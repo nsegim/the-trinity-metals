@@ -1,0 +1,122 @@
+.top-bar {
+  background-color: var(--trinity-blue);
+}
+.basic-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 38px;
+}
+.contact-info {
+  gap: 20px;
+}
+.contact-info a {
+  text-decoration: none;
+}
+.contact-info a:first-child {
+  padding-right: 30px;
+}
+.contact-info span {
+  color: var(--trinity-white);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.social-links {
+  display: flex;
+  align-items: baseline;
+}
+.careerBtn {
+  font-size: 13px;
+  font-weight: 700;
+
+  text-align: left;
+  color: var(--trinity-white);
+  text-decoration: none;
+}
+
+.social-links .social-icons {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.the_header {
+  background-color: var(--trinity-white);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 1px 10px 0px #1d1d1d1a;
+  align-items: center;
+  margin-top: -35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 10;
+  position: relative;
+}
+/* Site logo style */
+.site-logo {
+  width: 20%;
+}
+.site-image-logo {
+  width: 65%;
+}
+
+/* Navigation Menu style */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    gap: 40px;
+  }
+
+  .navigation-menu {
+    width: 65%;
+  }
+}
+
+.navigation-menu .nav-link:hover,
+.navigation-menu .nav-link.active {
+  color: var(--trinity-blue);
+}
+.navigation-menu .nav-link {
+  position: relative;
+  font-size: 14px;
+}
+.navigation-menu .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 05%;
+  bottom: 0;
+  width: 0%;
+  height: 2.3px;
+  background: var(--trinity-blue);
+  transition: width ease-in-out 0.4s;
+}
+
+.navigation-menu .nav-link:hover::before,
+.navigation-menu .nav-link.active::before {
+  width: 90%;
+}
+
+.contact-btn {
+  padding-right: 25px;
+}
+.contact-btn a {
+  text-decoration: none;
+  background-color: var(--trinity-blue);
+
+  padding: 15px 30px 15px 30px;
+  gap: 10px;
+  border-radius: 5px;
+  gap: 10px;
+  display: flex;
+}
+.contact-btn a span {
+  color: var(--trinity-white);
+
+  font-size: 14px;
+  font-weight: 400;
+}
