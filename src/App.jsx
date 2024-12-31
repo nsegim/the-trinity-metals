@@ -14,7 +14,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/trinity-metals/" element={<HomePage />}></Route>
         </Routes>
       </BrowserRouter>
     </>
