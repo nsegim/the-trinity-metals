@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const ImageGallery = ({ imageName, customClass }) => {
-  const placeholder = "/images/placeholder.jpg";
+  const placeholder = "public/images/placeholder.jpg";
 
   const imageSrc = imageName ? `public/images/${imageName}` : placeholder;
 
