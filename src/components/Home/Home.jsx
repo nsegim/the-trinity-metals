@@ -15,7 +15,7 @@ const articles = [
     date: "2024-01-16",
     dateDisplay: "26 January, 2024",
     title: "Trinity Metals Innovative Approach to the Illegal Mining Issue.",
-    featuredImage: "/images/innovative-approach.jpeg",
+    featuredImage: "public/images/innovative-approach.jpeg",
     category: "Innovation",
   },
   {
@@ -23,7 +23,7 @@ const articles = [
     dateDisplay: "26 January, 2024",
     title:
       "Rutongo is now Rwanda’s largest and Africa’s second-largest tin producer Musha ranks as Rwanda's second-largest..",
-    featuredImage: "/images/Macig.jpeg",
+    featuredImage: "public/images/Macig.jpeg",
     category: "Featured",
   },
   {
@@ -31,21 +31,21 @@ const articles = [
     dateDisplay: "26 January, 2024",
     title:
       "Trinity Metals Group pushes for global mining standards after unveiling environmental audit report",
-    featuredImage: "/images/Trinity-metals-group.jpeg",
+    featuredImage: "public/images/Trinity-metals-group.jpeg",
     category: "Sustainability",
   },
   {
     date: "2024-01-16",
     dateDisplay: "26 January, 2024",
     title: "Rwanda is a ‘performance-driven country’, says Trinity Metals CEO ",
-    featuredImage: "/images/Lithum-Projects.jpg",
+    featuredImage: "public/images/Lithum-Project.jpg",
     category: "Innovation",
   },
   {
     date: "2024-01-16",
     dateDisplay: "26 January, 2024",
     title: "The cost - and value - of ESG in mining",
-    featuredImage: "/images/Cost-And-value.png",
+    featuredImage: "public/images/Cost-And-value.png",
     category: "Featured",
   },
   {
@@ -53,7 +53,7 @@ const articles = [
     dateDisplay: "26 January, 2024",
     title:
       "Trinity Metals Secures $US3.8million funding from U.S. International Development Finance Corporation (DFC)",
-    featuredImage: "/images/Secures-funding.jpg",
+    featuredImage: "public/images/Secures-funding.jpg",
     category: "Sustainability",
   },
 ];
@@ -417,7 +417,7 @@ const HomePage = () => {
        {/* Latest articles section */}
        <div className="sectionwrapper">
         <div className="container">
-          <div className="sectionTops">
+          <div className="sectionTops pb-4">
                   <div className="section-heading">
                     <h1 className="section-header-2 with-blue">
                       <span className="welcome-icon-blue me-3">
@@ -449,7 +449,7 @@ const HomePage = () => {
           </div>
 
           <div className="articles-cards-wrapper">
-            <LoopGrid items={articles} itemsPerPage={2} />
+            <LoopGrid items={articles} itemsPerPage={3} />
 
           </div>
         </div>
