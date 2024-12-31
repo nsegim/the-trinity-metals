@@ -45,7 +45,7 @@ const SiteHeader = () => {
       </div>
       <div className="container the_header">
         <div className="site-logo">
-          <Link to="/">
+          <Link to="/trinity-metals">
             <ImageGallery
               imageName="site-logo1.png"
               customClass="site-image-logo"
