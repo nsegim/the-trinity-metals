@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SiteHeader from "./components/header/Header";
-import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Router, Route, Routes, HashRouter } from "react-router-dom";
 import HomePage from "./components/Home/Home";
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/trinity-metals/">
         <Routes>
-          <Route path="/trinity-metals/" element={<HomePage />}></Route>
+          <Route path="/" element={<HomePage />}></Route>
         </Routes>
       </BrowserRouter>
     </>

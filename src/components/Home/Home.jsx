@@ -522,9 +522,9 @@ const HomePage = () => {
       
       <SiteFooter />
 
-      <div className="container pb-5">
+      {/* <div className="container pb-5">
         <Navbar />
-      </div>
+      </div> */}
     </>
   );
 };

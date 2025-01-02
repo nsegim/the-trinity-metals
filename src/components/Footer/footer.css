@@ -78,6 +78,30 @@
   text-align: left;
 }
 
+.the-links .quick-links{
+  list-style-type: none;
+}
+
+.the-links .quick-links li{
+  position: relative;
+}
+
+.the-links .quick-links li::before{
+  content: '';
+  position: absolute;
+  left: -14%;
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+  width: 6px;
+height: 6px;
+
+border-radius: 3px;
+
+
+  background-image: url('/public/images/Footer-links.svg'); /* Set marker image */
+  background-size: cover; 
+}
+
 .contact-info-section {
   display: flex;
   width: 100%;
