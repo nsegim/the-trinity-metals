@@ -253,6 +253,7 @@ opacity: 0px;
 .tab-button.active-button{
   background: var(--trinity-blue);
   color: var(--trinity-white);
+  
 }
 
 
