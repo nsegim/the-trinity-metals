@@ -1,6 +1,6 @@
 {
   
-  "homepage": "https://nsegim.github.io/trinity-metals/",
+  "homepage": "https://nsegim.github.io/the-trinity-metals/",
   
   "name": "trinity-web",
   
@@ -16,7 +16,7 @@
   "dev": "vite",
   
     
-  "build": "vite build && cp ./dist/index.html ./dist/404.html",
+  "build": "vite build",
   
     
   "lint": "eslint .",
