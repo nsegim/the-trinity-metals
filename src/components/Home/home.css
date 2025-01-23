@@ -1,4 +1,7 @@
 /* Home Page styles */
+.hover-green:hover, .explore-more:hover{
+  background-color: var(--trinity-green)!important;
+}
 
 /* Hero section styles */
 .hero-section {
@@ -35,7 +38,7 @@
 }
 .basic-info {
   width: 50%;
-  z-index: 10;
+  z-index: 1;
   gap: 20px;
 }
 
@@ -104,6 +107,9 @@ text-decoration: none;
   text-align: center;
 
 
+}
+.get-started:hover{
+  background-color: var(--trinity-blue);
 }
 
 .get-started:hover, .view-projects:hover{ 
@@ -390,11 +396,11 @@ color: var(--trinity-white);
   gap: 30px;
 }
 .cards-wrapper .a-card{
-  height: 300px;
+  min-height: 300px;
   border-radius: 4px;
   box-shadow: 0px 3px 53px 0px #2828281F;
   width: 31.8%;
-
+  overflow: hidden;
 
 }
 
@@ -474,6 +480,7 @@ color: var(--trinity-dark);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 557px;
+  border-radius: 10px;
 }
 
 .Sastainability-right{
@@ -486,16 +493,16 @@ color: var(--trinity-dark);
 
 
 /* Latest Article section styles */
-.sectionwrapper{
+.article-sectionwrapper{
   padding-top: 120px;
   background-color: #F2F2F2;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 .with-blue{
   color: var(--trinity-blue);
 }
 
-.view-articles{
+.explore-more{
   
 padding: 16px 30px 16px 30px;
 background-color: var(--trinity-blue);
@@ -508,6 +515,9 @@ font-weight: 400;
 line-height: 19.5px;
 text-align: center;
 
+}
+.explore-more:hover{
+  color: var(--trinity-white);
 }
 
 /* Our Gallery Section Styles */
@@ -570,4 +580,5 @@ text-align: center;
   height: 210.1px;
   object-fit: cover;
   border-radius: 5px;
+  cursor: pointer;
 }

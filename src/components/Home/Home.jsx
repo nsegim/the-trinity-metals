@@ -7,6 +7,7 @@ import "./home.css";
 import { useState, useRef } from "react";
 import Navbar from "../NavBar/NavigationBar";
 import LoopGrid from "../Loop-grid/LoopGrid";
+import ImageLightBox from "../LightBox/Image-LightBox/ImageLightBox";
 
 
 // Sample JSON data
@@ -15,7 +16,7 @@ const articles = [
     date: "2024-01-16",
     dateDisplay: "26 January, 2024",
     title: "Trinity Metals Innovative Approach to the Illegal Mining Issue.",
-    featuredImage: "public/images/innovative-approach.jpeg",
+    featuredImage: "./images/innovative-approach.jpeg",
     category: "Innovation",
   },
   {
@@ -23,7 +24,7 @@ const articles = [
     dateDisplay: "26 January, 2024",
     title:
       "Rutongo is now Rwanda’s largest and Africa’s second-largest tin producer Musha ranks as Rwanda's second-largest..",
-    featuredImage: "public/images/Macig.jpeg",
+    featuredImage: "./images/Macig.jpeg",
     category: "Featured",
   },
   {
@@ -31,21 +32,21 @@ const articles = [
     dateDisplay: "26 January, 2024",
     title:
       "Trinity Metals Group pushes for global mining standards after unveiling environmental audit report",
-    featuredImage: "public/images/Trinity-metals-group.jpeg",
+    featuredImage: "./images/Trinity-metals-group.jpeg",
     category: "Sustainability",
   },
   {
     date: "2024-01-16",
     dateDisplay: "26 January, 2024",
     title: "Rwanda is a ‘performance-driven country’, says Trinity Metals CEO ",
-    featuredImage: "public/images/Lithum-Project.jpg",
+    featuredImage: "./images/Lithum-Project.jpg",
     category: "Innovation",
   },
   {
     date: "2024-01-16",
     dateDisplay: "26 January, 2024",
     title: "The cost - and value - of ESG in mining",
-    featuredImage: "public/images/Cost-And-value.png",
+    featuredImage: "./images/Cost-And-value.png",
     category: "Featured",
   },
   {
@@ -53,9 +54,30 @@ const articles = [
     dateDisplay: "26 January, 2024",
     title:
       "Trinity Metals Secures $US3.8million funding from U.S. International Development Finance Corporation (DFC)",
-    featuredImage: "public/images/Secures-funding.jpg",
+    featuredImage: "./images/Secures-funding.jpg",
     category: "Sustainability",
   },
+  {
+    "date": "2024-01-16",  
+    "dateDisplay": "26 January, 2024",
+    "title": "Celebration of International Day of Women in Mining (IDWIM), 2024",
+    "featuredImage": "./images/Rotongo-women.jpg",
+    "category": "Sustainability"
+  },
+  {
+    "date": "2024-01-16",  
+    "dateDisplay": "26 January, 2024",
+    "title": "Trinity Safety, Health, Environment and Community Pledge",
+    "featuredImage": "./images/Safety&Health.jpg",
+    "category": "Health"
+  },
+  {
+    "date": "2024-01-16",  
+    "dateDisplay": "26 January, 2024",
+    "title": "Trinity Metals Secures $US3.8million funding from U.S. International Development Finance Corporation (DFC)",
+    "featuredImage": "./images/development_program.jpeg",
+    "category": "Featured"
+  }
 ];
 
 
@@ -97,7 +119,7 @@ const HomePage = () => {
       <div className="hero-section">
         <div className="background-video-container">
           <video autoPlay muted loop>
-            <source src="public/videos/Trinity-video.mp4" type="video/mp4" />
+            <source src="./videos/Trinity-video.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="background-overlay">
@@ -267,7 +289,7 @@ const HomePage = () => {
                
 
               <div className="buttonElement">
-                <a href="#">
+                <a href="#" className="hover-green">
                   
                   <span>Read More</span>
                   <ImageGallery imageName="Arrow2.svg"/>
@@ -328,7 +350,7 @@ const HomePage = () => {
                       <div className="project-title">
                         <a href="#">
                           <span>
-                          Nyakabingo Mine
+                          Trinity Nyakabingo Mine
                           </span>
                         </a>
                       </div>
@@ -343,7 +365,7 @@ const HomePage = () => {
                       <div className="project-title">
                           <a href="#">
                             <span>
-                            Musha Mine
+                            Trinity Musha Mines
                             </span>
                           </a>
                         </div>
@@ -357,7 +379,7 @@ const HomePage = () => {
                       <div className="project-title">
                           <a href="#">
                             <span>
-                            Rutongo Mine
+                            Rutongo Mines
                             </span>
                           </a>
                         </div>
@@ -415,7 +437,7 @@ const HomePage = () => {
        </div>
 
        {/* Latest articles section */}
-       <div className="sectionwrapper">
+       <div className="article-sectionwrapper">
         <div className="container">
           <div className="sectionTops pb-4">
                   <div className="section-heading">
@@ -436,7 +458,7 @@ const HomePage = () => {
                   </div>
                   
                   <div className="button-element">
-                  <a href="#" className="view-articles">
+                  <a href="#" className="explore-more">
                     View Projects
                     <span>
                       <ImageGallery imageName="arrow-icon.svg"/>
@@ -454,7 +476,7 @@ const HomePage = () => {
           </div>
         </div>
        </div>
-
+        
        {/* Our Gallery Section */}
        <div className="gallery-section">
         <div className="container">
@@ -477,8 +499,8 @@ const HomePage = () => {
                   </div>
                   
                   <div className="button-element">
-                  <a href="#" className="view-articles">
-                    View Projects
+                  <a href="#" className="explore-more">
+                    View Gallery
                     <span>
                       <ImageGallery imageName="arrow-icon.svg"/>
                     </span>
@@ -494,7 +516,7 @@ const HomePage = () => {
                 ref = {videoRef}
                  
                  muted>
-                   <source src="public/videos/Trinity-video.mp4" type="video/mp4" />
+                   <source src="./videos/Trinity-video.mp4" type="video/mp4" />
                 </video>
 
                 <div className="play-button" onClick={handleVideo}>
@@ -502,7 +524,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="image-wrapper">
-              <div className="the-image-grid">
+              {/* <div className="the-image-grid">
                  <div className="grid-item1">
                   <ImageGallery imageName="Excavator.jpeg" customClass="gallery-image"/>
                  </div>
@@ -512,13 +534,18 @@ const HomePage = () => {
                  <div className="grid-item3">
                   <ImageGallery imageName="trinity-employes2.jpeg" customClass="gallery-image"/>
                  </div>
-              </div>
+              </div> */}
+              <ImageLightBox />
+
               
             </div>
           </div>
         </div>
+
+
        </div>
 
+      
       
       <SiteFooter />
 

@@ -35,28 +35,26 @@
 .newsletter-form .mb-3 {
   width: 55%;
 }
-.email-field {
+.newsletter-form .email-field {
   background-color: transparent;
-
-  padding: 12.5px 20px 13px 20px;
+  border: 1.4px solid #8bcee8!important;
+  padding: 15.5px 20px 13.1px 20px;
 
   border-radius: 5px;
 }
-.email-field::placeholder {
+.newsletter-form .email-field::placeholder {
   color: var(--trinity-white);
   font-size: 13px;
 }
 .newsletterSubmitBtn {
-  background-color: var(--trinity-dark);
+  background-color: var(--trinity-dark)!important;
   width: 22%;
-
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 700!important;
   line-height: 19.5px;
   text-align: center;
   height: fit-content;
-
-  padding: 14.94px 30px 16.5px 30px;
+  padding: 14.94px 30px 16.5px 30px!important;
   border-radius: 5px;
 }
 
@@ -134,3 +132,21 @@ border-radius: 3px;
   margin-bottom: 5px;
   text-decoration: none;
 }
+
+.bottom-section{
+  background-color: var(--trinity-dark);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+.bottom-section .copyright{
+  display: flex;
+  
+  justify-content: center;
+}
+.bottom-section .copyright p{
+  color: var(--trinity-white);
+  margin-bottom: 0;
+}
+ 
+  
