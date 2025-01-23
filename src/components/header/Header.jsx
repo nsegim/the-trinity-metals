@@ -4,7 +4,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const SiteHeader = () => {
+  const [show, setShow] = useState(null)
+  const onHoverListener = (dropDown)=>(setShow(dropDown))
+  const onRemovePointer = ()=>(setShow(false))
+
   return (
     <div className="header">
       <div className="top-bar">
@@ -45,7 +50,7 @@ const SiteHeader = () => {
       </div>
       <div className="container the_header">
         <div className="site-logo">
-          <Link to="/trinity-metals">
+          <Link to="/">
             <ImageGallery
               imageName="site-logo1.png"
               customClass="site-image-logo"
@@ -59,7 +64,14 @@ const SiteHeader = () => {
               <Nav className="me-auto">
                 <Nav.Link href="#">Home</Nav.Link>
 
-                <NavDropdown title="About Us" id="basic-nav-dropdown">
+                <NavDropdown 
+                  title="About Us" 
+                  id="basic-nav-dropdown" 
+                  show={ show === "AboutUs"} 
+                  onMouseEnter={()=> onHoverListener("AboutUs")} 
+                  onMouseLeave={onRemovePointer}
+
+                >
                   <NavDropdown.Item href="#action/3.1">
                     Our History
                   </NavDropdown.Item>
@@ -69,18 +81,24 @@ const SiteHeader = () => {
                   </NavDropdown.Item>
 
                   <NavDropdown.Item href="#action/3.1">
-                    Our Strategies
+                    Our Strategy
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.1">
-                    Our Leadership
-                  </NavDropdown.Item>
-
                   <NavDropdown.Item href="#action/3.1">
                     Our Products
                   </NavDropdown.Item>
+                    
+                  <NavDropdown.Item href="#action/3.1">
+                    Our Leadership
+                  </NavDropdown.Item>
                 </NavDropdown>
 
-                <NavDropdown title="Our Projects" id="basic-nav-dropdown">
+                <NavDropdown 
+                  title="Our Projects" 
+                  id="basic-nav-dropdown"
+                  show={ show === "OurProjects"} 
+                  onMouseEnter={()=> onHoverListener("OurProjects")} 
+                  onMouseLeave={onRemovePointer}
+                >
                   <NavDropdown.Item href="#action/3.1">
                     Rutongo
                   </NavDropdown.Item>
@@ -92,11 +110,14 @@ const SiteHeader = () => {
                   <NavDropdown.Item href="#action/3.1">Musha</NavDropdown.Item>
                 </NavDropdown>
 
-                <Nav.Link href="#">Sustainability</Nav.Link>
+                <Nav.Link href="">Sustainability</Nav.Link>
 
                 <NavDropdown
                   title="Investors Relations"
                   id="basic-nav-dropdown"
+                  show={ show === "Investors"} 
+                  onMouseEnter={()=> onHoverListener("Investors")} 
+                  onMouseLeave={onRemovePointer}
                 >
                   <NavDropdown.Item href="#action/3.1">
                     Reports

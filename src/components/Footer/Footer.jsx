@@ -1,4 +1,5 @@
 import { Form, Button } from "react-bootstrap";
+
 import "./footer.css";
 import { Link } from "react-router-dom";
 import ImageGallery from "../ImageGallery";
@@ -7,7 +8,8 @@ const SiteFooter = () => {
     <>
       <div className="footer">
         <div className="map-section">
-           <iframe width="100%" height="500.88" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500.88&amp;hl=en&amp;q=+(Trinity%20Metals)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe>
+           {/* <iframe width="100%" height="500.88" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500.88&amp;hl=en&amp;q=+(Trinity%20Metals)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe> */}
+           <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1ffI0qI2TP6XhTJ3XH-uY88v6aA-v0YE&ehbc=2E312F" width="100%" height="500.88"></iframe>        
         </div>
         <div className="footer-content-wrapper">
           <div className="the-newsLetter">
@@ -31,7 +33,7 @@ const SiteFooter = () => {
                   type="submit"
                   className="newsletterSubmitBtn"
                 >
-                  Submit
+                  Subscribe
                 </Button>
               </Form>
             </div>
@@ -80,6 +82,7 @@ const SiteFooter = () => {
 
                 <Link className="reach-contact">+250 919 59034</Link>
               </div>
+              
             </div>
             <div className="icon-box">
               <span>
@@ -96,6 +99,11 @@ const SiteFooter = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bottom-section">
+        <div className="container copyright">
+          <p>Copyright © TRINITY METALS 2025  All Right Reserved </p>
         </div>
       </div>
     </>

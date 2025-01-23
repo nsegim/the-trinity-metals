@@ -40,6 +40,34 @@
         "title": "Trinity Metals Secures $US3.8million funding from U.S. International Development Finance Corporation (DFC)",
         "featuredImage": "/images/Secures-funding.jpg",
         "category": "Sustainability"
-      }
+      },
+      {
+        "date": "2024-01-16",  
+        "dateDisplay": "26 January, 2024",
+        "title": "Trinity Metals Group pushes for global mining standards after unveiling environmental audit report",
+        "featuredImage": "/images/Trinity-metals-group.jpeg",
+        "category": "Sustainability"
+      },
+      {
+          "date": "2024-01-16",  
+          "dateDisplay": "26 January, 2024",
+          "title": "Celebration of International Day of Women in Mining (IDWIM), 2024",
+          "featuredImage": "/images/Rotongo-women.jpg",
+          "category": "Sustainability"
+        },
+        {
+          "date": "2024-01-16",  
+          "dateDisplay": "26 January, 2024",
+          "title": "Trinity Safety, Health, Environment and Community Pledge",
+          "featuredImage": "/images/Safety&Health.jpg",
+          "category": "Health"
+        },
+        {
+          "date": "2024-01-16",  
+          "dateDisplay": "26 January, 2024",
+          "title": "Trinity Metals Secures $US3.8million funding from U.S. International Development Finance Corporation (DFC)",
+          "featuredImage": "/images/development_program.jpeg",
+          "category": "Featured"
+        }
   ]
   
