@@ -1,0 +1,463 @@
+/* Hero section styles */
+.description-text{
+    
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+text-align: left;
+color: var(--trinity-dark);
+
+}
+.about-hero-section{
+    margin-top: -60px;
+    min-height: 500px;
+    background-image: url('/public/images/about-us-hero.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.about-hero-section::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.inner-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.inner-wrapper .heading{
+    
+font-size: 64px;
+font-weight: 700;
+line-height: 78.02px;
+text-align: center;
+color: var(--trinity-white);
+
+}
+
+/* History section styles */
+.history-section-wrapper{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.histort-content-holder, .image-holder{
+    width: 48%;
+}
+.histort-content-holder .content-holder{
+    margin-bottom: 50px;
+}
+.image-holder{
+    min-height: 707px;
+    position: relative;
+}
+.history-play-button{
+   position: absolute;
+   right: -30px;
+   bottom: -30px; 
+   cursor: pointer;
+}
+.history-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-content{
+    padding-bottom: 22px;
+    border-bottom: 1px solid #DEDEDE;
+}
+.section-heading{
+   
+font-size: 36px;
+font-weight: 700;
+line-height: 43.88px;
+text-align: left;
+padding-bottom: 15px;
+
+}
+/* Our Mission and Values styles */
+.our-values-wrapper{
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+.our-mission, .our-vision{
+  width: 48.7%;
+  position: relative;
+}
+.our-mission::after, .our-vision::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+
+.our-mission{
+    background-image: url('/public/images/Our-mission.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 274px;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+.our-vision{
+    background-image: url('/public/images/our-vision.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 274px;
+
+}
+.our-mission .text-001, .our-vision .text-001{
+    
+font-size: 18.59px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 1px;
+text-align: center;
+color: var(--trinity-white);
+
+}
+.our-values-wrapper .icon-box{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(20px);
+    transition: transform .3s ease-in-out;
+}
+
+.our-mission:hover{
+    background-image: none;
+    background-color: var(--trinity-blue)!important;
+}
+.our-vision:hover{
+    background-image: none;
+    background-color: var(--trinity-green)!important;
+}
+.our-values-wrapper .text-description{
+    width: 80%;
+    color: var(--trinity-white);
+    opacity: 0;
+}
+.our-vision:hover .text-description, .our-mission:hover .text-description{
+    opacity: 1;
+    z-index: 1;
+}
+.our-vision:hover .icon-box, .our-mission:hover .icon-box{
+    
+    transform: translateY(0px);
+}
+
+/* Our values section styles */
+.values-section{
+    background-image: url('/public/images/Trinity-values.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    display: flex;
+    
+    align-items: center;
+}
+.our-values-holder{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+.values-section .inner-contentWrapper {
+    
+    width: 65%;
+    background-color: var(--trinity-white);
+    padding: 40px 35px;
+    
+
+}
+.section-heading0002{
+    
+font-size: 28px;
+font-weight: 700;
+line-height: 34.13px;
+text-align: left;
+color: var(--trinity-dark);
+padding-bottom: 10px;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding-bottom: 20px;
+}
+
+.values-section .the-grid-item{
+    border: 1px solid #DEDEDE;
+    width: Fill (329.45px)px;
+
+    padding: 28px 20px 14px 20px;
+
+
+}
+.values-section .the-grid-item .the-icon-box{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.values-section .icon-box-header p{
+    
+font-size: 16px;
+font-weight: 700;
+line-height: 19.5px;
+text-align: left;
+
+
+}
+
+.values-section .icon-box-description{
+    
+font-size: 13px;
+font-weight: 400;
+line-height: 15.85px;
+text-align: left;
+
+
+}
+
+/* Our Strategies section styless */
+
+.strategies-section{
+    min-height: 602px;
+    position: relative;
+    background: #00A4E4;
+}
+
+.strategies-section::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/images/patterns2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.12;
+    
+}
+.top-content{
+    gap: 20px;
+}
+
+.text-content-inner{
+    width: 50%;
+    padding-bottom: 20px;
+}
+.strategies-section .text-heading h1{
+    
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    text-align: center;
+    color: var(--trinity-white);
+    
+}
+.strategies-section .text-content-inner p{
+    
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+text-align: center;
+color: var(--trinity-white);
+
+}
+.strategies-section .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.strategies-section .grid-container .the-grid-item{
+    background: var(--trinity-white);
+   
+padding: 10px 22px 10px 22px;
+gap: 18px;
+
+
+}
+.strategies-section .grid-container .the-icon-box{
+    display: flex;
+    flex-direction: column;
+   gap: 18px;
+    align-items: center;
+}
+.strategy-icon{
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+.strategies-section .icon-box-header p{
+    
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    
+    color: var(--trinity-dark);
+}
+.strategies-section .icon-box-description p{
+   
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    
+    color: var(--trinity-dark);
+    
+}
+
+/* Our management team section styles */
+.executive-management-wrapper{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+    
+}
+.executive-management-wrapper .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.team-member-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.team-member-photo{
+    min-height: 330px;
+    object-fit: cover;
+    width: 100%;
+}
+.team-member-details{
+   
+  padding: 30px 20px 15px 20px;
+  gap: 10px;
+  opacity: 0px;
+  background-color: var(--trinity-white);
+}
+.member-name, .member-post{
+    color: var(--trinity-dark);
+}
+.member-name{
+
+font-size: 20px;
+font-weight: 700;
+line-height: 24.38px;
+text-align: left;
+
+
+}
+
+.member-post{
+   
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+text-align: left;
+
+
+}
+.more-member-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.more-member-button .hover-green{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--trinity-blue);
+    border-radius: 5px;
+    padding: 16px 30px 16px 30px;
+    color: var(--trinity-white);
+    display: flex;
+    gap: 10px;
+    ;
+}
+
+.more-member-button .hover-green:hover{
+    background-color: var(--trinity-green);
+}
+
+/* Our Product section styles */
+.our-products-section{
+   min-height: 691px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 40px;
+}
+.our-products-section .first-container{
+    display: flex;
+    justify-content: space-between;
+}
+.our-products-section  .header-part{
+    width: 30%;
+}
+.our-products-section  .description-part{
+    width: 63%;
+}
+
+.second-container {
+    gap: 30px;
+    align-items: stretch;
+}
+
+.single-product{
+    width: 32%;
+    flex: 1;
+}
+.single-product .product-image{
+  width: 100%;
+}
+.product-desc{
+    box-shadow: 0px 4px 4px 0px #00A0DD33;
+    min-height: 207.5px;
+    padding: 30px 20px 10px 20px;
+    gap: 16px;
+    
+
+
+}
+.product-name{
+    
+font-size: 20px;
+font-weight: 700;
+line-height: 24.38px;
+text-align: left;
+color: var(--trinity-green);
+
+}
+.custom-divider{
+    color: rgb(169, 159, 159)!important;
+
+}

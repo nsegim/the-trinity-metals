@@ -5,6 +5,10 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Menus from "../menu/Menu";
+import OffcanvasMenu from "../Offcanvas/OffcanvasMenu";
+
+
 const SiteHeader = () => {
   const [show, setShow] = useState(null)
   const onHoverListener = (dropDown)=>(setShow(dropDown))
@@ -57,91 +61,24 @@ const SiteHeader = () => {
             />
           </Link>
         </div>
-        <div className="navigation-menu">
-          <Navbar expand="lg" className="bg-body-light">
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#">Home</Nav.Link>
-
-                <NavDropdown 
-                  title="About Us" 
-                  id="basic-nav-dropdown" 
-                  show={ show === "AboutUs"} 
-                  onMouseEnter={()=> onHoverListener("AboutUs")} 
-                  onMouseLeave={onRemovePointer}
-
-                >
-                  <NavDropdown.Item href="#action/3.1">
-                    Our History
-                  </NavDropdown.Item>
-
-                  <NavDropdown.Item href="#action/3.1">
-                    Our Values
-                  </NavDropdown.Item>
-
-                  <NavDropdown.Item href="#action/3.1">
-                    Our Strategy
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.1">
-                    Our Products
-                  </NavDropdown.Item>
-                    
-                  <NavDropdown.Item href="#action/3.1">
-                    Our Leadership
-                  </NavDropdown.Item>
-                </NavDropdown>
-
-                <NavDropdown 
-                  title="Our Projects" 
-                  id="basic-nav-dropdown"
-                  show={ show === "OurProjects"} 
-                  onMouseEnter={()=> onHoverListener("OurProjects")} 
-                  onMouseLeave={onRemovePointer}
-                >
-                  <NavDropdown.Item href="#action/3.1">
-                    Rutongo
-                  </NavDropdown.Item>
-
-                  <NavDropdown.Item href="#action/3.1">
-                    Nyakabingo
-                  </NavDropdown.Item>
-
-                  <NavDropdown.Item href="#action/3.1">Musha</NavDropdown.Item>
-                </NavDropdown>
-
-                <Nav.Link href="">Sustainability</Nav.Link>
-
-                <NavDropdown
-                  title="Investors Relations"
-                  id="basic-nav-dropdown"
-                  show={ show === "Investors"} 
-                  onMouseEnter={()=> onHoverListener("Investors")} 
-                  onMouseLeave={onRemovePointer}
-                >
-                  <NavDropdown.Item href="#action/3.1">
-                    Reports
-                  </NavDropdown.Item>
-
-                  <NavDropdown.Item href="#action/3.1">
-                    Latest News
-                  </NavDropdown.Item>
-
-                  <NavDropdown.Item href="#action/3.1">
-                    Photos and Videos
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
+        
+        <div className="site-menu-container">
+          <Menus />
         </div>
+        
+        <OffcanvasMenu />
+
         <div className="contact-btn">
-          <a href="#">
+          <a href="/the-trinity-metals/contact-us" className="hover-green">
             <span>Contact Us</span>
             <ImageGallery imageName="contact-us-icon.svg" />
           </a>
         </div>
+
+        
+        
       </div>
+      
     </div>
   );
 };

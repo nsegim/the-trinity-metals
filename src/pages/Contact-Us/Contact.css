@@ -1,0 +1,42 @@
+.map-section-on{
+    margin-top: -127px;
+}
+
+
+.get-in-touchSection .container .row{
+    box-shadow: 0px 3px 63px 0px #2828281C;
+    background-color: var(--trinity-white);
+    min-height: 683.95px;
+    padding: 65px;
+    border-radius: 4px;
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
+    gap: 50px;
+}
+.get-in-touchSection .left{
+    padding-right: 55px;
+}
+
+.get-in-touchSection .left, .get-in-touchSection .right{
+    width: 47.4%;
+}
+
+.get-in-touch {
+    background-image: url('public/images/Our-Work.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 505.45px;
+}
+
+.contact-details{
+    background-color: var(--trinity-green);
+    
+padding: 45px 40px 45px 50px;
+gap: 24px;
+border-radius: 0px 4px 4px 4px;
+  margin-top: -150px;
+  width: 93%;
+
+}
