@@ -1,0 +1,50 @@
+
+
+.environment-section, .community-section{
+    overflow-x: hidden;
+}
+.environment-section .row, .community-section .row{
+  position: relative;
+  
+}
+/* environment section styles */
+.sustainabilty-icon{
+width: 108px;
+height: 115px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+
+}
+
+.environment-section .row .bg-section{
+  background-image: url('/public/images/Sustainabilty.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100px;
+}
+
+.environment-section .content-section{
+   
+padding: 40px 100px 40px 60px;
+gap: 20px;
+width: 40%;
+
+}
+
+/* Community section styles */
+.community-bg-section{
+    background-image: url('/public/images/Community.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.community-content{
+padding: 100px 70px 102px 16%;
+
+background-color: var(--trinity-green);
+}
+
+

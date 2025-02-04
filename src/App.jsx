@@ -1,42 +1,61 @@
-// import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
-// import "./App.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import SiteHeader from "./components/header/Header";
-// import { BrowserRouter, Router, Route, Routes, HashRouter } from "react-router-dom";
-// import HomePage from "./components/Home/Home";
 
-// function App() {
-//   const [count, setCount] = useState(0);
-
-//   return (
-//     <>
-//       <hashRouter basename={import.meta.env.BASE_URL}>
-//         <Routes>
-//           <Route path="/" element={<HomePage />}></Route>
-//         </Routes>
-//       </hashRouter>
-//     </>
-//   );
-// }
-
-// export default App;
-
-
-
-import { HashRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./components/Home/Home";
+import { HashRouter, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
+import HomePage from "./pages/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import routes from "./routes/routes";
+import AboutPage from "./pages/About/About";
+import InvestorPage from "./pages/Investor/Investor";
+import ProjectPage from "./pages/Project/Projects";
+import SustainabilityPage from "./pages/Sustainability/Sustainability";
+import Team from "./pages/Our-leadership/Team";
+import ContactUs from "./pages/Contact-Us/Contact";
+
+
+// Dummy components for demonstration
+const Home = () => <HomePage />;
+const About = () => <AboutPage />;
+
+const OurProjects = () => <ProjectPage /> ;
+const Sustainability = () => <SustainabilityPage />;
+const Investors = () => <InvestorPage />;
+const OurLeadership = () => <Team />;
+
+// Component map to match paths to components
+const ComponentMap = {
+  "/": Home,
+  "/about": About,
+  "/our-projects": OurProjects,
+  "/sustainability": Sustainability,
+  "/investor-relations": Investors,
+  
+};
+
+// Recursive function to render nested routes
+const renderRoutes = (routesArray) =>
+  routesArray.map((route) => {
+    const Component = ComponentMap[route.path] || (() => <h1>Page Not Found</h1>);
+
+    // Check if the route has children and render them recursively
+    return route.children ? (
+      <Route key={route.path} path={route.path} element={<Component />}>
+        {renderRoutes(route.children)}
+      </Route>
+    ) : (
+      <Route key={route.path} path={route.path} element={<Component />} />
+    );
+  });
 
 function App() {
   return (
-    <HashRouter>
+    <Router basename="/the-trinity-metals">
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        {renderRoutes(routes)}
+        <Route path="/contact-us" element={<ContactUs />}></Route>
       </Routes>
-    </HashRouter>
+      
+    </Router>
   );
 }
 
