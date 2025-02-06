@@ -15,7 +15,7 @@ const SustainabilityPage = () => {
            {/* Envirnoment section */}
            <div className="environment-section">
              <div className="row">
-              <ImageGallery imageName="Environment-bulk.svg" customClass={'sustainabilty-icon'}/>
+              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Environment-bulk.svg" customClass={'sustainabilty-icon'}/>
               <div className="col-md-6 bg-section">
                 
               </div>
@@ -67,7 +67,7 @@ const SustainabilityPage = () => {
            {/* Community Section */}
            <div className="community-section">
               <div className="row">
-              <ImageGallery imageName="Community-icon.svg" customClass={'sustainabilty-icon'}/>
+              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Community-icon.svg" customClass={'sustainabilty-icon'}/>
 
                 <div className="col-md-6 community-content">
                 <div className="content-wrapper">

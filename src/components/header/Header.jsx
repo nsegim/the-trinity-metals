@@ -20,11 +20,11 @@ const SiteHeader = () => {
         <div className="container basic-info-wrapper">
           <div className="contact-info">
             <a href="#">
-              <ImageGallery imageName="phone-icon.svg" />
+              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/phone-icon.svg" />
               <span>+250 791 959 034</span>
             </a>
             <a href="#">
-              <ImageGallery imageName="envelope.svg" />
+              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/envelope.svg" />
               <span>Email: info.rw@trinity-metals.com</span>
             </a>
           </div>
@@ -35,17 +35,17 @@ const SiteHeader = () => {
             <ul className="social-icons">
               <li>
                 <a href="">
-                  <ImageGallery imageName="X-icon.svg" />
+                  <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/X-icon.svg" />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <ImageGallery imageName="IG-icon.svg" />
+                  <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/IG-icon.svg" />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <ImageGallery imageName="Youtube-icon.svg" />
+                  <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Youtube-icon.svg" />
                 </a>
               </li>
             </ul>
@@ -56,7 +56,7 @@ const SiteHeader = () => {
         <div className="site-logo">
           <Link to="/">
             <ImageGallery
-              imageName="site-logo1.png"
+              imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/site-logo1.png"
               customClass="site-image-logo"
             />
           </Link>
@@ -71,7 +71,7 @@ const SiteHeader = () => {
         <div className="contact-btn">
           <a href="/the-trinity-metals/contact-us" className="hover-green">
             <span>Contact Us</span>
-            <ImageGallery imageName="contact-us-icon.svg" />
+            <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/contact-us-icon.svg" />
           </a>
         </div>
 

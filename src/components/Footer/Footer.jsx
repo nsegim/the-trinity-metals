@@ -75,7 +75,7 @@ const SiteFooter = () => {
                   <div className="contact-info-section">
                     <div className="icon-box">
                       <span>
-                        <ImageGallery imageName="Yellow-Phone.svg" />
+                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Yellow-Phone.svg" />
                       </span>
                       <div className="text-element">
                         <p className="header-element">Call us</p>
@@ -87,7 +87,7 @@ const SiteFooter = () => {
                     <div className="icon-box">
                       <span>
                         <Link>
-                          <ImageGallery imageName="Yellow-envelope.svg" />
+                          <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Yellow-envelope.svg" />
                         </Link>
                       </span>
                       <div className="text-element">

@@ -19,7 +19,7 @@ transform: translate(-50%, -50%);
 }
 
 .environment-section .row .bg-section{
-  background-image: url('/public/images/Sustainabilty.webp');
+  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Sustainabilty.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +36,7 @@ width: 40%;
 
 /* Community section styles */
 .community-bg-section{
-    background-image: url('/public/images/Community.webp');
+    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Community.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
