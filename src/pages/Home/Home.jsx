@@ -17,7 +17,7 @@ const articles = [
     date: "2024-01-16",
     dateDisplay: "26 January, 2024",
     title: "Trinity Metals Innovative Approach to the Illegal Mining Issue.",
-    featuredImage: "./images/innovative-approach.jpeg",
+    featuredImage: "https://trinity-metals.com/wp-content/uploads/2025/02/innovative-approach.jpeg",
     category: "Innovation",
   },
   {
@@ -25,7 +25,7 @@ const articles = [
     dateDisplay: "26 January, 2024",
     title:
       "Rutongo is now Rwanda’s largest and Africa’s second-largest tin producer Musha ranks as Rwanda's second-largest..",
-    featuredImage: "./images/Macig.jpeg",
+    featuredImage: "https://trinity-metals.com/wp-content/uploads/2025/02/Macig.jpeg",
     category: "Featured",
   },
   {
@@ -33,49 +33,49 @@ const articles = [
     dateDisplay: "26 January, 2024",
     title:
       "Trinity Metals Group pushes for global mining standards after unveiling environmental audit report",
-    featuredImage: "./images/Trinity-metals-group.jpeg",
+    featuredImage: "https://trinity-metals.com/wp-content/uploads/2025/02/Trinity-metals-group.jpeg",
     category: "Sustainability",
   },
   {
     date: "2024-01-16",
     dateDisplay: "26 January, 2024",
     title: "Rwanda is a ‘performance-driven country’, says Trinity Metals CEO ",
-    featuredImage: "./images/Lithum-Project.jpg",
+    featuredImage: "https://trinity-metals.com/wp-content/uploads/2024/07/Lithum-Project.jpg",
     category: "Innovation",
   },
   {
     date: "2024-01-16",
     dateDisplay: "26 January, 2024",
     title: "The cost - and value - of ESG in mining",
-    featuredImage: "./images/Cost-And-value.png",
+    featuredImage: "https://trinity-metals.com/wp-content/uploads/2025/02/Cost-And-value.png",
     category: "Featured",
   },
   {
     date: "2024-01-16",
     dateDisplay: "26 January, 2024",
     title: "Trinity Metals Secures $US3.8million funding from U.S. International Development Finance Corporation (DFC)",
-    featuredImage: "./images/Secures-funding.jpg",
+    featuredImage: "https://trinity-metals.com/wp-content/uploads/2025/02/Secures-funding.jpg",
     category: "Sustainability",
   },
   {
      date : "2024-01-16",  
      dateDisplay : "26 January, 2024",
      title : "Celebration of International Day of Women in Mining (IDWIM), 2024",
-     featuredImage : "./images/Rotongo-women.jpg",
+     featuredImage : "https://trinity-metals.com/wp-content/uploads/2025/02/Rotongo-women.jpg",
      category : "Sustainability"
   },
   {
      date : "2024-01-16",  
      dateDisplay : "26 January, 2024",
      title : "Trinity Safety, Health, Environment and Community Pledge",
-     featuredImage : "./images/Safety&Health.jpg",
+     featuredImage : "https://trinity-metals.com/wp-content/uploads/2025/02/SafetyHealth.jpg",
      category : "Health"
   },
   {
      date : "2024-01-16",  
      dateDisplay : "26 January, 2024",
      title : "Trinity Metals Secures $US3.8million funding from U.S. International Development Finance Corporation (DFC)",
-     featuredImage : "./images/development_program.jpeg",
+     featuredImage : "https://trinity-metals.com/wp-content/uploads/2025/02/development_program.jpeg",
      category : "Featured"
   }
 ];
@@ -128,7 +128,7 @@ const HomePage = () => {
       <div className="hero-section">
         <div className="background-video-container">
           <video autoPlay muted loop>
-            <source src="./videos/Trinity-video.mp4" type="video/mp4" />
+            <source src="https://trinity-metals.com/wp-content/uploads/2022/12/Loop-9.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="background-overlay">
@@ -250,7 +250,7 @@ const HomePage = () => {
                         </div>
                       </div>
                       <div className="the_content_right">
-                        <ImageGallery imageName="mine_site_employees.png" customClass="miners_img1" />
+                        <ImageGallery  imageUrl= 'https://trinity-metals.com/wp-content/uploads/2025/02/mine_site_employees.png' customClass="miners_img1" />
                       </div>
                      </div>
                       
@@ -269,7 +269,7 @@ const HomePage = () => {
                      <div className="wrapper_content">
                         
                         <div className="the_content_right">
-                          <ImageGallery imageName="mine_site_employees2.png" customClass="miners_img1" />
+                          <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/mine_site_employees2.png' customClass="miners_img1" />
                         </div>
                      
                       </div>
@@ -287,7 +287,7 @@ const HomePage = () => {
                       <div className="wrapper_content">
                         
                         <div className="the_content_right">
-                          <ImageGallery imageName="mine_site_employees3.png" customClass="miners_img1" />
+                          <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/mine_site_employees3.png' customClass="miners_img1" />
                         </div>
                      
                       </div>
@@ -301,7 +301,7 @@ const HomePage = () => {
                 <a href="#" className="hover-green">
                   
                   <span>Read More</span>
-                  <ImageGallery imageName="Arrow2.svg"/>
+                  <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg' />
 
                 </a>
               </div>
@@ -319,7 +319,7 @@ const HomePage = () => {
                   <div className="section-heading">
                     <h1 className="section-header-2">
                       <span className="welcome-icon">
-                        <ImageGallery imageName="welcome-icon2.svg"/>
+                        <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/welcome-icon2.svg' />
                       </span>Latest Works
                       
                     </h1>
@@ -336,7 +336,7 @@ const HomePage = () => {
                   <a href="#" className="view-projects">
                     View Projects
                     <span>
-                      <ImageGallery imageName="arrow-icon.svg"/>
+                      <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg'/>
                     </span>
                     
                     
@@ -352,7 +352,7 @@ const HomePage = () => {
                      
                       <div className="featured-image">
                         <Link to={"#"}>
-                          <ImageGallery imageName="nyakabingo-mine.png" customClass= "card-image" />
+                          <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine.png' customClass= "card-image" />
                         </Link>  
                       </div>
                       
@@ -368,7 +368,7 @@ const HomePage = () => {
                    <div className="a-card">
                       <div className="featured-image">
                         <Link to={"#"}>
-                          <ImageGallery imageName="musha_mine.png" customClass= "card-image" />
+                          <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/musha_mine-min.png' customClass= "card-image" />
                         </Link>  
                       </div>
                       <div className="project-title">
@@ -382,7 +382,7 @@ const HomePage = () => {
                    <div className="a-card">
                       <div className="featured-image">
                         <Link to={"#"}>
-                          <ImageGallery imageName="rutongo.png" customClass= "card-image"/>
+                          <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/rutongo-min.png' customClass= "card-image"/>
                         </Link>  
                       </div>
                       <div className="project-title">
@@ -409,7 +409,7 @@ const HomePage = () => {
            <div className="col-md-6 Sastainability-right">
              <h1 className="section-header">
               <span className="welcome-icon">
-                <ImageGallery imageName="welcome-icon.svg"/>
+                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/welcome-icon.svg"/>
               </span>Sustainability
              </h1>
 
@@ -430,7 +430,7 @@ const HomePage = () => {
                   <a href="#" className="view-projects">
                     View Projects
                     <span>
-                      <ImageGallery imageName="arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
@@ -442,7 +442,7 @@ const HomePage = () => {
          </div>
         </div>
          
-         <ImageGallery imageName="plant-bg.png" customClass="sastain-bg-img"/>
+         <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/plant-bg.png" customClass="sastain-bg-img"/>
        </div>
 
        {/* Latest articles section */}
@@ -452,7 +452,7 @@ const HomePage = () => {
                   <div className="section-heading">
                     <h1 className="section-header-2 with-blue">
                       <span className="welcome-icon-blue me-3">
-                        <ImageGallery imageName="welcome-icon-blue.svg"/>
+                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/welcome-icon-blue.svg"/>
                       </span>
                       Blog Post
                       
@@ -470,7 +470,7 @@ const HomePage = () => {
                   <a href="#" className="explore-more">
                     View Projects
                     <span>
-                      <ImageGallery imageName="arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
@@ -493,7 +493,7 @@ const HomePage = () => {
                   <div className="section-heading">
                     <h1 className="section-header-2 with-blue">
                       <span className="welcome-icon-blue me-3">
-                        <ImageGallery imageName="welcome-icon-blue.svg"/>
+                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/welcome-icon-blue.svg"/>
                       </span>
                       Media
                       
@@ -511,7 +511,7 @@ const HomePage = () => {
                   <a href="#" className="explore-more">
                     View Gallery
                     <span>
-                      <ImageGallery imageName="arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
@@ -525,25 +525,15 @@ const HomePage = () => {
                 ref = {videoRef}
                  
                  muted>
-                   <source src="./videos/Trinity-video.mp4" type="video/mp4" />
+                   <source src="https://trinity-metals.com/wp-content/uploads/2022/12/Loop-9.mp4" type="video/mp4" />
                 </video>
 
                 <div className="play-button" onClick={handleVideo}>
-                  <ImageGallery imageName="Play-button.svg"/>
+                  <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Play-button.svg"/>
                 </div>
             </div>
             <div className="image-wrapper">
-              {/* <div className="the-image-grid">
-                 <div className="grid-item1">
-                  <ImageGallery imageName="Excavator.jpeg" customClass="gallery-image"/>
-                 </div>
-                 <div className="grid-item2">
-                  <ImageGallery imageName="trinity-employees.jpeg" customClass="gallery-image"/>
-                 </div>
-                 <div className="grid-item3">
-                  <ImageGallery imageName="trinity-employes2.jpeg" customClass="gallery-image"/>
-                 </div>
-              </div> */}
+             
               <ImageLightBox />
 
               

@@ -138,7 +138,7 @@ text-decoration: none;
 }
 
 .basic-intro-left{
-  background-image: url('/public/images/mining-process-left.jpeg');
+  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/mining-process-left-scaled.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -202,7 +202,7 @@ text-align: left;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/public/images/patterns1.png');
+  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/patterns1.png');
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.031;
@@ -441,7 +441,7 @@ color: var(--trinity-dark);
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/public/images/patterns2.png');
+  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/patterns2.png');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
@@ -566,7 +566,7 @@ color: var(--trinity-dark);
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/public/images/patterns3.png');
+  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/patterns3.png');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
@@ -588,7 +588,7 @@ color: var(--trinity-dark);
 }
 
 .Sastainability-image{
-  background-image: url('/public/images/Sastainability-images.png');
+  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Sastainability-images.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

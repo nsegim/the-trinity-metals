@@ -53,6 +53,7 @@ function App() {
       <Routes>
         {renderRoutes(routes)}
         <Route path="/contact-us" element={<ContactUs />}></Route>
+        <Route path="/our-leadership" element={<Team />}></Route>
       </Routes>
       
     </Router>

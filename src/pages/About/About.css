@@ -11,7 +11,7 @@ color: var(--trinity-dark);
 .about-hero-section{
     margin-top: -60px;
     min-height: 500px;
-    background-image: url('/public/images/about-us-hero.webp');
+    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/about-us-hero.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -104,7 +104,7 @@ padding-bottom: 15px;
 }
 
 .our-mission{
-    background-image: url('/public/images/Our-mission.webp');
+    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Our-mission.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +115,7 @@ padding-bottom: 15px;
 }
 
 .our-vision{
-    background-image: url('/public/images/our-vision.webp');
+    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/our-vision.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,7 +165,7 @@ color: var(--trinity-white);
 
 /* Our values section styles */
 .values-section{
-    background-image: url('/public/images/Trinity-values.webp');
+    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Trinity-values.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -251,7 +251,7 @@ text-align: left;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/public/images/patterns2.png');
+  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/patterns2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

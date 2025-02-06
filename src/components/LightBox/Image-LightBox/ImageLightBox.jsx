@@ -3,15 +3,15 @@ import React, { useState } from "react";
 import TheModal from './Modal'
 const imageArray = [
   {
-    'link': './images/Excavator.jpeg',
+    'link': 'https://trinity-metals.com/wp-content/uploads/2025/02/Excavator-scaled.jpeg',
     'text': 'Excavator as one of triniy tools'
   },
   {
-    'link': './images/trinity-employees.jpeg',
+    'link': 'https://trinity-metals.com/wp-content/uploads/2025/02/trinity-employees-scaled.jpeg',
     'text': 'Employees of triniy'
   },
   {
-    'link': './images/trinity-employes2.jpeg',
+    'link': 'https://trinity-metals.com/wp-content/uploads/2025/02/trinity-employes2-scaled.jpeg',
     'text': 'Employees of triniy'
   }
 ]

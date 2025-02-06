@@ -18,8 +18,8 @@ const AboutPage = () => {
             <div className="container history-section-wrapper">
                 <div className="row justify-content-between">
                     <div className="col-md-6 image-holder">
-                        <ImageGallery imageName="Histrory-Image.webp" customClass={'history-image'}/>
-                        <ImageGallery imageName="History-playButton.svg" customClass={'history-play-button'}/>
+                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Histrory-Image.webp" customClass={'history-image'}/>
+                        {/* <ImageGallery imageUrl="History-playButton.svg" customClass={'history-play-button'}/> */}
                     </div>
                     <div className="col-md-6 histort-content-holder">
                         <div className="content-holder">
@@ -67,7 +67,7 @@ const AboutPage = () => {
                     <div className="col-md-6 our-mission d-flex justify-content-center align-items-center flex-column">
                         <div className="icon-box">
                             <div className="icon d-flex justify-content-center">
-                                <ImageGallery imageName="Our_mission-icon.svg" />
+                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Our_mission-icon.svg" />
                             </div>
                             <div className="icon-box-header">
                                 <p className="text-001">Our Mission</p>
@@ -86,7 +86,7 @@ const AboutPage = () => {
                     <div className="col-md-6 our-vision d-flex justify-content-center align-items-center flex-column">
                         <div className="icon-box">
                             <div className="icon d-flex justify-content-center">
-                            <ImageGallery imageName="Our_vision-icon.svg" />
+                            <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Our_vision-icon.svg" />
                             </div>
                             <div className="icon-box-text">
                                 <p className="text-001">Our Vision</p>
@@ -121,7 +121,7 @@ const AboutPage = () => {
                             <div className="the-grid-item">
                                 <div className="the-icon-box">
                                     <div className="the-iconbox-icon">
-                                    <ImageGallery imageName="LightBulb.svg" />
+                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/LightBulb.svg" />
                                     </div>
                                     <div className="iconbox-content-wrapper">
                                         <div className="icon-box-header">
@@ -138,7 +138,7 @@ const AboutPage = () => {
                             <div className="the-grid-item">
                                 <div className="the-icon-box">
                                     <div className="the-iconbox-icon">
-                                        <ImageGallery imageName="Watch-icon.svg" />
+                                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Watch-icon.svg" />
                                     </div>
                                     <div className="iconbox-content-wrapper">
                                         <div className="icon-box-header">
@@ -156,7 +156,7 @@ const AboutPage = () => {
                             <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                    <ImageGallery imageName="User-icon.svg" />
+                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/User-icon.svg" />
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -174,7 +174,7 @@ const AboutPage = () => {
                             <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                    <ImageGallery imageName="trophy-icon.svg" />
+                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/trophy-icon.svg" />
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -217,7 +217,7 @@ const AboutPage = () => {
                         <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                <ImageGallery imageName="Hammer-icon.svg" customClass={'strategy-icon'}/>
+                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Hammer-icon.svg" customClass={'strategy-icon'}/>
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -233,7 +233,7 @@ const AboutPage = () => {
                         <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                <ImageGallery imageName="group-icon.svg" customClass={'strategy-icon'}/>
+                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/group-icon.svg" customClass={'strategy-icon'}/>
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -251,7 +251,7 @@ const AboutPage = () => {
                         <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                <ImageGallery imageName="intersection-cion.svg" customClass={'strategy-icon'}/>
+                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/intersection-cion.svg" customClass={'strategy-icon'}/>
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -267,7 +267,7 @@ const AboutPage = () => {
                         <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                <ImageGallery imageName="qlementine-icons_build-16.svg" customClass={'strategy-icon'}/>
+                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/qlementine-icons_build-16.svg" customClass={'strategy-icon'}/>
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -295,7 +295,7 @@ const AboutPage = () => {
                     <div className="team-members">
                          <div className="team-member-wrapper">
                             <div className="single-team-member">
-                                <ImageGallery imageName="Trinity-boss.jpeg" customClass={'team-member-photo'}/>
+                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Trinity-boss.jpeg" customClass={'team-member-photo'}/>
                                 <div className="team-member-details">
                                     <h2 className="member-name">
                                        Peter Geleta
@@ -313,7 +313,7 @@ const AboutPage = () => {
                     <div class="more-member-button">
                             <a href="#" class="hover-green">
                                 <span>View All Team</span>
-                                <ImageGallery imageName="Arrow2.svg"/>
+                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg"/>
                             </a>
                     </div>
                 </div>
@@ -338,7 +338,7 @@ const AboutPage = () => {
                 </div>
                 <div className="second-container d-flex">
                    <div className="single-product">
-                      <ImageGallery imageName="Tin.svg" customClass={'product-image'}/>
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Tin.svg" customClass={'product-image'}/>
                       <div className="product-desc">
                         <div className="product-name">
                             <p>
@@ -356,7 +356,7 @@ const AboutPage = () => {
                       </div>
                    </div>
                    <div className="single-product">
-                      <ImageGallery imageName="Tantalum.svg" customClass={'product-image'}/>
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Tantalum.svg" customClass={'product-image'}/>
                       <div className="product-desc">
                         <div className="product-name">
                             <p>
@@ -377,7 +377,7 @@ const AboutPage = () => {
                       </div>
                    </div>
                    <div className="single-product">
-                      <ImageGallery imageName="Tangusten.svg" customClass={'product-image'}/>
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Tangusten.svg" customClass={'product-image'}/>
                       <div className="product-desc">
                         <div className="product-name">
                             <p>

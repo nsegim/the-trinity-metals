@@ -63,7 +63,7 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
                      <h2 className="article-title">{item.title}</h2>
                      <div className="card-bottom-elements">
                        <div className="category-holder">
-                         <ImageGallery imageName="Category-Icon.svg" customClass="category-icon"/>
+                         <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Category-Icon.svg" customClass="category-icon"/>
                            <span className="category">{item.category}</span>
                        </div>
                        <div className="read-more-btn-wrapper">
