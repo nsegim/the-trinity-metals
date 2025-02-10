@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import SiteFooter from "../../components/Footer/Footer"
 import SiteHeader from "../../components/header/Header"
 import ImageGallery from "../../components/ImageGallery"
@@ -13,7 +14,7 @@ const Team = () => {
             <h1 className="heading">Our Leadership</h1>
          </div>
       </div>
-
+      
       {/* Team members section */}
       <div className="Team-container-wrapper ">
          <div className="container d-flex flex-column">
@@ -29,14 +30,17 @@ const Team = () => {
                      <div className="team-member-details">
                         <div className="team-member-info">
                               <h2 className="member-name">
-                              Peter Geleta
-                           </h2>
+                                Peter Geleta
+                              </h2>
                               <p className="member-post">
-                              Chief Executive Officer
+                                Chief Executive Officer
                               </p>
                         </div>
                         <div className="view-member-desc">
-                              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Vector-1.svg"/>
+                           <Link to="">
+                             <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Vector-1.svg"/>
+
+                           </Link>
                         </div>
                      </div>
                   </div>
@@ -58,7 +62,7 @@ const Team = () => {
                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Trinity-boss.jpeg" customClass={'team-member-photo'}/>
                      <div className="team-member-details">
                         <div className="team-member-info">
-                              <h2 className="member-name">
+                           <h2 className="member-name">
                               Peter Geleta
                            </h2>
                               <p className="member-post">
@@ -66,7 +70,10 @@ const Team = () => {
                               </p>
                         </div>
                         <div className="view-member-desc">
+                           <Link to="">
                               <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Vector-1.svg"/>
+
+                           </Link>
                         </div>
                      </div>
                   </div>

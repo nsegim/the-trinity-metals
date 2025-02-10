@@ -20,6 +20,7 @@ color: var(--trinity-dark);
     align-items: center;
     position: relative;
 }
+
 .about-hero-section::after{
   position: absolute;
   content: "";
@@ -81,6 +82,30 @@ text-align: left;
 padding-bottom: 15px;
 
 }
+
+@media(max-width: 992px) AND (min-width: 768px){
+    .histort-content-holder, .image-holder {
+        width: 50%;
+    }
+    .our-values-wrapper .icon-box{
+        transform: translateY(50px);
+    }
+    .inner-container, .our-products-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .strategies-section .grid-container, .team-member-wrapper{
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+    .executive-management-wrapper{
+        padding-top: 40px!important;
+        padding-bottom: 40px!important;
+    }
+    .second-container{
+        gap: 20px!important;
+    }
+}
+
 /* Our Mission and Values styles */
 .our-values-wrapper{
     padding-bottom: 70px;
@@ -472,4 +497,72 @@ color: var(--trinity-green);
 .custom-divider{
     color: rgb(169, 159, 159)!important;
 
+}
+@media(max-width: 767px){
+    .histort-content-holder, .image-holder {
+        width: 100%!important;
+    }
+    .history-section-wrapper{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .history-section-wrapper .row{
+        gap: 40px;
+    }
+    .our-mission, .our-vision{
+        width: 100%;
+    }
+    .our-values-wrapper .row{
+        gap: 30px;
+    }
+    .histort-content-holder .content-holder{
+        margin-bottom: 25px;
+    }
+
+    .our-values-wrapper .icon-box{
+        transform: translateY(40px);
+    }
+    .values-section .the-grid-item .the-icon-box{
+        flex-direction: column;
+    }
+    .values-section .icon-box-description{
+        text-align: center;
+    }
+    .values-section .icon-box-header p{
+        text-align: center;
+    }
+    
+    .grid-wrapper{
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .strategies-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .strategies-section .grid-container, .team-member-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .text-content-inner {
+        width: 65%;
+    }
+    .executive-management-wrapper{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .our-products-section .header-part, .our-products-section .description-part{
+        width: 100%;
+    }
+    .our-products-section .first-container{
+        flex-direction: column;
+        padding-top: 40px;
+        
+    }
+    .second-container{
+        flex-direction: column;
+    }
+    .single-product {
+        width: 100%;
+        
+    }
 }

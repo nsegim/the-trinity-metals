@@ -23,7 +23,7 @@ transform: translate(-50%, -50%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  min-height: 300px;
 }
 .environment-section .bg-section{
   background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Sustainabilty.webp');
@@ -89,6 +89,7 @@ letter-spacing: 0%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 300px;
 }
 .community-content{
 padding: 100px 70px 102px 16%;
@@ -222,4 +223,59 @@ font-size: 14px;
 line-height: 30px;
 letter-spacing: -0.28px;
 
+}
+.download-button:hover{
+  background-color: var(--trinity-blue);
+}
+.download-button:hover span{
+  color: var(--trinity-white)!important;
+}
+
+@media (max-width: 992px) AND (min-width: 768px) {
+  .content-section{
+    width: 50%;
+  }
+  .community-content {
+    padding: 40px 50px 40px 8%;
+  }
+  .has-content {
+    padding: 40px 70px 40px 60px;
+  }
+  .has-content1 {
+    padding-top: 40px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+}
+}
+@media (max-width: 767px) {
+  .environment-section{
+    padding-top: 40px;
+    
+  }
+  .content-section{
+   width: 100%;
+  }
+  .has-content {
+    padding: 40px 50px 40px 50px;
+  }
+  .inner-wrapper .heading {
+    font-size: 46px;
+  }
+  .community-content {
+    padding: 40px 52px 40px 8%;
+  }
+  .community-section .row{
+    flex-direction: column-reverse;
+  }
+  .has-content1{
+    padding: 40px;
+  }
+  .reports-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .policies-section-wrapper{
+    padding: 40px 15px;
+  }
+  
 }

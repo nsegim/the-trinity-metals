@@ -69,7 +69,7 @@ const ThePhotoGallery = () => {
             setImages(imageArray);
             setLoading(false);
 
-            console.log(data)
+            
           })
           .catch(error => {
             console.error('Error fetching images:', error);
@@ -178,7 +178,7 @@ const ThePhotoGallery = () => {
                     {loading ? <p>Loading images...</p> : 
                         images.length > 0 ? (
                         images.map((image, index) => (
-                            <img key={index} src={image} alt={`Image ${index}`} width="200" />
+                            <img key={index} src={image.url} alt={`Image ${index}`} width="200" />
                         ))
                         ) : (
                         <p>No images found.</p>

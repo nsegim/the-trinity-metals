@@ -169,9 +169,9 @@ const SustainabilityPage = () => {
                   </div>
                   <div className="download-section">
                        <span>2.9KB</span>
-                       <a href="" className="download-button">
+                       <Link href="" className="download-button">
                           <span>Download</span>
-                       </a>
+                       </Link>
                   </div>
                   
                 </div>

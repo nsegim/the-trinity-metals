@@ -134,7 +134,7 @@ padding-top: 60px;
 
 font-size: 16px;
 font-weight: 500;
-line-height: 19px;
+line-height: 25px;
 
 }
 
@@ -147,4 +147,15 @@ line-height: 19px;
 
 
 
+}
+@media (max-width: 992px) AND (min-width: 768px) {
+    .projects-cards-wrapper .card-item:hover .project-name h4{
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .projects-cards-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

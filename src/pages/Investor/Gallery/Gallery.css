@@ -91,7 +91,7 @@ color: var(--trinity-dark);
 .image-grid{
     position: relative
 }
-.image-grid:hover:after{
+.photos-wrapper .image-grid:hover:after{
     position: absolute;
     content: "";
     top: 0;

@@ -157,14 +157,14 @@ const HomePage = () => {
                   </a>
                 </div>
                 <div className="button-element">
-                  <a href="#" className="view-projects">
+                  <Link to="/our-projects" className="view-projects">
                     View Projects
                     <span>
                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -333,14 +333,14 @@ const HomePage = () => {
                   </div>
                   
                   <div className="button-element">
-                  <a href="#" className="view-projects">
+                  <Link to="our-projects" className="view-projects">
                     View Projects
                     <span>
                       <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg'/>
                     </span>
                     
                     
-                  </a>
+                  </Link>
                 </div>
                   
                 </div>
@@ -351,7 +351,7 @@ const HomePage = () => {
                      
                      
                       <div className="featured-image">
-                        <Link to={"#"}>
+                        <Link to="/our-projects/nyakabingo">
                           <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine.png' customClass= "card-image" />
                         </Link>  
                       </div>
@@ -367,7 +367,7 @@ const HomePage = () => {
                    
                    <div className="a-card">
                       <div className="featured-image">
-                        <Link to={"#"}>
+                        <Link to="/our-projects/musha">
                           <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/musha_mine-min.png' customClass= "card-image" />
                         </Link>  
                       </div>
@@ -381,7 +381,7 @@ const HomePage = () => {
                    </div>
                    <div className="a-card">
                       <div className="featured-image">
-                        <Link to={"#"}>
+                        <Link to="/our-projects/rutongo">
                           <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/rutongo-min.png' customClass= "card-image"/>
                         </Link>  
                       </div>
