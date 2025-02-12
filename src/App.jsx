@@ -11,6 +11,7 @@ import ProjectPage from "./pages/Project/Projects";
 import SustainabilityPage from "./pages/Sustainability/Sustainability";
 import Team from "./pages/Our-leadership/Team";
 import ContactUs from "./pages/Contact-Us/Contact";
+import I18n from "./i18n";
 
 
 // Dummy components for demonstration

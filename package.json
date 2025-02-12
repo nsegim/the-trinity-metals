@@ -53,6 +53,18 @@
   "bootstrap": "^5.3.3",
   
     
+  "i18n-js": "^4.5.1",
+  
+    
+  "i18next": "^24.2.2",
+  
+    
+  "i18next-browser-languagedetector": "^8.0.2",
+  
+    
+  "i18next-http-backend": "^3.0.2",
+  
+    
   "react": "^18.3.1",
   
     
@@ -60,6 +72,9 @@
   
     
   "react-dom": "^18.3.1",
+  
+    
+  "react-i18next": "^15.4.0",
   
     
   "react-router-dom": "^7.1.0"
