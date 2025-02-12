@@ -11,7 +11,7 @@ const translations = {
     welcome: "Bienvenue dans notre application !",
     description: "Ceci est une application React multilingue.",
     home: {
-      title: "Page d'accueil",
+      title: "Page d'accueil ",
       subtitle: "Découvrez nos fonctionnalités",
     },
   },
