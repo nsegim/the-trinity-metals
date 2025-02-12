@@ -1,9 +1,51 @@
+import { useLocation } from "react-router-dom"
 import SiteFooter from "../../components/Footer/Footer"
 import SiteHeader from "../../components/header/Header"
 import ImageGallery from "../../components/ImageGallery"
 import './About.css'
+import Modal from 'react-bootstrap/Modal';
+
+import { useRef, useEffect, useState } from "react"
 
 const AboutPage = () => {
+    const location = useLocation()
+    
+    const history = useRef(null)
+   
+    const values = useRef(null)
+    const strategies = useRef(null)
+    const products = useRef(null)
+
+    const scrollToSection = (ref) =>{
+         ref.current?.scrollIntoView({behavior: "smooth"})
+    }
+
+    useEffect(()=>{
+        if(location.pathname === "/about/our-history"){
+            
+            scrollToSection(history)
+        }
+         else if(location.pathname === "/about/our-values"){
+            
+            scrollToSection(values)
+        } else if(location.pathname === "/about/our-strategies"){
+            
+            scrollToSection(strategies)
+        } else if(location.pathname === "/about/our-products"){
+            
+            scrollToSection(products)
+        }
+        
+        
+
+        
+
+        
+    }, [location])
+
+    const [modalShow, setModalShow] = useState(false);
+
+    
     return(
         <>
             <SiteHeader />
@@ -15,10 +57,10 @@ const AboutPage = () => {
             </div>
 
             {/* Our History Section */}
-            <div className="container history-section-wrapper">
+            <div ref={history} className="container history-section-wrapper">
                 <div className="row justify-content-between">
                     <div className="col-md-6 image-holder">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Histrory-Image.webp" customClass={'history-image'}/>
+                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Trinity-mines.webp" customClass={'history-image'}/>
                         {/* <ImageGallery imageUrl="History-playButton.svg" customClass={'history-play-button'}/> */}
                     </div>
                     <div className="col-md-6 histort-content-holder">
@@ -36,26 +78,65 @@ const AboutPage = () => {
                                 </p>
                                 <p>
                                 In May 2022, the three companies’ shareholders joined forces to form Trinity Metals Limited (“The Group”) 
-                                under equity backing from Techmet, a UK-based private industrial company working to secure the technology
-                                 metal supply chain in a world with rapidly increasing demand.  Techmet, Trinity Metals’ majority shareholder, 
-                                 works with a number of investment partners including the US Development Finance Corporation (DFC) to fund its 
-                                 portfolio. Additional shareholders include Piran Resources, the parent company of Piran Rwanda Limited and the
-                                  Rwandan Government, represented by Ngali Holdings Limited. 
+                                under equity backing from Techmet, a UK-based private industrial company working to secure the technology 
+                                metal supply chain in a world with rapidly increasing demand.  
                                 </p>
 
-                                <p>
-                                The consolidation of the three companies led Trinity Metals to its position as a leading mining company and
-                                 private sector employer. The board of directors was appointed in May 2022 with representation from the major 
-                                 shareholders to oversee the company’s strategy and governance in Rwanda.
-                                </p>
-
-                                <p>
-                                The three-way alliance, by design, builds upon the strengths of each of the three companies to achieve operational 
-                                synergies such as increased production capacity, greater supply chain leverage, improved career growth opportunities 
-                                for employees and stronger community and government relations.
-                                </p>
+                                
 
                             </div>
+                            <Modal
+                            
+                            size="lg"
+                            aria-labelledby="contained-modal-title-vcenter"
+                            centered
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                            >
+                                <Modal.Header closeButton>
+                                    
+                                </Modal.Header>
+                                <Modal.Body>
+                                    <div className="text-content">
+                                        <p className="fw-bold">
+                                            Trinity Musha Mines Limited [formerly Piran Rwanda Ltd], Trinity Nyakabingo Mine Limited [formerly Eurotrade
+                                            International Ltd], and Rutongo Mines Limited are established as three separate, privately held companies.
+                                            They all have a strong track record of mining and exploration of tin, tungsten and/or tantalum in Rwanda 
+                                            and are committed to incorporating responsible mining practices into assets previously acquired from the 
+                                            Rwandan government.
+                                        </p>
+                                        <p>
+                                            In May 2022, the three companies’ shareholders joined forces to form Trinity Metals Limited (“The Group”) 
+                                            under equity backing from Techmet, a UK-based private industrial company working to secure the technology 
+                                            metal supply chain in a world with rapidly increasing demand.  Techmet, Trinity Metals’ majority shareholder,
+                                             works with a number of investment partners including the US Development Finance Corporation (DFC) to fund its 
+                                             portfolio. Additional shareholders include Piran Resources, the parent company of Piran Rwanda Limited and the
+                                              Rwandan Government, represented by Ngali Holdings Limited. 
+                                        </p>
+                                        <p>
+                                            The consolidation of the three companies led Trinity Metals to its position as a leading mining company and 
+                                            private sector employer. The board of directors was appointed in May 2022 with representation from the major 
+                                            shareholders to oversee the company’s strategy and governance in Rwanda.
+                                        </p>
+                                        <p>
+                                            The three-way alliance, by design, builds upon the strengths of each of the three companies to achieve operational 
+                                            synergies such as increased production capacity, greater supply chain leverage, improved career growth opportunities 
+                                            for employees and stronger community and government relations.
+                                        </p>
+
+                                        
+
+                                    </div>
+                                </Modal.Body>
+                                
+                            </Modal>
+                            <div class="general-button justify-content-left">
+                                <a href="#" class="hover-green" onClick={() => setModalShow(true)}>
+                                    <span>Read More</span>
+                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg"/>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -108,7 +189,7 @@ const AboutPage = () => {
 
             </div>
             {/* Our Values */}
-            <div className="values-section">
+            <div ref={values} className="values-section">
                 <div className="container our-values-holder">
                     
                     <div className="inner-contentWrapper">
@@ -196,7 +277,7 @@ const AboutPage = () => {
                </div>
             </div>
             {/* Our Strategies */}
-            <div className="strategies-section d-flex justify-content-center flex-column">
+            <div ref={strategies} className="strategies-section d-flex justify-content-center flex-column">
                 <div className="inner-container container">
                     <div className="top-content d-flex justify-content-center align-items-center flex-column">
                         <div className="text-heading">
@@ -224,8 +305,9 @@ const AboutPage = () => {
                                         <p className="text-center">Our Business</p>   
                                     </div>
                                     <div className="icon-box-description">
-                                        <p className="text-center">Optimized Business Planning for safe , ethical
-                                             , profitable and efficient mining across our business process </p>
+                                        <p className="text-center">We prioritize optimized business planning to ensure safe,
+                                             ethical, profitable, and efficient mining operations across all our processes.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -240,10 +322,8 @@ const AboutPage = () => {
                                         <p className="text-center">Our People</p>   
                                     </div>
                                     <div className="icon-box-description">
-                                        <p className="text-center">Motivated people 
-                                            delivering 
-                                            results and performing 
-                                            to their full potential</p>
+                                        <p className="text-center">We are dedicated to motivating our team 
+                                            to deliver outstanding results and reach their full potential.</p>
                                     </div>
                                 </div>
                             </div>
@@ -258,8 +338,8 @@ const AboutPage = () => {
                                         <p className="text-center">Our Relationships</p>   
                                     </div>
                                     <div className="icon-box-description">
-                                        <p className="text-center">Relationship management with external 
-                                            stakeholders prioritized as an integral part of how we do our business</p>
+                                        <p className="text-center">We prioritize managing relationships with external 
+                                            stakeholders as a fundamental aspect of our business operations</p>
                                     </div>
                                 </div>
                             </div>
@@ -275,8 +355,8 @@ const AboutPage = () => {
                                     </div>
                                     <div className="icon-box-description">
                                         <p className="text-center">
-                                            Pursue Organic and Greenfield Growth 
-                                            opportunities</p>
+                                        We actively pursue organic and greenfield growth opportunities 
+                                        to secure a prosperous future.</p>
                                     </div>
                                 </div>
                             </div>
@@ -297,20 +377,26 @@ const AboutPage = () => {
                             <div className="single-team-member">
                                 <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Trinity-boss.jpeg" customClass={'team-member-photo'}/>
                                 <div className="team-member-details">
-                                    <h2 className="member-name">
-                                       Peter Geleta
-                                    </h2>
-                                    <p className="member-post">
-                                      Chief Executive Officer
-                                    </p>
+                                    <div className="team-member-info">
+                                        <h2 className="member-name">
+                                         Peter Geleta
+                                       </h2>
+                                        <p className="member-post">
+                                        Chief Executive Officer
+                                        </p>
+                                    </div>
+                                    <div className="view-member-desc">
+                                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Vector-1.svg"/>
+                                    </div>
                                 </div>
+                                    
                             </div>
                          </div>
                          
                        
                         
                     </div> 
-                    <div class="more-member-button">
+                    <div class="general-button justify-content-center">
                             <a href="#" class="hover-green">
                                 <span>View All Team</span>
                                 <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg"/>
@@ -319,7 +405,7 @@ const AboutPage = () => {
                 </div>
             </div>
             {/* Our Products */}
-            <div className="container our-products-section">
+            <div ref={products} className="container our-products-section">
                 <div className="first-container">
                   <div className="header-part">
                      <h1 className="section-heading">

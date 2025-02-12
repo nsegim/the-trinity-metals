@@ -38,7 +38,7 @@
     background: #fff;
     padding: 10px;
     
-    min-width: 170px;
+    min-width: 205px;
   }
   @media(min-width: 1024px){
     .dropdown{
@@ -80,9 +80,18 @@
     padding-bottom: 15px;
   }
   
-  .menu-item:hover .dropdown{
+  /* .menu-item:hover .dropdown{
+    display: block;
+  } */
+  .menu-item.has-children:hover > .dropdown {
     display: block;
   }
+  
+  .menu-item.has-children .menu-item.has-children:hover > .dropdown {
+    display: block;
+    left: 100%;
+    top: 0;
+  } 
   
   
   .has-children > .the_link-item::after{

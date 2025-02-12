@@ -1,11 +1,11 @@
 
 
 .environment-section, .community-section{
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
-.environment-section .row, .community-section .row{
-  position: relative;
-  
+.environment-section .row, .community-section .row, .goverance .row{
+position: relative;
+
 }
 /* environment section styles */
 .sustainabilty-icon{
@@ -18,28 +18,78 @@ transform: translate(-50%, -50%);
 
 }
 
-.environment-section .row .bg-section{
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Sustainabilty.webp');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100px;
+
+.row .bg-section{
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 300px;
+}
+.environment-section .bg-section{
+background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Sustainabilty.webp');
+
 }
 
-.environment-section .content-section{
-   
-padding: 40px 100px 40px 60px;
+.content-section{
+ 
+
 gap: 20px;
 width: 40%;
+
+}
+.has-content{
+padding: 40px 100px 40px 60px;
+
+}
+
+.section-header{
+
+font-weight: 700;
+font-size: 36px;
+line-height: 43.88px;
+letter-spacing: 0%;
+padding-bottom: 8px;
+
+}
+.header008{
+color: var(--trinity-dark);
+}
+.min-header{
+font-weight: 700;
+font-size: 20px;
+line-height: 24.38px;
+letter-spacing: 0%;
+padding-bottom: 10px;
+
+}
+.environment-section p{
+color: var(--trinity-dark);
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0%;
+
+}
+.header0002{
+color: var(--trinity-dark);
+}
+
+.has-content1{
+
+padding-top: 100px;
+padding-right: 100px;
+padding-bottom: 102px;
+padding-left: 100px;
 
 }
 
 /* Community section styles */
 .community-bg-section{
-    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Community.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Community.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
 }
 .community-content{
 padding: 100px 70px 102px 16%;
@@ -47,4 +97,185 @@ padding: 100px 70px 102px 16%;
 background-color: var(--trinity-green);
 }
 
+.goverance .row{
+background-color: var(--trinity-blue);
+}
+.header009, .header0019{
+color: var(--trinity-white);
+}
+.community-content p, .goverance{
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0%;
+color: var(--trinity-white);
+}
 
+.community-content .content-achievement, .goverance .content-achievement{
+ padding-left: 30px;
+ list-style-type: none;
+}
+.content-achievement li{
+font-weight: 500;
+font-size: 13px;
+line-height: 24px;
+letter-spacing: 0%;
+color: var(--trinity-white);
+position: relative;
+padding-bottom: 18px;
+
+}
+.content-achievement li::after{
+position: absolute;
+content: "";
+left: -30px;
+top: 5px;
+width: 18px;
+height: 18px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+
+}
+.community-content .content-achievement li::after{
+background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Container-5.svg');
+
+}
+
+/* Governance section styles */
+.goverance .bg-section{
+background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Governance-bg.webp');
+}
+
+.goverance .content-achievement li::after{
+background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Container-6.svg');
+
+}
+
+
+/* Policies & Standards section */
+.policies-section-wrapper{
+padding-top: 70px;
+padding-bottom: 70px;
+}
+.policies-section-wrapper .container{
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.reports-container{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+.reports-container .single-report{
+border: 1px solid #DDDDDD;
+
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+padding-right: 25.01px;
+padding-bottom: 20px;
+padding-left: 25px;
+border-width: 1px;
+
+}
+.policies-section-title h2{
+
+font-weight: 700;
+font-size: 36px;
+line-height: 43.88px;
+letter-spacing: 0%;
+color: var(--trinity-dark);
+
+}
+.report-name, .download-section{
+display: flex;
+gap: 20px;
+align-items: center;
+}
+.report-name h4{
+color: var(--trinity-dark);
+font-weight: 700;
+font-size: 14px;
+line-height: 17.07px;
+letter-spacing: 0%;
+margin-bottom: 0;
+
+}
+
+.download-button{
+
+padding-top: 6px;
+padding-right: 30px;
+padding-bottom: 6px;
+padding-left: 30px;
+background-color: 
+#F3F3F3;
+text-decoration: none;
+
+
+}
+.download-button span{
+color: #888888;
+font-family: Montserrat;
+font-weight: 700;
+font-size: 14px;
+line-height: 30px;
+letter-spacing: -0.28px;
+
+}
+.download-button:hover{
+background-color: var(--trinity-blue);
+}
+.download-button:hover span{
+color: var(--trinity-white)!important;
+}
+
+@media (max-width: 992px) AND (min-width: 768px) {
+.content-section{
+  width: 50%;
+}
+.community-content {
+  padding: 40px 50px 40px 8%;
+}
+.has-content {
+  padding: 40px 70px 40px 60px;
+}
+.has-content1 {
+  padding-top: 40px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+}
+}
+@media (max-width: 767px) {
+.environment-section{
+  padding-top: 40px;
+  
+}
+.content-section{
+ width: 100%;
+}
+.has-content {
+  padding: 40px 50px 40px 50px;
+}
+.inner-wrapper .heading {
+  font-size: 46px;
+}
+.community-content {
+  padding: 40px 52px 40px 8%;
+}
+.community-section .row{
+  flex-direction: column-reverse;
+}
+.has-content1{
+  padding: 40px;
+}
+.reports-container{
+  grid-template-columns: repeat(1, 1fr);
+}
+.policies-section-wrapper{
+  padding: 40px 15px;
+}
+
+}

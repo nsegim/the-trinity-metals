@@ -1,9 +1,10 @@
 import { Form, Button } from "react-bootstrap";
 
 import "./footer.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ImageGallery from "../ImageGallery";
 const SiteFooter = () => {
+  const location = useLocation()
   return (
     <>
       <div className="footer row gap-0">
@@ -38,39 +39,113 @@ const SiteFooter = () => {
                   </Form>
                 </div>
               </div>
+              <div className="include-location d-flex">
+                <div className="quickLinksWrapper">
+                  <h1 className="footer-heading">Quick Links</h1>
 
-              <div className="quickLinksWrapper">
-                <h1 className="footer-heading">Quick Links</h1>
-
-                    <div className="the-links">
-                      <div className="links001">
-                        <ul className="quick-links">
-                          <li>
-                            <Link className="footer-links">Home</Link>
-                          </li>
-                          <li>
-                            <Link className="footer-links">About Us</Link>
-                          </li>
-                          <li>
-                            <Link className="footer-links">Investors Relations</Link>
-                          </li>
-                        </ul>
+                      <div className="the-links">
+                        <div className="links001">
+                          <ul className="quick-links">
+                            <li>
+                              <Link to="/" className="footer-links">Home</Link>
+                            </li>
+                            <li>
+                              <Link to="/about" className="footer-links">About Us</Link>
+                            </li>
+                            <li>
+                              <Link className="footer-links">Investors Relations</Link>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="links002">
+                          <ul className="quick-links">
+                            <li>
+                              <Link to="/our-projects" className="footer-links">Mining Projects</Link>
+                            </li>
+                            <li>
+                              <Link to="/sustainability" className="footer-links">Sustainability</Link>
+                            </li>
+                            <li>
+                              <Link className="footer-links">Careers</Link>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div className="links002">
-                        <ul className="quick-links">
-                          <li>
-                            <Link className="footer-links">Mining Projects</Link>
-                          </li>
-                          <li>
-                            <Link className="footer-links">Sustainability</Link>
-                          </li>
-                          <li>
-                            <Link className="footer-links">Careers</Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                </div>
+                
+                  {  location.pathname === "/our-projects/musha" ? (
+                          
+                        <div className="mine-site-location">  
+                          <h4>Musha Mines</h4>
+                          <ul>
+                              <li>
+                                Eastern Province
+                              </li>
+                              <li>
+                                Musha, Rwamagana
+                              </li>
+                              <li>
+                                P.O Box: 3824, Kigali-Rwanda
+                              </li>
+                              <li>
+                                Musha@trinity-metals.com
+                              </li>
+                              <li>
+                                +250 789 312 308
+                              </li>
+                         </ul>
+                        </div> 
+                      ) : location.pathname === "/our-projects/nyakabingo" ?(
+                        <div className="mine-site-location">  
+                          <h4>Nyakabingo Mine</h4>
+                          <ul>
+                              <li>
+                                Northern Province
+                              </li>
+                              <li>
+                                Shyorongi, Rulindo
+                              </li>
+                              <li>
+                                P.O Box: 749, Kigali-Rwanda
+                              </li>
+                              <li>
+                                Nyakabingo@trinity-metals.com
+                              </li>
+                              <li>
+                                +250 791 345 409
+                              </li>
+                         </ul>
+                        </div>
+                      ): location.pathname === "/our-projects/rutongo" ?(
+                        <div className="mine-site-location">  
+                          <h4>Musha Mines</h4>
+                          <ul>
+                              <li>
+                                Northern Province
+                              </li>
+                              <li>
+                                Masoro, Rulindo
+                              </li>
+                              <li>
+                                P.O Box: 6132 Kigali-Rwanda
+                              </li>
+                              <li>
+                                rutongo@trinity-metals.com
+                              </li>
+                              <li>
+                                +250 791 701 498
+                              </li>
+                         </ul>
+                        </div>
+                      ): (
+                         <div></div>
+                      ) 
+                    
+                  }
+                  
+                
+              </div>
+             
             
                   <div className="contact-info-section">
                     <div className="icon-box">

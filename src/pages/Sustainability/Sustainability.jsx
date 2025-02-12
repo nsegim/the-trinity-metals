@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import SiteFooter from "../../components/Footer/Footer"
 import SiteHeader from "../../components/header/Header"
 import ImageGallery from "../../components/ImageGallery"
@@ -19,12 +20,12 @@ const SustainabilityPage = () => {
               <div className="col-md-6 bg-section">
                 
               </div>
-              <div className="col-md-6 content-section">
+              <div className="col-md-6 content-section has-content">
                 <div className="content-wrapper">
-                  <h2 className="section-header008">
+                  <h2 className="section-header header008">
                     Environment
                   </h2>
-                  <h5 className="min-header">
+                  <h5 className="min-header header0002 ">
                     We are a part of the energy revolution
                   </h5>
                   <p>
@@ -71,10 +72,10 @@ const SustainabilityPage = () => {
 
                 <div className="col-md-6 community-content">
                 <div className="content-wrapper">
-                    <h2 className="section-header009">
+                    <h2 className="section-header header009">
                      Community
                     </h2>
-                    <h5 className="min-header">We are a part of the energy revolution</h5>
+                    <h5 className="min-header header0019">We are a part of the energy revolution</h5>
                     <p>
                       We take our values seriously and hold ourselves accountable to the 
                       communities where we operate and the greater good of the planet. 
@@ -100,6 +101,83 @@ const SustainabilityPage = () => {
                  
                 </div>
               </div>
+           </div>
+
+           {/* Governance */}
+           <div className="goverance">
+             <div className="row">
+              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Container-4.svg" customClass={'sustainabilty-icon'}/>
+              <div className="col-md-6 bg-section">
+                
+              </div>
+              <div className="col-md-6 content-section has-content1">
+                <div className="content-wrapper">
+                  <h2 className="section-header header009">
+                    Governance
+                  </h2>
+                  
+                  <p>
+                     Trinity Metals has strict guidelines in place to ensure ethical business 
+                     conduct and responsible practices pertaining to human rights, labour
+                      rights and the environment.
+                  </p>
+                  <p>
+                    We comply with guidelines and standards from leading local and international 
+                    bodies including Certified Trading Chain (CTC) and Organisation for Economic 
+                    Co-operation and Development (OECD).
+                  </p>
+                   
+                  <p>
+                    Our minerals are certified conflict-free, and meet five basic principles
+                  </p> 
+
+                  <ul className="content-achievement">
+                      <li>Traceability: The origin and volumes of minerals we produce and trade are fully traceable</li>
+                      <li>Fair working conditions: We do not use child labour. We pay fair remuneration and provide safety and well-being focused working conditions</li>
+                      <li>
+                       Security and human rights: We ensure security on our sites whilst respecting human rights
+                      </li>
+                      <li>
+                       Community development: We consult with local communities and contribute to their social, economic and institutional development, taking into account gender-sensitive aspects.
+                      </li>
+                      <li>
+                        Environment: We seek continual improvement of our environmental performance.
+                      </li>
+                  </ul>
+                  
+                </div>
+              </div>
+
+             </div>
+           </div>
+
+           {/* Policies & Standards section */}
+           <div className="policies-section-wrapper">
+            <div className="container">
+              <div className="policies-section-title">
+                <h2>
+                   Policies & Standards
+                </h2>
+              </div>
+              <div className="reports-container">
+                <div className="single-report">
+                  <div className="report-name">
+                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Report-icon.svg" />
+                    <h4 className="report-name">
+                       Anti-Bribery and Corruption Policy
+                    </h4>
+                  </div>
+                  <div className="download-section">
+                       <span>2.9KB</span>
+                       <Link href="" className="download-button">
+                          <span>Download</span>
+                       </Link>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
            </div>
             
 

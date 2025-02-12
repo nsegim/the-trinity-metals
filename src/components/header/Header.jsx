@@ -69,10 +69,10 @@ const SiteHeader = () => {
         <OffcanvasMenu />
 
         <div className="contact-btn">
-          <a href="/the-trinity-metals/contact-us" className="hover-green">
+          <Link to="/contact-us" className="hover-green">
             <span>Contact Us</span>
             <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/contact-us-icon.svg" />
-          </a>
+          </Link>
         </div>
 
         

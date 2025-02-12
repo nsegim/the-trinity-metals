@@ -136,7 +136,7 @@ const HomePage = () => {
         <div className="container hero-section-content-wrapper">
             <div className="basic-info">
 
-              <h1 className="section-header"><span className="welcome-icon"><ImageGallery imageName="welcome-icon.svg"/></span>WELCOME TO TRINITY METALS</h1>
+              <h1 className="section-header"><span className="welcome-icon"><ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/welcome-icon.svg"/></span>WELCOME TO TRINITY METALS</h1>
 
               <h2 className="section-desc">
                 We are enabling a better future.<br/> 3 Minerals , 3 Mines , One
@@ -151,20 +151,20 @@ const HomePage = () => {
                     
                     Get Started
                     <span>
-                      <ImageGallery imageName="arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                   </a>
                 </div>
                 <div className="button-element">
-                  <a href="#" className="view-projects">
+                  <Link to="/our-projects" className="view-projects">
                     View Projects
                     <span>
-                      <ImageGallery imageName="arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -298,12 +298,12 @@ const HomePage = () => {
                
 
               <div className="buttonElement">
-                <a href="#" className="hover-green">
+                <Link to="/about" className="hover-green">
                   
                   <span>Read More</span>
                   <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg' />
 
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -333,14 +333,14 @@ const HomePage = () => {
                   </div>
                   
                   <div className="button-element">
-                  <a href="#" className="view-projects">
+                  <Link to="our-projects" className="view-projects">
                     View Projects
                     <span>
                       <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg'/>
                     </span>
                     
                     
-                  </a>
+                  </Link>
                 </div>
                   
                 </div>
@@ -351,7 +351,7 @@ const HomePage = () => {
                      
                      
                       <div className="featured-image">
-                        <Link to={"#"}>
+                        <Link to="/our-projects/nyakabingo">
                           <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine.png' customClass= "card-image" />
                         </Link>  
                       </div>
@@ -367,7 +367,7 @@ const HomePage = () => {
                    
                    <div className="a-card">
                       <div className="featured-image">
-                        <Link to={"#"}>
+                        <Link to="/our-projects/musha">
                           <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/musha_mine-min.png' customClass= "card-image" />
                         </Link>  
                       </div>
@@ -381,7 +381,7 @@ const HomePage = () => {
                    </div>
                    <div className="a-card">
                       <div className="featured-image">
-                        <Link to={"#"}>
+                        <Link to="/our-projects/rutongo">
                           <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/rutongo-min.png' customClass= "card-image"/>
                         </Link>  
                       </div>
@@ -415,7 +415,7 @@ const HomePage = () => {
 
              <h2 className="heading text-white w-75">
               <span>We are a part of the 
-             energy revolution</span>
+                energy revolution</span>
              </h2>
 
              <div className="text-content002">
@@ -427,14 +427,14 @@ const HomePage = () => {
              </div>
 
              <div className="button-element">
-                  <a href="#" className="view-projects">
-                    View Projects
+                  <Link to="/sustainability" className="view-projects">
+                    Read More
                     <span>
                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
-                  </a>
+                  </Link>
             </div>
 
 
@@ -467,14 +467,14 @@ const HomePage = () => {
                   </div>
                   
                   <div className="button-element">
-                  <a href="#" className="explore-more">
-                    View Projects
+                  <Link to="/investor-relations/latest-news" className="explore-more">
+                    Read More
                     <span>
                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
-                  </a>
+                  </Link>
                 </div>
                   
           </div>
@@ -508,14 +508,14 @@ const HomePage = () => {
                   </div>
                   
                   <div className="button-element">
-                  <a href="#" className="explore-more">
+                  <Link to="/investor-relations/gallery/photos" className="explore-more">
                     View Gallery
                     <span>
                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
-                  </a>
+                  </Link>
                 </div>
                   
           </div>

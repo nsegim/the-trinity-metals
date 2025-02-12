@@ -40,3 +40,211 @@ border-radius: 0px 4px 4px 4px;
   width: 93%;
 
 }
+
+.contact-details p{
+    
+font-size: 16px;
+font-weight: 700;
+line-height: 19.5px;
+text-align: left;
+color: var(--trinity-white);
+
+}
+.contact-details span{
+    
+font-size: 20px;
+font-weight: 700;
+line-height: 24.38px;
+text-align: left;
+
+
+}
+
+.get-in-touchSection .right{
+    
+padding: 5px 15px 15px 15px;
+}
+
+.right-header h1{
+   
+font-size: 36px;
+font-weight: 700;
+line-height: 43.88px;
+text-align: left;
+color: var(--trinity-dark);
+
+}
+.right-text-element p{
+  color: var(--trinity-dark);
+  padding-bottom: 30px;
+
+}
+
+
+.form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form-wrapper .field-wrapper input, .form-wrapper .field-wrapper select, .form-wrapper .field-wrapper textarea{
+    width: 100%;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+}
+.form-wrapper .field-wrapper input:focus-visible, .form-wrapper .field-wrapper select:focus-visible, .form-wrapper .field-wrapper textarea:focus-visible{
+  outline: none;
+}
+
+.field-wrapper textarea{
+    
+padding: 24px 28px 16px 28px!important;
+
+}
+.form-wrapper .field-wrapper input, .form-wrapper .field-wrapper select{
+    
+padding: 15.5px 28px 15.5px 28px!important;
+
+
+}
+.field-wrapper .select-inquiry::placeholder, .field-title{
+    text-transform: uppercase;
+    font-size: 12.97px;
+    font-weight: 600;
+    line-height: 47px;
+    text-align: left;
+    
+    font-weight: 600;
+    color: var(--trinity-dark)!important;
+    cursor: pointer;
+}
+
+
+ .field-title{
+    align-self: flex-start;
+}
+.display-options
+
+.field-wrapper .select-inquiry{
+    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Icon-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right 15px;
+
+
+    
+}
+
+.form-wrapper .field-wrapper{
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+.form-submit-button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--trinity-blue);
+    
+
+    padding: 10px 30px 10px 30px!important;
+
+    border-radius: 5px;
+
+
+}
+.form-submit-button:hover{
+    background-color: var(--trinity-green);
+    border-color: var(--trinity-green);
+}
+
+
+.form-submit-button .button-text{
+    
+font-size: 16px;
+font-weight: 700;
+line-height: 19.5px;
+text-align: left;
+color: var(--trinity-white);
+
+}
+.display-options{
+    width: 47.8%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+    background-color: #F4F4F4;
+    width: Fixed (251px)px;
+
+    padding: 05px 28px 20px 28px;
+    border-radius: 5px; 
+    opacity: 0;
+    transition: margin-right 0.5s ease-out, opacity 0.5s ease-out;
+    
+
+}
+.display-options.visible {
+    margin-right: auto;
+    opacity: 1;
+  }
+.display-options label:nth-child(2){
+    border-bottom: 2px solid #D5DDDD;
+    padding-bottom: 15px;
+    
+}
+.display-options label{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 12.97px;
+    color: #666666;
+    font-weight: 600;
+}
+.display-options label:nth-child(1){
+    flex-direction: row!important;
+    gap: 20px;
+}
+
+.display-options input[type="radio"]{
+    width: 18px;
+}
+
+.contain-select{
+    position: relative;
+}
+
+
+
+/* Localtions styles */
+.location-wrapper{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.location-wrapper .row{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.location-name h4{
+ padding-bottom: 10px;  
+font-size: 20px;
+font-weight: 700;
+line-height: 24.38px;
+text-align: left;
+color: var(--trinity-dark);
+
+}
+.location-details ul{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
