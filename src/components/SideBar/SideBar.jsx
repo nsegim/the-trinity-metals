@@ -1,7 +1,25 @@
 import { Link } from 'react-router-dom'
 import ImageGallery from '../ImageGallery'
 import './SideBar.css'
+import { fetchData } from '../../config/apiConfig'
+import { useEffect, useState } from 'react'
+
+
 const SideBar = ()=>{
+
+   const [categories,setCategories] = useState([])
+
+   const readCategories = async()=>{
+      try {
+         const responce = await fetchData('categories')
+         setCategories(responce)
+      } catch (error) {
+         console.log(error)
+      }
+   }
+   useEffect(()=>{
+      readCategories()
+   },[])
     return(
         <>
           <div className="sidebar-wrapper">
@@ -70,19 +88,23 @@ const SideBar = ()=>{
                            <h5>Categories List</h5>
                      </div>
                      <div className="categories-container">
-                        <div className="a-category">
-                        <div className="category-name-wrapper">
-                              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Document-icon.svg"/>
-                              <Link>
-                                <span className='category-name'>Chemical</span>
-                              </Link>
-                           </div>
-                           <div className="with-category-counter ">
-                              <span>3</span>
-                           </div>
-                           
-
-                        </div>
+                        {
+                           categories.map((item,index)=>{
+                              if(item?.count)
+                              return(
+                              <div className="a-category" key={index}>
+                                 <div className="category-name-wrapper">
+                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Document-icon.svg"/>
+                                    <Link>
+                                    <span className='category-name'>{item?.name}</span>
+                                    </Link>
+                                 </div>
+                                 <div className="with-category-counter ">
+                                    <span>{item?.count}</span>
+                                 </div>
+                              </div>
+                           )})
+                        }
                      </div>
                   </div>
                  

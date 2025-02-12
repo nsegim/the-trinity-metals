@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import { useState,useEffect } from "react";
 import './styles.css'
-import ImageGallery from "../ImageGallery";
 import Carousel from 'react-bootstrap/Carousel';
 
+import ReUsablePost from '../../components/ReUsablePost';
+import { fetchData } from "../../config/apiConfig";
 
 
 const LoopGrid = ({ items, itemsPerPage = 3 }) => {
@@ -11,9 +12,75 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   // Pagination logic
-  const totalPages = Math.ceil(items.length / itemsPerPage);
+  
+
+  const [data, setData] = useState([]);
+  const [categories, setCategories] = useState({});
+  const [postImages, setPostImages] = useState({});
+  const [error, setError] = useState(null);
+
+  // Fetch posts
+  const getPosts = async () => {
+    try {
+      const response = await fetchData('posts?page=1&per_page=9');
+      setData(response);
+    } catch (error) {
+      setError(error);
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    getPosts();
+  }, []);
+
+  useEffect(() => {
+    if (data.length > 0) {
+      data.forEach(async (item) => {
+        if (item?.categories?.[0]) {
+          const categoryName = await getPostCategory(item?.categories[0]);
+          setCategories((prevCategories) => ({
+            ...prevCategories,
+            [item.id]: categoryName,
+          }));
+        }
+        if (item?.featured_media) {
+          const featuredImage = await getPostImage(item?.featured_media);
+          setPostImages((prevImages) => ({
+            ...prevImages,
+            [item.id]: featuredImage,
+          }));
+        }
+      });
+    }
+  }, [data]);
+
+  const getPostCategory = async (id) => {
+    try {
+      const response = await fetchData(`categories/${id}`);
+      return response?.name;
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  };
+
+  const getPostImage = async (id) => {
+    try {
+      const response = await fetchData(`media/${id}`);
+      return response?.guid?.rendered;
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  };
+
+
+
+
+  const totalPages = Math.ceil(data.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentItems = items.slice(startIndex, startIndex + itemsPerPage);
+  const currentItems = data.slice(startIndex, startIndex + itemsPerPage);
 
  
 
@@ -31,6 +98,7 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
           
   }
 
+
   return (
     <div>
       {/* Bootstrap Carousel */}
@@ -47,35 +115,15 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
       >
         
         {[...Array(totalPages)].map((_, index) =>(
-             <Carousel.Item style={{minHeight: "300px"}}>
-            
-             
+             <Carousel.Item style={{minHeight: "300px"}} key={index}>
              <div className= {`grid article`}>
-              
                {currentItems.map((item, index) => (
-                 <div className="grid-item" key={index}>
-                   <img src={item.featuredImage} alt={item.title} className="featured-image"/>
-
-                   
-                   <p className="article_date">{item.dateDisplay}</p>
-
-                   <div className="rt-holder">
-                     <h2 className="article-title">{item.title}</h2>
-                     <div className="card-bottom-elements">
-                       <div className="category-holder">
-                         <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Category-Icon.svg" customClass="category-icon"/>
-                           <span className="category">{item.category}</span>
-                       </div>
-                       <div className="read-more-btn-wrapper">
-                         <a href="#" className="read-more-btn">
-                           <span>Read more</span>
-                         </a>
-                       </div>
-                     </div>
-                   </div>
-                   
-                 
-                 </div>
+                 <ReUsablePost
+                    key={index}
+                    item={item}
+                    categories={categories}
+                    postImages={postImages}
+                  />
                ))}
              </div>
 

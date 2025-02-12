@@ -7,6 +7,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     historyApiFallback: true, // Ensures that deep links work
+    proxy: {
+      '/wp-json': 'https://trinity-metals.com', // Proxy API requests to bypass CORS
+    },
   },
   
 })
+
