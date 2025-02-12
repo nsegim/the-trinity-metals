@@ -3,7 +3,9 @@ import SiteFooter from "../../components/Footer/Footer"
 import SiteHeader from "../../components/header/Header"
 import ImageGallery from "../../components/ImageGallery"
 import './About.css'
-import { useRef, useEffect } from "react"
+import Modal from 'react-bootstrap/Modal';
+
+import { useRef, useEffect, useState } from "react"
 
 const AboutPage = () => {
     const location = useLocation()
@@ -40,6 +42,9 @@ const AboutPage = () => {
 
         
     }, [location])
+
+    const [modalShow, setModalShow] = useState(false);
+
     
     return(
         <>
@@ -80,8 +85,53 @@ const AboutPage = () => {
                                 
 
                             </div>
+                            <Modal
+                            
+                            size="lg"
+                            aria-labelledby="contained-modal-title-vcenter"
+                            centered
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                            >
+                                <Modal.Header closeButton>
+                                    
+                                </Modal.Header>
+                                <Modal.Body>
+                                    <div className="text-content">
+                                        <p className="fw-bold">
+                                            Trinity Musha Mines Limited [formerly Piran Rwanda Ltd], Trinity Nyakabingo Mine Limited [formerly Eurotrade
+                                            International Ltd], and Rutongo Mines Limited are established as three separate, privately held companies.
+                                            They all have a strong track record of mining and exploration of tin, tungsten and/or tantalum in Rwanda 
+                                            and are committed to incorporating responsible mining practices into assets previously acquired from the 
+                                            Rwandan government.
+                                        </p>
+                                        <p>
+                                            In May 2022, the three companies’ shareholders joined forces to form Trinity Metals Limited (“The Group”) 
+                                            under equity backing from Techmet, a UK-based private industrial company working to secure the technology 
+                                            metal supply chain in a world with rapidly increasing demand.  Techmet, Trinity Metals’ majority shareholder,
+                                             works with a number of investment partners including the US Development Finance Corporation (DFC) to fund its 
+                                             portfolio. Additional shareholders include Piran Resources, the parent company of Piran Rwanda Limited and the
+                                              Rwandan Government, represented by Ngali Holdings Limited. 
+                                        </p>
+                                        <p>
+                                            The consolidation of the three companies led Trinity Metals to its position as a leading mining company and 
+                                            private sector employer. The board of directors was appointed in May 2022 with representation from the major 
+                                            shareholders to oversee the company’s strategy and governance in Rwanda.
+                                        </p>
+                                        <p>
+                                            The three-way alliance, by design, builds upon the strengths of each of the three companies to achieve operational 
+                                            synergies such as increased production capacity, greater supply chain leverage, improved career growth opportunities 
+                                            for employees and stronger community and government relations.
+                                        </p>
+
+                                        
+
+                                    </div>
+                                </Modal.Body>
+                                
+                            </Modal>
                             <div class="general-button justify-content-left">
-                                <a href="#" class="hover-green">
+                                <a href="#" class="hover-green" onClick={() => setModalShow(true)}>
                                     <span>Read More</span>
                                     <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg"/>
                                 </a>

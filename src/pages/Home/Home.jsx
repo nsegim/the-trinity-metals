@@ -298,12 +298,12 @@ const HomePage = () => {
                
 
               <div className="buttonElement">
-                <a href="#" className="hover-green">
+                <Link to="/about" className="hover-green">
                   
                   <span>Read More</span>
                   <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg' />
 
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -415,7 +415,7 @@ const HomePage = () => {
 
              <h2 className="heading text-white w-75">
               <span>We are a part of the 
-             energy revolution</span>
+                energy revolution</span>
              </h2>
 
              <div className="text-content002">
@@ -427,14 +427,14 @@ const HomePage = () => {
              </div>
 
              <div className="button-element">
-                  <a href="#" className="view-projects">
-                    View Projects
+                  <Link to="/sustainability" className="view-projects">
+                    Read More
                     <span>
                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
-                  </a>
+                  </Link>
             </div>
 
 
@@ -467,14 +467,14 @@ const HomePage = () => {
                   </div>
                   
                   <div className="button-element">
-                  <a href="#" className="explore-more">
-                    View Projects
+                  <Link to="/investor-relations/latest-news" className="explore-more">
+                    Read More
                     <span>
                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
-                  </a>
+                  </Link>
                 </div>
                   
           </div>
@@ -508,14 +508,14 @@ const HomePage = () => {
                   </div>
                   
                   <div className="button-element">
-                  <a href="#" className="explore-more">
+                  <Link to="/investor-relations/gallery/photos" className="explore-more">
                     View Gallery
                     <span>
                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
-                  </a>
+                  </Link>
                 </div>
                   
           </div>

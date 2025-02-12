@@ -136,6 +136,29 @@ border-radius: 3px;
   gap: 50px;
 }
 
+.mine-site-location{
+  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0;
+}
+.mine-site-location h4{
+font-weight: 700;
+font-size: 20px;
+line-height: 24.38px;
+letter-spacing: 0%;
+color: var(--trinity-white);
+}
+.mine-site-location ul{
+  margin-bottom: 0;
+  align-self: end;
+  list-style-type: none;
+  color: var(--trinity-white);
+  font-size: 14px;
+  padding-left: 0;
+}
+
 .contact-info-section .icon-box {
   display: flex;
   gap: 25px;

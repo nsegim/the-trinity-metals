@@ -82,6 +82,27 @@ text-align: left;
 padding-bottom: 15px;
 
 }
+.show{
+    background-color: #00000052!important;
+}
+ .modal-content{
+  border-radius: 0;
+  background-color: var(--trinity-white);
+}
+.text-content, .modal-header{
+    border: none;
+}
+.modal-body{
+  padding: 20px;
+}
+.modal-body p{
+   color: var(--trinity-dark); 
+
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0%;
+
+}
 
 @media(max-width: 992px) AND (min-width: 768px){
     .histort-content-holder, .image-holder {
