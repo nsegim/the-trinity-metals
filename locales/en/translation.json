@@ -281,6 +281,20 @@
       "latest-news-page-title": "Latest News",
       "read-more-btn": "Read more"
   },
+  "sidebar" :{
+      "search": "Search",
+      "search-input": "Enter your keywords...",
+      "featured-posts": "Features Posts",
+      "newsletter": "",
+      "newsletter-section": {
+          "section-title": "",
+          "input-field": "",
+          "subscribe-btn": ""
+      },
+      "our-gallery": ""
+
+
+  },
 
   "gallery": {
       "photos": "Photos",
