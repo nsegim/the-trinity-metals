@@ -172,6 +172,7 @@
             "trinity-rutongo-mines": "Trinity Rutongo Mines",
             "LITHIUM-EXPLORATION": "LITHIUM EXPLORATION"
 
+
         },
 
         "rutongo-mines": {
@@ -191,6 +192,7 @@
 
             "brief-history ": "Brief history",
             "brief-history-description": "Rutongo Mines is a Tin mine with a mining concession of 9,960 ha. Features 6 operational mining sites - Nyamyumba, Gasambya, Masoro, Mahaza, Karambo and Gisanse. They are estimated to contain approximately 56,000 tonnes of recoverable tin with potential to grow the resource substantially at depth. Currently produce between 70-90 tonnes of tin concentrate at 68-70% Sn, projected to increase to 200 tonnes per month in the next five years.",
+            "presented-history": "Presented on a History Timeline",
             "history-timeline": "Tin exploitation at Rutongo began in 1931, and from the 1940s, the mines consistently exported 800 tonnes a year of cassiterite. By the 1950s, SOMUKI, a Belgian mining company, had developed the mine into the largest tin concentrate producer in Rwanda. In 1973, the fusion of former colonial mining sites gave rise to SOMIRWA (Société Des Mines Du Rwanda), a joint venture between the Government of Rwanda and GEOMINES. This Belgium-based mining company operated on site until its liquidation in 1986. At this time, the mines were nationalized and operated under REDEMI (Regie d’Exploitation et de Developpement des Mines).",
             "history-timeline-2": "The mines closed in 1994 when the genocide against the Tutsi occured. In 1995 they reopened under REDEMI as a miners’ co-operative and operated as such until 2008, when the government re-privatized them. "
         },
@@ -251,7 +253,7 @@
     "community-title": "Community",
     "community-subtitle": "We are a part of the energy revolution",
     "community-desc": "We take our values seriously and hold ourselves accountable to the communities where we operate and the greater good of the planet. We support the UN’s mission to ensure that by 2030 all people enjoy peace and prosperity and do our part to contribute to the Global Sustainability Development Goals.",
-    "community-desc1": "Through our ongoing commitment, we have helped to uplift communities by",
+    "community-desc1": "Through our ongoing commitment, we have helped to uplift communities by:",
     "community-list": "Providing medical insurance for more than 3,000 residents annually",
     "community-list1": "Rehabilitating more than 30km of community roads",
     "community-list2": "Helping the communities’ most vulnerable families in personalised ways, including construction and renovation of dilapidated homes, distributing fruit tree seeds and creating community vegetable gardens to address childhood malnutrition and growth stunting, and sponsoring school fees and supplies for students.",
@@ -274,6 +276,7 @@
 
   "reports": {
      "report-page-title": "Reports",
+     "form-placeholder": "Enter your keywords ...",
      "Download-btn": "Download"
   },
 
@@ -301,6 +304,20 @@
       "videos": "Videos",
       "photo-gallery": "Photo Gallery",
       "video-gallery": "Video Gallery"
+  },
+  "careers": {
+    "top-title": "We are an Employer of Choice",
+    "top-desc1": "We are committed to empowering and uplifting the communities where we operate through job creation,training and social initiatives.",
+    "top-desc2": "We value gender-diversity and are passionate about increasing the number of women in the mining sector, aspiring to a minimum of 30% of our workforce comprising women by 2025..",
+
+    "search-form":{
+      "input-title": "Find Jobs",
+      "input-placeholder":"Job title, Skill, Keyword...",
+      "select-field-title":"Near Location"
+      
+    }
+
+
   },
   
   "footer": {

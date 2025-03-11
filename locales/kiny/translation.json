@@ -55,7 +55,7 @@
       "employees":"Abakozi",
       "mine-site": "Ibirombe",
       "read-more-button": "Soma Byinshi",
-      "rwandan-leadership": "Abayobozi babenegihugu",
+      "rwandan-leadership": "Abayobozi b'abenegihugu",
       "rwandan-workforce": "Abakozi b’abenegihugu",
       
       
@@ -75,6 +75,7 @@
 
       "blog-post-section": "Inyandiko",
       "latest-articles": "Amakuru Agezweho",
+      
 
 
       "media-section":"Itangazamakuru",
@@ -159,56 +160,56 @@
 
   "our-project-page": {
 
-        "projects-title": "Projects",
-        "project-description-1": "Trinity Metals has three mining projects operated as subsidiaries in Rwanda – Rutongo Mines, Nyakabingo Mine, and Musha Mines. They include three primary mining sites and a few satellite sites located in close proximity to the primary sites.",
-        "project-description-2": "All of our mining sites operate to international mining regulations and uphold strict environmental standards. We do not use toxic or environmentally damaging chemical processes in our mines, nor do the mines produce any such material.",
-        "project-description-3": "All of our production is certified “conflict-free” – our mines are fully compliant with conflict minerals audit requirements under OECD guidelines.",
+        "projects-title": "Imishinga yacu",
+        "project-description-1": "Trinity Metals Mines ifite imishinga itatu ikorera mu Rwanda – Rutongo Mines, Nyakabingo Mine, na Musha Mines. Zirimo ibirombe bitatu by’ibanze n’ibindi birombe bito byegereye ibyo birombe bitatu. ",
+        "project-description-2": "Ibirombe byacu bikorerwa ku mabwiriza mpuzamahanga agenga gucukura ibirombe ndetse tukita ku mahame yo kubungabunga ibidukikije. Mu birombe byacu  ntabwo dukoresha ibikoresho byangiza ibidukikije cyangwa dukore ibyo bikoresho. ",
+        "project-description-3": "Umusaruro wacu wose wahawe icyemezo cyo gukorera mu mutekano. Ibirombe byacu bikora mu buryo bwubahiriza amabwiriza ya OECD. ",
 
 
 
         "project-sites": {
-            "trinity-nyakabingo-mine": "Trinity Nyakabingo Mine",
-            "trinity-musha-mines": "Trinity Musha Mines",
-            "trinity-rutongo-mines": "Trinity Rutongo Mines",
-            "LITHIUM-EXPLORATION": "LITHIUM EXPLORATION"
+            "trinity-nyakabingo-mine": "Ikirombe cya Trinity Nyakabingo",
+            "trinity-musha-mines": "Ikirombe cya Trinity Musha",
+            "trinity-rutongo-mines": "Ikirombe cya Trinity Rutongo",
+            "LITHIUM-EXPLORATION": "Ubushakashatsi kuri Lithium"
 
         },
 
         "rutongo-mines": {
-            "satellite-mines": "Rutongo Satellite Mines",
-            "satellite-mines-achievement": "6 Mines",
+            "satellite-mines": "Amashami y'ikirombe cya Rutongo",
+            "satellite-mines-achievement": "Ibirombe 6",
 
-            "tin-production": "Tin Production",
-            "tin-production-achievement": "70-90 tonnes",
+            "tin-production": "umusaruro wa Tin",
+            "tin-production-achievement": "Toni hagati ya toni 70 -90 ",
 
-            "workforce": "Workforce",
+            "workforce": "Abakozi",
             "Workforce-achievement": "2,500+",
 
-            "location": "Location",
-            "location-achievement": "Rutongo Mines sit 26km north <br> of Kigali, Rwanda",
+            "location": "Amerekezo",
+            "location-achievement": "Ikirombe cya Rutongo kiri mu birometero 26 uvuye mu Kigali",
 
 
 
-            "brief-history ": "Brief history",
-            "brief-history-description": "Rutongo Mines is a Tin mine with a mining concession of 9,960 ha. Features 6 operational mining sites - Nyamyumba, Gasambya, Masoro, Mahaza, Karambo and Gisanse. They are estimated to contain approximately 56,000 tonnes of recoverable tin with potential to grow the resource substantially at depth. Currently produce between 70-90 tonnes of tin concentrate at 68-70% Sn, projected to increase to 200 tonnes per month in the next five years.",
-            "history-timeline": "Tin exploitation at Rutongo began in 1931, and from the 1940s, the mines consistently exported 800 tonnes a year of cassiterite. By the 1950s, SOMUKI, a Belgian mining company, had developed the mine into the largest tin concentrate producer in Rwanda. In 1973, the fusion of former colonial mining sites gave rise to SOMIRWA (Société Des Mines Du Rwanda), a joint venture between the Government of Rwanda and GEOMINES. This Belgium-based mining company operated on site until its liquidation in 1986. At this time, the mines were nationalized and operated under REDEMI (Regie d’Exploitation et de Developpement des Mines).",
-            "history-timeline-2": "The mines closed in 1994 when the genocide against the Tutsi occured. In 1995 they reopened under REDEMI as a miners’ co-operative and operated as such until 2008, when the government re-privatized them. "
+            "brief-history ": "Incamake y’amateka ",
+            "brief-history-description": "Rutongo mines ni sosiyete icukura amabuye ya Tin, ifite ibirombe bifite ubuso bwa hegitare 9,960 mu birombe 6 ifite mu Nyamyumba, Nyamyumba, Gasambya, Masoro, Mahaza, Karambo na Gisanse.Habarurwa  nibura toni 56,000 za Tin  ndetse zishobora no kwiyongera bakomeje gucukura. Ubu hakorwa hagati ya toni 70-90 za Tin ifite ijanisha rya 68-70% Sn, bikaba biteganyijwe ko bizagera kuri toni 200 ku kwezi mu myaka itanu iri imbere.",
+            "presented-history": "Ibyagezweho",
+            "history-timeline": "Gucukura Tin muri Rutongo byatangiye mu 1931, naho guhera mu myaka ya 1940, ibirombe byavagamo toni 800 za Tin buri mwaka. Mu myaka ya 1950, sosoyete y’Ababiligi yitwa SOMUKI, yagiye ibirombe mu Rwanda. Mu 1973, ibirombe bya kera ku bukoro ni byahurijwe hamwe bibyara  icyitwa SOMIRWA (Société Des Mines Du Rwanda), yayoborwaga na Leta y’u Rwanda ndetse GEOMINES y’Ababiligi. Iyo sosiyete yo mu Bubirigi  yakomeje gukora kugeza mu 1986 ubwo yaseswaga. Nyuma yaho, ibirombe byahawe Leta maze bikomeza gucungwa na REDEMI (Regie d’Exploitation et de Developpement des Mines).",
+            "history-timeline-2": "Ibirombe byafunzwe mu 1994 ubwo jenoside yakorewe Abatutsi yabaga. Mu 1995 byongeye gufungurwa bikoreramo REDEMI nk’ishyirahamwe ry’abacukuzi kugeza mu 2008, ubwo leta yabigurishaga ku bikorerwa. "
         },
         
         "nyakabingo-mines": {
-            "tungsten-production": "Tungsten Production",
-            "tungsten-production-achievement": "100-110 tonnes",
-            "workforce": "Workforce",
+            "tungsten-production": "umusaruro wa Tungsten",
+            "tungsten-production-achievement": "Toni hagati ya 100 -110",
+            "workforce": "abakozi",
             "workforce-achievement": "1,800+",
-            "location": "Location",
-            "location-achievement":"Nyakabingo Mine sit 19km northwest <br> of Kigali, Rwanda",
+            "location": "Amerekezo",
+            "location-achievement":"Ikirombe cya Nyakabinga giherereye mu majyaruguru, mu birimetero 19 uvuye I Kigali ",
 
 
-            "brief-history": "Brief history",
-            "brief-history-desc":"Trinity Nyakabingo Mine is a Tungsten ore mine with a mining concession of 1,600 ha. They are estimated to contain approximately 115,502 tonnes of recoverable Tungsten with potential to grow the resource substantially at depth. Currently produces between 100 to 110 tonnes of wolframite per month, containing 66-70% Tungsten, under a 25 year license that began in 2015.",
+            "brief-history": "Incamake y’amateka,Trinity Nyakabingo Mines ni ibirombe bya Tungsten bifite ubuso bwa hegitari 1,600, birimo nibura toni 115,502 biteganyijwe ko zishobora kwiyongera nibakomeza gucukura. Kuri ubu hakorwa toni hagati ya 100 na 110 za Tungsten ku kwezi, zirimo 66-70% ya Tungsten. Imaze imyaka 25 icukura aya mabuye yahawe uburenganzira bwo gukora mu 2015 ",
 
-            "history-timeline": "Presented on a history timeline",
-            "history-timeline-desc": "Exploration of the mine’s alluvial deposits began in the late 1930s, but it was only after WWII that systematic open cast mining began. Underground mining started in the late 1960s with adits, followed by drives along quartz veins situated in bedding planes (known as concordant parallel veins or PV). The first Companies to work the deposit were Belgium who mined on a semi-mechanized until the 1986. At this time, the mines were nationalized and operated under REDEMI (Regie d’Exploitation et de Developpement des Mines). The mines closed in 1994 when the genocide against the Tutsi occurred. In 1995 they reopened under REDEMI as a miners’ co-operative and operated as such until 2007, when Euro Trade International took ownership."
+            "history-timeline": "ibyagezweho",
+            "history-timeline-desc": "Ubushakashatsi ku bucukuzi bwa alluvial bwa bwatangiye mu mpera y’imyaka ya za 1930, ariko nyuma y’intambara ya kabiri y'isi yose ni bwo ubucukuzi bwatangiye. Ubucukuzi bw'amabuye y'agaciro bwatangiye mu mpera z'imyaka ya za 1960 banyuze mu nzira za adits, nyuma bukurikirwa no guca muri quartz yabagejeje kuri bedding. Amasosiyete ya mbere yacukuye ayo mabuye ni ay’Ababiligi yacukuraga akoresheje imashini ndetse n’abantu kugera mu 1986. Muri iki gihe, ibirombe byahawe REDEMI (Regie d'Exploitation et de Developpement des Mines). Mu 1994 ubwo habaga Jenoside yakorewe Abatutsi ibyo birombe byarafunze byongera gufungura mu 1995 biyoborwa na REDEMI nka koperative y’abacukuzi b’amabuye y’agaciro kugera mu 2007 ubwo Euro Trade International yahabwaga ibyo birombe. "
         },  
 
         "musha-mines": {
@@ -239,42 +240,44 @@
   },
 
   "Sustainability":{
-    "sustainability-page-title": "Sustainability",
-    "environment-title": "Environment",
-    "environment-min-title": "We are a part of the energy revolution",
-    "environment-desc": "We take our values seriously and hold ourselves accountable to the communities where we operate and the greater good of the planet. We support the UN’s mission to ensure that by 2030 all people enjoy peace and prosperity and do our part to contribute to the Global Sustainability Development Goals.",
-    "environment-desc1": "We have taken steps to track, actively reduce and offset our carbon emissions and utilise eco-conscious mining methods and technology. We employ a replacement strategy for trees affected by our mining operations and have planted in excess of  657,000 trees across the three mine sites. We work collaboratively with the local environment, forestry and water management authorities to ensure that our efforts add net value to the environment. ",
-    "environment-desc2-title": "We promote biodiversity",
-    "environment-desc2": "Bees play a critical role in ecological balance and restoration. At Nyakabingo mine, we have launched a community beekeeping project in our rehabilitated forests, a sustainable project that provides livelihood opportunities for local community members. This project has been and will continue to be a significant income generation mechanism for the community. ",
+    "sustainability-page-title": "Iterambere rirambye",
+    "environment-title": "Ibidukikije",
+    "environment-min-title": "Turi ku isonga mu mpinduramatwara y’ingufu ",
+    "environment-desc": "Dufata indangagaciro zacu nk’ingenzi kandi tiwiyemeje kurengera abaturage ndetse n’umugabane muri rusange. Dushyigikira intego z’Umuryango w’Abibumbye za 2030, aho abantu bose bazaba babayeho mu mahoro ndetse n’iterambere, ndetse tukagira uruhare mu iterambere rirambye ku isi. ",
+    "environment-desc1": "Twafashe ingamba zo gukurikirana, kugabanya no gukuraho ibyuka bihumanya ikirere, ubundi  dukoresha uburyo bwo gucukura amabuye ariko butangiza ibidukikije, ndetse n’ikoranabuhanga. Tugira gahunda yo gusimbuza ibiti byangijwe n’ibikorwa byacu by’ubucukuzi, aho tumaze gutera ibiti bisaga 657,000 mu birombe bitatu dukoreramo. Dukorana n’inzego zishinzwe ibidukikije, amashyamba n’amazi kugira ngo ibikorwa byacu bifashe kurushaho guteza imbere no kubungabunga ibidukikije.",
+    "environment-desc2-title": "Dushyigikira imibereho y’ibinyabuzima",
+    "environment-desc2": "Inzuki zigira uruhare rukomeye mu gusigasira no kugarura ubusugire bw’ibidukikije. Ku kirombe bya Nyakabingo, twatangije umushinga w’ubworozi bw’inzuki, aho inzuki zororerwa mu mashyamba twateyemo ibiti kugira ngo abaturiye ibirombe bagire amahirwe aho batuye. Uyu mushinga uzakomeza kuba isoko y’inyungu n’iterambere ry’abaturage bo mu gace dukoreramo.",
 
 
-    "community-title": "Community",
-    "community-subtitle": "We are a part of the energy revolution",
-    "community-desc": "We take our values seriously and hold ourselves accountable to the communities where we operate and the greater good of the planet. We support the UN’s mission to ensure that by 2030 all people enjoy peace and prosperity and do our part to contribute to the Global Sustainability Development Goals.",
-    "community-desc1": "Through our ongoing commitment, we have helped to uplift communities by",
-    "community-list": "Providing medical insurance for more than 3,000 residents annually",
-    "community-list1": "Rehabilitating more than 30km of community roads",
-    "community-list2": "Helping the communities’ most vulnerable families in personalised ways, including construction and renovation of dilapidated homes, distributing fruit tree seeds and creating community vegetable gardens to address childhood malnutrition and growth stunting, and sponsoring school fees and supplies for students.",
+    "community-title": "Abaturage",
+    "community-subtitle": "Duteza imbere ingufu",
+    "community-desc": "Dufata indangagaciro zacu nk’ingenzi kandi tiwiyemeje kurengera abaturage ndetse n’umugabane muri rusange. Dushyigikira intego z’Umuryango w’Abibumbye za 2030, aho abantu bose bazaba babayeho mu mahoro ndetse n’iterambere, ndetse tukagira uruhare mu iterambere rirambye ku isi. ",
+    "community-desc1": "Mu rwego rwo gushyira mu bikorwa iyi ntego, twafashije mu kuzamura imibereho y’abaturage binyuze mu:",
+    "community-list": "Gutanga ubwishingizi bw’ubuvuzi ku baturage basaga 3,000 buri mwaka.",
+    "community-list1": "Gusana ibirometero 30 by’imihanda y’abaturage.",
+    "community-list2": "Gufasha imiryango itifashije mu buryo butandukanye burimo kubaka no kuvugurura inzu zasenyutse, gutanga imbuto z’ibiti by’imbuto, kubafasha gushyiraho imirima y’igikoni kugirango dukemure ikibazo cy’imirire mibi n’igwingira ry’abana, kwishyurira abana amashuri no kubaha ibikoresho",
 
 
-    "governance": "Governance",
-    "governance-desc": "Trinity Metals has strict guidelines in place to ensure ethical business conduct and responsible practices pertaining to human rights, labour rights and the environment.",
-    "governance-desc1": "We comply with guidelines and standards from leading local and international bodies including Certified Trading Chain (CTC) and Organisation for Economic Co-operation and Development (OECD).",
-    "governance-desc2": "Our minerals are certified conflict-free, and meet five basic principles",
-    "governance-list": "Traceability: The origin and volumes of minerals we produce and trade are fully traceable",
-    "governance-list1": "Fair working conditions: We do not use child labour. We pay fair remuneration and provide safety and well-being focused working conditions",
-    "governance-list2": "Security and human rights: We ensure security on our sites whilst respecting human rights",
-    "governance-list3": "Community development: We consult with local communities and contribute to their social, economic and institutional development, taking into account gender-sensitive aspects.",
-    "governance-list4": "Environment: We seek continual improvement of our environmental performance.",
+    "governance": "Imiyoborere",
+    "governance-desc": "Trinity Metals ifite amabwiriza akomeye agamije kugenzura ko ubucuruzi bwemewe, uburenganzira bwa muntu, uburenganzira bw’abakozi ndetse no kurengera ibidukikije byubahirijwe ",
+    "governance-desc1": "Twubahiriza amabwiriza n’ibipimo byashyizweho n’inzego haba mu gihugu no ku rwego mpuzamahanga, zirimo Urwego rushinzwe kugenzura ko ubucukuzi bw’amabuye y’agaciro bwakozwe neza mu mutekano (CTC) ndetse na Urwego mpuzamahanga rw’imikorere n’imikoranire (OECD).",
+    "governance-desc2": "Amabuye y’agaciro ducukura afite icyemezo cy’uko ataturutse mu makimbirane, kandi akurikije amategeko atanu y’ingenzi:",
+    "governance-list": "Ubushobozi bwo gukurikirana: Aho amabuye y’agaciro dukora aturuka n’ingano yayo bishobora gukurikiranwa neza.",
+    "governance-list1": "Gukorera ahantu heza: Ntabwo dukoresha abana. Dutanga umushahara w’ibyiciro byiza kandi dukora ku buryo bwizewe kandi bwita ku mutekano w’abakozi n’imibereho yabo.",
+    "governance-list2": "Umutekano mu birombe byacu kandi twubahiriza uburenganzira bwa muntu.",
+    "governance-list3": "Iterambere ry’abaturage: Tugira inama abaturage bo mu duce dukoreramo, tukagira uruhare mu guteza imbere imibereho yabo, ubukungu, ndetse n’imiyoborere, tunubahiriza ihame ry’uburinganire. ",
+    "governance-list4": "Ibidukikije: Dukora ibishoboka byose mu kugira ngo dukomeze kunoza ibikorwa byacu byo kubungabunga ibidukikije.",
 
 
-    "policies-standards": "Policies & Standards"
+    "policies-standards": "Politiki n’Amahame"
      
   },
 
   "reports": {
-     "report-page-title": "Reports",
-     "Download-btn": "Download"
+     "report-page-title": "Raporo",
+     "form-placeholder": "Shyiramo amagambo y’ingenzi...",
+     "Download-btn": "Manura"
+     
   },
 
   "latest-news": {
