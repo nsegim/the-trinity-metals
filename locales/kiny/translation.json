@@ -75,7 +75,7 @@
 
       "blog-post-section": "Inyandiko",
       "latest-articles": "Amakuru Agezweho",
-      
+      "date_format": "DD MMMM, YYYY",
 
 
       "media-section":"Itangazamakuru",
@@ -283,6 +283,21 @@
   "latest-news": {
       "latest-news-page-title": "Latest News",
       "read-more-btn": "Read more"
+  },
+  "sidebar" :{
+      "search": "Shakisha",
+      "search-input": "Shyiramo amagambo y’ingenzi...",
+      "featured-posts": "Inkuru Bijyanye",
+      "newsletter": "Iyandikishe ujye ubona amakuru ",
+      "newsletter-section": {
+          "section-title": "Shyiramo imeyili yawe uniyandikishe ujye ubona amakuru. ",
+          "input-field": "Imeyili yawe",
+          "subscribe-btn": "Iyandikishe None Aha"
+      },
+      "category":"Urutonde rw’Ibyiciro",
+      "our-gallery": "Ububiko Bwacu"
+
+
   },
 
   "gallery": {

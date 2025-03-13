@@ -75,6 +75,7 @@
 
       "blog-post-section": "Blog Post",
       "latest-articles": "Latest Articles",
+      "date_format": "DD MMMM, YYYY",
 
 
       "media-section":"Media",
@@ -288,13 +289,14 @@
       "search": "Search",
       "search-input": "Enter your keywords...",
       "featured-posts": "Features Posts",
-      "newsletter": "",
+      "newsletter": "Newsletter",
       "newsletter-section": {
-          "section-title": "",
-          "input-field": "",
-          "subscribe-btn": ""
+          "section-title": "Enter your e-mail and subscribe to our newsletter.",
+          "input-field": "Your Email",
+          "subscribe-btn": "Subscribe Now"
       },
-      "our-gallery": ""
+      "category":"Categories List",
+      "our-gallery": "Our Gallery"
 
 
   },
