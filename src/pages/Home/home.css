@@ -2,7 +2,11 @@
 .hover-green:hover, .explore-more:hover{
   background-color: var(--trinity-green)!important;
 }
-
+.transprent-button:hover{
+  background: #F8D100!important;
+  border: none;
+  color: #001721!important;
+}
 /* Hero section styles */
 .hero-section {
   margin-top: -60px;
@@ -11,6 +15,7 @@
   overflow: hidden;
   max-width: 100%;
 }
+
 
 .background-video-container video {
   position: absolute;
@@ -119,7 +124,7 @@ text-decoration: none;
   font-weight: 400;
   line-height: 19.5px;
   text-align: center;
-
+  cursor: pointer;
 
 }
 .get-started:hover{
@@ -138,12 +143,12 @@ text-decoration: none;
 }
 
 .basic-intro-left{
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/mining-process-left-scaled.jpeg');
+  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Trinity-mines.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 50%;
-  height: 707px;
+  height: 620px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -154,14 +159,26 @@ text-decoration: none;
   display: flex;
   justify-content: space-around;
   
-padding: 30px 50px 30px 50px;
-
+  padding: 30px 50px 30px 50px;
+    /* background-color: var(--trinity-yellow);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 50px 30px 50px;*/
+    z-index: 9999;
+    position: absolute;
+    right: 0;
+    width: 35%;
+    bottom: 0; 
 
 
 }
 @media (max-width: 768px) {
   .coverage-precentages-wrapper .workforce-text, .coverage-precentages-wrapper .leader-text{
     text-align: center;
+  }
+  .home-hero{
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
 }
 .leadership-counter-wrapper .leadership-counter, .workforce-counter-wrapper .workforce-counter {
@@ -184,13 +201,15 @@ text-align: left;
 
 /* Right Section */
 .basic-intro-right{
-  width: 50%;
-  display: flex;
-  padding-left: 80px;
-  flex-direction: column;
-  padding-top: 120px;
-  position: relative;
-  padding-right: 11%;
+     width: 50%;
+    display: flex;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    flex-direction: column;
+    justify-content: end;
+    /* padding-top: 120px; */
+    position: relative;
+    /* padding-right: 11%;*/
  
 }
 
@@ -331,6 +350,7 @@ opacity: 0px;
 
 .wrapper_content{
   display: flex;
+
 }
 .the_content_left{
   display: flex;
@@ -385,7 +405,8 @@ color: var(--trinity-dark);
 }
 @media (max-width: 977px) {
   .about-us-intro-section-wrapper{
-    flex-direction: column-reverse;
+    flex-direction: column;
+    padding-top: 30px;
   }
   .basic-intro-left, .basic-intro-right{
     width: 100%;
@@ -398,20 +419,23 @@ color: var(--trinity-dark);
 }
 @media (max-width: 767px) {
   .basic-intro-left{
-   max-height: 540px;
+   max-height: 350px;
   }
   .basic-intro-right{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .right-intro-wrapper {
     width: 100%;
   }
   .wrapper_content{
     flex-direction: column;
+    gap: 20px;
   }
   
-
+  .the_content_left{
+    width: 75%;
+  }
 
 }
 
@@ -419,23 +443,37 @@ color: var(--trinity-dark);
 
 
 /* Our porject section styles */
-
-.our-porject-wrapper{
-  padding-bottom: 120px;
-  min-height: 800px;
+.the-top-bg{
+  background-image: url('../../../public/asset/about-trinity.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
   position: relative;
-  padding-top: 120px;
 }
-.our-porject-wrapper::after{
+.the-top-bg::after{
   position: absolute;
   content: "";
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--trinity-blue);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
   
 }
-.our-porject-wrapper::before{
+.our-porject-wrapper{
+ 
+ padding-bottom: 100px;  
+  border: none;
+  color: #001721;
+  position: relative;
+  /* padding-top: 120px;
+  background-image: url('../../../public/asset/about-trinity.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+/* .our-porject-wrapper::before{
   position: absolute;
   content: "";
   top: 0;
@@ -446,7 +484,7 @@ color: var(--trinity-dark);
   background-size: cover;
   z-index: 10;
   opacity: 0.08;
-}
+} */
 @media (max-width: 768px) {
   .our-porject-wrapper{
     padding-top: 60px;
@@ -459,6 +497,7 @@ color: var(--trinity-dark);
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-top: -35vh;
 }
 
 .sectionTops{
@@ -544,14 +583,14 @@ color: var(--trinity-dark);
 /* Sastainability Section styles */
 .sastainability-section-wrapper{
   position: relative;
-  min-height: 700px;
- 
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+  background: #F2F2F2;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
 
 }
-.sastainability-section-wrapper::after{
+/* .sastainability-section-wrapper::after{
   position: absolute;
   content: "";
   top: 0;
@@ -571,7 +610,7 @@ color: var(--trinity-dark);
   background-size: cover;
   z-index: 10;
   opacity: 0.16;
-}
+} */
 
 .sastain-bg-img{
   position: absolute;
@@ -581,19 +620,35 @@ color: var(--trinity-dark);
   z-index: 5;
 }
 
-.content-wrapper{
+.Sastainability-content{
   z-index: 20;
   position: relative;
-  
+  background-color: var(--trinity-white);
 }
-
+.sastain-home .content-wrapper .section-header{
+  color: var(--trinity-green);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.content-wrapper span, .content-wrapper p{
+  color: #001721
+}
+.content-wrapper .view-projects{
+  border-color: #001721;
+border-width: 1px;
+color: #001721;
+}
 .Sastainability-image{
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Sastainability-images.png');
+  background-image: url('../../../public/asset/Container.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 557px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+}
+.Sastainability-imag::after{
+
 }
 
 .Sastainability-right{
@@ -619,12 +674,23 @@ color: var(--trinity-dark);
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .coverage-precentages-wrapper{
+        width: 40%;
+        padding: 20px 15px 15px 15px;
+        flex-direction: column;
+  }
   .sastain-bg-img{
     width: 40%;
   }
   .Sastainability-right .heading{
     width: 100%!important;
   }
+
+  .the-top-bg{
+    height: 400px;
+  }
+
+
 }
 @media (max-width: 992px) AND (min-width: 768px){
   .sastainability-section-wrapper{
@@ -674,6 +740,9 @@ text-align: center;
 }
 .explore-more:hover{
   color: var(--trinity-white);
+}
+.read-more-btn-wrapper a{
+  text-decoration: none;
 }
 
 @media (max-width: 500px) {
@@ -760,10 +829,17 @@ text-align: center;
 
 @media (min-width: 1200px) {
   .coverage-precentages-wrapper {
-  padding-left: 22%;
+  /* padding-left: 22%; */
 }
 .about-us-intro-section-wrapper{
   padding-top: 60px;
   padding-bottom: 60px;
 }
 }
+
+@media(max-width: 1480px) AND (min-width: 1200px){
+  .basic-intro-right {
+    padding-right: 0;
+  }
+}
+

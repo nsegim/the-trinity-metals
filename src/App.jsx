@@ -4,7 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import HomePage from "./pages/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import routes from "./routes/routes";
+// import routes from "./routes/routes";
+// RoutesConfig
 import AboutPage from "./pages/About/About";
 import InvestorPage from "./pages/Investor/Investor";
 import ProjectPage from "./pages/TheProjects/Projects";
@@ -18,8 +19,14 @@ import Lithium from "./pages/Projects/Lithium";
 import Reports from "./pages/Investor/Report/Reports";
 import LatestNews from "./pages/Investor/Latest-news/LatestNews";
 import ThePhotoGallery from "./pages/Investor/Gallery/Gallery-photo";
-import TheGalleryGallery from "./pages/Investor/Gallery/Gallery-video";
+import TheVideoGallery from "./pages/Investor/Gallery/Gallery-video";
 import { useRef } from "react";
+import SinglePost from "./components/single-post-template/Single-post";
+import ScrollToTop from "./components/ScrollTopFirst";
+import RoutesConfig from "./routes/routes";
+import Careers from "./pages/Careers/Careers";
+import SingleJob from "./components/SingleJob/SingleJob";
+
 
 // Dummy components for demonstration
 const Home = () => <HomePage />;
@@ -38,7 +45,7 @@ const ComponentMap = {
   "/about": About,
   "/our-projects": OurProjects,
   "/sustainability": Sustainability,
-  "/investor-relations": Investors,
+  
   
 };
 
@@ -58,8 +65,10 @@ const renderRoutes = (routesArray) =>
   });
 
 function App() {
+  const routes = RoutesConfig()
   return (
     <Router basename="/the-trinity-metals">
+       <ScrollToTop /> 
       <Routes>
         {renderRoutes(routes)}
         <Route path="/contact-us" element={<ContactUs />}></Route>
@@ -71,11 +80,14 @@ function App() {
         <Route path="/investor-relations/latest-news" element={<LatestNews />}></Route>
         <Route path="/investor-relations/reports" element={<Reports />}></Route>
         <Route path="/investor-relations/gallery/photos" element={<ThePhotoGallery />}></Route>
-        <Route path="/investor-relations/gallery/videos" element={<TheGalleryGallery />}></Route>
+        <Route path="/investor-relations/gallery/videos" element={<TheVideoGallery />}></Route>
         <Route path="/about/our-history" element={<AboutPage />}></Route>
         <Route path="/about/our-values" element={<AboutPage />}></Route>
         <Route path="/about/our-strategies" element={<AboutPage />}></Route>
         <Route path="/about/our-products" element={<AboutPage />}></Route>
+        <Route path="/single-post/:id" element={<SinglePost />}></Route>
+        <Route path="/careers" element={<Careers />}></Route>
+        <Route path="/apply/:id" element={<SingleJob />}></Route>
       </Routes>
       
     </Router>

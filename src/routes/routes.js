@@ -1,45 +1,53 @@
 import { Children } from "react";
+import { useTranslation } from "react-i18next";
 
-const routes = [
-    { name: "Home", path:"/" },
-    { 
-        name: "About Us", path:"/about",
-        children: [
-            { name: "Our History", path:"/about/our-history" },
-            { name: "Our Values", path:"/about/our-values" },
-            { name: "Our Strategies", path:"/about/our-strategies" },
-            { name: "Our Products", path:"/about/our-products" },
-            { name: "Our Leadership", path:"/about/our-leadership" }
+const RoutesConfig = () => {
+    const { t } = useTranslation();
+    return(
+       [
+            { name: t("header.home"), path:"/" },
+            { 
+                name: t("header.about-us"), path:"/about",
+                children: [
+                    { name: t("header.about.our-history"), path:"/about/our-history" },
+                    { name: t("header.about.our-values"), path:"/about/our-values" },
+                    { name: t("header.about.our-strategies"), path:"/about/our-strategies" },
+                    { name: t("header.about.our-products"), path:"/about/our-products" },
+                    { name: t("header.about.our-leadership"), path:"/about/our-leadership" }
+                    
+                ]
+            },
+            { 
+                name: t("header.OurProjects"), path:"/our-projects",
+                children: [
+                    { name: t("header.project.rutongo"), path:"/our-projects/rutongo" },
+                    { name: t("header.project.nyakabingo"), path:"/our-projects/nyakabingo" },
+                    { name: t("header.project.musha"), path:"/our-projects/musha" },
+                    { name: t("header.project.lithium-exploration"), path:"/our-projects/lithium-exploration" },
+                    
+                    
+                ]
+            },
+        
+            { name: t("header.sustainability"), path:"/sustainability" },
             
-        ]
-    },
-    { 
-        name: "Our Projects", path:"/our-projects",
-        children: [
-            { name: "Rutongo", path:"/our-projects/rutongo" },
-            { name: "Nyakabingo", path:"/our-projects/nyakabingo" },
-            { name: "Musha", path:"/our-projects/musha" },
-            { name: "Lithium Exploration", path:"/our-projects/lithium-exploration" },
-            
-            
-        ]
-    },
-
-    { name: "Sustainability", path:"/sustainability" },
-    
-    { 
-        name: "Investor Relations", path:"/investor-relations",
-        children: [
-            { name: "Reports", path:"/investor-relations/reports" },
-            { name: "Latest News", path:"/investor-relations/latest-news" },
-            { name: "Gallery", path:"/investor-relations/gallery",
-               children: [
-                { name: "Photos", path:"/investor-relations/gallery/photos" },
-                { name: "Videos", path:"/investor-relations/gallery/videos" },
+            { 
+                name: t("header.investor-relations"), path:"/investor-relations",
+                children: [
+                    { name: t("header.investor.reports"), path:"/investor-relations/reports" },
+                    { name: t("header.investor.latest-news"), path:"/investor-relations/latest-news" },
+                    { name: t("header.investor.gallery"), path:"/investor-relations/gallery/photos",
+                       children: [
+                        { name: t("header.investor.gallery-sub.photos"), path:"/investor-relations/gallery/photos" },
+                        { name: t("header.investor.gallery-sub.videos"), path:"/investor-relations/gallery/videos" },
+                       ]
+                   }    
                ]
-           }    
-       ]
-    },
-]
+            },
+        ]
+        
+      
+    )
+}
 
-export default routes
+export default RoutesConfig

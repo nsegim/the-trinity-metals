@@ -7,12 +7,17 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Menus from "../menu/Menu";
 import OffcanvasMenu from "../Offcanvas/OffcanvasMenu";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 
 const SiteHeader = () => {
   const [show, setShow] = useState(null)
   const onHoverListener = (dropDown)=>(setShow(dropDown))
   const onRemovePointer = ()=>(setShow(false))
+
+  const { t } = useTranslation()
+
 
   return (
     <div className="header">
@@ -25,31 +30,36 @@ const SiteHeader = () => {
             </a>
             <a href="#">
               <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/envelope.svg" />
-              <span>Email: info.rw@trinity-metals.com</span>
+              <span><span>{t("header.email")}</span>: info.rw@trinity-metals.com</span>
             </a>
           </div>
-          <div className="social-links">
-            <a href="#" className="careerBtn">
-              Careers
-            </a>
-            <ul className="social-icons">
-              <li>
-                <a href="">
-                  <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/X-icon.svg" />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/IG-icon.svg" />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Youtube-icon.svg" />
-                </a>
-              </li>
+          
+          <div className="right-tools">
+             <LanguageSwitcher />
+            <div className="social-links">
+                <Link to="/Careers" className="careerBtn">
+                  {t("header.careers")}
+                </Link>
+                <ul className="social-icon">
+                  <li>
+                    <a href="https://x.com/Trinity_Metals">
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/X-icon.svg" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/IG-icon.svg" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Youtube-icon.svg" />
+                    </a>
+                  </li>
             </ul>
           </div>
+          </div>
+          
         </div>
       </div>
       <div className="container the_header">
@@ -70,7 +80,7 @@ const SiteHeader = () => {
 
         <div className="contact-btn">
           <Link to="/contact-us" className="hover-green">
-            <span>Contact Us</span>
+            <span>{t("header.contact-us")}</span>
             <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/contact-us-icon.svg" />
           </Link>
         </div>

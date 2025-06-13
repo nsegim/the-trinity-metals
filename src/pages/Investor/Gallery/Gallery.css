@@ -88,6 +88,18 @@ color: var(--trinity-dark);
     gap: 30px;
 
 }
+@media (max-width: 1024px) AND (min-width: 768px){
+    .photos-wrapper .photo-category, .videos-wrapper .video-category{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+@media (max-width: 767px) {
+    .photos-wrapper .photo-category, .videos-wrapper .video-category{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
 .image-grid{
     position: relative
 }
@@ -129,7 +141,17 @@ color: var(--trinity-dark);
 }
 
 .play-video-player{
+    cursor: pointer;
     width: 100%;
     object-fit: cover;
 }
 
+.photo-gallery-wrapper .page-number, .photo-gallery-wrapper .pagination-btn{
+  background-color: #F2F2F2;
+}
+
+.photo-gallery-wrapper .page-number.active{
+    background-color: var(--trinity-blue);
+    color: var(--trinity-white);
+
+}

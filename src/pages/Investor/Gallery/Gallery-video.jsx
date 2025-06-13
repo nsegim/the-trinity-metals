@@ -3,21 +3,104 @@ import './Gallery.css'
 import SiteHeader from "../../../components/header/Header"
 import SiteFooter from "../../../components/Footer/Footer"
 import { Link } from "react-router-dom"
-import { useEffect, useState } from "react"
-const TheGalleryGallery = ()=>{
+import { useEffect, useState, useRef } from "react"
+import { fetchData } from "../../../config/apiConfig"
+import Spinner from "../../../components/Spinner/Spinner"
+import LightBox from "./VideoLightBox/LightBox"
+
+
+
+const TheVideoGallery = ()=>{
      // The tabs declaration
      const [activeFilter, setActiveFilter] = useState('Tab1');
      const handleFilterClick = (tab) => {
        setActiveFilter(tab)
        
      }
+
+         
+        const [data, setData] = useState([]);
+        const [thumbnail, setThumbnail] = useState([]);
+         
+     
+         
+     
+          // Fetch gallery data
+          useEffect(() => {
+             let isMounted = true; // To prevent state updates on unmounted component
+     
+             const fetchGalleryData = async () => {
+                 try {
+                     const response = await fetchData('video-posts?_embed');
+                     if (isMounted && response.length) {
+                         setData(response);
+
+
+                     }
+                 } catch (error) {
+                     console.error("Error fetching gallery:", error);
+                 }
+             };
+     
+             fetchGalleryData();
+     
+             // Cleanup function
+             return () => {
+                 isMounted = false;
+                 
+             };
+         }, []); // Empty dependency array to run only once
+     
+       
+
+         const [clickedPlayButtonLink, setClickedPlayButtonLink] = useState([])
+         const [isOpen, setIsOpen] = useState(false)
+         const popup = useRef(null)
+
+         const handleClick = (event, item) => {
+          event.preventDefault(); 
+          setClickedPlayButtonLink(item?.acf?.video_url);
+          setIsOpen(true)
+          console.log(clickedPlayButtonLink)
+        };
+
+
+        const handleClosePopup = () => {
+
+           setIsOpen(false)
+
+          
+        }
+
+        const handleClickOutSide = (event) =>{
+          if (popup.current && !popup.current.contains(event.target)) {
+            setIsOpen(false)
+         }
+        }
+        
+
+        useEffect(() => {
+          if (isOpen) {
+            document.addEventListener("mousedown", handleClickOutSide);
+          } else {
+            document.removeEventListener("mousedown", handleClickOutSide);
+          }
+      
+          return () => {
+            document.removeEventListener("mousedown", handleClickOutSide); // Cleanup on unmount
+          };
+        }, [isOpen]); // Runs when `isOpen` changes
+      
+
+        useEffect(()=>{console.log(data)}, [data])
+     
     return(
         <>
           <SiteHeader />
           {/* Hero section */}
           <div className="custom-hero video-gallery">
                 <div className="child-item-wrapper z-1">
-                    <h1 className="heading">Videos</h1>
+                    <h1 className="heading text-uppercase">Videos</h1>
                 </div>
           </div>
            {/* Gallery Navigation */}
@@ -52,47 +135,58 @@ const TheGalleryGallery = ()=>{
                     </div>
 
                     <div className="videos-wrapper">
-                        <div className="video-category  All">
-                          <div className="image-grid">
-                            <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Gallery-image-1.webp" customClass={'gallery-img'}/>
-                            <Link to=""> 
-                              <div className="play-video">
-                                 <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Link-e1739190132637.png" customClass="play-video-player"/>
+                        
+                          {
+                             data?.length > 0 ? (
+
+                              <div className="video-category  All">
+                                {
+                                 data.map((item, index) => {
+                                  
+                                    
+                                    return (
+                                       <div className="image-grid">
+                                        <ImageGallery imageUrl={item?._embedded?.["wp:featuredmedia"]?.[0]?.source_url} customClass={'gallery-img'} />
+                                          
+                                            <div className="play-video" onClick={(event) => handleClick(event, item)}>
+                                              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Link-e1739190132637.png" customClass="play-video-player"/>
+                                            </div>
+                                          
+
+                                          <div>{ thumbnail}</div>
+                                 
+                                      </div>
+                                    )
+                                   
+                                  
+
+                                 })
+                                } 
+
                               </div>
-                            </Link>
-                           
-                          </div>
-                          <div className="image-grid">
-                            <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Gallery-image-1.webp" customClass={'gallery-img'}/>
-                            <Link to="">
-                              <div className="play-video">
-                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Link-e1739190132637.png" customClass="play-video-player"/>
-                              </div>
-                            </Link>
-                            
-                          </div>
-                          <div className="image-grid">
-                            <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Gallery-image-1.webp" customClass={'gallery-img'}/>
-                            <Link to="">
-                              <div className="play-video">
-                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Link-e1739190132637.png" customClass="play-video-player"/>
-                              </div>
-                            </Link>
-                            
-                          </div>
-                          <div className="image-grid">
-                            <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Gallery-image-1.webp" customClass={'gallery-img'}/>
-                            <Link to="">
-                              <div className="play-video">
-                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Link-e1739190132637.png" customClass="play-video-player"/>
-                              </div>
-                            </Link>
-                            
-                          </div>
+
+                             ) : (
+                                 <Spinner />
+                             )
+                             
+                          }
+                          
+                          
                           
 
-                        </div>
+                       
                     </div>
+
+                    {/* Video LightBox */}
+                    {isOpen ? (
+                       
+                            <LightBox clickedPlayButtonLink={clickedPlayButtonLink} handleClosePopup={handleClosePopup} ref={popup}/>
+                        
+                          
+                    ) : (
+                        <div></div>
+                    )}
+                    
 
               </div>
             </div>
@@ -101,4 +195,4 @@ const TheGalleryGallery = ()=>{
     )
 }
 
-export default TheGalleryGallery
+export default TheVideoGallery

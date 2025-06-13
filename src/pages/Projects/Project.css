@@ -2,9 +2,13 @@
     
     margin-top: -60px;
     min-height: 650px;
-    background-color: var(--trinity-dark);
-    
-    
+    /* background-color: var(--trinity-dark); */
+}
+
+.the-project-hero-section-wrapper video{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
 }
 .project-content-wrapper{
     background-color: #F2F2F2;
@@ -76,4 +80,20 @@ text-align: left;
 }
 .map-wrapper{
     margin-top: -130px;
+}
+
+@media (max-width: 768px) {
+    .the-project-hero-section-wrapper{
+        min-height: 500px;
+    }
+    .project-content-wrapper .information-project{
+        width: 100%;
+        padding: 30px 20px;
+    }
+   
+    .project-brief h4{
+        padding-top: 10px;
+        padding-bottom: 10px
+
+    }
 }

@@ -22,6 +22,7 @@
   padding-bottom: 40px;
 }
 
+
 .projects-section-holder .container{
   background-color: var(--trinity-white);
   padding: 40px 40px 60px 40px;
@@ -79,12 +80,13 @@ text-align: left;
     height: 100%;
     background-color: rgba(0,0,0,0.3);
     transition: background .4s ease-in-out;
+    background-repeat: no-repeat;
 }
 .projects-cards-wrapper .card-item:hover::after{
     background-color: var(--trinity-blue);
 }
 .projects-cards-wrapper .card1{
- background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine.png');
+ background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine-min.png');
  
 }
 .projects-cards-wrapper .card2{
@@ -109,10 +111,12 @@ font-size: 20px;
 font-weight: 700;
 line-height: 24.38px;
 padding-top: 60px;
+text-align: center;
 }
 .projects-cards-wrapper .card-item:hover .project-name h4{
   padding-top: 0;
   color: var(--trinity-yellow);
+  
 }
 .projects-cards-wrapper .card-item:hover .read-more-about a{
    display: flex;
@@ -154,8 +158,12 @@ line-height: 25px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .projects-cards-wrapper{
         grid-template-columns: repeat(1, 1fr);
     }
+    .projects-section-holder{
+        padding-top: 0;
+    }
 }
+

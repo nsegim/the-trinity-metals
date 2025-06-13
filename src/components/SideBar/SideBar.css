@@ -85,6 +85,13 @@ padding-left: 20px;
     display: flex;
     align-items: center;
     gap: 15px;
+    flex-direction: column;
+   
+}
+
+.featured-post{
+    display: flex;
+    gap: 20px;
 }
 .a-related-post .post-title a{
     text-decoration: none;
@@ -217,7 +224,7 @@ color: var(--trinity-dark);
 
 
 /* Gallery Section styles */
-.a-gallery{
+.a-gallery .the-gallery{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2px;
@@ -228,4 +235,8 @@ color: var(--trinity-dark);
     height: 84.62999725341797px;
     object-fit: cover;
     
+}
+.a-gallery .the-gallery .view-image{
+    width: 30px;
+    height: 30px;
 }

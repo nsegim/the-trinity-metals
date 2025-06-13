@@ -1,0 +1,119 @@
+.vacancy-name-wrapper{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding-bottom: 60px;
+}
+.vacancy-name {
+    padding-top: 60px;
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+}
+.vacancy-name h1{
+font-weight: 700;
+font-size: 36px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: var(--trinity-dark);
+
+}
+
+.job-details{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.job-details div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.job-details div p{
+    margin-bottom: 0;
+}
+.job-details div img{
+    width: 20px;
+}
+.job-requirement{
+    width: 75%;
+    padding-top: 50px;
+    
+}
+#apply{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.field-group{
+    display: flex;
+    gap: 20px;
+}
+
+.mb-4{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.full-width{
+    width: 100%;
+}
+#applyButton button{
+  color: var(--trinity-white);
+  background-color: var(--trinity-blue);
+}
+#applyButton button:hover{
+    background-color: var(--trinity-green);
+    border-color: var(--trinity-green);
+}
+
+.job-application-submit-btn{
+    background-color: var(--trinity-green);
+    border-radius: 0!important;
+}
+
+.job-application-submit-btn:hover{
+    background-color: var(--trinity-blue);
+    border-color: var(--trinity-blue);
+}
+
+.job-requirement div{
+    width: 70%;
+}
+
+
+@media (max-width: 768px) {
+    .vacancy-name-wrapper{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .vacancy-name, .job-details, .job-requirement{
+        width: 100%
+    }
+    .job-details {
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 20px;
+    }
+    .job-requirement{
+        padding-top: 10px;
+    }
+    .job-requirement div{
+        width: 100%;
+    }
+    .about-the-job{
+       padding-top: 10px!important;
+    }
+    .field-group{
+        flex-direction: column;
+    }
+    .full-width{
+        width: 50%;
+    }
+    .application-form .mb-4{
+        width: 100%;
+    }
+}
+
+

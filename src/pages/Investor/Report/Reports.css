@@ -19,3 +19,17 @@ padding-bottom: 80px;
     width: 30%;
     align-self: flex-end;
 }
+@media(max-width: 768px){
+    .top-search-container{
+        width: 100%;
+    }
+    .reports-container .single-report{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .report-name, .download-section{
+        gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    }
+}

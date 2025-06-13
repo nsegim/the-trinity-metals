@@ -21,7 +21,7 @@
   .menu-item {
     position: relative;
     margin: 0 10px;
-    
+   
   }
   
   .menu-item a {
@@ -69,12 +69,17 @@
     transition: width ease-in-out 0.4s;
   }
   
-  .menu-item .the_link-item:hover::before{
+  .menu-item .the_link-item:hover::before, .menu-item.active > .the_link-item::before {
     width: 100%;
     z-index: 2;
-  }
-  
 
+  }
+  .menu-item.active > .the_link-item{
+    color: var(--trinity-blue)!important;
+
+  }
+
+ 
  
   .dropdown .menu-item{
     padding-bottom: 15px;
@@ -96,19 +101,28 @@
   
   .has-children > .the_link-item::after{
    
-  content: "\2304"; /* Unicode or text for the chevron icon */
-  font-size: 1.3rem; 
+  content: ""; /* Unicode or text for the chevron icon */
+  
   position: absolute;
-  right: -20px;
-  top: 32%; 
+  right: -24px;
+  top: 50%; 
   transform: translateY(-50%);
   pointer-events: none;
-    
+  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/ri_arrow-drop-down-line-1.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 26px;
+    width: 26px;
+    height: 26px;
   }
   
+  .menuWrapper > .has-children:last-child > a{
+    pointer-events: none;
+  }
   /* Responsiveness on small device */
   @media(max-width: 1024px){
     .site-menu-container{
         display: none;
     }
   }
+

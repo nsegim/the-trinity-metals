@@ -1,6 +1,6 @@
 .top-bar {
   background-color: var(--trinity-blue);
-  z-index: 1;
+ 
   position: relative;
 }
 .basic-info-wrapper {
@@ -28,6 +28,11 @@
   padding-left: 5px;
 }
 
+.right-tools{
+  display: flex;
+  gap: 80px;
+}
+
 .social-links {
   display: flex;
   align-items: baseline;
@@ -41,7 +46,10 @@
   text-decoration: none;
 }
 
-.social-links .social-icons {
+.careerBtn:hover{
+   color: var(--trinity-yellow);
+}
+.social-links .social-icon {
   list-style: none;
   display: flex;
   gap: 10px;
@@ -184,8 +192,31 @@ text-align: left;
 }
 
 
-@media (max-width: 1024px) {
-  .contact-btn{
+@media (max-width: 992px) {
+ 
+  .contact-btn {
+    padding-right: 25px;
+      position: absolute;
+      right: 65px;
+  
+   }
+}
+
+@media (max-width: 768px) {
+ .basic-info-wrapper .social-links .social-icons,  .basic-info-wrapper .contact-info{
     display: none;
-  }
+ }
+ .basic-info-wrapper{
+  justify-content: end;
+  padding-bottom: 50px;
+ }
+
+
+ .contact-btn a{
+  padding: 15px 12px 12px 15px;
+ }
+ .site-logo{
+  width: 30%;
+ }
+
 }

@@ -3,7 +3,10 @@ import { Form, Button } from "react-bootstrap";
 import "./footer.css";
 import { Link, useLocation } from "react-router-dom";
 import ImageGallery from "../ImageGallery";
+import { useTranslation } from "react-i18next";
+
 const SiteFooter = () => {
+  const { t } = useTranslation()
   const location = useLocation()
   return (
     <>
@@ -14,7 +17,7 @@ const SiteFooter = () => {
         <div className="footer-content-wrapper col-md-6">
           <div className="inner-content-wrapper d-flex flex-column">
               <div className="the-newsLetter">
-                <h1 className="footer-heading">Subscribe To Our Newsletter</h1>
+                <h1 className="footer-heading">{t("footer.subscribe-newsletter")}</h1>
 
                 <div className="formWrapper">
                   <Form className="newsletter-form">
@@ -24,7 +27,7 @@ const SiteFooter = () => {
                     >
                       <Form.Control
                         type="email"
-                        placeholder="Your Email Address"
+                        placeholder={t("footer.your-email")}
                         className="email-field"
                       />
                     </Form.Group>
@@ -34,39 +37,39 @@ const SiteFooter = () => {
                       type="submit"
                       className="newsletterSubmitBtn"
                     >
-                      Subscribe
+                      {t("footer.subscribe")}
                     </Button>
                   </Form>
                 </div>
               </div>
               <div className="include-location d-flex">
                 <div className="quickLinksWrapper">
-                  <h1 className="footer-heading">Quick Links</h1>
+                  <h1 className="footer-heading">{t("footer.quick-links")}</h1>
 
                       <div className="the-links">
                         <div className="links001">
                           <ul className="quick-links">
                             <li>
-                              <Link to="/" className="footer-links">Home</Link>
+                              <Link to="/" className="footer-links">{t("header.home")}</Link>
                             </li>
                             <li>
-                              <Link to="/about" className="footer-links">About Us</Link>
+                              <Link to="/about" className="footer-links">{t("header.about-us")}</Link>
                             </li>
                             <li>
-                              <Link className="footer-links">Investors Relations</Link>
+                              <Link to="/investor-relations/latest-news" className="footer-links">{t("header.investor.latest-news")}</Link>
                             </li>
                           </ul>
                         </div>
                         <div className="links002">
                           <ul className="quick-links">
                             <li>
-                              <Link to="/our-projects" className="footer-links">Mining Projects</Link>
+                              <Link to="/our-projects" className="footer-lihttp://localhost:5173/the-trinity-metals/nks">{t("footer.mining-projects")}</Link>
                             </li>
                             <li>
-                              <Link to="/sustainability" className="footer-links">Sustainability</Link>
+                              <Link to="/sustainability" className="footer-links">{t("header.sustainability")}</Link>
                             </li>
                             <li>
-                              <Link className="footer-links">Careers</Link>
+                              <Link to="/Careers" className="footer-links">{t("header.careers")}</Link>
                             </li>
                           </ul>
                         </div>
@@ -76,10 +79,10 @@ const SiteFooter = () => {
                   {  location.pathname === "/our-projects/musha" ? (
                           
                         <div className="mine-site-location">  
-                          <h4>Musha Mines</h4>
+                          <h4>{t("home.trinity-musha-mine")}</h4>
                           <ul>
                               <li>
-                                Eastern Province
+                                {t("footer.mine-projects.Eastern-province")}
                               </li>
                               <li>
                                 Musha, Rwamagana
@@ -97,10 +100,10 @@ const SiteFooter = () => {
                         </div> 
                       ) : location.pathname === "/our-projects/nyakabingo" ?(
                         <div className="mine-site-location">  
-                          <h4>Nyakabingo Mine</h4>
+                          <h4>{t("home.trinity-Nyakabingo-mine")}</h4>
                           <ul>
                               <li>
-                                Northern Province
+                              {t("footer.mine-projects.Northern-province")}
                               </li>
                               <li>
                                 Shyorongi, Rulindo
@@ -118,10 +121,11 @@ const SiteFooter = () => {
                         </div>
                       ): location.pathname === "/our-projects/rutongo" ?(
                         <div className="mine-site-location">  
-                          <h4>Musha Mines</h4>
+                          
+                          <h4>{t("home.rutongo-mine")}</h4>
                           <ul>
                               <li>
-                                Northern Province
+                              {t("footer.mine-projects.Northern-province")}
                               </li>
                               <li>
                                 Masoro, Rulindo
@@ -149,28 +153,31 @@ const SiteFooter = () => {
             
                   <div className="contact-info-section">
                     <div className="icon-box">
-                      <span>
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Yellow-Phone.svg" />
-                      </span>
+                      <a href="tel:+25091959034">
+                         <span>
+                           <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Yellow-Phone.svg" />
+                         </span>
+                      </a>
+                     
                       <div className="text-element">
-                        <p className="header-element">Call us</p>
+                        <p className="header-element">{t("footer.call-us")}</p>
 
-                        <Link className="reach-contact">+250 919 59034</Link>
+                        <a href="tel:+25091959034" className="reach-contact">+250 919 59034</a>
                       </div>
                       
                     </div>
                     <div className="icon-box">
                       <span>
-                        <Link>
+                        <a href="mailto:info.rw@trinity-metals.com">
                           <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Yellow-envelope.svg" />
-                        </Link>
+                        </a>
                       </span>
                       <div className="text-element">
-                        <p className="header-element">Write to us</p>
+                        <p className="header-element">{t("footer.write-to-us")}</p>
 
-                        <Link className="reach-contact">
+                        <a href="mailto:info.rw@trinity-metals.com" className="reach-contact">
                           info.rw@trinity-metals.com
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </div>

@@ -8,7 +8,9 @@ const Nyakabingo = () => {
           <SiteHeader />
           {/* Hero section */}
           <div className="the-project-hero-section-wrapper">
-              
+            <video autoPlay muted loop>
+              <source src="https://trinity-metals.com/wp-content/uploads/2025/03/TRINITY-DOC-WEB_1.mp4" type="video/mp4" />
+            </video>
           </div>
           {/* Projects description */}
           <div className="project-content-wrapper">

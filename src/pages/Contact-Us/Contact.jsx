@@ -1,5 +1,6 @@
 import SiteFooter from "../../components/Footer/Footer"
 import React, { useState, useEffect, useRef } from 'react';
+import Form from 'react-bootstrap/Form';
 
 import SiteHeader from "../../components/header/Header"
 import ImageGallery from "../../components/ImageGallery"
@@ -10,7 +11,8 @@ const ContactUs = ()=>{
     name: "",
     phone: "",
     email: "",
-    inquiryType: "",
+    
+    selectInquiry: "",
     message: "",
   });
 
@@ -20,11 +22,12 @@ const ContactUs = ()=>{
       ...formData,
       [name]: value
     });
+
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+    console.log("Form data", formData);
   };
   
 
@@ -95,12 +98,13 @@ const ContactUs = ()=>{
                     </div>
                     <div className="form-wrapper">
                        {/* The form  */}
-                       <form onSubmit={handleSubmit} className="max-w-md mx-auto p-2 bg-white rounded-lg shadow-md">
+                       <form  onSubmit={handleSubmit} className="max-w-md mx-auto p-2 bg-white rounded-lg shadow-md">
                           <div className="field-wrapper">
                             <input
                                 type="text"
                                 name="name"
                                 value={formData.name}
+                                placeholder="Name"
                                 onChange={handleChange}
                                 className="w-full p-2 border rounded-md"
                                 required
@@ -112,6 +116,7 @@ const ContactUs = ()=>{
                                 type="email"
                                 name="email"
                                 value={formData.email}
+                                placeholder="Email"
                                 onChange={handleChange}
                                 className="w-full p-2 border rounded-md"
                                 required
@@ -123,6 +128,7 @@ const ContactUs = ()=>{
                                 type="number"
                                 name="phone"
                                 value={formData.phone}
+                                placeholder="Phone"
                                 onChange={handleChange}
                                 className="w-full p-2 border rounded-md"
                                 required
@@ -131,12 +137,12 @@ const ContactUs = ()=>{
 
                             <input
                                 type="text"
-                                name="select"
+                                name="selectInquiry"
                                 value= ""
                                 
                                 className="w-full p-2 border rounded-md select-inquiry"
                                 
-                                placeholder="YOUR INQUIRY ABOUT"
+                                placeholder={ formData.selectInquiry || "YOUR INQUIRY ABOUT"}
 
                                 onClick={handleToggle}
 
@@ -149,28 +155,22 @@ const ContactUs = ()=>{
                                     <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Icon-1.svg" />
                                   </span>
                                 </label>
-                                <label className="block">
-                                  <input
-                                    type="radio"
-                                    name="gender"
-                                    value="General Inquiry"
-                                    checked={formData.gender === 'male'}
-                                    onChange={handleChange}
-                                    className="mr-2"
-                                  />
-                                  General Inquiry
-                                </label>
-                                <label className="block">
-                                  <input
-                                    type="radio"
-                                    name="gender"
-                                    value="Media & Partnership Inquiry"
-                                    checked={formData.gender === 'female'}
-                                    onChange={handleChange}
-                                    className="mr-2"
-                                  />
-                                  Media & Partnership Inquiry
-                                </label>
+                              
+
+                                {["General Inquiry", "Media & Partnership Inquiry"].map((type, index) => (
+                                    <div key={index} className="mb-3">
+                                      <Form.Check
+                                        inline
+                                        label={type}
+                                        name="selectInquiry"
+                                        type="radio"
+                                        id={`inline-radio-${index + 1}`}
+                                        value={type}
+                                        checked={formData.selectInquiry === type}
+                                        onChange={handleChange}
+                                      />
+                                    </div>
+                                  ))}
                               </div>)}
                               
                             </div>
