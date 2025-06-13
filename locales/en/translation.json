@@ -243,6 +243,18 @@
 
   "Sustainability":{
     "sustainability-page-title": "Sustainability",
+
+     "water-management-title": "Our approach to Water management",
+     "water-management-desc": "We recognize our responsibility to manage water with care, efficiency and transparency. Our goal is to operate within local water limits while contributing to watershed health and long-term community resilience, focusing on minimizing freshwater withdrawal, improving water recycling and reuse, and preventing contamination of surface and groundwater sources.",
+     
+     "approach-to-Tailings-title": "Our approach to Tailings and waste storage",
+      "approach-to-Tailings-desc": "Responsible tailings management is a core part of our environmental stewardship. Tailings—the residues left after mineral extraction—can pose significant risks if not properly handled. That’s why we adhere to globally recognized best practices, invest in risk mitigation technologies, and maintain open dialogue with surrounding communities. Our approach goes beyond compliance; it reflects our deep commitment to safety, sustainability, and building trust at every stage of our operations.",
+
+      "approach-to-closure-management-title": "Our approach to closure management",
+      "approach-to-closure-management-desc1": "We plan for closure with a focus on long-term environmental stability, community resilience and sustainable land use.",
+      "approach-to-closure-management-desc2": "Our approach is built on early engagement, progressive rehabilitation and collaboration with host communities to ensure that post-mining landscapes are safe, productive, and beneficial. We integrate closure planning into every phase of the mine life cycle, aligning with international best practices and local expectations.",
+
+
     "environment-title": "Environment",
     "environment-min-title": "We are a part of the energy revolution",
     "environment-desc": "We take our values seriously and hold ourselves accountable to the communities where we operate and the greater good of the planet. We support the UN’s mission to ensure that by 2030 all people enjoy peace and prosperity and do our part to contribute to the Global Sustainability Development Goals.",
@@ -253,23 +265,46 @@
 
     "community-title": "Community",
     "community-subtitle": "We are a part of the energy revolution",
-    "community-desc": "We take our values seriously and hold ourselves accountable to the communities where we operate and the greater good of the planet. We support the UN’s mission to ensure that by 2030 all people enjoy peace and prosperity and do our part to contribute to the Global Sustainability Development Goals.",
-    "community-desc1": "Through our ongoing commitment, we have helped to uplift communities by:",
-    "community-list": "Providing medical insurance for more than 3,000 residents annually",
-    "community-list1": "Rehabilitating more than 30km of community roads",
-    "community-list2": "Helping the communities’ most vulnerable families in personalised ways, including construction and renovation of dilapidated homes, distributing fruit tree seeds and creating community vegetable gardens to address childhood malnutrition and growth stunting, and sponsoring school fees and supplies for students.",
+    "community-desc": "We believe the mining industry is vital in generating job growth and inclusive economic opportunities. Our workforce, which is 99% local,  is empowered and enabled to lead and participate in programs that impact  the well-being of people in their communities. We consider community members at every phase of our mining lifecycle and have launched initiatives to ensure their lives are better off because of our presence. ",
+    "community-list1": "Integrated Unauthorised Miner:",
+    "community-list1-2": "Partnering with local government and security organs, we have approached and mobilized illegal miners to join our mining companies to be trained and work professionally  to secure their future and their families' future. ",
+    "community-list2": "Sustainable Livelihood Programs:",
+    "community-list2-2": "Investing in agriculture, entrepreneurship, and vocational training to create alternative, long-term income streams for communities.",
+    "community-list3": "Education and Capacity Building: ",
+    "community-list3-2": "Supporting students in our communities with scholarships, STEM education, to unlock opportunities for youth and future generations.",
+     "community-list4": "Healthcare and Well-being:",
+     "community-list4-2": "Partnering with local stakeholders to improve access to healthcare, sanitation, and mental health resources.",
+     "community-list5": "Infrastructure Development: ",
+     "community-list5-2": "Co-developing essential infrastructure — including roads, water systems, and electrification — that enhances quality of life.",
+     "community-list6": "Community-Led Planning:",
+     "community-list6-2": "Working directly with community representatives to design and implement projects that reflect local priorities, culture, and aspirations.",
+     "community-list7": "Monitoring and Accountability:",
+     "community-list7-2": "Establishing clear metrics, feedback mechanisms, and transparent reporting to measure impact and continuously improve.",
+
+
+     
+    "Occupational-Health-title": "Occupational Health and Safety",
+    "Occupational-Health-desc": "We are committed to becoming a leader in occupational health and safety through an ISO-compliant SHEC (Safety, Health, Environmental, and Community) system based on risk assessments and impact evaluations. The company has trained thousands of employees through both external and internal programs to strengthen safety practices across operations. With established ISO-aligned procedures, including risk management and incident response, Trinity has significantly reduced its Lost Time Injury Frequency Rate (LTIFR). Equipped with on-site medical facilities and supported by partnerships with local hospitals, the company remains focused on its ZERO HARM goal while promoting safety awareness in both the workplace and surrounding communities.",
+    "Occupational-statement-title": "We believe in ZERO HARM",
+    "Occupational-statement-desc": "we are dedicated to ensuring safe mining operations and adhere to the principle of ZERO HARM for our employees and stakeholders. Our primary objective is to conduct our activities without injuries to personnel or damage to equipment, property, or the work environment.",
 
 
     "governance": "Governance",
     "governance-desc": "Trinity Metals has strict guidelines in place to ensure ethical business conduct and responsible practices pertaining to human rights, labour rights and the environment.",
     "governance-desc1": "We comply with guidelines and standards from leading local and international bodies including Certified Trading Chain (CTC) and Organisation for Economic Co-operation and Development (OECD).",
     "governance-desc2": "Our minerals are certified conflict-free, and meet five basic principles",
-    "governance-list": "Traceability: The origin and volumes of minerals we produce and trade are fully traceable",
-    "governance-list1": "Fair working conditions: We do not use child labour. We pay fair remuneration and provide safety and well-being focused working conditions",
-    "governance-list2": "Security and human rights: We ensure security on our sites whilst respecting human rights",
-    "governance-list3": "Community development: We consult with local communities and contribute to their social, economic and institutional development, taking into account gender-sensitive aspects.",
-    "governance-list4": "Environment: We seek continual improvement of our environmental performance.",
-
+    "governance-list": "Traceability: ",
+    "governance-list-2": " The origin and volumes of minerals we produce, and trade are fully traceable",
+    "governance-list1": "Fair working conditions: ",
+    "governance-list1-2": " We do not use child labour. We pay fair remuneration and provide safety and well-being focused working conditions",
+    "governance-list2": "Security and human rights:",
+    "governance-list2-2": " We ensure security on our sites whilst respecting human rights",
+    "governance-list3": "Community development: ",
+    "governance-list3-2": "We consult with local communities and contribute to their social, economic and institutional development, taking into account gender-sensitive aspects.",
+    "governance-list4": "Environment: ",
+    "governance-list4-2": "We seek continual improvement of our environmental performance.",
+    
+    
 
     "policies-standards": "Policies & Standards"
      
