@@ -4,6 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import HomePage from "./pages/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 // import routes from "./routes/routes";
 // RoutesConfig
 import AboutPage from "./pages/About/About";
@@ -22,7 +24,7 @@ import ThePhotoGallery from "./pages/Investor/Gallery/Gallery-photo";
 import TheVideoGallery from "./pages/Investor/Gallery/Gallery-video";
 import { useRef } from "react";
 import SinglePost from "./components/single-post-template/Single-post";
-import ScrollToTop from "./components/ScrollTopFirst";
+
 import RoutesConfig from "./routes/routes";
 import Careers from "./pages/Careers/Careers";
 import SingleJob from "./components/SingleJob/SingleJob";
@@ -63,6 +65,18 @@ const renderRoutes = (routesArray) =>
       <Route key={route.path} path={route.path} element={<Component />} />
     );
   });
+
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Scroll to top whenever the route changes
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null; 
+}
 
 function App() {
   const routes = RoutesConfig()

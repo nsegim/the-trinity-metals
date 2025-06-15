@@ -497,7 +497,7 @@ color: var(--trinity-dark);
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: -35vh;
+  margin-top: -21vh;
 }
 
 .sectionTops{

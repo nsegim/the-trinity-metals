@@ -63,7 +63,7 @@ const SiteFooter = () => {
                         <div className="links002">
                           <ul className="quick-links">
                             <li>
-                              <Link to="/our-projects" className="footer-lihttp://localhost:5173/the-trinity-metals/nks">{t("footer.mining-projects")}</Link>
+                              <Link to="/our-projects" className="footer-links">{t("footer.mining-projects")}</Link>
                             </li>
                             <li>
                               <Link to="/sustainability" className="footer-links">{t("header.sustainability")}</Link>
