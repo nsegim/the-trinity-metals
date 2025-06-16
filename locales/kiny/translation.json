@@ -243,8 +243,15 @@
 
     "sustainability-page-title": "Iterambere rirambye",
 
-      "water-management-title": "Our approach to Water management",
-     "water-management-desc": "We recognize our responsibility to manage water with care, efficiency and transparency. Our goal is to operate within local water limits while contributing to watershed health and long-term community resilience, focusing on minimizing freshwater withdrawal, improving water recycling and reuse, and preventing contamination of surface and groundwater sources.",
+    "sustainability-into-left-header":"Dushyigikiye impinduramatwara mu by’ingufu",
+    "sustainability-into-left-header-desc": "Twita cyane ku ndangagaciro zacu kandi twumva ko dufite inshingano ku baturage b’aho dukorera n'inyungu rusange z'uyu mubumbe. Dushyigikiye gahunda y'Umuryango w'Abibumbye igamije ko mu mwaka wa 2030 abantu bose bazaba bishimira amahoro n'uburumbuke, kandi dutanga umusanzu wacu mu kugera ku Ntego z'Iterambere Rirambye ku Isi.",
+
+    "sustainability-into-right-header": "Igenamikorere Ryacu ",
+    "sustainability-into-right-header-desc":"Dufata iya mbere mu gukora ubucukuzi bwuzuza inshingano binyuze mu bikorwa bizana inyungu zirambye ku muryango mugari, tubungabunga ibidukikije, kandi buri wese mu bo dukorana akabasha kubona ibyo akeneye. Kuva dutangiye kugeza ku musozo, dukorana bya hafi n’abafatanyabikorwa bacu kugira ngo tumenye neza ko ibikorwa byacu bitanga umusanzu mu iterambere ry’imibereho myiza, ubukungu no kwita ku bidukikije.",
+
+     
+     "water-management-title": " Igenamikorere ryacu mu micungire y'Amazi",
+     "water-management-desc": "Tuzirikana inshingano zacu mu micungire y'amazi, mu buryo bwitondewe, buboneye kandi buciye mu mucyo. Intego yacu ni ugukoresha ibipimo byagenwe by'amazi tudasize inyuma urusobe rw'ibinyabuzima by'aho amazi ahurira hamwe no kwita ku ngamba zirambye zifasha umuryango mugari. Twibanda cyane ku kugabanya ikoreshwa ry'amazi asukuye, tugateza imbere uburyo hongera gukoreshwa amazi yari yakoreshejwe, ari na ko twirinda kwanduza amasoko y'amazi munsi y'ubutaka.",
      
      "approach-to-Tailings-title": "Our approach to Tailings and waste storage",
       "approach-to-Tailings-desc": "Responsible tailings management is a core part of our environmental stewardship. Tailings—the residues left after mineral extraction—can pose significant risks if not properly handled. That’s why we adhere to globally recognized best practices, invest in risk mitigation technologies, and maintain open dialogue with surrounding communities. Our approach goes beyond compliance; it reflects our deep commitment to safety, sustainability, and building trust at every stage of our operations.",
@@ -254,16 +261,15 @@
       "approach-to-closure-management-desc2": "Our approach is built on early engagement, progressive rehabilitation and collaboration with host communities to ensure that post-mining landscapes are safe, productive, and beneficial. We integrate closure planning into every phase of the mine life cycle, aligning with international best practices and local expectations.",
 
 
+    "environment-title": "Environment",
+    "environment-min-title": "We are a part of the energy revolution",
+    "environment-desc": "We take our values seriously and hold ourselves accountable to the communities where we operate and the greater good of the planet. We support the UN’s mission to ensure that by 2030 all people enjoy peace and prosperity and do our part to contribute to the Global Sustainability Development Goals.",
+    "environment-desc1": "We have taken steps to track, actively reduce and offset our carbon emissions and utilise eco-conscious mining methods and technology. We employ a replacement strategy for trees affected by our mining operations and have planted in excess of  657,000 trees across the three mine sites. We work collaboratively with the local environment, forestry and water management authorities to ensure that our efforts add net value to the environment. ",
+    "environment-desc2-title": "We promote biodiversity",
+    "environment-desc2": "Bees play a critical role in ecological balance and restoration. At Nyakabingo mine, we have launched a community beekeeping project in our rehabilitated forests, a sustainable project that provides livelihood opportunities for local community members. This project has been and will continue to be a significant income generation mechanism for the community. ",
 
-    "environment-title": "Ibidukikije",
-    "environment-min-title": "Turi ku isonga mu mpinduramatwara y’ingufu ",
-    "environment-desc": "Dufata indangagaciro zacu nk’ingenzi kandi tiwiyemeje kurengera abaturage ndetse n’umugabane muri rusange. Dushyigikira intego z’Umuryango w’Abibumbye za 2030, aho abantu bose bazaba babayeho mu mahoro ndetse n’iterambere, ndetse tukagira uruhare mu iterambere rirambye ku isi. ",
-    "environment-desc1": "Twafashe ingamba zo gukurikirana, kugabanya no gukuraho ibyuka bihumanya ikirere, ubundi  dukoresha uburyo bwo gucukura amabuye ariko butangiza ibidukikije, ndetse n’ikoranabuhanga. Tugira gahunda yo gusimbuza ibiti byangijwe n’ibikorwa byacu by’ubucukuzi, aho tumaze gutera ibiti bisaga 657,000 mu birombe bitatu dukoreramo. Dukorana n’inzego zishinzwe ibidukikije, amashyamba n’amazi kugira ngo ibikorwa byacu bifashe kurushaho guteza imbere no kubungabunga ibidukikije.",
-    "environment-desc2-title": "Dushyigikira imibereho y’ibinyabuzima",
-    "environment-desc2": "Inzuki zigira uruhare rukomeye mu gusigasira no kugarura ubusugire bw’ibidukikije. Ku kirombe bya Nyakabingo, twatangije umushinga w’ubworozi bw’inzuki, aho inzuki zororerwa mu mashyamba twateyemo ibiti kugira ngo abaturiye ibirombe bagire amahirwe aho batuye. Uyu mushinga uzakomeza kuba isoko y’inyungu n’iterambere ry’abaturage bo mu gace dukoreramo.",
 
-
-     "community-title": "Community",
+    "community-title": "Community",
     "community-subtitle": "We are a part of the energy revolution",
     "community-desc": "We believe the mining industry is vital in generating job growth and inclusive economic opportunities. Our workforce, which is 99% local,  is empowered and enabled to lead and participate in programs that impact  the well-being of people in their communities. We consider community members at every phase of our mining lifecycle and have launched initiatives to ensure their lives are better off because of our presence. ",
     "community-list1": "Integrated Unauthorised Miner:",
@@ -281,24 +287,29 @@
      "community-list7": "Monitoring and Accountability:",
      "community-list7-2": "Establishing clear metrics, feedback mechanisms, and transparent reporting to measure impact and continuously improve.",
 
+
      
-    "Occupational Health-title": "Occupational Health and Safety",
-    "Occupational Health-subtitle": "We are committed to becoming a leader in occupational health and safety through an ISO-compliant SHEC (Safety, Health, Environmental, and Community) system based on risk assessments and impact evaluations. The company has trained thousands of employees through both external and internal programs to strengthen safety practices across operations. With established ISO-aligned procedures, including risk management and incident response, Trinity has significantly reduced its Lost Time Injury Frequency Rate (LTIFR). Equipped with on-site medical facilities and supported by partnerships with local hospitals, the company remains focused on its ZERO HARM goal while promoting safety awareness in both the workplace and surrounding communities.",
+    "Occupational-Health-title": "Occupational Health and Safety",
+    "Occupational-Health-desc": "We are committed to becoming a leader in occupational health and safety through an ISO-compliant SHEC (Safety, Health, Environmental, and Community) system based on risk assessments and impact evaluations. The company has trained thousands of employees through both external and internal programs to strengthen safety practices across operations. With established ISO-aligned procedures, including risk management and incident response, Trinity has significantly reduced its Lost Time Injury Frequency Rate (LTIFR). Equipped with on-site medical facilities and supported by partnerships with local hospitals, the company remains focused on its ZERO HARM goal while promoting safety awareness in both the workplace and surrounding communities.",
     "Occupational-statement-title": "We believe in ZERO HARM",
     "Occupational-statement-desc": "we are dedicated to ensuring safe mining operations and adhere to the principle of ZERO HARM for our employees and stakeholders. Our primary objective is to conduct our activities without injuries to personnel or damage to equipment, property, or the work environment.",
 
 
-
-    "governance": "Imiyoborere",
-    "governance-desc": "Trinity Metals ifite amabwiriza akomeye agamije kugenzura ko ubucuruzi bwemewe, uburenganzira bwa muntu, uburenganzira bw’abakozi ndetse no kurengera ibidukikije byubahirijwe ",
-    "governance-desc1": "Twubahiriza amabwiriza n’ibipimo byashyizweho n’inzego haba mu gihugu no ku rwego mpuzamahanga, zirimo Urwego rushinzwe kugenzura ko ubucukuzi bw’amabuye y’agaciro bwakozwe neza mu mutekano (CTC) ndetse na Urwego mpuzamahanga rw’imikorere n’imikoranire (OECD).",
-    "governance-desc2": "Amabuye y’agaciro ducukura afite icyemezo cy’uko ataturutse mu makimbirane, kandi akurikije amategeko atanu y’ingenzi:",
-    "governance-list": "Ubushobozi bwo gukurikirana: Aho amabuye y’agaciro dukora aturuka n’ingano yayo bishobora gukurikiranwa neza.",
-    "governance-list1": "Gukorera ahantu heza: Ntabwo dukoresha abana. Dutanga umushahara w’ibyiciro byiza kandi dukora ku buryo bwizewe kandi bwita ku mutekano w’abakozi n’imibereho yabo.",
-    "governance-list2": "Umutekano mu birombe byacu kandi twubahiriza uburenganzira bwa muntu.",
-    "governance-list3": "Iterambere ry’abaturage: Tugira inama abaturage bo mu duce dukoreramo, tukagira uruhare mu guteza imbere imibereho yabo, ubukungu, ndetse n’imiyoborere, tunubahiriza ihame ry’uburinganire. ",
-    "governance-list4": "Ibidukikije: Dukora ibishoboka byose mu kugira ngo dukomeze kunoza ibikorwa byacu byo kubungabunga ibidukikije.",
-
+    "governance": "Governance",
+    "governance-desc": "Trinity Metals has strict guidelines in place to ensure ethical business conduct and responsible practices pertaining to human rights, labour rights and the environment.",
+    "governance-desc1": "We comply with guidelines and standards from leading local and international bodies including Certified Trading Chain (CTC) and Organisation for Economic Co-operation and Development (OECD).",
+    "governance-desc2": "Our minerals are certified conflict-free, and meet five basic principles",
+    "governance-list": "Traceability: ",
+    "governance-list-2": " The origin and volumes of minerals we produce, and trade are fully traceable",
+    "governance-list1": "Fair working conditions: ",
+    "governance-list1-2": " We do not use child labour. We pay fair remuneration and provide safety and well-being focused working conditions",
+    "governance-list2": "Security and human rights:",
+    "governance-list2-2": " We ensure security on our sites whilst respecting human rights",
+    "governance-list3": "Community development: ",
+    "governance-list3-2": "We consult with local communities and contribute to their social, economic and institutional development, taking into account gender-sensitive aspects.",
+    "governance-list4": "Environment: ",
+    "governance-list4-2": "We seek continual improvement of our environmental performance.",
+    
 
     "policies-standards": "Politiki n’Amahame"
      
