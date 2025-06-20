@@ -56,15 +56,12 @@ const Musha = () => {
                   <h4>
                     Brief history 
                   </h4>
-                  <p>
-                    Trinity Musha Mines is a Tin and Tantalum Mine with a mining concession of 3,894ha which is estimated 
-                    to contain approximately 12,870tonnes of recoverable Tin with potential to grow the resource substantially 
-                    at depth. Currently produces 30tonnes of Tin per month, containing 68-70% Sn, under a 25-year license that 
-                    began in 2014. The Mine also produces a small amount of Coltan from Duha and Ntunga sub-site.
+                  <p className="fw-bold">
+                      Musha-Ntunga mine (also known as Musha Mines) is located in Rwanda’s prolific tin region – Rwamagana District – 45 km from Kigali in the Eastern Province. Although the operation consists of a number of sub-mines, more than 95% of the production comes from Musha mines.
                   </p>
-                  <h4>
+                  {/* <h4>
                       Presented on a history timeline
-                  </h4>
+                  </h4> */}
                   <p>
                     The Musha-Ntunga tin deposits were initially exploited from the 1920s to the 1970s. In 1985, the mine was 
                     nationalized and operated by SOMIRWA (Société des Mines du Rwanda). However, due to depressed tin prices and 

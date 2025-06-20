@@ -108,7 +108,7 @@
 
       "our-values-section-title": "Our Values",
       "we-empower": "We empower & impact",
-      "we-empower-description": "We empower communities by investing in programs that develop talent and drive local economic growth.",
+      "we-empower-description": "We champion economic empowerment, investing in programmes that develop the next generation of industry talent. We create vehicles for economic progress for the people in the communities where we are based.",
       "we-do-no-warm": "We do no harm",
       "we-do-no-warm-description": "We are committed to safe, ethical, profitable, and eco-friendly mining operations. We’ve made it our mission to find new and better ways to mine responsibly and ensure that our work doesn’t have an adverse effect on the communities where we operate, our people or the planet.",
       "we-set-standard": "We set the standard",
@@ -119,7 +119,7 @@
 
 
       "our-strategy-section-title": "Our Strategy",
-      "our-strategy-section-description": "We champion economic empowerment, investing in programmes that develop the next generation of industry talent. We create vehicles for economic progress for the people in the communities where we are based.",
+      "our-strategy-section-description": "We are dedicated to achieving sustainable growth through a strategic approach that balances profitability, ethical practices, and environmental stewardship.",
 
       "our-strategies-business": "Our Business",
       "our-strategies-business-description": "We prioritize optimized business planning to ensure safe, ethical, profitable, and efficient mining operations across all our processes.",
@@ -161,6 +161,7 @@
   "our-project-page": {
 
         "projects-title": "Projects",
+        "projects-sub-title": "Our Projects",
         "project-description-1": "Trinity Metals has three mining projects operated as subsidiaries in Rwanda – Rutongo Mines, Nyakabingo Mine, and Musha Mines. They include three primary mining sites and a few satellite sites located in close proximity to the primary sites.",
         "project-description-2": "All of our mining sites operate to international mining regulations and uphold strict environmental standards. We do not use toxic or environmentally damaging chemical processes in our mines, nor do the mines produce any such material.",
         "project-description-3": "All of our production is certified “conflict-free” – our mines are fully compliant with conflict minerals audit requirements under OECD guidelines.",
@@ -243,6 +244,13 @@
 
   "Sustainability":{
     "sustainability-page-title": "Sustainability",
+
+    "sustainability-into-left-header":"We are a part of the energy revolution",
+    "sustainability-into-left-header-desc": "We take our values seriously and hold ourselves accountable to the communities where we operate and the greater good of the planet. We support the UN’s mission to ensure that by 2030 all people enjoy peace and prosperity and do our part to contribute to the Global Sustainability Development Goals.",
+
+    "sustainability-into-right-header": "Our Approach",
+    "sustainability-into-right-header-desc":"We take the lead in responsible mining while delivering lasting value to communities, protecting the environment, and meeting the expectations of our stakeholders. Throughout the project lifecycle, we work in close partnership with stakeholders to ensure our activities contribute meaningfully to social progress, economic empowerment, and ecological integrity.",
+    
 
      "water-management-title": "Our approach to Water management",
      "water-management-desc": "We recognize our responsibility to manage water with care, efficiency and transparency. Our goal is to operate within local water limits while contributing to watershed health and long-term community resilience, focusing on minimizing freshwater withdrawal, improving water recycling and reuse, and preventing contamination of surface and groundwater sources.",

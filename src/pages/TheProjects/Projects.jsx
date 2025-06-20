@@ -12,18 +12,22 @@ const ProjectPage = () => {
           <SiteHeader />
           {/* Hero Section */}
           <div className="project-section-wrapper">
-            
+               
+                <div className="inner-wrapper">
+                    <h1 className="heading text-uppercase">{t("our-project-page.projects-title")}</h1>
+                </div>
           </div>
 
           {/* Projects section */}
           <div className="projects-section-holder">
             <div className="container">
               <div className="inner-section-header">
-                <h1>{t("our-project-page.projects-title")}</h1>
+                <h2>{t("our-project-page.projects-sub-title")}</h2>
               </div>
               <div className="projects-description pb-3">
                 <p>
-                  {t("our-project-page.project-description-1")}
+                  <b> {t("our-project-page.project-description-1")}</b>
+                 
                 </p>
                 <p>
                   {t("our-project-page.project-description-2")}  

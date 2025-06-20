@@ -42,8 +42,9 @@ background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Sus
 }
 
 .content-section{
- 
-
+display: flex;
+flex-direction: column;
+justify-content: center;
 gap: 20px;
 width: 40%;
 

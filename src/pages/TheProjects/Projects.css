@@ -6,6 +6,10 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .project-section-wrapper::before{
     position: absolute;
@@ -27,7 +31,7 @@
   background-color: var(--trinity-white);
   padding: 40px 40px 60px 40px;
 }
-.inner-section-header h1{
+.inner-section-header h2{
     
 font-size: 36px;
 font-weight: 700;

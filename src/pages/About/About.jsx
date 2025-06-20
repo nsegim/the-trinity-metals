@@ -150,7 +150,7 @@ const AboutPage = () => {
             <div ref={history} className="container history-section-wrapper">
                 <div className="row justify-content-between">
                     <div className="col-md-6 image-holder">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Trinity-mines.webp" customClass={'history-image'}/>
+                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/06/tyu.webp" customClass={'history-image'}/>
                         {/* <ImageGallery imageUrl="History-playButton.svg" customClass={'history-play-button'}/> */}
                     </div>
                     <div className="col-md-6 histort-content-holder">

@@ -10,7 +10,7 @@ const Rutongo = () => {
           {/* Hero section */}
           <div className="the-project-hero-section-wrapper">
               <video autoPlay muted loop>
-                <source src="https://trinity-metals.com/wp-content/uploads/2025/03/TRINITY-DOC-WEB_1.mp4" type="video/mp4" />
+                <source src="https://trinity-metals.com/wp-content/uploads/2025/06/Rutongo.mp4" type="video/mp4" />
               </video>
           </div>
           {/* Projects description */}
@@ -65,15 +65,13 @@ const Rutongo = () => {
                   <h4>
                     Brief history 
                   </h4>
-                  <p>
-                    Rutongo Mines is a Tin mine with a mining concession of 9,960 ha. Features 6 operational mining sites - Nyamyumba, 
-                    Gasambya, Masoro, Mahaza, Karambo and Gisanse. They are estimated to contain approximately 56,000 tonnes of recoverable 
-                    tin with potential to grow the resource substantially at depth. Currently produce between 70-90 tonnes of tin concentrate
-                     at 68-70% Sn, projected to increase to 200 tonnes per month in the next five years.
+                  <p className="fw-bold">
+                     Rutongo Mines sit 26km north of Kigali, comprising six underground tin mines – Gisanze, Masoro, Nyamyumba, Gasambya, Karambo and Mahaza. Together, they contain one of the biggest cassiterite deposits in Africa.
                   </p>
-                  <h4>
+
+                  {/* <h4>
                       Presented on a history timeline
-                  </h4>
+                  </h4> */}
                   <p>
                     Tin exploitation at Rutongo began in 1931, and from the 1940s, the mines consistently exported 800 tonnes a year of cassiterite. 
                     By the 1950s, SOMUKI, a Belgian mining company, had developed the mine into the largest tin concentrate producer in Rwanda. In 1973, 

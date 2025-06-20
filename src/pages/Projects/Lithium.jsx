@@ -43,7 +43,7 @@ const Lithium = () => {
                   <p>
                     The potential exists to define a globally significant Li-Sn-Ta resource in a secure and rapidly 
                     developing country. Trinity is focused on advancing this deposit and anticipates an updated resource
-                     statement in the near term. We are confident that we will soon move into a full feasibility phase.
+                    statement in the near term. We are confident that we will soon move into a full feasibility phase.
                   </p>
                 </div>
               </div>

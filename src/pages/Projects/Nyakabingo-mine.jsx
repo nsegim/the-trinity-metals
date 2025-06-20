@@ -56,16 +56,17 @@ const Nyakabingo = () => {
                   <h4>
                     Brief history 
                   </h4>
-                  <p>
+                  <p className="fw-bold">
                      Trinity Nyakabingo Mine is a Tungsten ore mine with a mining concession of 1,600 ha.
                      They are estimated to contain approximately 115,502 tonnes of recoverable Tungsten with 
                      potential to grow the resource substantially at depth. Currently produces between 100 to 
                      110 tonnes of wolframite per month, containing 66-70% Tungsten, under a 25 year license 
                      that began in 2015.
+                     
                   </p>
-                  <h4>
+                  {/* <h4>
                       Presented on a history timeline
-                  </h4>
+                  </h4> */}
                   <p>
                     Exploration of the mine’s alluvial deposits began in the late 1930s, but it was only after WWII 
                     that systematic open cast mining began. Underground mining started in the late 1960s with adits,

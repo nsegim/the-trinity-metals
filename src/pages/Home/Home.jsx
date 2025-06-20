@@ -67,7 +67,10 @@ const scrollToAboutSection = () => {
    
   const { t } = useTranslation()
   
-  
+  const handleVideoHandler = () =>{
+    const youtubeLink = "https://www.youtube.com/@TrinityMetalsGroup";
+    window.open(youtubeLink, "_blank");
+  }
 
   return (
     <>
@@ -79,7 +82,7 @@ const scrollToAboutSection = () => {
       <div className="hero-section home-hero">
         <div className="background-video-container">
           <video autoPlay muted loop>
-            <source src="https://trinity-metals.com/wp-content/uploads/2025/03/TRINITY-DOC-WEB_1.mp4" type="video/mp4" />
+            <source src="https://trinity-metals.com/wp-content/uploads/2025/06/nyakibingo.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="background-overlay">
@@ -494,8 +497,8 @@ const scrollToAboutSection = () => {
                  muted>
                    <source src="https://trinity-metals.com/wp-content/uploads/2022/12/Loop-9.mp4" type="video/mp4" />
                 </video>
-
-                <div className="play-button" onClick={handleVideo}>
+                 
+                <div className="play-button" onClick={handleVideoHandler}>
                   <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Play-button.svg"/>
                 </div>
             </div>

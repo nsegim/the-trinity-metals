@@ -102,16 +102,16 @@ const SustainabilityPage = () => {
               <div className="container sust-container">
                 <div className="row pt-5 pb-5">
                     <div className="sust-upper-content col-md-6">
-                    <h2>We are a part of the energy revolution</h2>
+                    <h2>{t("Sustainability.sustainability-into-left-header")}</h2>
                     <ul>
-                      <li>We take our values seriously and hold ourselves accountable to the communities where we operate and the greater good of the planet. We support the UN’s mission to ensure that by 2030 all people enjoy peace and prosperity and do our part to contribute to the Global Sustainability Development Goals. </li>
+                      <li>{t("Sustainability.sustainability-into-left-header-desc")}</li>
                     </ul>
                   </div>
 
                   <div className="sust-upper-content  col-md-6">
-                    <h2>Our Approach</h2>
+                    <h2>{t("Sustainability.sustainability-into-right-header")}</h2>
                     <ul>
-                      <li>We take the lead in responsible mining while delivering lasting value to communities, protecting the environment, and meeting the expectations of our stakeholders. Throughout the project lifecycle, we work in close partnership with stakeholders to ensure our activities contribute meaningfully to social progress, economic empowerment, and ecological integrity. </li>
+                      <li>{t("Sustainability.sustainability-into-right-header-desc")} </li>
                     </ul>
                   </div>
                 </div>
