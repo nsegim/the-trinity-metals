@@ -9,7 +9,7 @@ const Nyakabingo = () => {
           {/* Hero section */}
           <div className="the-project-hero-section-wrapper">
             <video autoPlay muted loop>
-              <source src="https://trinity-metals.com/wp-content/uploads/2025/03/TRINITY-DOC-WEB_1.mp4" type="video/mp4" />
+              <source src="https://trinity-metals.com/wp-content/uploads/2025/06/nyakibingo-1.mp4" type="video/mp4" />
             </video>
           </div>
           {/* Projects description */}
@@ -47,7 +47,7 @@ const Nyakabingo = () => {
                      <div className="details-element">
                         
                         <h4>Location</h4>
-                        <p>Nyakabingo Mine sit 19km northwest <br/>of Kigali, Rwanda</p>
+                        <p>19km northwest <br/>of Kigali, Rwanda</p>
                      </div>
                    </div>
                 </div>
@@ -83,10 +83,12 @@ const Nyakabingo = () => {
           </div>
 
           {/* Project site map */}
-          <div className="map-wrapper">
+          <div className="main-map-parent">
+               <div className="map-wrapper nyakabingo-map">
 
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.995535622144!2d29.97668413924816!3d-1.8634999512650818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca333c79c7c3f%3A0x42a1aa10c0acfe29!2sNyakabingo%20Mine!5e1!3m2!1sen!2srw!4v1738923560503!5m2!1sen!2srw" width="100%" height="634"></iframe>
-          </div> 
+               </div>
+          </div>
+           
           <div className="yellow-bg"></div>
           <SiteFooter />
         </>

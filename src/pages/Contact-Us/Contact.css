@@ -301,6 +301,9 @@ color: var(--trinity-dark);
     .location-wrapper .location-name h4{
         padding-bottom: 15px;
     }
+    .form-wrapper form{
+        padding: 0!important;
+    }
     .form-wrapper .field-wrapper{
         flex-direction: column;
     }

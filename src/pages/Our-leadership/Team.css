@@ -20,8 +20,8 @@ line-height: 43.88px;
 }
 
 @media (max-width: 768px){
-   .about-hero-section .heading{
-    font-size: 40px;
+   .about-hero-section .heading, .child-item-wrapper h1{
+    font-size: 36px!important;
    }
    .Team-container-wrapper .header-element h1{
     font-size: 32px;

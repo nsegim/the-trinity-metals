@@ -49,6 +49,7 @@
     .history-section-wrapper{
         padding-top: 80px;
         padding-bottom: 80px;
+
     }
     .histort-content-holder, .image-holder{
         width: 48%;
@@ -216,8 +217,7 @@
        background-color: var(--trinity-green);
         min-height: 522px;
         display: flex;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        
         align-items: center;
     }
     .our-values-holder{
@@ -401,9 +401,9 @@
       
     }
     .team-member-photo{
-        max-height: 330px;
+        height: 330px;
         object-fit: cover;
-        object-position: top;
+        object-position: center 10%;
         width: 100%;
     }
     .team-member-details{
@@ -412,6 +412,7 @@
        align-items: center;
       padding: 30px 20px 30px 20px;
       gap: 10px;
+          min-height: 125px;
       opacity: 0px;
       background-color: var(--trinity-white);
     }
@@ -446,6 +447,20 @@
         }
         .a-member-desc .text-content, .a-member-desc .a-member-image{
             width: 100%!important;
+        }
+        .values-section .inner-contentWrapper{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .inner-wrapper, .child-item-wrapper {
+            padding-top: 50px;
+        }
+        .inner-wrapper .heading, .child-item-wrapper h1{
+            line-height: 1.3em!important;
+        }
+        .history-image{
+          height: 300px;
+          object-fit: cover;
         }
     }
     .a-member-desc .text-content {
@@ -568,12 +583,21 @@
         .history-section-wrapper{
             padding-top: 40px;
             padding-bottom: 40px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         .history-section-wrapper .row{
             gap: 40px;
         }
         .our-mission, .our-vision{
             width: 100%;
+        }
+
+        .our-values-wrapper{
+            padding-bottom: 15px;
+    
+            padding-left: 27px;
+            padding-right: 27px;
         }
         .our-values-wrapper .row{
             gap: 30px;
@@ -607,7 +631,7 @@
             grid-template-columns: repeat(1, 1fr);
         }
         .text-content-inner {
-            width: 65%;
+            width: 100%;
         }
         .executive-management-wrapper{
             padding-top: 40px;

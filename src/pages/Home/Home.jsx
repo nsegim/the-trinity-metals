@@ -14,12 +14,12 @@ import mySvg from '../../../public/asset/SVG.svg'
 
 const BottomImagesGallery = [
   {
-    'link': 'https://trinity-metals.com/wp-content/uploads/2025/02/Excavator-scaled.jpeg',
-    'text': 'Excavator as one of triniy tools'
+    'link': 'https://trinity-metals.com/wp-content/uploads/2025/06/3_32.webp',
+    'text': 'H.E Paul Kagame as our visitor'
   },
   {
-    'link': 'https://trinity-metals.com/wp-content/uploads/2025/02/trinity-employees-scaled.jpeg',
-    'text': 'Employees of triniy'
+    'link': 'https://trinity-metals.com/wp-content/uploads/2025/06/3_32-2.webp',
+    'text': 'H.E Paul Kagame as our visitor 2'
   },
   {
     'link': 'https://trinity-metals.com/wp-content/uploads/2025/02/trinity-employes2-scaled.jpeg',
@@ -82,7 +82,7 @@ const scrollToAboutSection = () => {
       <div className="hero-section home-hero">
         <div className="background-video-container">
           <video autoPlay muted loop>
-            <source src="https://trinity-metals.com/wp-content/uploads/2025/06/nyakibingo.mp4" type="video/mp4" />
+            <source src="https://trinity-metals.com/wp-content/uploads/2025/06/homepage-1.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="background-overlay">
@@ -491,17 +491,30 @@ const scrollToAboutSection = () => {
           </div>
           <div className="media-sample">
             <div className="video-wrapper">
-                <video  
+                {/* <video  
                 ref = {videoRef}
                  
                  muted>
                    <source src="https://trinity-metals.com/wp-content/uploads/2022/12/Loop-9.mp4" type="video/mp4" />
                 </video>
+               
                  
                 <div className="play-button" onClick={handleVideoHandler}>
                   <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Play-button.svg"/>
-                </div>
+                </div> */}
+                 <iframe 
+                 className="video-player-fromyoutbe"
+               
+                src="https://www.youtube.com/embed/aSxVT-MduHQ?controls=1&modestbranding=1&showinfo=0&rel=0&fs=0"
+                frameBorder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                title="YouTube Video"
+              />
             </div>
+           
+
+            
             <div className="image-wrapper">
              
               {/* <ImageLightBox /> */}

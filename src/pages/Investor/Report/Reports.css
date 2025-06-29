@@ -32,4 +32,10 @@ padding-bottom: 80px;
     align-items: center;
     justify-content: space-between;
     }
+    .contains-reports{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }

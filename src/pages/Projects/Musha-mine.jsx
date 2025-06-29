@@ -9,7 +9,7 @@ const Musha = () => {
           {/* Hero section */}
           <div className="the-project-hero-section-wrapper">
             <video autoPlay muted loop>
-              <source src="https://trinity-metals.com/wp-content/uploads/2025/03/TRINITY-DOC-WEB_1.mp4" type="video/mp4" />
+              <source src="https://trinity-metals.com/wp-content/uploads/2025/06/musha-1.mp4" type="video/mp4" />
             </video>
           </div>
           {/* Projects description */}
@@ -47,7 +47,7 @@ const Musha = () => {
                      <div className="details-element">
                         
                         <h4>Location</h4>
-                        <p>Musha Mines sit 45km from Kigali in the Eastern Province</p>
+                        <p>45km from Kigali in the Eastern Province</p>
                      </div>
                    </div>
                 </div>
@@ -75,11 +75,13 @@ const Musha = () => {
             </div>
           </div>
 
-          {/* Project site map */}
-          <div className="map-wrapper">
+         
+           {/* Project site map */}
+          <div className="main-map-parent">
+               <div className="map-wrapper musha-map">
 
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8742.139325141357!2d30.33924524974359!3d-1.9275878443746952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19db5b76d3094de9%3A0xb6792ab5ff299494!2sTrinity%20Musha%20Mines%20Ltd!5e1!3m2!1sen!2srw!4v1738927967346!5m2!1sen!2srw"  width="100%" height="634"></iframe>
-          </div> 
+               </div>
+          </div>
           <div className="yellow-bg"></div>
           <SiteFooter />
         </>

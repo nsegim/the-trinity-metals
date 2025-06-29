@@ -17,9 +17,10 @@ const SustainabilityPage = () => {
          useEffect(() => {
                  const fetchReportsData = async () => {
                      try {
-                         const response = await fetchData('trinity-document');
+                         const response = await fetchData('trinity-document?categories=79');
                          if (response.length) {
                              setDocuments(response);
+
                              // Store attachment URLs
                              const urls = response.flatMap(item => item._links.self.map(link => link.href));
      
@@ -33,6 +34,7 @@ const SustainabilityPage = () => {
                  };
          
                  fetchReportsData();
+                 console.log("render", Documents)
              }, []);
      
                  const fetchDocuments = async () => {
@@ -49,15 +51,9 @@ const SustainabilityPage = () => {
                      console.log("This is a pdf document", areport)
                  };
          
-             
          
      
-             useEffect(()=>{
-                  console.log("The Documents:", Documents)
-                  //console.log("The attachments:", attachmentsUrl)
-                 console.log("The documents Pdf => :", areport)
-     
-             }, [Documents, attachmentsUrl, areport] )
+         
      
      
      const [selectedPostUrl, setSelectedPostUrl] = useState('')

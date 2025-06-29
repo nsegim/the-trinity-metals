@@ -97,6 +97,7 @@
   flex-direction: column;
   gap: 20px;
 }
+
 .footer-links {
   text-decoration: none;
   color: var(--trinity-white);

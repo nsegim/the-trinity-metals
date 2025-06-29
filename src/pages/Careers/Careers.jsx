@@ -29,22 +29,21 @@ const Careers = () => {
                 const response = await fetchData('job')
                 if(response?.length > 0){
                     setData(response)
-                    setTest("Test!!!")
+                    // setTest("Test!!!")
                 }
             } catch (error) {
                 console.log(error)
             }
             
-
+           console.log("The data",data)       
         }
 
         useEffect(() => {
             renderJobPost()
             
         },[])
-        // useEffect(() => {
-        //    console.log(data)            
-        // },[data])
+
+      
 
        
        
@@ -162,7 +161,9 @@ const Careers = () => {
                                                  </div>
                                             )
                                         }
-                                        
+                                        <div className='no-position'>
+                                                <p className='text-center'>No Position Available</p>
+                                        </div>
                                     </div>
                         </div>
 

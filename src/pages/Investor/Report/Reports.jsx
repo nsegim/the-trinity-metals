@@ -17,7 +17,7 @@ const Reports = ()=>{
     useEffect(() => {
             const fetchReportsData = async () => {
                 try {
-                    const response = await fetchData('trinity-document');
+                    const response = await fetchData('trinity-document?categories=81');
                     if (response.length) {
                         setDocuments(response);
                         // Store attachment URLs

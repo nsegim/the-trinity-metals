@@ -10,7 +10,7 @@ const Rutongo = () => {
           {/* Hero section */}
           <div className="the-project-hero-section-wrapper">
               <video autoPlay muted loop>
-                <source src="https://trinity-metals.com/wp-content/uploads/2025/06/Rutongo.mp4" type="video/mp4" />
+                <source src="https://trinity-metals.com/wp-content/uploads/2025/06/rutongo-122.mp4" type="video/mp4" />
               </video>
           </div>
           {/* Projects description */}
@@ -56,7 +56,7 @@ const Rutongo = () => {
                      </div>
                      <div className="details-element">
                         <h4>Location</h4>
-                        <p>Rutongo Mines sit 26km north <br/>of Kigali, Rwanda</p>
+                        <p> 26km north <br/>of Kigali, Rwanda</p>
                      </div>
                    </div>
                 </div>
@@ -89,10 +89,11 @@ const Rutongo = () => {
           </div>
 
           {/* Project site map */}
-          <div className="map-wrapper">
+          <div className="main-map-parent">
+               <div className="map-wrapper rutongo-map">
 
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.088586584535!2d30.058246836491325!3d-1.81666367409583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dc992eeb294c9b%3A0x7eb5d43ca2c602ae!2sTrinity%20Rutongo%20Mines!5e1!3m2!1sen!2srw!4v1738925999792!5m2!1sen!2srw" width="100%" height="634"></iframe>
-          </div> 
+               </div>
+          </div>
           <SiteFooter />
         </>
     )

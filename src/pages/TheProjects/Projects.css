@@ -169,5 +169,11 @@ line-height: 25px;
     .projects-section-holder{
         padding-top: 0;
     }
+    .project-section-wrapper{
+        min-height: 500px;
+    }
+    .projects-section-holder .container{
+        padding: 40px 15px;
+    }
 }
 
