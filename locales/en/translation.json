@@ -6,14 +6,14 @@
       "about-us": "About Us",
       "about": {
           
-          "our-history": "Our History",
-          "our-values":"Our Values",
-          "our-strategies":"Our Strategies",
-          "our-products": "Our Products",
-          "our-leadership":"Our Leadership"
+          "our-history": "History",
+          "our-values":"Values",
+          "our-strategies":"Strategies",
+          "our-products": "Products",
+          "our-leadership":"Leadership"
       },
 
-      "OurProjects": "Our Projects",
+      "OurProjects": "Projects",
       "project":{
         "rutongo": "Rutongo",
         "nyakabingo": "Nyakabingo",
@@ -231,7 +231,7 @@
         },
 
          "LITHIUM-EXPLORATION": {
-          "LITHIUM-EXPLORATION-title": "LITHIUM-EXPLORATION",
+          "LITHIUM-EXPLORATION-title": "Ntunga Lithium Project",
           "LITHIUM-EXPLORATION-subtitle": "The Ntunga pegmatite offers robust development opportunities for Trinity Metals. ",
           "description1": "In 2018, Trinity Metals (PIRAN Rwanda Ltd) began a bold exploration campaign at its Ntunga property—and the results were promising. Initial shallow drilling (up to 250 meters) revealed encouraging grades of 0.02% Ta₂O₅ and 0.12% Sn in weathered pegmatites, along with lithium mineralization—primarily spodumene—appearing in fresh pegmatites from depths of 80 meters and beyond.",
           "description2": "Fast forward to 2023, with the global surge in lithium demand, we took our exploration to the next level. A new phase of deeper drilling (300–780 meters) was launched to test theorebody’s depth potential—and it delivered. Over 39 drill holes, we encountered grades reaching up to 4% Li₂O, with standout intercepts including:",
@@ -282,8 +282,8 @@
     "community-title": "Community",
     "community-subtitle": "We are a part of the energy revolution",
     "community-desc": "We believe the mining industry is vital in generating job growth and inclusive economic opportunities. Our workforce, which is 99% local,  is empowered and enabled to lead and participate in programs that impact  the well-being of people in their communities. We consider community members at every phase of our mining lifecycle and have launched initiatives to ensure their lives are better off because of our presence. ",
-    "community-list1": "Integrated Unauthorised Miner:",
-    "community-list1-2": "Partnering with local government and security organs, we have approached and mobilized illegal miners to join our mining companies to be trained and work professionally  to secure their future and their families' future. Strategy",
+    "community-list1": "Integrated Unauthorised Miner Strategy:",
+    "community-list1-2": "Partnering with local government and security organs, we have approached and mobilized illegal miners to join our mining companies to be trained and work professionally  to secure their future and their families' future.",
     "community-list2": "Sustainable Livelihood Programs:",
     "community-list2-2": "Investing in agriculture, entrepreneurship, and vocational training to create alternative, long-term income streams for communities.",
     "community-list3": "Education and Capacity Building: ",
