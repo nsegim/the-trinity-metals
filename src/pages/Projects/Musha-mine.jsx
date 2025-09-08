@@ -26,7 +26,7 @@ const Musha = () => {
                      </div>
                      <div className="details-element">
                         <h4>Tin Production</h4>
-                        <p>30 tonnes</p>
+                        <p>30-40 tons per month</p>
                      </div>
                    </div>
 
@@ -57,18 +57,37 @@ const Musha = () => {
                     Brief history 
                   </h4>
                   <p className="fw-bold">
-                      Musha-Ntunga mine (also known as Musha Mines) is located in Rwanda’s prolific tin region – Rwamagana District – 45 km from Kigali in the Eastern Province. Although the operation consists of a number of sub-mines, more than 95% of the production comes from Musha mines.
+                      Trinity Musha Mine is a Tin and Tantalum Mine with Lithium prospects operating
+                      on 6,094 ha concession, located in Rwanda’s prolific tin region – Rwamagana
+                      District – 45 km from Kigali in the Eastern Province. The mine consists of a
+                      number of sub-mines.
                   </p>
                   {/* <h4>
                       Presented on a history timeline
                   </h4> */}
                   <p>
-                    The Musha-Ntunga tin deposits were initially exploited from the 1920s to the 1970s. In 1985, the mine was 
-                    nationalized and operated by SOMIRWA (Société des Mines du Rwanda). However, due to depressed tin prices and 
-                    the 1994 genocide against the Tutsi, which deterred external investment, the operation remained artisanal. 
-                    Between 2014 and 2016, Pella Rwanda Ltd was granted a 25-year mining license for the Musha-Ntunga Mines. 
-                    Pella reprocessed tailings and conducted a geochemical testing program, yielding encouraging results and
-                    prompting further work. In 2017, ownership was transferred to Piran Resources.
+                   Trinity Musha Mines tin deposits were initially exploited from the 1920s to the 1970s.
+                    In 1985, the mine was nationalized and operated by SOMIRWA (Société des Mines du
+                    Rwanda). However, due to depressed tin prices and the 1994 genocide against the
+                    Tutsi, which deterred external investment, the operation remained artisanal and never
+                    realized its growth potential. Between 2014 and 2016, Pella Rwanda Ltd was granted
+                    a 25-year mining license for the Musha-Ntunga Mines. In 2017, ownership was
+                    transferred to Piran Resources. Piran Resources operate the mine until May 2022
+                    when it was incorporated into the newly established Trinity Metals Group.
+                  </p>
+                     
+                  <p>
+                     The mine is Rwanda’s second largest tin producer after Rutongo Mine.
+                  </p>
+
+                  <p>
+                    The mine has significant growth potential - future plans consist of increasing mining
+                    volumes by opening up new reserves at depth through the development of a decline
+                    below level 4, introducing new bulk mining, utilization of larger mining equipment and
+                    the design and construction of a number of mineral processing facilities to process run
+                    of mine material and legacy stockpiled material. These plans give the mine the
+                    opportunity to more than double production over the next 5 years. The Ntunga mining
+                    area has significant reserves of tantalum that will be mined as a by-product to the tin.
                   </p>
                 </div>
               </div>

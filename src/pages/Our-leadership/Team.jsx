@@ -127,7 +127,7 @@ const Team = () => {
                <h1 className="text-center">Trinity Metals Group Board Members</h1>
             </div>
 
-            <div className="team-members">
+            <div className="team-members first-grid">
                
                 {
                     
@@ -204,7 +204,7 @@ const Team = () => {
             </div>
 
 
-            <div className="team-members">
+            <div className="team-members second-grid">
               
                
 
@@ -281,7 +281,7 @@ const Team = () => {
 
 
 
-            <div className="header-element pt-5">
+            {/* <div className="header-element pt-5">
                <h1 className="text-center">Rutongo Mines Board Members</h1>
             </div>
 
@@ -352,7 +352,7 @@ const Team = () => {
                                
                              
                               
-            </div>
+            </div> */}
             
          </div>
       </div>

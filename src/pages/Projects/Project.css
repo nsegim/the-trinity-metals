@@ -11,8 +11,8 @@
     object-fit: cover;
 }
 .lithium{
-    background-image: url(https://trinity-metals.com/wp-content/uploads/2024/01/Musha-Drilling-1-scaled.jpg);
-        background-position: center 84%;
+    background-image: url(https://trinity-metals.com/wp-content/uploads/2025/07/image001-2-1.jpg);
+        background-position: center 60%;
         background-repeat: no-repeat;
         background-size: cover;
     
@@ -31,14 +31,15 @@
    margin-top: -100px;
    z-index: 1;
 }
-.project-content-wrapper .project-title-element h1{
+.project-content-wrapper .project-title-element h1, .no-report-found h1{
     
     font-size: 36px;
     font-weight: 700;
     line-height: 43.88px;
     text-align: left;
-    
-    
+}
+.no-report-found h1{
+    text-align: center;
 }
 
 .work-result .stats{
@@ -69,12 +70,15 @@ line-height: 16px;
 
 }
 .project-brief h4{
+    padding-bottom: 20px;
+}
+.project-brief h4, .project-brief2 h4{
 font-size: 20px;
 font-weight: 700;
 line-height: 24.38px;
 text-align: left;
 color: var(--trinity-dark);
-padding-bottom: 20px;
+
 }
 .project-brief p{
 color: var(--trinity-dark);

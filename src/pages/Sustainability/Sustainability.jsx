@@ -6,18 +6,29 @@ import ImageGallery from "../../components/ImageGallery"
 import { fetchData } from '../../config/apiConfig'
 import './Sastainability.css'
 import { useTranslation } from "react-i18next"
+import axios from "axios"
+
 
 const SustainabilityPage = () => {
 
       const [Documents, setDocuments] = useState([])
+       const [Documents2, setDocuments2] = useState([])
         const [attachmentsUrl, setAttachmentsUrl] = useState([])
+        const [attachmentsUrl2, setAttachmentsUrl2] = useState([])
+        
         const [loading, setLoading] = useState(true)
         const [areport, setAreport] = useState(null)
      
          useEffect(() => {
                  const fetchReportsData = async () => {
                      try {
-                         const response = await fetchData('trinity-document?categories=79');
+                         const [response, response2] = await Promise.all([
+                              fetchData('trinity-document?categories=79'),
+                              fetchData('trinity-document?categories=81')
+                         ])
+                        //  const response = await fetchData('trinity-document?categories=79');
+                        //  const response2 = await fetchData('trinity-document?categories=81');
+
                          if (response.length) {
                              setDocuments(response);
 
@@ -28,23 +39,42 @@ const SustainabilityPage = () => {
      
                              setAttachmentsUrl(urls);
                          }
+
+                         if (response2.length) {
+                          setDocuments2(response2);
+                            const urls2 = response2.flatMap(item => item._links.self.map(link => link.href));
+                              setAttachmentsUrl2(urls2)
+                         }
+
+
                      } catch (error) {
-                         console.error("Error fetching gallery:", error);
+                         console.error("Error fetching Reports:", error);
                      }
                  };
          
                  fetchReportsData();
-                 console.log("render", Documents)
+                 
              }, []);
      
                  const fetchDocuments = async () => {
                      try {
-                         const documentsIds = attachmentsUrl.map(url => url.split('/').pop());
-                         const documentsResponses = await Promise.all(documentsIds.map(id => fetchData(`media?parent=${id}`)));
-                         const documentLinks = await Promise.all(documentsResponses.map(item => item[0]))
-                         setAreport(documentLinks);
-                        // setAreport(documentsIds)
-                         setLoading(false);
+                         if(attachmentsUrl){
+                            const documentsIds = attachmentsUrl.map(url => url.split('/').pop());
+                            const documentsResponses = await Promise.all(documentsIds.map(id => fetchData(`media?parent=${id}`)));
+                            const documentLinks = await Promise.all(documentsResponses.map(item => item[0]))
+                            setAreport(documentLinks);
+                            // setAreport(documentsIds)
+                            setLoading(false);
+                         }
+                         if(attachmentsUrl2){
+                              const documentsIds2 = attachmentsUrl.map(url => url.split('/').pop());
+                            const documentsResponses2 = await Promise.all(documentsIds2.map(id => fetchData(`media?parent=${id}`)));
+                            const documentLinks2 = await Promise.all(documentsResponses2.map(item => item[0]))
+                            setAreport(documentLinks2);
+                            // setAreport(documentsIds)
+                            setLoading(false);
+                         }
+                        
                      } catch (error) {
                          console.error("Error fetching images:", error);
                      }
@@ -52,23 +82,52 @@ const SustainabilityPage = () => {
                  };
          
          
-     
-         
-     
+           useEffect(()=>{
+              console.log(Documents)
+           }, Documents)
      
      const [selectedPostUrl, setSelectedPostUrl] = useState('')
      const [loadinPdf,setLoadingPdf] = useState(false)
+      
              const download = async () =>{
                  setLoadingPdf(true)
                  try {
-                     const response = await fetchData(`media?parent=${selectedPostUrl}`)
+
+                    // const response = await fetchData(`media/${selectedPostUrl}`)
+                     const response = await fetch(`https://trinity-metals.com/wp-json/wp/v2/media/${selectedPostUrl}`, {
+                       method: 'GET',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                        },
+                        mode: 'cors',
+                        credentials: 'omit'
+                     })
+                      
+                       if(response){
+                        console.log(response)
+                       }
+                      if (!response.ok) {
+                          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                      }
+
+                      return await response.json();
+                     
+
+
                      // window.location.href = response[0].guid.rendered;
                      window.open(response[0].guid.rendered, '_blank');
                      setLoadingPdf(false)
-                 // console.log(response)
-                 } catch (error) {
-                     setLoadingPdf(false)
-                 }
+                      console.log(response)
+                    }catch (error) {
+                        console.error('Media fetch failed:', error);
+                        throw error;
+                    } 
+                //  } catch (error) {
+                //      setLoadingPdf(false)
+                //  }
+
+               
              }
              useEffect(()=>{
                  if(selectedPostUrl)
@@ -106,7 +165,7 @@ const SustainabilityPage = () => {
 
                   <div className="sust-upper-content  col-md-6">
                     <h2>{t("Sustainability.sustainability-into-right-header")}</h2>
-                    <ul>
+                    <ul className="responsive-margin">
                       <li>{t("Sustainability.sustainability-into-right-header-desc")} </li>
                     </ul>
                   </div>
@@ -235,11 +294,11 @@ const SustainabilityPage = () => {
                       
                   </ul>
 
-                  <ul className="content-achievement">
+                  {/* <ul className="content-achievement">
                       <li><b>{t("Sustainability.community-list3")} </b>{t("Sustainability.community-list3-2")}</li>
                       
                       
-                  </ul>
+                  </ul> */}
                   
                   <ul className="content-achievement">
                       <li><b>{t("Sustainability.community-list4")} </b>{t("Sustainability.community-list4-2")}</li>
@@ -346,7 +405,7 @@ const SustainabilityPage = () => {
         
 
            {/* Governance */}
-           <div className="goverance">
+           {/* <div className="goverance">
              <div className="row">
               <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Container-4.svg" customClass={'sustainabilty-icon sus-icon'}/>
               <div className="col-md-6 bg-section">
@@ -379,6 +438,9 @@ const SustainabilityPage = () => {
                       <li><b>{t("Sustainability.governance-list3")} </b>{t("Sustainability.governance-list3-2")}</li>
 
                      <li><b>{t("Sustainability.governance-list4")} </b>{t("Sustainability.governance-list4-2")}</li>
+                     <li>{t("Sustainability.governance-list5")}</li>
+                     <li>{t("Sustainability.governance-list6")}</li>
+                     <li>{t("Sustainability.governance-list7")}</li>
 
 
 
@@ -388,7 +450,88 @@ const SustainabilityPage = () => {
               </div>
 
              </div>
+           </div> */}
+            <div class="yellow-bg"></div>
+            <div class="the-project-hero-section-wrapper Governance-section"></div>
+            <div class="project-content-wrapper pb-5">
+               <div class="container d-flex justify-content-center">
+                   <div class="information-project">
+                      <div class="project-title-element">
+                        <h1>Governance</h1>
+                        <div class="project-brief2 pt-3">
+                          <h4>Corporate Governance&nbsp;</h4>
+                          <p>At Trinity Metals, we believe strong corporate governance is more than a responsibility, it’s a driving force behind our ethical business practices and long-term success. We lead with integrity, ensuring transparency and accountability in everything we do. Our governance framework reflects our deep commitment to our core values, empowering sound decision-making that supports sustainable growth and protects the interests of our people, partners, communities, and planet. By integrating Environmental, Social, and Governance (ESG) principles into our operations, we go beyond compliance—creating real, lasting value and reinforcing our role as a trusted and responsible industry leader.</p>
+
+                          <h4>Traceability&nbsp;</h4>
+                          <p>We take pride in ensuring that every mineral we produce is 100% conflict-free, fully traceable, and responsibly sourced from our own licensed concessions. From the moment it leaves the ground to the point it reaches the market, our minerals are never blended or traded from external sources—guaranteeing full transparency and control throughout the supply chain. Our vertically integrated operations give us unmatched oversight, reinforcing our commitment to ethical sourcing. We work closely with RCS Global through its Better Mining Program, an industry-leading initiative recognized by the Responsible Minerals Initiative (RMI). In line with global best practices, we publish annual due diligence reports based on the OECD Framework, underscoring our dedication to integrity, accountability, and sustainable mining.</p>
+                          <h4>Board of Directors&nbsp;</h4>
+                          <p>Our Board of Directors is a driving force behind our commitment to responsible leadership and ethical excellence. With a clear strategic vision and unwavering oversight, the Board ensures that every aspect of our business meets the highest ethical and regulatory standards. Backed by dedicated committees, the Audit Committee for financial integrity, the Remuneration Committee for fair and performance-driven rewards, and the SHECS Committee for Safety, Health, Environment, Community, and Security, we maintain strong governance that champions accountability, protects our stakeholders, and fuels sustainable growth. This structure empowers us to lead with purpose and deliver meaningful impact across every level of our operations.</p>
+                        </div>
+                      </div>
+                   </div>
+               </div> 
+            </div>  
+
+              {/*  Diligence Report */}
+            <div className="policies-section-wrapper1">
+            <div className="container">
+              <div className="policies-section-title">
+                <h2>
+                   Due Diligence Report
+                </h2>
+              </div>
+              <div className="reports-container">
+                      {Documents2 ? (
+                                Documents2.map((item, index) => (
+                                  <div key={index} className="single-report">
+                                      <div className="report-name">
+                                          <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Report-icon.svg" />
+                                          
+                                          <h4 className="report-name">
+                                              {item.title.rendered}
+                                          </h4>
+                                  
+                                          
+                                      </div>
+                                      <div className="download-section">
+                                              <span>{}</span>
+                                              {
+                                                      !loadinPdf &&
+                                                      <a   
+                                                          className="download-button"
+                                                          onClick={()=>setSelectedPostUrl(item.acf.document_uploaded)}
+                                              
+                                              >
+                                                    <span>{t("reports.Download-btn")}</span>
+                                                    <span>{item.acf.document_uploaded}</span>
+                                                   
+                                                    
+                                              </a>
+                                                  }
+                                              
+                                              
+                                      </div>
+                          
+                                  </div>
+                          ))
+                          
+                      ) : (
+  
+                      <div>Loading...</div>
+                      
+                          
+                          
+                        
+                      )}
+              
+                                  
+              
+                                   
+              </div>
+
+            </div>
            </div>
+
 
            {/* Policies & Standards section */}
            <div className="policies-section-wrapper">
@@ -421,6 +564,7 @@ const SustainabilityPage = () => {
                                               
                                               >
                                                     <span>{t("reports.Download-btn")}</span>
+                                                      <span>{item.acf.document_uploaded}</span>
                                               </a>
                                                   }
                                               

@@ -10,7 +10,7 @@ const LanguageSwitcher = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = {
-    en: { label: "Eng", flag: "https://trinity-metals.com/wp-content/uploads/2025/03/uk-flag-round-circle-icon.svg" },
+    en: { label: "Eng", flag: "https://trinity-metals.com/wp-content/uploads/2025/07/usa-flag-round-circle-icon.svg" },
     kiny: { label: "Kiny", flag: "https://trinity-metals.com/wp-content/uploads/2025/03/rwanda-flag-round-circle-icon.svg" },
   };
 
@@ -20,14 +20,14 @@ const LanguageSwitcher = () => {
   };
 
   const dropdownRef = useRef(null);
-
+  
   useEffect(()=>{
    
     const handleClickOutSide = (event) => {
         if(dropdownRef.current && !dropdownRef.current.contains(event.target)){
             setIsOpen(false)
         }
-
+      
 
        
     }

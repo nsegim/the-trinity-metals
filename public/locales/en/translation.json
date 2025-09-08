@@ -6,19 +6,19 @@
       "about-us": "About Us",
       "about": {
           
-          "our-history": "Our History",
-          "our-values":"Our Values",
-          "our-strategies":"Our Strategies",
-          "our-products": "Our Products",
-          "our-leadership":"Our Leadership"
+          "our-history": "History",
+          "our-values":"Values",
+          "our-strategies":"Strategies",
+          "our-products": "Products",
+          "our-leadership":"Leadership"
       },
 
-      "OurProjects": "Our Projects",
+      "OurProjects": "Projects",
       "project":{
         "rutongo": "Rutongo",
         "nyakabingo": "Nyakabingo",
         "musha":"Musha",
-        "lithium-exploration":"Lithium Exploration"
+        "lithium-exploration":"Ntunga Lithium Project"
         
       },
       "sustainability": "Sustainability",
@@ -69,7 +69,7 @@
 
       "sustainability" : "Sustainability",
       "we-are-energy":"We are a part of the energy revolution",
-      "we-are-energy-description": "We take our values seriously and hold ourselves accountable to the communities where we operate and the greater good of the planet. We support the UN’s mission to ensure that by 2030 all people enjoy peace and prosperity and do our part to contribute to the Global Sustainability Development Goals.",
+      "we-are-energy-description": "We take the lead in responsible mining while delivering lasting value to communities, protecting the environment, and meeting the expectations of our stakeholders.",
       "we-are-energy-description1":"We have taken steps to track, actively reduce and offset our carbon emissions and utilise eco-conscious mining methods and technology.",
 
 
@@ -161,10 +161,10 @@
   "our-project-page": {
 
         "projects-title": "Projects",
-        "projects-sub-title": "Our Projects",
-        "project-description-1": "Trinity Metals has three mining projects operated as subsidiaries in Rwanda – Rutongo Mines, Nyakabingo Mine, and Musha Mines. They include three primary mining sites and a few satellite sites located in close proximity to the primary sites.",
-        "project-description-2": "All of our mining sites operate to international mining regulations and uphold strict environmental standards. We do not use toxic or environmentally damaging chemical processes in our mines, nor do the mines produce any such material.",
-        "project-description-3": "All of our production is certified “conflict-free” – our mines are fully compliant with conflict minerals audit requirements under OECD guidelines.",
+        "projects-sub-title": "Projects",
+        "project-description-1": "Trinity Metals has three mining projects operated as subsidiaries in Rwanda – Rutongo Mines, Nyakabingo Mine, and Musha Mines. They compromise of three primary mining sites with several satellite mining sites located in close proximity to the primary sites.",
+        "project-description-2": "Our mining sites operate to national and international mining regulations and uphold strict ESG standards. We do not use toxic or environmentally damaging chemical processes on our mines, nor do the mines produce any such material.",
+        "project-description-3": "Our production is certified “conflict-free” – our mines are fully compliant with conflict minerals audit requirements under OECD guidelines.",
 
 
 
@@ -230,13 +230,21 @@
 
         },
 
-        "LITHIUM-EXPLORATION": {
-          "LITHIUM-EXPLORATION-title": "LITHIUM-EXPLORATION",
+         "LITHIUM-EXPLORATION": {
+          "LITHIUM-EXPLORATION-title": "Ntunga Lithium Project",
           "LITHIUM-EXPLORATION-subtitle": "The Ntunga pegmatite offers robust development opportunities for Trinity Metals. ",
-          "description1": "In 2018, exploration efforts within the Trinity Ntunga licence successfully defined an initial 9Mt Sn-Ta (Tin-Tantalum) resource hosted in a large LCT pegmatite system. In addition, the team discovered consistent high grades of 1.5% Li₂O (Lithium Oxide) dominantly within spodumene mineralisation in several holes with intersections over 80m true width and open to depth. ",
-          "description2": "The team’s further analysis of drill core has revealed a second potential host of significant volumes of lithium mineralisation of up to 1% Li₂O. ",
-          "description3": "As a result of this exciting discovery, the group performed an additional study and test work, which prompted the next phase of modeling and metallurgical testing. ",
-          "description4": "The potential exists to define a globally significant Li-Sn-Ta resource in a secure and rapidly developing country. Trinity is focused on advancing this deposit and anticipates an updated resource statement in the near term. We are confident that we will soon move into a full feasibility phase."
+          "description1": "In 2018, Trinity Metals (PIRAN Rwanda Ltd) began a bold exploration campaign at its Ntunga property—and the results were promising. Initial shallow drilling (up to 250 meters) revealed encouraging grades of 0.02% Ta₂O₅ and 0.12% Sn in weathered pegmatites, along with lithium mineralization—primarily spodumene—appearing in fresh pegmatites from depths of 80 meters and beyond.",
+          "description2": "Fast forward to 2023, with the global surge in lithium demand, we took our exploration to the next level. A new phase of deeper drilling (300–780 meters) was launched to test theorebody’s depth potential—and it delivered. Over 39 drill holes, we encountered grades reaching up to 4% Li₂O, with standout intercepts including:",
+          "description2-1": "DD_055:",
+            "description2-1-0": "195m @ 1.4% Li₂O",
+          "description2-2": "DD_062:",
+            "description2-2-0": "148m @ 1.46% Li₂O",
+          "description2-3": "DD_064:",
+            "description2-3-0": "16m @ 2.1% Li₂O and 30m @ 1.4% Li₂O",
+          "description2-4": "DD_056:",
+            "description2-4-0": "8m @ 2.1% Li₂O",
+          "description3": "In total, we drilled nearly 12,000 metres across 39 diamond holes, with over 2,700 samples assayed. Notably, high-grade tin and tantalum intercepts remain consistent with the 2018 results, with improved grades trending eastward across the orebody.",
+          "description4": "Based on this limited but highly encouraging drilling, the lithium potential at Ntunga is currently estimated between 35 to 70 million tonnes at >1% Li₂O. Up next: geological structural studies, metallurgical testing, resource estimation, and expanded drilling. This is just the beginning of unlocking Ntunga’s full critical minerals potential."
 
         }
 
@@ -274,8 +282,8 @@
     "community-title": "Community",
     "community-subtitle": "We are a part of the energy revolution",
     "community-desc": "We believe the mining industry is vital in generating job growth and inclusive economic opportunities. Our workforce, which is 99% local,  is empowered and enabled to lead and participate in programs that impact  the well-being of people in their communities. We consider community members at every phase of our mining lifecycle and have launched initiatives to ensure their lives are better off because of our presence. ",
-    "community-list1": "Integrated Unauthorised Miner:",
-    "community-list1-2": "Partnering with local government and security organs, we have approached and mobilized illegal miners to join our mining companies to be trained and work professionally  to secure their future and their families' future. ",
+    "community-list1": "Integrated Unauthorised Miner Strategy:",
+    "community-list1-2": "Partnering with local government and security organs, we have approached and mobilized illegal miners to join our mining companies to be trained and work professionally  to secure their future and their families' future.",
     "community-list2": "Sustainable Livelihood Programs:",
     "community-list2-2": "Investing in agriculture, entrepreneurship, and vocational training to create alternative, long-term income streams for communities.",
     "community-list3": "Education and Capacity Building: ",
@@ -284,7 +292,7 @@
      "community-list4-2": "Partnering with local stakeholders to improve access to healthcare, sanitation, and mental health resources.",
      "community-list5": "Infrastructure Development: ",
      "community-list5-2": "Co-developing essential infrastructure — including roads, water systems, and electrification — that enhances quality of life.",
-     "community-list6": "Community-Led Planning:",
+     "community-list6": "Community Development Planning:",
      "community-list6-2": "Working directly with community representatives to design and implement projects that reflect local priorities, culture, and aspirations.",
      "community-list7": "Monitoring and Accountability:",
      "community-list7-2": "Establishing clear metrics, feedback mechanisms, and transparent reporting to measure impact and continuously improve.",
@@ -311,8 +319,9 @@
     "governance-list3-2": "We consult with local communities and contribute to their social, economic and institutional development, taking into account gender-sensitive aspects.",
     "governance-list4": "Environment: ",
     "governance-list4-2": "We seek continual improvement of our environmental performance.",
-    
-    
+    "governance-list5": "Trinity Nyakabingo Mine 2022 Annual Due Diligence Report",
+    "governance-list6": "Rutongo Mines 2022 Annual Due Diligence Report",
+    "governance-list7": "Due Diligence Report_Piran Rwanda Ltd",
 
     "policies-standards": "Policies & Standards"
      

@@ -200,8 +200,10 @@ color: var(--trinity-white);
 .bottom-section .copyright{
   display: flex;
   
-  justify-content: center;
+  justify-content: space-evenly;
 }
+
+
 .bottom-section .copyright p{
   color: var(--trinity-white);
   margin-bottom: 0;
@@ -284,5 +286,11 @@ line-height: 15.85px;
   }
   .quick-links{
     padding-left: revert;
+  }
+  .bottom-section .copyright{
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 20px;
   }
 }

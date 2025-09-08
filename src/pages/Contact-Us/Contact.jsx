@@ -81,7 +81,7 @@ const ContactUs = ()=>{
                     <div className="contact-details">
                         <p>
                         We will get back to you within 24 hours, or you can call us everyday,
-                        09:00 AM - 12:00 PM
+                        08:00am to 5:00pm
                         </p>
                         <p>
                             <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/Cell-phone-icon-4.svg' />
@@ -93,9 +93,9 @@ const ContactUs = ()=>{
                     <div className="right-header">
                       <h1>Get In Touch</h1>
                     </div>
-                    <div className="right-text-element">
+                    {/* <div className="right-text-element">
                       <p>Complete control over products allows us to ensure our customers receive the best quality prices and service.</p>
-                    </div>
+                    </div> */}
                     <div className="form-wrapper">
                        {/* The form  */}
                        <form  onSubmit={handleSubmit} className="max-w-md mx-auto p-2 bg-white rounded-lg shadow-md">

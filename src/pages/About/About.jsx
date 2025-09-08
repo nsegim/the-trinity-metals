@@ -262,7 +262,7 @@ const AboutPage = () => {
 
             </div>
             {/* Our Values */}
-            <div ref={values} className="values-section">
+            <div ref={values} className="values-section py-5">
                 <div className="container our-values-holder">
                     
                     <div className="inner-contentWrapper">
@@ -439,7 +439,7 @@ const AboutPage = () => {
                              managementMember?.length > 0 ? (
                                 <div className="team-member-wrapper">
                                   {
-                                    managementMember.slice(7, 14).reverse().map((item, index) => (
+                                    managementMember.slice(5, 8).reverse().map((item, index) => (
                                         <div key={index} className="single-team-member">
                                         <ImageGallery imageUrl={item._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif"} customClass={'team-member-photo'}/>
                                                <div className="team-member-details">

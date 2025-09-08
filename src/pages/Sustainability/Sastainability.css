@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 
 .environment-section, .community-section, .our-approach-section, .community-section1{
   overflow-x: hidden;
@@ -199,7 +201,12 @@ background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Con
 padding-top: 70px;
 padding-bottom: 70px;
 }
-.policies-section-wrapper .container{
+.policies-section-wrapper1{
+padding-top: 70px;
+padding-bottom: 0;
+}
+
+.policies-section-wrapper .container, .policies-section-wrapper1 .container{
 display: flex;
 flex-direction: column;
 gap: 30px;
@@ -330,4 +337,19 @@ color: var(--trinity-white)!important;
   flex-wrap: wrap;
   gap: 30px;
 }
+}
+.Governance-section{
+    background-image: url(https://trinity-metals.com/wp-content/uploads/2025/06/Governance.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: unset!important;
+
+}
+
+
+@media (min-width: 768px) {
+  .responsive-margin {
+    margin-top: 45px;
+  }
 }

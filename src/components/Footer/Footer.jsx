@@ -192,6 +192,8 @@ const SiteFooter = () => {
       <div className="bottom-section">
         <div className="container copyright">
           <p>Copyright © TRINITY METALS 2025  All Right Reserved </p>
+           <Link to="/disclaimer" className="footer-links">Disclaimer</Link>
+          
         </div>
       </div>
     </>

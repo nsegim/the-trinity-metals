@@ -1,6 +1,9 @@
 import SiteFooter from "../../components/Footer/Footer"
 import SiteHeader from "../../components/header/Header"
+import { useTranslation } from "react-i18next"
+ 
 const Lithium = () => {
+   const { t } = useTranslation()
     return(
         <>
             <SiteHeader />
@@ -15,35 +18,49 @@ const Lithium = () => {
             <div className="container d-flex justify-content-center">
               <div className="information-project">
                 <div className="project-title-element">
-                  <h1>Lithium Exploration</h1>
+                  <h1 style={{marginBottom: "0"}}>{t("our-project-page.LITHIUM-EXPLORATION.LITHIUM-EXPLORATION-title")}</h1>
                 </div>
                 
 
-                <div className="project-brief pt-3">
+                <div className="project-brief">
                   <p className="fw-bold">
-                    The Ntunga pegmatite offers robust development opportunities for Trinity Metals. 
+                    {t("our-project-page.LITHIUM-EXPLORATION.LITHIUM-EXPLORATION-subtitle")} 
                   </p>
                   <p>
-                   In 2018, exploration efforts within the Trinity Ntunga licence successfully defined 
-                  an initial 9Mt Sn-Ta (Tin-Tantalum) resource hosted in a large LCT pegmatite system. 
-                  In addition, the team discovered consistent high grades of 1.5% Li₂O (Lithium Oxide) 
-                  dominantly within spodumene mineralisation in several holes with intersections over 80m 
-                  true width and open to depth. 
-                  </p>
-
-                  <p>
-                    The team’s further analysis of drill core has revealed a second potential host of significant 
-                    volumes of lithium mineralisation of up to 1% Li₂O. 
-                  </p>
-                  <p>
-                    As a result of this exciting discovery, the group performed an additional study and test work, 
-                    which prompted the next phase of modeling and metallurgical testing. 
+                      {t("our-project-page.LITHIUM-EXPLORATION.description1")} 
                   </p>
                   
                   <p>
-                    The potential exists to define a globally significant Li-Sn-Ta resource in a secure and rapidly 
-                    developing country. Trinity is focused on advancing this deposit and anticipates an updated resource
-                    statement in the near term. We are confident that we will soon move into a full feasibility phase.
+                    {t("our-project-page.LITHIUM-EXPLORATION.description2")} 
+                  </p>
+                  <div>
+                    <ul>
+                      <li>
+                        <p style={{marginBottom: "5px"}}><b>{t("our-project-page.LITHIUM-EXPLORATION.description2-1")}</b></p>
+                        <p>{t("our-project-page.LITHIUM-EXPLORATION.description2-1-0")}</p>
+                      </li>
+                      <li>
+                          <p style={{marginBottom: "5px"}}><b>{t("our-project-page.LITHIUM-EXPLORATION.description2-2")}</b></p>
+                          <p>{t("our-project-page.LITHIUM-EXPLORATION.description2-2-0")}</p>
+                      </li>
+                      <li>
+                           <p style={{marginBottom: "5px"}}><b>{t("our-project-page.LITHIUM-EXPLORATION.description2-3")}</b></p>
+                           <p>{t("our-project-page.LITHIUM-EXPLORATION.description2-3-0")}</p>
+                      </li>
+                      
+                      <li>
+                          <p style={{marginBottom: "5px"}}><b>{t("our-project-page.LITHIUM-EXPLORATION.description2-4")}</b></p>
+                          <p>{t("our-project-page.LITHIUM-EXPLORATION.description2-4-0")}</p>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                  <p>
+                     {t("our-project-page.LITHIUM-EXPLORATION.description3")} 
+                  </p>
+                  
+                  <p>
+                      {t("our-project-page.LITHIUM-EXPLORATION.description4")} 
                   </p>
                 </div>
               </div>

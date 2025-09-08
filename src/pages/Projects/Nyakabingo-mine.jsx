@@ -26,7 +26,7 @@ const Nyakabingo = () => {
                      </div>
                      <div className="details-element">
                         <h4>Tungsten Production</h4>
-                        <p>100-110 tonnes</p>
+                        <p>100-110 tons per month</p>
                      </div>
                    </div>
 
@@ -57,25 +57,36 @@ const Nyakabingo = () => {
                     Brief history 
                   </h4>
                   <p className="fw-bold">
-                     Trinity Nyakabingo Mine is a Tungsten ore mine with a mining concession of 1,600 ha.
-                     They are estimated to contain approximately 115,502 tonnes of recoverable Tungsten with 
-                     potential to grow the resource substantially at depth. Currently produces between 100 to 
-                     110 tonnes of wolframite per month, containing 66-70% Tungsten, under a 25 year license 
-                     that began in 2015.
+                     Trinity Nyakabingo Mine is a Tungsten ore mine with a mining concession of 1,600 ha. The
+                      mine is estimated to contain approximately 115,502 tons of recoverable Tungsten with
+                      potential to grow the resource substantially at depth. Current production is between 100 to 110
+                      tons of wolframite per month, containing 66-70% Tungsten, under a 25-year license that
+                      commenced in 2015.
                      
                   </p>
                   {/* <h4>
                       Presented on a history timeline
                   </h4> */}
                   <p>
-                    Exploration of the mine’s alluvial deposits began in the late 1930s, but it was only after WWII 
-                    that systematic open cast mining began. Underground mining started in the late 1960s with adits,
-                     followed by drives along quartz veins situated in bedding planes (known as concordant parallel 
-                     veins or PV). The first Companies to work the deposit were Belgium who mined on a semi-mechanized 
-                     until the 1986. At this time, the mines were nationalized and operated under REDEMI (Regie d’Exploitation
-                      et de Developpement des Mines). The mines closed in 1994 when the genocide against the Tutsi occurred. In 
-                      1995 they reopened under REDEMI as a miners’ co-operative and operated as such until 2007, when Euro Trade 
-                      International took ownership.
+                      Exploration of the mine’s alluvial deposits began in the late 1930s, but it was only after WWII that
+                        systematic open cast mining began. In the late 1960’s underground mining started through adits,
+                        followed by drives along quartz veins situated in bedding planes (known as concordant parallel
+                        veins). The first Companies to mine the deposit were Belgium using semi-mechanized methods until
+                        1986. At this time, the mines were nationalized and operated under REDEMI (Regie d’Exploitation et
+                        de Developpement des Mines). The mines closed in 1994 when the genocide against the Tutsi
+                        occurred. In 1995 they reopened under REDEMI as a miners’ co-operative and operated as such until
+                        2007, when Euro Trade International took ownership. In May 2022 the mine was incorporated into the
+                        newly established Trinity Metals Group and renamed Trinity Nyakabingo Mine.
+                  </p>
+                  <p>
+                    Trinity Nyakabingo Mine is the African continent’s largest Tungsten producer.
+                  </p>
+                  <p>
+                    The mine has significant growth potential - future plans consist of increasing mining volumes by
+opening up new reserves at depth through the development of a decline below 22 level, introducing
+new bulk mining, utilization of larger mining equipment and the design and construction of mineral
+processing facilities to process run of mine material and legacy stockpiled material. These plans give
+the mine the opportunity to at least double current production levels.
                   </p>
                 </div>
               </div>

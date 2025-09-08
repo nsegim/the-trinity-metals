@@ -33,7 +33,7 @@
 .contact-details{
     background-color: var(--trinity-green);
     
-padding: 45px 40px 45px 50px;
+padding: 45px 40px 45px 40px;
 gap: 24px;
 border-radius: 0px 4px 4px 4px;
   margin-top: -150px;

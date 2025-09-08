@@ -95,9 +95,14 @@ const [loadinPdf,setLoadingPdf] = useState(false)
                         </form>
                     </div>
                   </div>
-                 
-                  <div className="reports-container">
-                    {Documents ? (
+
+                  <div className="no-report-found">
+                         <h1 >Reports ...</h1>
+                     </div> 
+
+                  
+                  {/* <div className="reports-container">
+                    {Documents ?  (
                              Documents.map((item, index) => (
                                 <div key={index} className="single-report">
                                     <div className="report-name">
@@ -129,8 +134,11 @@ const [loadinPdf,setLoadingPdf] = useState(false)
                         ))
                         
                     ) : (
-
-                    <Spinner />
+                     
+                     <div className="no-report-found">
+                         <h1>Reports</h1>
+                     </div>   
+                    
                     
                        
                         
@@ -140,7 +148,7 @@ const [loadinPdf,setLoadingPdf] = useState(false)
                     
 
                      
-                 </div>
+                 </div> */}
 
                </div>
 

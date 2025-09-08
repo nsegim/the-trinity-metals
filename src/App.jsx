@@ -28,6 +28,8 @@ import SinglePost from "./components/single-post-template/Single-post";
 import RoutesConfig from "./routes/routes";
 import Careers from "./pages/Careers/Careers";
 import SingleJob from "./components/SingleJob/SingleJob";
+import Disclaimer from "./pages/Disclaimer/Disclaimer";
+
 
 
 // Dummy components for demonstration
@@ -37,7 +39,7 @@ const About = () => <AboutPage />;
 const OurProjects = () => <ProjectPage /> ;
 const Sustainability = () => <SustainabilityPage />;
 const Investors = () => <InvestorPage />;
-const OurLeadership = () => <Team />;
+const OurLeadership = () => <Team />; 
 
 
 
@@ -102,6 +104,7 @@ function App() {
         <Route path="/single-post/:id" element={<SinglePost />}></Route>
         <Route path="/careers" element={<Careers />}></Route>
         <Route path="/apply/:id" element={<SingleJob />}></Route>
+        <Route path="/disclaimer" element={<Disclaimer />}></Route>
       </Routes>
       
     </Router>

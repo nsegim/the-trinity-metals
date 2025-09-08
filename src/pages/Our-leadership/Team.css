@@ -19,6 +19,17 @@ line-height: 43.88px;
     max-height: 400px;
 }
 
+@media(min-width: 768px){
+    .second-grid .single-team-member:nth-of-type(8) .member-post,
+ .team-member-wrapper .single-team-member:nth-of-type(1) .member-post, 
+ .first-grid .team-member-wrapper .single-team-member:nth-of-type(3) .member-post{
+  
+  width: 68%;
+  
+}
+}
+
+
 @media (max-width: 768px){
    .about-hero-section .heading, .child-item-wrapper h1{
     font-size: 36px!important;

@@ -25,16 +25,19 @@ const ProjectPage = () => {
                 <h2>{t("our-project-page.projects-sub-title")}</h2>
               </div>
               <div className="projects-description pb-3">
-                <p>
-                  <b> {t("our-project-page.project-description-1")}</b>
-                 
-                </p>
-                <p>
-                  {t("our-project-page.project-description-2")}  
-                </p>
-                <p>
-                  {t("our-project-page.project-description-3")}
-                </p>
+                <ul>
+                    <li>
+                      <b> {t("our-project-page.project-description-1")}</b>
+                    
+                    </li>
+                    <li>
+                      {t("our-project-page.project-description-2")}  
+                    </li>
+                    <li>
+                      {t("our-project-page.project-description-3")}
+                    </li>
+                </ul>
+                
               </div>
               <div className="projects-cards-wrapper">
                 <div className="project-card card-item card1">
