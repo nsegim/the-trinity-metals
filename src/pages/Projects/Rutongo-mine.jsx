@@ -37,7 +37,7 @@ const Rutongo = () => {
                      </div>
                      <div className="details-element">
                         <h4>Tin Production</h4>
-                        <p>70-90 tons per month</p>
+                        <p>40-70tons per month</p>
                      </div>
                    </div>
 
@@ -62,10 +62,10 @@ const Rutongo = () => {
                 </div>
 
                 <div className="project-brief pt-3">
-                  <h4>
+                  {/* <h4>
                     Brief history 
-                  </h4>
-                  <p className="fw-bold">
+                  </h4> */}
+                  <p className="fw-bold heading-20">
                     
                     
                       Rutongo Mines is a Tin Mine with a mining concession of 9,600 ha, located 26km north of

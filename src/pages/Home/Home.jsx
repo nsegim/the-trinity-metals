@@ -210,7 +210,7 @@ const scrollToAboutSection = () => {
                         <div className="the_content_left">
                         <div className="who-are-we-numbers">
                           <div className="employess-count">
-                            <span>5000+</span>
+                            <span>6000+</span>
                             <p>{t("home.employees")}</p>
                           </div>
                         </div>
@@ -386,7 +386,7 @@ const scrollToAboutSection = () => {
               </span>{t("home.sustainability")}
              </h2>
 
-             <h3 className="heading w-75">
+             <h3 className="heading w-100">
               <span>{t("home.we-are-energy")}</span>
              </h3>
 

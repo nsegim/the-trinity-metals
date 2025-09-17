@@ -53,10 +53,10 @@ const Musha = () => {
                 </div>
 
                 <div className="project-brief pt-3">
-                  <h4>
+                  {/* <h4>
                     Brief history 
-                  </h4>
-                  <p className="fw-bold">
+                  </h4> */}
+                  <p className="fw-bold heading-20">
                       Trinity Musha Mine is a Tin and Tantalum Mine with Lithium prospects operating
                       on 6,094 ha concession, located in Rwanda’s prolific tin region – Rwamagana
                       District – 45 km from Kigali in the Eastern Province. The mine consists of a

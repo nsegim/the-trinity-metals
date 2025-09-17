@@ -53,10 +53,10 @@ const Nyakabingo = () => {
                 </div>
 
                 <div className="project-brief pt-3">
-                  <h4>
+                  {/* <h4>
                     Brief history 
-                  </h4>
-                  <p className="fw-bold">
+                  </h4> */}
+                  <p className="fw-bold heading-20">
                      Trinity Nyakabingo Mine is a Tungsten ore mine with a mining concession of 1,600 ha. The
                       mine is estimated to contain approximately 115,502 tons of recoverable Tungsten with
                       potential to grow the resource substantially at depth. Current production is between 100 to 110

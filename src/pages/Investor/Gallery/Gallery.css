@@ -155,3 +155,9 @@ color: var(--trinity-dark);
     color: var(--trinity-white);
 
 }
+
+
+/* Youtube video styles */
+.youtube-vid-wrapper img{
+    width: 100%;
+}

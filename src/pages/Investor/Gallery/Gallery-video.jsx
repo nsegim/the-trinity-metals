@@ -54,16 +54,17 @@ const TheVideoGallery = ()=>{
        
 
          const [clickedPlayButtonLink, setClickedPlayButtonLink] = useState([])
+         
          const [isOpen, setIsOpen] = useState(false)
          const popup = useRef(null)
 
-         const handleClick = (event, item) => {
-          event.preventDefault(); 
-          setClickedPlayButtonLink(item?.acf?.video_url);
-          setIsOpen(true)
-          console.log(clickedPlayButtonLink)
-        };
-
+        //  const handleClick = (event, item) => {
+        //   event.preventDefault(); 
+        //   setClickedPlayButtonLink(item?.acf?.video_url);
+        //   setIsOpen(true)
+        //   console.log(clickedPlayButtonLink)
+        // };
+         
 
         const handleClosePopup = () => {
 
@@ -93,6 +94,76 @@ const TheVideoGallery = ()=>{
       
 
         useEffect(()=>{console.log(data)}, [data])
+
+
+        //Video fetch try
+       const [youtubeList, setYoutubeList] = useState([]) // Initialize as empty array
+        const [loading, setLoading] = useState(true)
+        const [error, setError] = useState(null)
+
+        const fetchYoutubeData = async () => {
+          try {
+            setLoading(true)
+            setError(null)
+            
+            const APIKey = "AIzaSyBDIRHkiZhooxRilDmjWuFtAt6ax2ZDrVI" 
+            const channelId = "UCs7L7h5xrBdfI7_4YLn66QA" 
+            
+            // FIRST: Get the uploads playlist ID from the channel
+            const channelResponse = await fetch(
+              `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${channelId}&key=${APIKey}`
+            )
+            
+            if (!channelResponse.ok) {
+              throw new Error(`HTTP error! status: ${channelResponse.status}`)
+            }
+            
+            const channelData = await channelResponse.json()
+            
+            if (!channelData.items || channelData.items.length === 0) {
+              throw new Error("Channel not found or no items")
+            }
+            
+            // Get the uploads playlist ID
+            const uploadsPlaylistId = channelData.items[0].contentDetails.relatedPlaylists.uploads
+           // console.log("Uploads Playlist ID:", uploadsPlaylistId)
+            
+            // SECOND: Now fetch videos from the uploads playlist
+            const videosResponse = await fetch(
+              `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=25&key=${APIKey}`
+            )
+            
+            if (!videosResponse.ok) {
+              throw new Error(`HTTP error! status: ${videosResponse.status}`)
+            }
+            
+            const videosData = await videosResponse.json()
+            //console.log("Videos data all:", videosData)
+            
+            // Set the videos to state
+            setYoutubeList(videosData.items)
+            
+          } catch (error) {
+            console.error("Error fetching YouTube data:", error)
+            setError(error.message)
+          } finally {
+            setLoading(false)
+          }
+        }
+
+        useEffect(() => {
+          fetchYoutubeData()
+        }, [])
+
+
+        const handleVideoPlay = (event, item) => {
+          event.preventDefault(); 
+          setClickedPlayButtonLink(item?.snippet?.resourceId?.videoId);
+          setIsOpen(true)
+          console.log(clickedPlayButtonLink)
+        };
+         
+
      
     return(
         <>
@@ -137,18 +208,19 @@ const TheVideoGallery = ()=>{
                     <div className="videos-wrapper">
                         
                           {
-                             data?.length > 0 ? (
+                             youtubeList?.length > 0 ? (
 
                               <div className="video-category  All">
                                 {
-                                 data.map((item, index) => {
+                                 youtubeList.map((item, index) => {
                                   
                                     
                                     return (
-                                       <div className="image-grid">
-                                        <ImageGallery imageUrl={item?._embedded?.["wp:featuredmedia"]?.[0]?.source_url} customClass={'gallery-img'} />
-                                          
-                                            <div className="play-video" onClick={(event) => handleClick(event, item)}>
+                                       <div className="image-grid youtube-vid-wrapper">
+                                        {/* <ImageGallery imageUrl={item?._embedded?.["wp:featuredmedia"]?.[0]?.source_url} customClass={'gallery-img'} /> */}
+                                           <ImageGallery imageUrl ={item?.snippet?.thumbnails?.medium?.url} />
+
+                                            <div className="play-video" onClick={(event) => handleVideoPlay(event, item)}>
                                               <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Link-e1739190132637.png" customClass="play-video-player"/>
                                             </div>
                                           
@@ -180,7 +252,7 @@ const TheVideoGallery = ()=>{
                     {/* Video LightBox */}
                     {isOpen ? (
                        
-                            <LightBox clickedPlayButtonLink={clickedPlayButtonLink} handleClosePopup={handleClosePopup} ref={popup}/>
+                            <LightBox clickedPlayButtonLink={`https://youtube.com/embed/${clickedPlayButtonLink}?start&autoplay=0&controls=1&enablejsapi=1&modestbranding=1&origin=https://trinity-metals.com&rel=0&showinfo=0&version=3&wmode=transparent`} handleClosePopup={handleClosePopup} ref={popup}/>
                         
                           
                     ) : (

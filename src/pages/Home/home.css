@@ -164,7 +164,7 @@ text-decoration: none;
     display: flex;
     justify-content: space-around;
     padding: 30px 50px 30px 50px;*/
-    z-index: 9999;
+    z-index: 999;
     position: absolute;
     right: 0;
     width: 35%;
@@ -232,8 +232,16 @@ text-align: center;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 83%;
+  
   z-index: 10;
+}
+@media (max-width: 1399px) {
+  .right-intro-wrapper{width: 100%;}
+}
+@media (min-width: 1400px)  {
+  .right-intro-wrapper{
+    width: 83%;
+  }
 }
 @media (max-width: 1208px) AND (min-width: 978px){
   .basic-intro-right{
@@ -243,6 +251,14 @@ text-align: center;
 
   .right-intro-wrapper {
     width: 100%;
+  }
+
+  .mine-site-count p{
+    text-align: center;
+  }
+
+  .the_content_left{
+    gap: 30px
   }
 
 }
@@ -434,7 +450,7 @@ color: var(--trinity-dark);
   }
   
   .the_content_left{
-    width: 75%;
+    width: 80%;
   }
 
 }
@@ -644,6 +660,7 @@ color: var(--trinity-dark);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  margin-bottom: 0;
 }
 .content-wrapper span, .content-wrapper p{
   color: #001721
@@ -671,6 +688,28 @@ color: #001721;
   justify-content: center;
   gap: 21px;
   padding: 45px 45px 45px 60px;
+}
+
+@media (min-width: 520px) and (max-width: 767px) {
+  .coverage-precentages-wrapper{
+    width: 25%!important;
+  }
+  .get-started {
+    padding: 16.5px 22px 16.5px 22px;
+  }
+  .info-buttons{
+    gap: 15px;
+  }
+}
+
+@media (max-width: 519px) {
+  .info-buttons{
+    flex-direction: column;
+  }
+  .view-projects, .get-started{
+    padding: 16px 18px 16px 18px;
+
+  }
 }
 @media (max-width: 767px) {
   .Sastainability-right{
@@ -706,6 +745,8 @@ color: #001721;
 
 
 }
+
+
 @media (max-width: 992px) AND (min-width: 768px){
   .sastainability-section-wrapper{
     padding-top: 40px;

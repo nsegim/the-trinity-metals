@@ -136,3 +136,8 @@ text-align: left;
         height: 500px;
     }
 }
+
+.heading-20{
+    font-size: 20px!important;
+    line-height: 28px!important;
+}

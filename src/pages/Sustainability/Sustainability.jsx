@@ -6,6 +6,7 @@ import ImageGallery from "../../components/ImageGallery"
 import { fetchData } from '../../config/apiConfig'
 import './Sastainability.css'
 import { useTranslation } from "react-i18next"
+
 import axios from "axios"
 
 
@@ -82,18 +83,19 @@ const SustainabilityPage = () => {
                  };
          
          
-           useEffect(()=>{
-              console.log(Documents)
-           }, Documents)
+          //  useEffect(()=>{
+          //     console.log(Documents)
+          //  }, Documents)
      
      const [selectedPostUrl, setSelectedPostUrl] = useState('')
      const [loadinPdf,setLoadingPdf] = useState(false)
+     const [link, setLink] = useState('')
       
              const download = async () =>{
                  setLoadingPdf(true)
                  try {
 
-                    // const response = await fetchData(`media/${selectedPostUrl}`)
+                     //const response = await fetchData(`media/${selectedPostUrl}`)
                      const response = await fetch(`https://trinity-metals.com/wp-json/wp/v2/media/${selectedPostUrl}`, {
                        method: 'GET',
                         headers: {
@@ -103,9 +105,17 @@ const SustainabilityPage = () => {
                         mode: 'cors',
                         credentials: 'omit'
                      })
+
+
+                      //const response = await fetch(`https://trinity-metals.com/wp-json/wp/v2/media/${selectedPostUrl}`)
+
+                      // console.log("selectId:", selectedPostUrl)
                       
                        if(response){
-                        console.log(response)
+                       // window.open(response[0].guid.rendered, '_blank');
+                        setLoadingPdf(false)
+                       // console.log("The response200:",response)
+                        
                        }
                       if (!response.ok) {
                           throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -116,9 +126,12 @@ const SustainabilityPage = () => {
 
 
                      // window.location.href = response[0].guid.rendered;
+                    // setLink(response[0].guid.rendered)
                      window.open(response[0].guid.rendered, '_blank');
                      setLoadingPdf(false)
                       console.log(response)
+
+
                     }catch (error) {
                         console.error('Media fetch failed:', error);
                         throw error;
@@ -129,10 +142,15 @@ const SustainabilityPage = () => {
 
                
              }
+
              useEffect(()=>{
                  if(selectedPostUrl)
                      download()
+                   // console.log("The Id", selectedPostUrl)
              },[selectedPostUrl])
+
+
+            
      
              
              const formatSize = (bytes) => {
@@ -236,9 +254,9 @@ const SustainabilityPage = () => {
                     <p>
                       {t("Sustainability.approach-to-closure-management-desc1")}
                     </p>
-                      <p>
+                      {/* <p>
                       {t("Sustainability.approach-to-closure-management-desc2")}
-                    </p>
+                    </p> */}
 
 
                   </div>
@@ -262,12 +280,15 @@ const SustainabilityPage = () => {
                      {t("Sustainability.community-title")}
                   </h2>
 
-                  <h5 class="min-header header009 ">{t("Sustainability.community-subtitle")}</h5>
+                  {/* <h5 class="min-header header009 ">{t("Sustainability.community-subtitle")}</h5> */}
                   
-                  <p>
+                  <p>{t("Sustainability.community-description1")}</p>
+                  <p>{t("Sustainability.community-description2")}</p>
+
+                  {/* <p>
                     <b>{t("Sustainability.community-desc")}</b>
                     
-                  </p>
+                  </p> */}
                   {/* <p>
                     {t("Sustainability.governance-desc1")}
                   </p>
@@ -276,7 +297,7 @@ const SustainabilityPage = () => {
                     {t("Sustainability.governance-desc2")}
                   </p>  */}
 
-                  <ul className="content-achievement">
+                  {/* <ul className="content-achievement">
                       <li><b>{t("Sustainability.community-list1")} </b>{t("Sustainability.community-list1-2")}</li>
                       
                       
@@ -292,7 +313,7 @@ const SustainabilityPage = () => {
                       <li><b>{t("Sustainability.community-list3")} </b>{t("Sustainability.community-list3-2")}</li>
                       
                       
-                  </ul>
+                  </ul> */}
 
                   {/* <ul className="content-achievement">
                       <li><b>{t("Sustainability.community-list3")} </b>{t("Sustainability.community-list3-2")}</li>
@@ -300,7 +321,7 @@ const SustainabilityPage = () => {
                       
                   </ul> */}
                   
-                  <ul className="content-achievement">
+                  {/* <ul className="content-achievement">
                       <li><b>{t("Sustainability.community-list4")} </b>{t("Sustainability.community-list4-2")}</li>
                       
                       
@@ -323,7 +344,7 @@ const SustainabilityPage = () => {
                       
                       
                   </ul>
-                  
+                   */}
                   
                 </div>
               </div>
@@ -503,7 +524,7 @@ const SustainabilityPage = () => {
                                               
                                               >
                                                     <span>{t("reports.Download-btn")}</span>
-                                                    <span>{item.acf.document_uploaded}</span>
+                                                    {/* <span>{item.acf.document_uploaded}</span> */}
                                                    
                                                     
                                               </a>
@@ -564,7 +585,7 @@ const SustainabilityPage = () => {
                                               
                                               >
                                                     <span>{t("reports.Download-btn")}</span>
-                                                      <span>{item.acf.document_uploaded}</span>
+                                                      {/* <span>{item.acf.document_uploaded}</span> */}
                                               </a>
                                                   }
                                               

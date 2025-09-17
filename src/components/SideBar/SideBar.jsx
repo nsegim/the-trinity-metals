@@ -279,7 +279,7 @@ const SideBar = ({ currentCategories, postTofieldField, onFiltedPost }) => {
                   </div>
 
                   {/* Categories */}
-                  <div className="about-categories">
+                  {/* <div className="about-categories">
                      <div className="sidebar-headers">
                         <h5>{t("sidebar.category")}</h5>
                      </div>
@@ -302,7 +302,7 @@ const SideBar = ({ currentCategories, postTofieldField, onFiltedPost }) => {
                            )
                         ))}
                      </div>
-                  </div>
+                  </div> */}
 
                   {/* Gallery */}
                   <div className="about-gallery">

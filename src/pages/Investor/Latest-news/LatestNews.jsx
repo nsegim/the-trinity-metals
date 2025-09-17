@@ -21,7 +21,7 @@ const LatestNews = () => {
   // Fetch posts
   const getPosts = async () => {
     try {
-      const response = await fetchData('posts');
+      const response = await fetchData('posts?_embeded&per_page=100');
       setData(response);
       setFilteredPosts(response)
     } catch (error) {

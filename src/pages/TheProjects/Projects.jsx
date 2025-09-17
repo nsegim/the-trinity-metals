@@ -25,18 +25,19 @@ const ProjectPage = () => {
                 <h2>{t("our-project-page.projects-sub-title")}</h2>
               </div>
               <div className="projects-description pb-3">
-                <ul>
-                    <li>
-                      <b> {t("our-project-page.project-description-1")}</b>
+                
+                    <p>
+                       <b dangerouslySetInnerHTML={{ __html: t("our-project-page.project-description-1") }} />
+
                     
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                       {t("our-project-page.project-description-2")}  
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                       {t("our-project-page.project-description-3")}
-                    </li>
-                </ul>
+                    </p>
+                
                 
               </div>
               <div className="projects-cards-wrapper">
