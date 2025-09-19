@@ -252,7 +252,7 @@
         "LITHIUM-EXPLORATION": {
           "LITHIUM-EXPLORATION-title": "Umushinga wa Lithium wa Ntunga",
           "LITHIUM-EXPLORATION-subtitle": " Urutare rwa Ntunga Ntunga ni amahirwe y’iterambere rya Trinity Metals",
-          "description1": "Mu 2018, Trinity Metals (PIRAN Rwanda Ltd) yatangiye ubushakashatsi kuri site yayo ya Ntunga site, kandi ibyabuvuyemo byatangaga icyizere. Ubucukuzi bwakozwe ku ikubitiro bwageraga muri metero  250 ahagaragaye igipimo cyo kwishimira cya 0.02%  bya tantalum (Ta₂O₅) na 0.12% bya Tin (Sn) mu bitare by’amabuye, kandi si ibyo gusa kuko muri metero 80 gukomeza kumanuka munsi, hagaragayemo Lithium by’umwihariko mu bitare bizwi nka spodumene.",
+          "description1": "Mu 2018, PIRAN Rwanda Ltd yatangiye ubushakashatsi kuri site yayo ya Ntunga site, kandi ibyabuvuyemo byatangaga icyizere. Ubucukuzi bwakozwe ku ikubitiro bwageraga muri metero  250 ahagaragaye igipimo cyo kwishimira cya 0.02%  bya tantalum (Ta₂O₅) na 0.12% bya Tin (Sn) mu bitare by’amabuye, kandi si ibyo gusa kuko muri metero 80 gukomeza kumanuka munsi, hagaragayemo Lithium by’umwihariko mu bitare bizwi nka spodumene.",
           "description2": "Mu 2023, bitewe n’uko ku Isi lithium yakomeje gukenerwa cyane, twaguye ubushakashatsi bwacu. Twarushijeho gucukura mu bujyakuzimu kugera hagati ya metero 300 na 780 kandi byatanze umusaruro. Mu myobo irenga 39 twacukuye, twabashije kubona igipimo cya lithium (Li₂O) kigera kuri 4%, hamwe n’ibisubizo bitangaje birimo:",
           "description2-1": "DD_055:",
             "description2-1-0": "195m @ 1.4% Li₂O",
@@ -437,6 +437,12 @@
 
 
     
+  },
+
+   "desclaimer":{
+   "desclaimer-title":"Inshingano",
+   "desclaimer-desc":"Trinity Metals Limited is committed to keeping its website information up-to-date and accurate and will take the necessary steps to keep the website operating smoothly. Trinity Metals Limited makes no representations or warranties of any kind, express or implied, about the website's completeness, accuracy, reliability, suitability or availability for any purpose.",
+   "desclaimer-desc1": "Trinity Metals accepts no liability for any loss or damage, including, without limitation, indirect or consequential loss or damage, or any loss or damage arising from loss of data or profits arising out of, or in connection with, the use of this website. Use of any personal data you provide to Trinity Metals Limited via your response or request for information will be limited to the guidelines outlined in our privacy statement. All intellectual property rights to content on this website are vested in Trinity Metals Limited. Copying, disseminating, and any other use of these materials is not permitted without the written permission of Trinity Metals Limited, except and only insofar as otherwise stipulated in regulations of mandatory law (such as the right to quote), unless specific content dictates otherwise. If you have any questions or problems with the accessibility of the website, please get in touch with us at the group email address or phone number detailed on the website."
   },
   
   "footer": {

@@ -253,7 +253,7 @@
          "LITHIUM-EXPLORATION": {
           "LITHIUM-EXPLORATION-title": "Ntunga Lithium Project",
           "LITHIUM-EXPLORATION-subtitle": "The Ntunga pegmatite offers robust development opportunities for Trinity Metals. ",
-          "description1": "In 2018, Trinity Metals (PIRAN Rwanda Ltd) began a bold exploration campaign at its Ntunga property—and the results were promising. Initial shallow drilling (up to 250 meters) revealed encouraging grades of 0.02% Ta₂O₅ and 0.12% Sn in weathered pegmatites, along with lithium mineralization—primarily spodumene—appearing in fresh pegmatites from depths of 80 meters and beyond.",
+          "description1": "In 2018, PIRAN Rwanda Ltd began a bold exploration campaign at its Ntunga property—and the results were promising. Initial shallow drilling (up to 250 meters) revealed encouraging grades of 0.02% Ta₂O₅ and 0.12% Sn in weathered pegmatites, along with lithium mineralization—primarily spodumene—appearing in fresh pegmatites from depths of 80 meters and beyond.",
           "description2": "Fast forward to 2023, with the global surge in lithium demand, we took our exploration to the next level. A new phase of deeper drilling (300–780 meters) was launched to test theorebody’s depth potential—and it delivered. Over 39 drill holes, we encountered grades reaching up to 4% Li₂O, with standout intercepts including:",
           "description2-1": "DD_055:",
             "description2-1-0": "195m @ 1.4% Li₂O",
@@ -395,7 +395,7 @@
       "select-field-title":"Near Location"
       
     },
-    
+
      "No-position": "No Position Available"
 
 
@@ -428,6 +428,12 @@
    
     
     
+  },
+
+  "desclaimer":{
+   "desclaimer-title":"Disclaimer",
+   "desclaimer-desc":"Trinity Metals Limited is committed to keeping its website information up-to-date and accurate and will take the necessary steps to keep the website operating smoothly. Trinity Metals Limited makes no representations or warranties of any kind, express or implied, about the website's completeness, accuracy, reliability, suitability or availability for any purpose.",
+   "desclaimer-desc1": "Trinity Metals accepts no liability for any loss or damage, including, without limitation, indirect or consequential loss or damage, or any loss or damage arising from loss of data or profits arising out of, or in connection with, the use of this website. Use of any personal data you provide to Trinity Metals Limited via your response or request for information will be limited to the guidelines outlined in our privacy statement. All intellectual property rights to content on this website are vested in Trinity Metals Limited. Copying, disseminating, and any other use of these materials is not permitted without the written permission of Trinity Metals Limited, except and only insofar as otherwise stipulated in regulations of mandatory law (such as the right to quote), unless specific content dictates otherwise. If you have any questions or problems with the accessibility of the website, please get in touch with us at the group email address or phone number detailed on the website."
   },
   
   "footer": {
