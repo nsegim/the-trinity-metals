@@ -7,6 +7,7 @@ import SiteFooter from "../../../components/Footer/Footer"
 import { fetchData } from '../../../config/apiConfig';
 import ReUsablePost from '../../../components/ReUsablePost';
 import ImageGallery from '../../../components/ImageGallery';
+import { useTranslation } from 'react-i18next';
 
 const LatestNews = () => {
   const [data, setData] = useState([]);
@@ -100,14 +101,14 @@ const LatestNews = () => {
   executeScroll();
 }, [currentPage]); // Runs every time `currentPage` updates
 
-
+const { t } = useTranslation()
 
   return (
     <>
       <SiteHeader />
       <div className="custom-hero">
         <div className="child-item-wrapper z-1">
-          <h1 className="heading text-uppercase">Latest News</h1>
+          <h1 className="heading text-uppercase">{t("latest-news.latest-news-page-title")}</h1>
         </div>
       </div>
       <div className="latest-news-wrapper" ref={myRef}>

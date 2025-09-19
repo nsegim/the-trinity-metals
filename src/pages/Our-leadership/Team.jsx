@@ -7,9 +7,12 @@ import { useState, useEffect } from "react";
 import './Team.css'
 import { fetchData } from "../../config/apiConfig";
 import Spinner from "../../components/Spinner/Spinner";
+import { useTranslation } from "react-i18next";
+
 
 const Team = () => {
-   
+    
+       const { t,i18n } = useTranslation()
 
 
 
@@ -25,11 +28,22 @@ const Team = () => {
          const [error, setError] = useState(null);
          const [boardMember, setBoardMember] = useState([]);
          const [managementMember, setManagementMember] = useState([]);
+         const [boardMemberKiny, setBoardMemberKiny] = useState([]);
+         const [managementMemberKiny, setManagementMemberKiny] = useState([]);
          const [rutongoBoardMember, setRutongoBoardMember] = useState([]);
          const [activeModal, setActiveModal] = useState(null); // ✅ Single state for modals
-         
-     
-       
+         const [bordMembers,setBoardMembers] = useState({
+            kiny:[],
+            en:[]
+         })
+
+         const [managementMembers,setmanagementMembers] = useState({
+            kiny:[],
+            en:[]
+         })
+
+       const currentLang = i18n.language;
+
          // Fetch posts
          const getMembers = async () => {
            try {
@@ -56,6 +70,8 @@ const Team = () => {
               let boardTemp = [];
               let rutongoBoardTemp = [];
               let managementTemp = [];
+              let boardTempKiny = [];
+              let managementTempKiny = [];
               let tagsMap = {};
              // let imagesMap = {};
               let tagIds = new Set(); // Collect unique tag IDs for batch fetching
@@ -73,17 +89,25 @@ const Team = () => {
               tagResponses.forEach(tag => {
                 tagLookup[tag.id] = tag.name;
               });
-          
+              
+
+              
+
               // Process members with tags and images
               data.forEach((item) => {
                 const tagNames = item?.tags?.map(tagId => tagLookup[tagId]) || []; 
                 
                 tagsMap[item.id] = tagNames; // Store all assigned tags
-               
+                
+                
                 // Categorize team members if at least one tag matches
                 if (tagNames.includes("Board member")) boardTemp.push(item);
                 if (tagNames.includes("Management Team")) managementTemp.push(item);
                 if(tagNames.includes("Rutongo Mines Board Members")) rutongoBoardTemp.push(item);
+                if(tagNames.includes("Inama y'Ubutegetsi")) boardTempKiny.push(item);
+                if(tagNames.includes("Abagize inama y'ubucukuzi bwa Rutongo")) managementTempKiny.push(item);
+                 
+            
           
                 // Fetch and store featured image
                 // if (item?.featured_media) {
@@ -93,16 +117,36 @@ const Team = () => {
           
               // 4️⃣ Update state once (avoids multiple re-renders)
               setTags(tagsMap);
+
+
              // setMemberImage(imagesMap);
               setBoardMember(boardTemp);
+              setBoardMembers(prev => ({
+                                    ...prev,
+                                    en: boardTemp,
+                                    kiny:boardTempKiny
+                                    }));
+
               setManagementMember(managementTemp);
+
+              setmanagementMembers(prev => ({
+                                    ...prev,
+                                    en: managementTemp,
+                                    kiny: managementTempKiny
+                                    }));
+
               setRutongoBoardMember(rutongoBoardTemp);
+            //   setBoardMemberKiny(boardTempKiny)
+
+        
+
             };
           
             processMembers();
-             console.log("the members: ",data)
+            // console.log("the members: ",managementMemberKiny)
+               
 
-
+           
           }, [data]); // Runs when `data` changes
           
           
@@ -115,7 +159,7 @@ const Team = () => {
       {/* Hero section */}
       <div className="about-hero-section">
          <div className="inner-wrapper">
-            <h1 className="heading text-uppercase">Our Leadership</h1>
+            <h1 className="heading text-uppercase">{t("our-leadership.our-leadership-title")}</h1>
          </div>
       </div>
       
@@ -124,18 +168,20 @@ const Team = () => {
          <div className="container d-flex flex-column">
 
          <div className="header-element pt-5">
-               <h1 className="text-center">Trinity Metals Group Board Members</h1>
+               <h2 className="text-center">{t("our-leadership.board-members")}</h2>
             </div>
 
-            <div className="team-members first-grid">
+            <div className="team-members first-grid pb-2">
                
                 {
                     
-                    boardMember?.length > 0 ? (
+                    bordMembers?.[currentLang]?.length > 0 ? (
                         
                       <div className="team-member-wrapper">
 
-                        {boardMember.slice().reverse().map((item, index) => (
+                        {(currentLang === "kiny" ? bordMembers?.[currentLang]?.slice()
+                         : bordMembers?.[currentLang]?.slice().reverse()).map((item, index) => (
+
                             <div key={index} className="single-team-member">
                                  <ImageGallery imageUrl={item._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif"} customClass={'team-member-photo'}/>
                                         <div className="team-member-details">
@@ -200,20 +246,24 @@ const Team = () => {
 
 
             <div className="header-element">
-               <h1 className="text-center">Executive Management Team</h1>
+               <h2 className="text-center">{t("our-leadership.executive-management")}</h2>
             </div>
 
 
             <div className="team-members second-grid">
               
-               
+                         
 
 
                           {
-                             managementMember?.length > 0 ? (
+                             managementMembers?.[currentLang]?.length > 0 ? (
                                 <div className="team-member-wrapper">
-                                  {
-                                    managementMember.slice().reverse().map((item, index) => (
+                                  
+                                        {(currentLang === "kiny" 
+                                            ? managementMembers?.[currentLang]?.slice() 
+                                            : managementMembers?.[currentLang]?.slice().reverse()
+                                            )?.map((item, index) => (
+                                    //  managementMembers?.[currentLang]?.map((item, index) => (
                                         <div key={index} className="single-team-member">
                                         <ImageGallery imageUrl={item._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif"} customClass={'team-member-photo'}/>
                                                <div className="team-member-details">
@@ -367,6 +417,5 @@ const Team = () => {
 }
 
 export default Team
-
 
 

@@ -56,6 +56,12 @@ padding: 40px 100px 40px 60px;
 
 }
 
+@media(max-width: 600px){
+  .sust-upper-content{
+    padding-inline: 20px;
+  }
+}
+
 .section-header, .sust-upper-content h2{
 
 font-weight: 700;

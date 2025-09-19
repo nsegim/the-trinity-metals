@@ -176,16 +176,22 @@ const SustainabilityPage = () => {
                 <div className="row pt-5 pb-5">
                     <div className="sust-upper-content col-md-6">
                     <h2>{t("Sustainability.sustainability-into-left-header")}</h2>
-                    <ul>
+                    {/* <ul>
                       <li>{t("Sustainability.sustainability-into-left-header-desc")}</li>
-                    </ul>
+                    </ul> */}
+                    
+                      <p>{t("Sustainability.sustainability-into-left-header-desc")}</p>
+                    
                   </div>
 
                   <div className="sust-upper-content  col-md-6">
                     <h2>{t("Sustainability.sustainability-into-right-header")}</h2>
-                    <ul className="responsive-margin">
+                    {/* <ul className="responsive-margin">
                       <li>{t("Sustainability.sustainability-into-right-header-desc")} </li>
-                    </ul>
+                    </ul> */}
+                    
+                      <p className="responsive-margin">{t("Sustainability.sustainability-into-right-header-desc")} </p>
+                    
                   </div>
                 </div>
                 
@@ -478,15 +484,16 @@ const SustainabilityPage = () => {
                <div class="container d-flex justify-content-center">
                    <div class="information-project">
                       <div class="project-title-element">
-                        <h1>Governance</h1>
+                        <h2>{t("Sustainability.governance")}</h2>
                         <div class="project-brief2 pt-3">
-                          <h4>Corporate Governance&nbsp;</h4>
-                          <p>At Trinity Metals, we believe strong corporate governance is more than a responsibility, it’s a driving force behind our ethical business practices and long-term success. We lead with integrity, ensuring transparency and accountability in everything we do. Our governance framework reflects our deep commitment to our core values, empowering sound decision-making that supports sustainable growth and protects the interests of our people, partners, communities, and planet. By integrating Environmental, Social, and Governance (ESG) principles into our operations, we go beyond compliance—creating real, lasting value and reinforcing our role as a trusted and responsible industry leader.</p>
+                          <h4>{t("Sustainability.governance-subtitle1")}</h4>
+                          <p>{t("Sustainability.governance-desc1")}</p>
 
-                          <h4>Traceability&nbsp;</h4>
-                          <p>We take pride in ensuring that every mineral we produce is 100% conflict-free, fully traceable, and responsibly sourced from our own licensed concessions. From the moment it leaves the ground to the point it reaches the market, our minerals are never blended or traded from external sources—guaranteeing full transparency and control throughout the supply chain. Our vertically integrated operations give us unmatched oversight, reinforcing our commitment to ethical sourcing. We work closely with RCS Global through its Better Mining Program, an industry-leading initiative recognized by the Responsible Minerals Initiative (RMI). In line with global best practices, we publish annual due diligence reports based on the OECD Framework, underscoring our dedication to integrity, accountability, and sustainable mining.</p>
-                          <h4>Board of Directors&nbsp;</h4>
-                          <p>Our Board of Directors is a driving force behind our commitment to responsible leadership and ethical excellence. With a clear strategic vision and unwavering oversight, the Board ensures that every aspect of our business meets the highest ethical and regulatory standards. Backed by dedicated committees, the Audit Committee for financial integrity, the Remuneration Committee for fair and performance-driven rewards, and the SHECS Committee for Safety, Health, Environment, Community, and Security, we maintain strong governance that champions accountability, protects our stakeholders, and fuels sustainable growth. This structure empowers us to lead with purpose and deliver meaningful impact across every level of our operations.</p>
+                          <h4>{t("Sustainability.governance-subtitle2")}</h4>
+                          <p>{t("Sustainability.governance-desc2")}</p>
+
+                          <h4>{t("Sustainability.governance-subtitle3")}</h4>
+                          <p>{t("Sustainability.governance-desc3")}</p>
                         </div>
                       </div>
                    </div>
@@ -498,7 +505,7 @@ const SustainabilityPage = () => {
             <div className="container">
               <div className="policies-section-title">
                 <h2>
-                   Due Diligence Report
+                   {t("Sustainability.Diligence-report")}
                 </h2>
               </div>
               <div className="reports-container">

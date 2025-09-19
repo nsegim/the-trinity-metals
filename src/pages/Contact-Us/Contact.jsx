@@ -4,8 +4,12 @@ import Form from 'react-bootstrap/Form';
 
 import SiteHeader from "../../components/header/Header"
 import ImageGallery from "../../components/ImageGallery"
+
 import './Contact.css'
+import { useTranslation } from "react-i18next";
 const ContactUs = ()=>{
+
+
 
   const [formData, setFormData] = useState({
     name: "",
@@ -56,7 +60,7 @@ const ContactUs = ()=>{
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
-
+    const { t } = useTranslation()
 
 
 
@@ -80,18 +84,17 @@ const ContactUs = ()=>{
                     </div>
                     <div className="contact-details">
                         <p>
-                        We will get back to you within 24 hours, or you can call us everyday,
-                        08:00am to 5:00pm
+                        {t("Contact.contact-details")}
                         </p>
                         <p>
                             <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/Cell-phone-icon-4.svg' />
-                            <span>+250 791 959 034</span>
+                            <span> {t("Contact.contact-tel")}</span>
                         </p>
-                    </div>
+                    </div> 
                 </div>
                 <div className="col-md-6 right">
                     <div className="right-header">
-                      <h1>Get In Touch</h1>
+                      <h1>{t("Contact.contact-tel")}</h1>
                     </div>
                     {/* <div className="right-text-element">
                       <p>Complete control over products allows us to ensure our customers receive the best quality prices and service.</p>
@@ -181,13 +184,13 @@ const ContactUs = ()=>{
                                 onChange={handleChange}
                                 rows="3"
                                 className="w-full p-2 border rounded-md"
-                                placeholder="Additional Details!"
+                                placeholder={t('Contact.field-wrapper-message-placeholder')}
                               ></textarea>
                           </div>
                            
                           <div className="button-wrapper">
                             <button type="submit" className="w-full text-white p-2 rounded-md form-submit-button">
-                              <span className="button-text">Send Message</span>
+                              <span className="button-text">{t("Contact.")}</span>
                               <span className="button-icon">
                                 <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/contact-us-icon.svg" />
 
@@ -208,14 +211,14 @@ const ContactUs = ()=>{
             <div className="col-md-4">
               <div className="location-name">
                 <h4>
-                 Rutongo Mines
+                 {t("Contact.location-rutongo-name")}
                 </h4>
               </div>
               <div className="location-details">
                 <ul>
-                  <li>Email: rutongo@trinity-metals.com</li>
-                  <li>Address: P.O Box: 6132 - Masoro, Rulindo</li>
-                  <li>Phone: +250 791 701 498</li>
+                  <li>{t("Contact.location-rutongo-details-email")}</li>
+                  <li>{t("Contact.location-rutongo-detaisl-address")}</li>
+                  <li>{t("Contact.location-rutongo-detaisl-phone")}</li>
                 </ul>
           
               </div>
@@ -223,14 +226,14 @@ const ContactUs = ()=>{
             <div className="col-md-4">
             <div className="location-name">
                 <h4>
-                 Nyakabingo Mine
+                 {t("Contact.location-nyakabingo-name")}
                 </h4>
               </div>
               <div className="location-details">
                 <ul>
-                  <li>Email: Nyakabingo@trinity-metals.com</li>
-                  <li>Address: P.O Box: 749 , Shyorongi, Rulindo</li>
-                  <li>Phone: +250 791 345 409</li>
+                  <li>{t("Contact.location-nyakabingo-details-email")}</li>
+                  <li>{t("Contact.location-nyakabingo-detaisl-address")}</li>
+                  <li>{t("Contact.location-nyakabingo-detaisl-phone")}</li>
                 </ul>
           
               </div>
@@ -238,14 +241,14 @@ const ContactUs = ()=>{
             <div className="col-md-4">
             <div className="location-name">
                 <h4>
-                 Musha Mines
+                 {t("Contact.location-musha-name")}
                 </h4>
               </div>
               <div className="location-details">
                 <ul>
-                  <li>Email: musha@trinity-metals.com</li>
-                  <li>Address: P.O Box: 3824  Musha, Rwamagana</li>
-                  <li>Phone: +250 789 312 308</li>
+                  <li>{t("Contact.location-musha-details-email")}</li>
+                  <li>{t("Contact.location-musha-detaisl-address")}</li>
+                  <li>{t("Contact.location-musha-detaisl-phone")}</li>
                 </ul>
           
               </div>

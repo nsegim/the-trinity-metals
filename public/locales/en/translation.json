@@ -158,6 +158,12 @@
 
   },
 
+  "our-leadership":{
+    "our-leadership-title": "Our Leadership",
+    "board-members": "Trinity Metals Group Board Members",
+    "executive-management": "Executive Management Team"
+  },
+
   "our-project-page": {
 
         "projects-title": "Projects",
@@ -178,56 +184,70 @@
         },
 
         "rutongo-mines": {
+            "rutongo-title" :"Rutongo Mines",
             "satellite-mines": "Rutongo Satellite Mines",
             "satellite-mines-achievement": "6 Mines",
 
             "tin-production": "Tin Production",
-            "tin-production-achievement": "70-90 tonnes",
+            "tin-production-achievement": "40-70tons per month",
 
             "workforce": "Workforce",
             "Workforce-achievement": "2,500+",
 
             "location": "Location",
-            "location-achievement": "Rutongo Mines sit 26km north <br> of Kigali, Rwanda",
+            "location-achievement": "Rutongo Mines sit 26km north",
+            "location-achievement1": "of Kigali, Rwanda",
 
 
+            "rutongo-bold-title": "Rutongo Mines is a Tin Mine with a mining concession of 9,600 ha, located 26km north of Kigali, comprising six underground tin mines – Gisanze, Masoro, Nyamyumba, Gasambya, Karambo and Mahaza. Together, they contain one of the biggest cassiterite deposits in Africa.",
+            "rutongo-description": "The Rutongo mines operate under a 25-year license that began in 2015. They are estimated to contain approximately 54,000 tonnes of recoverable tin and currently produce between 40 to 70 tons per month, projected to increase to 200 tonnes per month in the next five years.",
 
-            "brief-history ": "Brief history",
-            "brief-history-description": "Rutongo Mines is a Tin mine with a mining concession of 9,960 ha. Features 6 operational mining sites - Nyamyumba, Gasambya, Masoro, Mahaza, Karambo and Gisanse. They are estimated to contain approximately 56,000 tonnes of recoverable tin with potential to grow the resource substantially at depth. Currently produce between 70-90 tonnes of tin concentrate at 68-70% Sn, projected to increase to 200 tonnes per month in the next five years.",
-            "presented-history": "Presented on a History Timeline",
-            "history-timeline": "Tin exploitation at Rutongo began in 1931, and from the 1940s, the mines consistently exported 800 tonnes a year of cassiterite. By the 1950s, SOMUKI, a Belgian mining company, had developed the mine into the largest tin concentrate producer in Rwanda. In 1973, the fusion of former colonial mining sites gave rise to SOMIRWA (Société Des Mines Du Rwanda), a joint venture between the Government of Rwanda and GEOMINES. This Belgium-based mining company operated on site until its liquidation in 1986. At this time, the mines were nationalized and operated under REDEMI (Regie d’Exploitation et de Developpement des Mines).",
-            "history-timeline-2": "The mines closed in 1994 when the genocide against the Tutsi occured. In 1995 they reopened under REDEMI as a miners’ co-operative and operated as such until 2008, when the government re-privatized them. "
+            "rutongo-description1": "Tin exploitation at Rutongo began in 1931, and from the 1940s, the mines consistently exported 800 tonnes a year of cassiterite. By the 1950s, SOMUKI, a Belgian mining company, had developed the mine into the largest tin concentrate producer in Rwanda. In 1973, the fusion of former colonial mining sites gave rise to SOMIRWA (Société Des Mines Du Rwanda), a joint venture between the Government of Rwanda and GEOMINES. This Belgium-based mining company operated on site until its liquidation in 1986. At this time, the mines were nationalised and operated under REDEMI (Regie d’Exploitation et de Developpement des Mines).",
+            "rutongo-description2": "The mines closed in 1994 when the genocide against the Tutsi occurred. In 1995 they reopened under REDEMI as a miners’ co-operative and operated as such until 2008, when the government re-privatized them.",
+            "rutongo-description3": "In May 2022, the mine was incorporated into the newly established Trinity Metals Group.",
+            "rutongo-description4" : "The mine has significant growth potential - future plans consist of increasing mining volumes by opening up new reserves at depth through the development of a decline below 33 level, introducing new bulk mining, utilization of larger mining equipment and the design and construction of a number of mineral processing facilities to process run of mine material and legacy stockpiled material. These plans give the mine the opportunity to more than double production over the next 5 years."
         },
+
+
         
         "nyakabingo-mines": {
+            "nyakabingo-mines-title": "Trinity Nyakabingo Mine",
             "tungsten-production": "Tungsten Production",
-            "tungsten-production-achievement": "100-110 tonnes",
+            "tungsten-production-achievement": "100-110 tons per month",
             "workforce": "Workforce",
             "workforce-achievement": "1,800+",
             "location": "Location",
-            "location-achievement":"Nyakabingo Mine sit 19km northwest <br> of Kigali, Rwanda",
+            "location-achievement":"19km northwest",
+            "location-achievement1": " of Kigali, Rwanda",
 
 
             "brief-history": "Brief history",
-            "brief-history-desc":"Trinity Nyakabingo Mine is a Tungsten ore mine with a mining concession of 1,600 ha. They are estimated to contain approximately 115,502 tonnes of recoverable Tungsten with potential to grow the resource substantially at depth. Currently produces between 100 to 110 tonnes of wolframite per month, containing 66-70% Tungsten, under a 25 year license that began in 2015.",
+            "brief-history-desc":"Trinity Nyakabingo Mine is a Tungsten ore mine with a mining concession of 1,600 ha. The mine is estimated to contain approximately 115,502 tons of recoverable Tungsten with potential to grow the resource substantially at depth. Current production is between 100 to 110 tons of wolframite per month, containing 66-70% Tungsten, under a 25-year license that commenced in 2015.",
 
             "history-timeline": "Presented on a history timeline",
-            "history-timeline-desc": "Exploration of the mine’s alluvial deposits began in the late 1930s, but it was only after WWII that systematic open cast mining began. Underground mining started in the late 1960s with adits, followed by drives along quartz veins situated in bedding planes (known as concordant parallel veins or PV). The first Companies to work the deposit were Belgium who mined on a semi-mechanized until the 1986. At this time, the mines were nationalized and operated under REDEMI (Regie d’Exploitation et de Developpement des Mines). The mines closed in 1994 when the genocide against the Tutsi occurred. In 1995 they reopened under REDEMI as a miners’ co-operative and operated as such until 2007, when Euro Trade International took ownership."
+            "history-timeline-desc": "Trinity Nyakabingo Mine is a Tungsten ore mine with a mining concession of 1,600 ha. The mine is estimated to contain approximately 115,502 tons of recoverable Tungsten with potential to grow the resource substantially at depth. Current production is between 100 to 110 tons of wolframite per month, containing 66-70% Tungsten, under a 25-year license that commenced in 2015.",
+            "history-timeline-desc1": "Exploration of the mine’s alluvial deposits began in the late 1930s, but it was only after WWII that systematic open cast mining began. In the late 1960’s underground mining started through adits, followed by drives along quartz veins situated in bedding planes (known as concordant parallel veins). The first Companies to mine the deposit were Belgium using semi-mechanized methods until 1986. At this time, the mines were nationalized and operated under REDEMI (Regie d’Exploitation et de Developpement des Mines). The mines closed in 1994 when the genocide against the Tutsi occurred. In 1995 they reopened under REDEMI as a miners’ co-operative and operated as such until 2007, when Euro Trade International took ownership. In May 2022 the mine was incorporated into the newly established Trinity Metals Group and renamed Trinity Nyakabingo Mine.",
+            "history-timeline-desc2": "Trinity Nyakabingo Mine is the African continent’s largest Tungsten producer.",
+            "history-timeline-desc3": "The mine has significant growth potential - future plans consist of increasing mining volumes by opening up new reserves at depth through the development of a decline below 22 level, introducing new bulk mining, utilization of larger mining equipment and the design and construction of mineral processing facilities to process run of mine material and legacy stockpiled material. These plans give the mine the opportunity to at least double current production levels."
+
         },  
+        
 
         "musha-mines": {
+           "musha-mines-title": "Trinity Musha Mines",
             "tin-production": "Tin Production",
-            "tin-production-achievement": "30 tonnes",
+            "tin-production-achievement": "30-40 tons per month",
             "workforce": "Workforce",
             "workforce-achievement": "2,200+",
             "location": "Location",
-            "location-achievement": "Musha Mines sit 45km from Kigali in the <br> Eastern Province",
+            "location-achievement": "Musha Mines sit 45km from Kigali in the",
+             "location-achievement1": "Eastern Province",
 
             "brief-history":"Brief history",
-            "brief-history-desc": "Trinity Musha Mines is a Tin and Tantalum Mine with a mining concession of 3,894ha which is estimated to contain approximately 12,870tonnes of recoverable Tin with potential to grow the resource substantially at depth. Currently produces 30tonnes of Tin per month, containing 68-70% Sn, under a 25-year license that began in 2014. The Mine also produces a small amount of Coltan from Duha and Ntunga sub-site.",
-            "history-timeline": "history timeline",
-            "history-timeline-desc": "The Musha-Ntunga tin deposits were initially exploited from the 1920s to the 1970s. In 1985, the mine was nationalized and operated by SOMIRWA (Société des Mines du Rwanda). However, due to depressed tin prices and the 1994 genocide against the Tutsi, which deterred external investment, the operation remained artisanal. Between 2014 and 2016, Pella Rwanda Ltd was granted a 25-year mining license for the Musha-Ntunga Mines. Pella reprocessed tailings and conducted a geochemical testing program, yielding encouraging results and prompting further work. In 2017, ownership was transferred to Piran Resources."
-
+            "brief-history-desc": "Trinity Musha Mine is a tin and tantalum mine with lithium prospects operating on a 6,094 ha concession, located in Rwanda’s prolific tin region – Rwamagana District – 45 km from Kigali in the Eastern Province. The mine consists of a number of sub-mines.",
+            "brief-history-desc1": "Trinity Musha Mine’s tin deposits were initially exploited from the 1920s to the 1970s. In 1985, the mine was nationalized and operated by SOMIRWA (Société des Mines du Rwanda). However, due to depressed tin prices and the 1994 genocide against the Tutsi, which deterred external investment, the operation remained artisanal and never realized its growth potential. Between 2014 and 2016, Pella Rwanda Ltd was granted a 25-year mining license for the Musha-Ntunga Mines. In 2017, ownership was transferred to Piran Resources, which operated the mine until May 2022, when it was incorporated into the newly established Trinity Metals Group.",
+            "brief-history-desc2": "The mine is Rwanda’s second largest tin producer after Rutongo Mine.",
+            "brief-history-desc3": "The mine has significant growth potential - future plans consist of increasing mining volumes by opening up new reserves at depth through the development of a decline below level 4, introducing new bulk mining, utilization of larger mining equipment and the design and construction of a number of mineral processing facilities to process run of mine material and legacy stockpiled material. These plans give the mine the opportunity to more than double production over the next 5 years. The Ntunga mining area has significant reserves of tantalum that will be mined as a by-product to the tin."
         },
 
          "LITHIUM-EXPLORATION": {
@@ -308,23 +328,16 @@
 
 
     "governance": "Governance",
-    "governance-desc": "Trinity Metals has strict guidelines in place to ensure ethical business conduct and responsible practices pertaining to human rights, labour rights and the environment.",
-    "governance-desc1": "We comply with guidelines and standards from leading local and international bodies including Certified Trading Chain (CTC) and Organisation for Economic Co-operation and Development (OECD).",
-    "governance-desc2": "Our minerals are certified conflict-free, and meet five basic principles",
-    "governance-list": "Traceability: ",
-    "governance-list-2": " The origin and volumes of minerals we produce, and trade are fully traceable",
-    "governance-list1": "Fair working conditions: ",
-    "governance-list1-2": " We do not use child labour. We pay fair remuneration and provide safety and well-being focused working conditions",
-    "governance-list2": "Security and human rights:",
-    "governance-list2-2": " We ensure security on our sites whilst respecting human rights",
-    "governance-list3": "Community development: ",
-    "governance-list3-2": "We consult with local communities and contribute to their social, economic and institutional development, taking into account gender-sensitive aspects.",
-    "governance-list4": "Environment: ",
-    "governance-list4-2": "We seek continual improvement of our environmental performance.",
-    "governance-list5": "Trinity Nyakabingo Mine 2022 Annual Due Diligence Report",
-    "governance-list6": "Rutongo Mines 2022 Annual Due Diligence Report",
-    "governance-list7": "Due Diligence Report_Piran Rwanda Ltd",
-
+    "governance-subtitle1": "Corporate Governance",
+   
+    "governance-desc1": "At Trinity Metals, we believe strong corporate governance is more than a responsibility, it’s a driving force behind our ethical business practices and long-term success. We lead with integrity, ensuring transparency and accountability in everything we do. Our governance framework reflects our deep commitment to our core values, empowering sound decision-making that supports sustainable growth and protects the interests of our people, partners, communities, and planet. By integrating Environmental, Social, and Governance (ESG) principles into our operations, we go beyond compliance—creating real, lasting value and reinforcing our role as a trusted and responsible industry leader.",
+    "governance-subtitle2":"Traceability",
+    "governance-desc2":"We take pride in ensuring that every mineral we produce is 100% conflict-free, fully traceable, and responsibly sourced from our own licensed concessions. From the moment it leaves the ground to the point it reaches the market, our minerals are never blended or traded from external sources—guaranteeing full transparency and control throughout the supply chain. Our vertically integrated operations give us unmatched oversight, reinforcing our commitment to ethical sourcing. We work closely with RCS Global through its Better Mining Program, an industry-leading initiative recognized by the Responsible Minerals Initiative (RMI). In line with global best practices, we publish annual due diligence reports based on the OECD Framework, underscoring our dedication to integrity, accountability, and sustainable mining.",
+    
+    "governance-subtitle3": "Board of Directors ",
+    "governance-desc3": "Our Board of Directors is a driving force behind our commitment to responsible leadership and ethical excellence. With a clear strategic vision and unwavering oversight, the Board ensures that every aspect of our business meets the highest ethical and regulatory standards. Backed by dedicated committees, the Audit Committee for financial integrity, the Remuneration Committee for fair and performance-driven rewards, and the SHECS Committee for Safety, Health, Environment, Community, and Security, we maintain strong governance that champions accountability, protects our stakeholders, and fuels sustainable growth. This structure empowers us to lead with purpose and deliver meaningful impact across every level of our operations.",
+    
+    "Diligence-report": "Due Diligence Report",
     "policies-standards": "Policies & Standards"
      
   },
@@ -334,7 +347,7 @@
      "form-placeholder": "Enter your keywords ...",
      "Download-btn": "Download"
   },
-
+  
   "latest-news": {
       "latest-news-page-title": "Latest News",
       "read-more-btn": "Read more"
@@ -360,7 +373,16 @@
       "videos": "Videos",
       "photo-gallery": "Photo Gallery",
       "video-gallery": "Video Gallery"
+      
   },
+  "Tabs": {
+      "all": "All",
+      "visitors": "Visitors",
+      "events": "Events",
+      "sports": "Sports"
+
+  },
+  
   "careers": {
     "top-title": "We are an Employer of Choice",
     "top-desc1": "We are committed to empowering and uplifting the communities where we operate through job creation,training and social initiatives.",
@@ -374,6 +396,35 @@
     }
 
 
+  },
+
+  "Contact":{
+    "contact-details": "We will get back to you within 24 hours, or you can call us everyday, 08:00am to 5:00pm",
+    "contact-tel":"+250 791 959 034",
+    "get-in-touch": "Get In Touch",
+    "field-wrapper-name-placeholder": "name",
+    "field-wrapper-email-placeholder": "email",
+    "field-wrapper-number-placeholder": "Phone",
+    "field-wrapper-message-placeholder": "name",
+    "field-wrapper-sendbtn": "Send Message",
+
+    "location-rutongo-name": "Rutongo Mines",
+    "location-rutongo-details-email": "Email: rutongo@trinity-metals.com",
+    "location-rutongo-detaisl-address": "Address: P.O Box: 749 , Shyorongi, Rulindo",
+    "location-rutongo-detaisl-phone": "Phone: +250 791 345 409",
+
+    "location-nyakabingo-name": "Nyakabingo Mine",
+    "location-nyakabingo-details-email": "Email: Nyakabingo@trinity-metals.com",
+    "location-nyakabingo-detaisl-address": "Address: P.O Box: 749 , Shyorongi, Rulindo",
+    "location-nyakabingo-detaisl-phone": "Phone: +250 791 345 409",
+  
+     "location-musha-name": "Musha Mines",
+    "location-musha-details-email": "Email: musha@trinity-metals.com",
+    "location-musha-detaisl-address": "Address: P.O Box: 3824  Musha, Rwamagana",
+    "location-musha-detaisl-phone": "Phone: +250 789 312 308"
+   
+    
+    
   },
   
   "footer": {

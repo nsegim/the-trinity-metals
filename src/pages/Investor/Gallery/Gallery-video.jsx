@@ -7,6 +7,8 @@ import { useEffect, useState, useRef } from "react"
 import { fetchData } from "../../../config/apiConfig"
 import Spinner from "../../../components/Spinner/Spinner"
 import LightBox from "./VideoLightBox/LightBox"
+import { useTranslation } from "react-i18next"
+
 
 
 
@@ -163,6 +165,9 @@ const TheVideoGallery = ()=>{
           console.log(clickedPlayButtonLink)
         };
          
+      const { t } = useTranslation()
+      
+        const tabs = ["all", "visitors", "events", "sports"]
 
      
     return(
@@ -179,15 +184,11 @@ const TheVideoGallery = ()=>{
              <div className="gallery-nav-wrapper d-flex">
                 <Link to="/investor-relations/gallery/photos" className="gallery-nav">
                     <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Photo-icon.svg"/>
-                    <span>
-                      Photo Gallery
-                    </span>
+                      <span>{t("gallery.photo-gallery")}</span>
                 </Link>
                 <Link to="/investor-relations/gallery/videos" className="gallery-nav visited">
                     <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Video-icon.svg"/>
-                    <span>
-                    Video Gallery
-                    </span>
+                      <span>{t("gallery.video-gallery")}</span>
                 </Link>
 
              </div>
@@ -199,10 +200,22 @@ const TheVideoGallery = ()=>{
             <div className="video-gallery-wrapper">
               <div className="video-gallery-container container">
                     <div className="video-gallery-filters">
-                        <button onClick={()=> handleFilterClick("Tab1")} className={`filter-title ${activeFilter === "Tab1" ? "active-button" : ""}`}>All</button>
+                        {/* <button onClick={()=> handleFilterClick("Tab1")} className={`filter-title ${activeFilter === "Tab1" ? "active-button" : ""}`}>All</button>
                         <button onClick={()=>  handleFilterClick("Tab2")} className={`filter-title ${activeFilter === "Tab2" ? "active-button" : ""}`}>Visitors</button>
                         <button onClick={()=>  handleFilterClick("Tab3")} className={`filter-title ${activeFilter === "Tab3" ? "active-button" : ""}`}>Events</button>
-                        <button onClick={()=>  handleFilterClick("Tab4")} className={`filter-title ${activeFilter === "Tab4" ? "active-button" : ""}`}>Sports</button>
+                        <button onClick={()=>  handleFilterClick("Tab4")} className={`filter-title ${activeFilter === "Tab4" ? "active-button" : ""}`}>Sports</button> */}
+
+                        {tabs.map((tab, index) => (
+                            <button 
+                                key={index} 
+                                onClick={() => (handleFilterClick(`Tab${index + 1}`), handleFilterGallery(tab))} 
+                                className={`filter-title ${activeFilter === `Tab${index + 1}` ? "active-button" : ""}`}
+                            >
+                                {t(`Tabs.${tab}`)}
+
+
+                            </button>
+                        ))}
                     </div>
 
                     <div className="videos-wrapper">

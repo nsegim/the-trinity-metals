@@ -1,9 +1,12 @@
 
+import { useTranslation } from 'react-i18next'
 import SiteFooter from '../../components/Footer/Footer'
 import SiteHeader from '../../components/header/Header'
 import ImageGallery from '../../components/ImageGallery'
 import './Project.css'
 const Rutongo = () => {
+
+    const { t } = useTranslation()
     return(
         <>
             <SiteHeader />
@@ -18,7 +21,7 @@ const Rutongo = () => {
             <div className="container d-flex justify-content-center">
               <div className="information-project">
                 <div className="project-title-element">
-                  <h1>Rutongo Mines </h1>
+                  <h1>{t("our-project-page.rutongo-mines.rutongo-title")} </h1>
                 </div>
                 <div className="work-result row">
                    <div className="col-md-3 stats">
@@ -26,8 +29,8 @@ const Rutongo = () => {
                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black-3.svg" />
                      </div>
                      <div className="details-element">
-                        <h4>Rutongo Satellite Mines</h4>
-                        <p>6 Mines</p>
+                        <h4>{t("our-project-page.rutongo-mines.satellite-mines")} </h4>
+                        <p>{t("our-project-page.rutongo-mines.satellite-mines-achievement")} </p>
                      </div>
                    </div>
 
@@ -36,8 +39,8 @@ const Rutongo = () => {
                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black.svg" />
                      </div>
                      <div className="details-element">
-                        <h4>Tin Production</h4>
-                        <p>40-70tons per month</p>
+                        <h4>{t("our-project-page.rutongo-mines.tin-production")} </h4>
+                        <p>{t("our-project-page.rutongo-mines.tin-production-achievement")} </p>
                      </div>
                    </div>
 
@@ -46,8 +49,8 @@ const Rutongo = () => {
                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black-1.svg" />
                      </div>
                      <div className="details-element">
-                        <h4>Workforce</h4>
-                        <p>2,500+</p>
+                        <h4>{t("our-project-page.rutongo-mines.workforce")} </h4>
+                        <p>{t("our-project-page.rutongo-mines.Workforce-achievement")} </p>
                      </div>
                    </div>
                    <div className="col-md-3 stats">
@@ -55,8 +58,8 @@ const Rutongo = () => {
                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black-2.svg" />
                      </div>
                      <div className="details-element">
-                        <h4>Location</h4>
-                        <p> 26km north <br/>of Kigali, Rwanda</p>
+                        <h4>{t("our-project-page.rutongo-mines.location")} </h4>
+                        <p> {t("our-project-page.rutongo-mines.location-achievement")}  <br/>{t("our-project-page.rutongo-mines.location-achievement1")} </p>
                      </div>
                    </div>
                 </div>
@@ -68,45 +71,28 @@ const Rutongo = () => {
                   <p className="fw-bold heading-20">
                     
                     
-                      Rutongo Mines is a Tin Mine with a mining concession of 9,600 ha, located 26km north of
-                      Kigali, comprising six underground tin mines – Gisanze, Masoro, Nyamyumba, Gasambya,
-                      Karambo and Mahaza. Together, they contain one of the biggest cassiterite deposits in Africa.
+                      {t("our-project-page.rutongo-mines.rutongo-bold-title")} 
                   </p>
 
                   {/* <h4>
                       Presented on a history timeline
                   </h4> */}
                   <p>
-                      The Rutongo mines operate under a 25-year license that began in 2015. They are estimated to
-                      contain approximately 54,000 tonnes of recoverable tin and currently produce between 40 to 70 tons
-                      per month, projected to increase to 200 tonnes per month in the next five years.
+                      {t("our-project-page.rutongo-mines.rutongo-description")} 
                   </p>
                   <p>
-                      Tin exploitation at Rutongo began in 1931, and from the 1940s, the mines consistently exported 800
-                        tonnes a year of cassiterite. By the 1950s, SOMUKI, a Belgian mining company, had developed the
-                        mine into the largest tin concentrate producer in Rwanda. In 1973, the fusion of former colonial
-                        mining sites gave rise to SOMIRWA (Société Des Mines Du Rwanda), a joint venture between the
-                        Government of Rwanda and GEOMINES. This Belgium-based mining company operated on site until
-                        its liquidation in 1986. At this time, the mines were nationalised and operated under REDEMI (Regie
-                        d’Exploitation et de Developpement des Mines).
+                     {t("our-project-page.rutongo-mines.rutongo-description1")} 
                   </p>
 
                   <p>
-                    The mines closed in 1994 when the genocide against the Tutsi occurred. In 1995 they reopened
-                    under REDEMI as a miners’ co-operative and operated as such until 2008, when the government
-                    re-privatized them.
+                   {t("our-project-page.rutongo-mines.rutongo-description2")} 
                   </p>
 
                   <p>
-                    In May 2022, the mine was incorporated into the newly established Trinity Metals Group.
-                  </p>
+                     {t("our-project-page.rutongo-mines.rutongo-description3")}                   </p>
 
                   <p>
-                    The mine has significant growth potential - future plans consist of increasing mining volumes by
-                    opening up new reserves at depth through the development of a decline below 33 level, introducing
-                    new bulk mining, utilization of larger mining equipment and the design and construction of a number
-                    of mineral processing facilities to process run of mine material and legacy stockpiled material. These
-                    plans give the mine the opportunity to more than double production over the next 5 years.
+                       {t("our-project-page.rutongo-mines.rutongo-description4")} 
                   </p>
                   
                 </div>
