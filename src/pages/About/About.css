@@ -550,12 +550,14 @@
     .single-product{
         width: 32%;
         flex: 1;
+         box-shadow: 0px 4px 4px 0px #00A0DD33;
+
+
     }
     .single-product .product-image{
       width: 100%;
     }
     .product-desc{
-        box-shadow: 0px 4px 4px 0px #00A0DD33;
         min-height: 207.5px;
         padding: 30px 20px 10px 20px;
         gap: 16px;

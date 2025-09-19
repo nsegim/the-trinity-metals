@@ -8,11 +8,12 @@ import ResumeUpload from './DrapDropTest';
 import { data, Link } from 'react-router-dom';
 import { fetchData } from '../../config/apiConfig';
 import moment from 'moment/min/moment-with-locales';
+import { useTranslation } from 'react-i18next';
 
 
 
 const Careers = () => {
-
+        const { t } = useTranslation()
         const [selectedOption, setSelectedOption] = useState(""); // Empty state for resetting
         const [selectedLocation, setSelectedLocation] = useState("")
         const [data, setData] = useState([])
@@ -57,7 +58,7 @@ const Careers = () => {
             {/* Hero section */}
             <div className="custom-hero video-gallery">
                     <div className="child-item-wrapper z-1">
-                        <h1 className="heading text-uppercase">Careers</h1>
+                        <h1 className="heading text-uppercase">{t("careers.careers-title")}</h1>
                     </div>
             </div>
             <div className="get-in-career-Section">
@@ -71,13 +72,13 @@ const Careers = () => {
                         </div>
                         <div className="col-md-6 right">
                             <div className="right-header">
-                            <h1>We are an Employer of Choice</h1>
+                            <h1>{t("careers.top-title")}</h1>
                             </div>
                             <div className="right-description">
-                            <p>We are committed to empowering and uplifting the communities where we operate through job creation,training and social initiatives.
+                            <p>{t("careers.top-desc1")}
                             </p>
                             <p>
-                                    We value gender-diversity and are passionate about increasing the number of women in the mining sector, aspiring to a minimum of 30% of our workforce comprising women by 2025..</p>
+                                {t("careers.top-desc2")}</p>
                             </div>
                             
                         </div>
@@ -96,14 +97,14 @@ const Careers = () => {
                                     <form action="" className="job-filter">
                                         <div className="search-fields d-flex">
                                             <div className="job-name-field">
-                                                <label htmlFor="">Find Jobs</label>
-                                                <input type='text' name='job-name' placeholder="Job title, Skill, Keyword..." />
+                                                <label htmlFor="">{t("careers.search-form.input-title")}</label>
+                                                <input type='text' name='job-name' placeholder={t("careers.search-form.input-placeholder")}/>
                                             </div>
                                             <div className="select-location-field">
                                                 <div className="select-field">
                                                 <select value={selectedOption} onChange={handleChange}>
                                                         <option value="" disabled>
-                                                            Near Location
+                                                           {t("careers.search-form.select-field-title")}
                                                         </option>
                                                         <option value="Nyakabingo">Nyakabingo</option>
                                                         <option value="Musha">Musha</option>
@@ -157,12 +158,12 @@ const Careers = () => {
                                                   ))
                                             ) : (
                                                  <div className='no-position'>
-                                                    <p>No Position Available</p>
+                                                    <p>{t("careers.No-position")}</p>
                                                  </div>
                                             )
                                         }
                                         <div className='no-position'>
-                                                <p className='text-center'>No Position Available</p>
+                                                <p className='text-center'>{t("careers.No-position")}</p>
                                         </div>
                                     </div>
                         </div>

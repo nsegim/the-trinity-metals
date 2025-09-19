@@ -38,7 +38,7 @@ const Musha = () => {
                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black-1.svg" />
                      </div>
                      <div className="details-element">
-                        <h4>{t("our-project-page.musha-mines.Workforce")}</h4>
+                        <h4>{t("our-project-page.musha-mines.workforce")}</h4>
                         <p>
                           {t("our-project-page.musha-mines.workforce-achievement")} 
                         </p>

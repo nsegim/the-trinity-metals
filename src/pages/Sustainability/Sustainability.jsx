@@ -410,7 +410,7 @@ const SustainabilityPage = () => {
                       {t("Sustainability.Occupational-Health-desc")}
                     </p>
 
-                    <div className="w-75 pt-4">
+                    <div className="w-100 pt-4">
                       <p>
                         {t("Sustainability.Occupational-statement-title")}
                       </p>

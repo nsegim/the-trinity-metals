@@ -384,6 +384,7 @@
   },
   
   "careers": {
+    "careers-title": "Careers",
     "top-title": "We are an Employer of Choice",
     "top-desc1": "We are committed to empowering and uplifting the communities where we operate through job creation,training and social initiatives.",
     "top-desc2": "We value gender-diversity and are passionate about increasing the number of women in the mining sector, aspiring to a minimum of 30% of our workforce comprising women by 2025..",
@@ -393,7 +394,9 @@
       "input-placeholder":"Job title, Skill, Keyword...",
       "select-field-title":"Near Location"
       
-    }
+    },
+    
+     "No-position": "No Position Available"
 
 
   },

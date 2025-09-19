@@ -94,7 +94,7 @@ const ContactUs = ()=>{
                 </div>
                 <div className="col-md-6 right">
                     <div className="right-header">
-                      <h1>{t("Contact.contact-tel")}</h1>
+                      <h1>{t("Contact.get-in-touch")}</h1>
                     </div>
                     {/* <div className="right-text-element">
                       <p>Complete control over products allows us to ensure our customers receive the best quality prices and service.</p>
@@ -190,7 +190,7 @@ const ContactUs = ()=>{
                            
                           <div className="button-wrapper">
                             <button type="submit" className="w-full text-white p-2 rounded-md form-submit-button">
-                              <span className="button-text">{t("Contact.")}</span>
+                              <span className="button-text">{t("Contact.field-wrapper-sendbtn")}</span>
                               <span className="button-icon">
                                 <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/contact-us-icon.svg" />
 

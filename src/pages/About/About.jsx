@@ -62,6 +62,10 @@ const AboutPage = () => {
        const [rutongoBoardMember, setRutongoBoardMember] = useState([]);
        const [activeModal, setActiveModal] = useState(null); // ✅ Single state for modals
        
+       const [managementMembers,setmanagementMembers] = useState({
+            kiny:[],
+            en:[]
+         })
    
      
        // Fetch posts
@@ -90,6 +94,8 @@ const AboutPage = () => {
             let boardTemp = [];
             let rutongoBoardTemp = [];
             let managementTemp = [];
+            let managementTempKiny = [];
+
             let tagsMap = {};
            // let imagesMap = {};
             let tagIds = new Set(); // Collect unique tag IDs for batch fetching
@@ -118,6 +124,8 @@ const AboutPage = () => {
               if (tagNames.includes("Board member")) boardTemp.push(item);
               if (tagNames.includes("Management Team")) managementTemp.push(item);
               if(tagNames.includes("Rutongo Mines Board Members")) rutongoBoardTemp.push(item);
+              if(tagNames.includes("Abagize inama y'ubucukuzi bwa Rutongo")) managementTempKiny.push(item);
+
         
             });
         
@@ -126,8 +134,14 @@ const AboutPage = () => {
            // setMemberImage(imagesMap);
             setBoardMember(boardTemp);
             setManagementMember(managementTemp);
-            console.log("management team:", managementMember)
+           // console.log("management team:", managementMember)
             setRutongoBoardMember(rutongoBoardTemp);
+
+             setmanagementMembers(prev => ({
+                                    ...prev,
+                                    en: managementTemp,
+                                    kiny: managementTempKiny
+                                    }));
           };
         
           processMembers();
@@ -135,7 +149,9 @@ const AboutPage = () => {
           
         }, [data]); // Runs when `data` changes
 
-        const { t } = useTranslation()
+        const { t, i18n } = useTranslation()
+        const currentLang = i18n.language;
+
     
     return(
         <>
@@ -426,9 +442,9 @@ const AboutPage = () => {
             <div className="executive-management-wrapper">
                 <div className="container">
                     <div className="header-part">
-                        <h1 className="section-heading text-center">
-                          {t("about-us-page.executive-management-team-section-title")}
-                        </h1>
+                         <div className="header-element">
+                             <h2 className="text-center">{t("our-leadership.executive-management")}</h2>
+                        </div>
                     </div>  
                      <div className="team-members">
               
@@ -436,10 +452,13 @@ const AboutPage = () => {
 
 
                           {
-                             managementMember?.length > 0 ? (
+                             managementMembers?.[currentLang]?.length > 0 ? (
                                 <div className="team-member-wrapper">
-                                  {
-                                    managementMember.slice(5, 8).reverse().map((item, index) => (
+
+                                    {(currentLang === "kiny" 
+                                            ? managementMembers?.[currentLang]?.slice(0, 3)
+                                            : managementMembers?.[currentLang]?.slice(5, 8).reverse()
+                                            )?.map((item, index) => (
                                         <div key={index} className="single-team-member">
                                         <ImageGallery imageUrl={item._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif"} customClass={'team-member-photo'}/>
                                                <div className="team-member-details">
@@ -516,9 +535,9 @@ const AboutPage = () => {
             <div ref={products} className="container our-products-section">
                 <div className="first-container">
                   <div className="header-part">
-                     <h1 className="section-heading">
+                     <h2 className="section-heading">
                        {t("about-us-page.our-product-section-title")}
-                     </h1>
+                     </h2>
                   </div>
                   <div className="description-part">
                       <p className="description-text">

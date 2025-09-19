@@ -30,7 +30,7 @@ const Nyakabingo = () => {
                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black.svg" />
                      </div>
                      <div className="details-element">
-                        <h4>{t("our-project-page.tungsten-production")}</h4>
+                        <h4>{t("our-project-page.nyakabingo-mines.tungsten-production")}</h4>
                         <p>{t("our-project-page.nyakabingo-mines.tungsten-production-achievement")}</p>
                      </div>
                    </div>

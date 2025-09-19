@@ -131,7 +131,7 @@
       "our-strategies-relationships-description": "Dushyira imbere kwita ku mubano dufitanye n’abafatanyabikorwa bo hanze nk’igice cy’ibanze cy’ibikorwa byacu by’ubucuruzi.",
 
       "our-strategies-future": "Ejo Hazaza Hacu",
-      "our-strategies-future-description": "Twita ku kubera uburyo bushya bw’imikorere bwaduteza imbere butangije ibidukikije kandi bizagira akamaro mu gihe kizaza. ",
+      "our-strategies-future-description": "Twita ku kureba uburyo bushya bw’imikorere bwaduteza imbere butangije ibidukikije kandi bizagira akamaro mu gihe kizaza. ",
 
 
 
@@ -145,13 +145,13 @@
       "our-product-section-title": "Ibicuruzwa Byacu ",
       "our-product-section-description": "'3Ts' Tantalum, Tungsten, na Tin ni amabuye akenerwa cyane mu bikoresho by’ikoranabuhanga, amahirwe ahari ni uko dukoresha ibi bikoresho byakozwe muri aya mabuye mu  buzima bwa buri munsi kurenza uko tubitekereza. Uko isoko ry’ibikoresho bigezweho by’ikoranabuhanga ryiyongera, ni ko n’akamaro k’aya mabuye kiyongera. Ibi bituma agira uruhare runini mu kuzamura ubukungu ndetse n’ikoranabuhanga.",
 
-      "our-product-TIN": "TIN",
+      "our-product-TIN": "Gasegeleti",
       "our-product-TIN-description": "Ni ibuye rikoreshwa cyane cyane mu gukora ibyuma bikomeye. Isoko ryaryo biteganyijwe rizakomeza kurushaho kwaguka bitewe n’uko ibikoresho by’ikoranabuhanga biri gukenerwa cyane ku isoko by’umwihariko muri bateri za Li-on zifashishwa mu modoka z’amashanyarazi. ",
 
-      "our-product-TANTALUM": "TANTALUM",
+      "our-product-TANTALUM": "Koruta",
       "our-product-TANTALUM-description": "50-70% bya Tantalum bikoreshwa mu nganda zikora ibikoresho by’ikoranabuhanga (by’umwihariko mu byuma bikomeye, ibindi bigakoreshwa mu nganda zitunganya imiti. ",
 
-      "our-product-TUNGSTEN": "TUNGSTEN",
+      "our-product-TUNGSTEN": "Wolufuramu",
       "our-product-TUNGSTEN-description": "Ikoreshwa mu bikoresho bikata ibyuma, mu byuma byikaraga ku muvuduko wo hejuru, ibyuma bikomeye cyane, ndetse n’ibindi bikoresho (nk’insinga zitanga urumuri mu matara). Mu 2022 isoko ry’aya mabuye ryariyongereye cyane ugereranyije n’imyaka 10 yabanje, kandi hari impungenge z’uko yabura."
 
        
@@ -161,7 +161,7 @@
   "our-leadership":{
      "our-leadership-title": "Ubuyobozi bwacu",
     "board-members": "Abagize Inama y'Ubuyobozi bya Trinity Metals Group",
-    "executive-management": "Executive Management Team"
+    "executive-management": "Ubuyobozi Nshingwabikorwa"
   },
    
 
@@ -185,11 +185,11 @@
 
         "rutongo-mines": {
             "rutongo-title" :"Ibirombe bya Rutongo",
-            "satellite-mines": "Rutongo Satellite Mines",
+            "satellite-mines": "Ibirombe",
             "satellite-mines-achievement": "Ibirombe 6",
 
             "tin-production": "Umusaruro wa Gasegereti",
-            "tin-production-achievement": "40-70tons per month",
+            "tin-production-achievement": "100-110tons per month",
 
             "workforce": "Abakozi",
             "Workforce-achievement": "2,500+",
@@ -210,8 +210,8 @@
 
         
         "nyakabingo-mines": {
-            "nyakabingo-mines-title": "kirombe cya Trinity cya Nyakabingo",
-            "tungsten-production": "Umusaruro wa Tungsten",
+            "nyakabingo-mines-title": "Ikirombe cya Trinity Nyakabingo",
+            "tungsten-production": "Umusaruro wa Wolufuramu",
             "tungsten-production-achievement": "Toni 100-110 mukwezi",
             "workforce": "Abakozi",
             "workforce-achievement": "1,800+",
@@ -221,10 +221,10 @@
 
 
             "brief-history": "Brief history",
-            "brief-history-desc":"Trinity Nyakabingo Mine is a Tungsten ore mine with a mining concession of 1,600 ha. The mine is estimated to contain approximately 115,502 tons of recoverable Tungsten with potential to grow the resource substantially at depth. Current production is between 100 to 110 tons of wolframite per month, containing 66-70% Tungsten, under a 25-year license that commenced in 2015.",
+            "brief-history-desc":"Trinity Nyakabingo Mine is a Wolufuramu ore mine with a mining concession of 1,600 ha. The mine is estimated to contain approximately 115,502 tons of recoverable Tungsten with potential to grow the resource substantially at depth. Current production is between 100 to 110 tons of wolframite per month, containing 66-70% Tungsten, under a 25-year license that commenced in 2015.",
 
             "history-timeline": "Presented on a history timeline",
-            "history-timeline-desc": "Ikirombe cya Trinity Nyakabingo gikorerwaho ubucukuzi bwa Tungsten ku ruhushya rwo gukorera ku buso bwa hegitari 1600. Habarurwa ko harimo toni 115.502 ndetse ko zishobora no kwiyongera mu gihe hacukuwe kurushaho mu bujyakuzimu. Muri iki gihe hacukurwa toni zibarirwa hagati ya 100 na 110 za wolufuramu ku kwezi aho hagati ya 66 na 70% bigizwe na Tungsten n’uruhushya rw’imyaka 25 rwo gukora ubucukuzi yatangiye kubarwa kuva mu 2015.",
+            "history-timeline-desc": "Ikirombe cya Trinity Nyakabingo gikorerwaho ubucukuzi bwa Wolufuramu ku ruhushya rwo gukorera ku buso bwa hegitari 1600. Habarurwa ko harimo toni 115.502 ndetse ko zishobora no kwiyongera mu gihe hacukuwe kurushaho mu bujyakuzimu. Muri iki gihe hacukurwa toni zibarirwa hagati ya 100 na 110 za wolufuramu ku kwezi aho hagati ya 66 na 70% bigizwe na Wolufuramu n’uruhushya rw’imyaka 25 rwo gukora ubucukuzi yatangiye kubarwa kuva mu 2015.",
             "history-timeline-desc1": "Ubushakashatsi ku hahereye ibirombe by’amabuye y’agaciro, bwatangiye mu mpera z’imyaka ya 1930, icyakora ibijyanye n’ubucukuzi nyirizina byatangiye nyuma y’Intambara ya Kabiri y’Isi. Ubucukuzi bw'amabuye y'agaciro munsi y'ubutaka bwatangiye mu mpera za 1960 ubwo hatangiraga gucukura ibirombe bimeze nk’ubuvumo bizwi nka “adits”, byakurikiwe n’ubundi buryo bw’ubucukuzi burimo ubuzwi nka parallel veins cyangwa PV. Sosiyete za mbere zahakoreye ubucukuzi bw'amabuye y'agaciro ni izo mu Bubiligi zacukuraga mu buryo busa n’ubuteye imbere kugeza mu 1986. Icyo gihe, ubucukuzi bw’amabuye y'agaciro bwashizwe mu maboko ya leta butangira kugengwa na REDEMI (Regie d'Exploitation et de Developpement des Mines). Ibyo birombe byafunzwe mu 1994 mu gihe hakorwaga Jenoside yakorewe Abatutsi. Mu 1995 bongeye gusubukura ibikorwa by’ubucukuzi n’ubundi bigengwa na REDEMI nk'ikigo cy'ubufatanye cy'abacukuzi b'amabuye y'agaciro kugeza mu 2007 ubwo byajyaga mu maboko ya Euro Trade International. Muri Gicurasi 2022, iki kirombe cyabaye icya Trinity Metals Group yari imaze gushyirwaho gihabwa izina rya Trinity Nyakabingo Mine.",
             "history-timeline-desc2": "Ikirombe cya Trinity Nyakabingo ni cyo gicukurwamo Wolfram nyinshi ku mugabane wa Afurika",
             "history-timeline-desc3": "Iki kirombe gishobora kwaguka kuko igenamigambi rihari ari iryo ni iryo kurushaho gucukura mu bujyakuzimu tukagera munsi y’urwego rwa 22 level, kwifashisha imashini nini n’ibikoresho byagenewe ubucukuzi no kubaka mu buryo bufasha ikoreshwa ry’ibyo bikoresho bishya tudasize n’ibisanzwe. Iri genamigambi rizatanga amahirwe yo kubona umusaruro ukubye nibura inshuro ebyiri uwari usanzwe uboneka."
@@ -232,7 +232,7 @@
         },
 
        "musha-mines": {
-           "musha-mines-title": "Ikirombe cya Trinity cya Musha",
+           "musha-mines-title": "Ikirombe cya Trinity Musha",
             "tin-production": " Umusaruro wa Gasegereti",
             "tin-production-achievement": "Toni 30-Toni 40 ku kwezi",
             "workforce": "Abakozi",
@@ -242,7 +242,7 @@
              "location-achievement1": "mu Burasirazuba",
 
             "brief-history":"Brief history",
-            "brief-history-desc": "Trinity Musha Mine ni ikirombe cya Gasegereti na Tantalum kinabarizwamo Lithium ku buso bungana na hegitari 6 094, giherereye mu gace k’u Rwanda gakungahaye kuri gasegereti; mu Karere ka Rwamagana, ibilometero 45 uvuye i Kigali ujya mu Ntara y’Iburasirazuba. Iki kirombe gifite ibindi birombe bito bigishamikiyeho.",
+            "brief-history-desc": "Trinity Musha Mine ni ikirombe cya Gasegereti na Koruta kinabarizwamo Lithium ku buso bungana na hegitari 6 094, giherereye mu gace k’u Rwanda gakungahaye kuri gasegereti; mu Karere ka Rwamagana, ibilometero 45 uvuye i Kigali ujya mu Ntara y’Iburasirazuba. Iki kirombe gifite ibindi birombe bito bigishamikiyeho.",
             "brief-history-desc1": "Ikirombe cya Musha na Ntunga cyatangiye kubyazwa umusaruro mu myaka ya 1920 kugeza mu myaka ya 1970. Mu 1985 iki kirombe cyagiye mu maboko ya Leta gitangira kugengwa na SOMIRWA (Société des Mines du Rwanda). Icyakora, bitewe no kugwa kw’ibiciro ndetse na Jenoside yakorewe Abatutsi mu 1994, byatumye ishoramari rivuye hanze ribigendamo biguru ntege, ubucukuzi bukomeza gukorwa mu buryo bwa gakondo. Hagati ya 2014 na 2016, Pella Rwanda Ltd yahawe uruhushya rw’imyaka 25 rwo gucukura ibirombe bya Musha-Ntuna. Mu 2017, urwo ruhushya rwimuriwe muri Piran Resources. Piran Resources ikora ubucukuzi kuva muri Gicurasi 2022 ubwo yatangiraga kugengwa na Trinity Metals Group yari imaze gushyirwaho.",
             "brief-history-desc2": "Iki kirombe ni cyo cya kabiri gicukurwamo gasegereti nyinshi mu Rwanda nyuma y’icya Rutongo.",
             "brief-history-desc3": "Iki kirombe gishobora kwaguka kuko igenamigambi ry’imyaka itanu iri imbere, ni ugukomeza gucukura munsi y’urwego rwa 4 hagamijwe kugera ku bice bishya birimo amabuye y’agaciro, kwifashisha imashini nini n’ibikoresho byagenewe ubucukuzi no kubaka mu buryo bufasha ikoreshwa ry’ibyo bikoresho bishya tudasize n’ibisanzwe. Iri genamigambi rizatanga amahirwe yo kubona umusaruro ukubye nibura inshuro ebyiri uwari usanzwe uboneka muri iyo myaka itanu iri imbere. Iki kirombe cya Ntunga kinakungahaye kuri tantalum izajya icukuranwa na gasegereti."
@@ -323,8 +323,8 @@
      
     "Occupational-Health-title": "Kwita ku Buzima n’Imibereho Myiza y’Abakozi",
     "Occupational-Health-desc": "Twiyemeje gufata iya mbere mu kwita ku buzima n’imibereho myiza y’abakozi binyuze mu gushyira mu bikorwa gahunda ya “ISO-compliant SHEC” (Safety, Health, Environmental, and Community) yibanda ku gusuzuma ibyago bishobora kuba n’ubugenzuzi ku musanzu wavuye mu bikorwa byacu. Trinity yahuguye abakozi babarirwa mu bihumbi binyuze muri gahunda z’imbere no hanze y’ikigo hagamijwe kongera umutekano mu bikorwa byacu. Hamwe na gahunda ya ISO twashyizeho, ikubiyemo uburyo bwo kwirinda ibyago no kubishakira ibisubizo. Trinity yagabanyije mu buryo bufatika igihe abakozi batakazaga batari mu kazi kubera imvune (LTIFR). Hamwe n’ibikoresho by’ubuvuzi kuri site dukoreraho tubifashijwemo n’abafatanyabikorwa mu bitaro biri hafi y’aho dukorera, ikigo cyacu gishyize imbere intego yacyo ya “ZERO HARM” igamije ko nta muntu ugomba guhurira n’ibyago mu kazi ari na ko duteza imbere ibikorwa byo kumenyekanisha umutekano w’abantu mu kazi no mu muryango mugari uturiye aho gakorerwa.",
-    "Occupational-statement-title": " Dushishikajwe na gahunda ya ZERO HARM",
-    "Occupational-statement-desc": "Twiyemeje gukora ibikorwa by’ubucukuzi butekanye ku buryo tugera ku ihame rya  ZERO HARM ku bakozi n’abafatanyabikorwa bacu. Intego yacu y’ibanze ni ugukora ibikorwa bizira imvune no gukomereka kw’abakozi cyangwa iyangirika ry’ibikoresho, imitungo cyangwa ibidukikije.",
+    "Occupational-statement-title": " Dushishikajwe na gahunda ya Impanuka ZERU",
+    "Occupational-statement-desc": "Twiyemeje gukora ibikorwa by’ubucukuzi butekanye ku buryo tugera ku ihame rya  Impanuka ZERU ku bakozi n’abafatanyabikorwa bacu. Intego yacu y’ibanze ni ugukora ibikorwa bizira imvune no gukomereka kw’abakozi cyangwa iyangirika ry’ibikoresho, imitungo cyangwa ibidukikije.",
 
 
     "governance": "Imiyoborere",
@@ -385,7 +385,25 @@
       "sports": "siporo"
 
   },
+   "careers": {
+    "careers-title": "Imirimo",
+    "top-title": "Turi Amahitamo meza y'Umukoresha ",
+    "top-desc1": "Twiyemeje kongerera ubushobozi no guteza imbere abaturage b'aho dukorera binyuze mu guhanga akazi, amahugurwa n'imishinga izamura imibereho myiza.",
+    "top-desc2": "Duha agaciro ihame ry'uburinganire n'ubwuzuzanye kandi duharanira kongera umubare w'ab'igitsinagore bakora mu rwego rw'ubucukuzi, aho nibura bagomba kuba 30% by'abakozi bose bitarenze umwaka wa 2025.",
 
+    "search-form":{
+      "input-title": "Shakisha Akazi",
+      "input-placeholder":"Izina ry'akazi, Ubuhanga,  Ijambo ryibanze....",
+      "select-field-title":"Hafi yawe"
+      
+    },
+
+    "No-position": "Nta mwanya uhari"
+
+
+
+
+  },
 
   "Contact":{
     "contact-details": "Tuzakugarukira mu masaha 24, cyangwa urashobora kuduhamagara burimunsi, 08:00 am kugeza 5:00 pm",
