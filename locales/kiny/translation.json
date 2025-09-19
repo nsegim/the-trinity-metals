@@ -323,8 +323,8 @@
      
     "Occupational-Health-title": "Kwita ku Buzima n’Imibereho Myiza y’Abakozi",
     "Occupational-Health-desc": "Twiyemeje gufata iya mbere mu kwita ku buzima n’imibereho myiza y’abakozi binyuze mu gushyira mu bikorwa gahunda ya “ISO-compliant SHEC” (Safety, Health, Environmental, and Community) yibanda ku gusuzuma ibyago bishobora kuba n’ubugenzuzi ku musanzu wavuye mu bikorwa byacu. Trinity yahuguye abakozi babarirwa mu bihumbi binyuze muri gahunda z’imbere no hanze y’ikigo hagamijwe kongera umutekano mu bikorwa byacu. Hamwe na gahunda ya ISO twashyizeho, ikubiyemo uburyo bwo kwirinda ibyago no kubishakira ibisubizo. Trinity yagabanyije mu buryo bufatika igihe abakozi batakazaga batari mu kazi kubera imvune (LTIFR). Hamwe n’ibikoresho by’ubuvuzi kuri site dukoreraho tubifashijwemo n’abafatanyabikorwa mu bitaro biri hafi y’aho dukorera, ikigo cyacu gishyize imbere intego yacyo ya “ZERO HARM” igamije ko nta muntu ugomba guhurira n’ibyago mu kazi ari na ko duteza imbere ibikorwa byo kumenyekanisha umutekano w’abantu mu kazi no mu muryango mugari uturiye aho gakorerwa.",
-    "Occupational-statement-title": " Dushishikajwe na gahunda ya ZERO HARM",
-    "Occupational-statement-desc": "Twiyemeje gukora ibikorwa by’ubucukuzi butekanye ku buryo tugera ku ihame rya  ZERO HARM ku bakozi n’abafatanyabikorwa bacu. Intego yacu y’ibanze ni ugukora ibikorwa bizira imvune no gukomereka kw’abakozi cyangwa iyangirika ry’ibikoresho, imitungo cyangwa ibidukikije.",
+    "Occupational-statement-title": " Dushishikajwe na gahunda ya Impanuka ZERU",
+    "Occupational-statement-desc": "Twiyemeje gukora ibikorwa by’ubucukuzi butekanye ku buryo tugera ku ihame rya  Impanuka ZERU ku bakozi n’abafatanyabikorwa bacu. Intego yacu y’ibanze ni ugukora ibikorwa bizira imvune no gukomereka kw’abakozi cyangwa iyangirika ry’ibikoresho, imitungo cyangwa ibidukikije.",
 
 
     "governance": "Imiyoborere",
@@ -385,7 +385,25 @@
       "sports": "siporo"
 
   },
+   "careers": {
+    "careers-title": "Imirimo",
+    "top-title": "Turi Amahitamo meza y'Umukoresha ",
+    "top-desc1": "Twiyemeje kongerera ubushobozi no guteza imbere abaturage b'aho dukorera binyuze mu guhanga akazi, amahugurwa n'imishinga izamura imibereho myiza.",
+    "top-desc2": "Duha agaciro ihame ry'uburinganire n'ubwuzuzanye kandi duharanira kongera umubare w'ab'igitsinagore bakora mu rwego rw'ubucukuzi, aho nibura bagomba kuba 30% by'abakozi bose bitarenze umwaka wa 2025.",
 
+    "search-form":{
+      "input-title": "Shakisha Akazi",
+      "input-placeholder":"Izina ry'akazi, Ubuhanga,  Ijambo ryibanze....",
+      "select-field-title":"Hafi yawe"
+      
+    },
+
+    "No-position": "Nta mwanya uhari"
+
+
+
+
+  },
 
   "Contact":{
     "contact-details": "Tuzakugarukira mu masaha 24, cyangwa urashobora kuduhamagara burimunsi, 08:00 am kugeza 5:00 pm",
