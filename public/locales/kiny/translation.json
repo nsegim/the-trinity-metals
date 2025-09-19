@@ -252,7 +252,7 @@
         "LITHIUM-EXPLORATION": {
           "LITHIUM-EXPLORATION-title": "Umushinga wa Lithium wa Ntunga",
           "LITHIUM-EXPLORATION-subtitle": " Urutare rwa Ntunga Ntunga ni amahirwe y’iterambere rya Trinity Metals",
-          "description1": "Mu 2018, Trinity Metals (PIRAN Rwanda Ltd) yatangiye ubushakashatsi kuri site yayo ya Ntunga site, kandi ibyabuvuyemo byatangaga icyizere. Ubucukuzi bwakozwe ku ikubitiro bwageraga muri metero  250 ahagaragaye igipimo cyo kwishimira cya 0.02%  bya tantalum (Ta₂O₅) na 0.12% bya Tin (Sn) mu bitare by’amabuye, kandi si ibyo gusa kuko muri metero 80 gukomeza kumanuka munsi, hagaragayemo Lithium by’umwihariko mu bitare bizwi nka spodumene.",
+          "description1": "Mu 2018, PIRAN Rwanda Ltd yatangiye ubushakashatsi kuri site yayo ya Ntunga site, kandi ibyabuvuyemo byatangaga icyizere. Ubucukuzi bwakozwe ku ikubitiro bwageraga muri metero  250 ahagaragaye igipimo cyo kwishimira cya 0.02%  bya tantalum (Ta₂O₅) na 0.12% bya Tin (Sn) mu bitare by’amabuye, kandi si ibyo gusa kuko muri metero 80 gukomeza kumanuka munsi, hagaragayemo Lithium by’umwihariko mu bitare bizwi nka spodumene.",
           "description2": "Mu 2023, bitewe n’uko ku Isi lithium yakomeje gukenerwa cyane, twaguye ubushakashatsi bwacu. Twarushijeho gucukura mu bujyakuzimu kugera hagati ya metero 300 na 780 kandi byatanze umusaruro. Mu myobo irenga 39 twacukuye, twabashije kubona igipimo cya lithium (Li₂O) kigera kuri 4%, hamwe n’ibisubizo bitangaje birimo:",
           "description2-1": "DD_055:",
             "description2-1-0": "195m @ 1.4% Li₂O",
@@ -437,6 +437,12 @@
 
 
     
+  },
+
+   "desclaimer":{
+   "desclaimer-title":"Inshingano",
+   "desclaimer-desc":"Trinity Metals Limited yiyemeje guhora ikugezaho amakuru agezweho ku rubuga rwayo kandi izakora ibishoboka byose kugira ngo urubuga rukomeze gukora neza mu buryo buhoraho. Trinity Metals Limited ntisezeranya ibijyanye n'uko umuntu ashobora kwitega imiterere y'urubuga rwayo cyangwa ngo iryozwe ikibazo gishobora kubaho kitayiturutseho.",
+   "desclaimer-desc1": "Trinity Metals ntiyemera uburyozwe bw'ibyangiritse cyangwa ibyabyuze birimo ariko bitagarukiye gusa ku bibazo bititezwe nko gutakaza amakuru cyangwa amafaranga bivuye ku ikoreshwa ry'urubuga. Mu gihe usangije amakuru yawe Trinity Metals, azakoreshwa gusa bigendanye n'amabwiriza agenga imicungire y'amakuru bwite y'umuntu. Ibiri ku rubuga rwacu byose ni umutungo wa Trinity Metals. Ntiwemerewe kubikorera kopi, kubisangiza abandi cyangwa kubikoresha mu bundi buryo utabiherewe uruhushya rwanditse, keretse gusa igihe itegeko ribyemera (nko kuba wakwifashishaho agace gato ukagaragaza aho wakavanye). Niba ugize ikibazo mu gukoresha urubuga, ushobora kuvugisha Trinity Metals unyuze kuri email cyangwa telefoni iri ku rubuga."
   },
   
   "footer": {
