@@ -9,7 +9,7 @@ const ImageGallery = ({ imageUrl, imageName, customClass }) => {
 };
 
 ImageGallery.propTypes = {
-  imageName: PropTypes.string.isRequired,
+  // imageName: PropTypes.string.isRequired,
 };
 
 export default ImageGallery;

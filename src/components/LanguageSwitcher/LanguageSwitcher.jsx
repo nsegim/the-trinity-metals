@@ -45,11 +45,11 @@ const LanguageSwitcher = () => {
       {/* Selected Language Button */}
       <div className="dropdown-toggle" onClick={() => setIsOpen(!isOpen)}>
       <img
-          src={languages[i18n.language.split("-")[0]]?.flag || languages.en.flag}
+          src={languages[i18n?.language?.split("-")?.[0]]?.flag || languages.en.flag}
           alt={i18n.language}
           className="flag-icon"
         />
-        <span>{languages[i18n.language.split("-")[0]]?.label || languages.en.label}</span>
+        <span>{languages[i18n.language?.split("-")?.[0]]?.label || languages.en.label}</span>
 
       </div>
 

@@ -14,7 +14,7 @@ i18n
       escapeValue: false, // React already escapes values
     },
     backend: {
-      loadPath: '/the-trinity-metals/locales/{{lng}}/translation.json', // Path to translation files
+      loadPath: '/locales/{{lng}}/translation.json', // Path to translation files
     },
   });
 

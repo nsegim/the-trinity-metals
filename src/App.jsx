@@ -83,7 +83,7 @@ function ScrollToTop() {
 function App() {
   const routes = RoutesConfig()
   return (
-    <Router basename="/the-trinity-metals">
+    <Router>
        <ScrollToTop /> 
       <Routes>
         {renderRoutes(routes)}
