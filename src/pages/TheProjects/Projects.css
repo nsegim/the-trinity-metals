@@ -1,7 +1,7 @@
 .project-section-wrapper{
     margin-top: -60px;
     min-height: 650px;
-    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/998ea0b1dabbe8656e91355a90406985.webp');
+    background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/998ea0b1dabbe8656e91355a90406985.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -59,7 +59,7 @@ margin-bottom: 15px;
 .project-card{
     
  padding: 78px 30px 80px 30px;
- background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine.png');
+ background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine.png');
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -90,19 +90,19 @@ margin-bottom: 15px;
     background-color: var(--trinity-blue);
 }
 .projects-cards-wrapper .card1{
- background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine-min.png');
+ background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine-min.png');
  
 }
 .projects-cards-wrapper .card2{
-    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/musha_mine-min.png');
+    background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/musha_mine-min.png');
 
 }
 .projects-cards-wrapper .card3{
-    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/rutongo-min.png');
+    background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/rutongo-min.png');
 
 }
 .projects-cards-wrapper .card4{
-    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/luthium-project-1.webp');
+    background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/luthium-project-1.webp');
 
 }
 .project-name, .read-more-about{

@@ -90,7 +90,7 @@ const [loadinPdf,setLoadingPdf] = useState(false)
                         <form action="">
                             <input type="text" placeholder={t("reports.form-placeholder")} />
                             <button type='submit' className=''>
-                            <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Symbol-9.svg"/>
+                            <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Symbol-9.svg"/>
                             </button>
                         </form>
                     </div>
@@ -106,7 +106,7 @@ const [loadinPdf,setLoadingPdf] = useState(false)
                              Documents.map((item, index) => (
                                 <div key={index} className="single-report">
                                     <div className="report-name">
-                                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Report-icon.svg" />
+                                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Report-icon.svg" />
                                        
                                         <h4 className="report-name">
                                             {item.title.rendered}

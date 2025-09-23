@@ -143,7 +143,7 @@ text-decoration: none;
 }
 
 .basic-intro-left{
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/06/3_24.webp');
+  background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/06/3_24.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -221,7 +221,7 @@ text-align: center;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/patterns1.png');
+  background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/patterns1.png');
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.031;
@@ -460,7 +460,7 @@ color: var(--trinity-dark);
 
 /* Our porject section styles */
 .the-top-bg{
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/06/6aa6e8a89ba55ad7562c41443993211469bc14d6-1.webp');
+  background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/06/6aa6e8a89ba55ad7562c41443993211469bc14d6-1.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -495,7 +495,7 @@ color: var(--trinity-dark);
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/patterns2.png');
+  background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/patterns2.png');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
@@ -635,7 +635,7 @@ color: var(--trinity-dark);
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/patterns3.png');
+  background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/patterns3.png');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;

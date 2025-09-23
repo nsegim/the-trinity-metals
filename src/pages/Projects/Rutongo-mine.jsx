@@ -13,7 +13,7 @@ const Rutongo = () => {
           {/* Hero section */}
           <div className="the-project-hero-section-wrapper">
               <video autoPlay muted loop>
-                <source src="https://trinity-metals.com/wp-content/uploads/2025/06/rutongo-122.mp4" type="video/mp4" />
+                <source src="https://contents.trinity-metals.com/wp-content/uploads/2025/06/rutongo-122.mp4" type="video/mp4" />
               </video>
           </div>
           {/* Projects description */}
@@ -26,7 +26,7 @@ const Rutongo = () => {
                 <div className="work-result row">
                    <div className="col-md-3 stats">
                      <div className="icon-element">
-                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black-3.svg" />
+                       <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Black-3.svg" />
                      </div>
                      <div className="details-element">
                         <h4>{t("our-project-page.rutongo-mines.satellite-mines")} </h4>
@@ -36,7 +36,7 @@ const Rutongo = () => {
 
                    <div className="col-md-3 stats">
                      <div className="icon-element">
-                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black.svg" />
+                       <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Black.svg" />
                      </div>
                      <div className="details-element">
                         <h4>{t("our-project-page.rutongo-mines.tin-production")} </h4>
@@ -46,7 +46,7 @@ const Rutongo = () => {
 
                    <div className="col-md-3 stats">
                      <div className="icon-element">
-                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black-1.svg" />
+                       <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Black-1.svg" />
                      </div>
                      <div className="details-element">
                         <h4>{t("our-project-page.rutongo-mines.workforce")} </h4>
@@ -55,7 +55,7 @@ const Rutongo = () => {
                    </div>
                    <div className="col-md-3 stats">
                      <div className="icon-element">
-                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black-2.svg" />
+                       <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Black-2.svg" />
                      </div>
                      <div className="details-element">
                         <h4>{t("our-project-page.rutongo-mines.location")} </h4>

@@ -143,7 +143,7 @@ const { t } = useTranslation()
                         executeScroll();
                       }}
                     >
-                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Vector.svg" />
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Vector.svg" />
                     </button>
 
                     {/* Page Numbers */}
@@ -170,7 +170,7 @@ const { t } = useTranslation()
                         executeScroll();
                       }}
                     >
-                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Vector-1-1.svg" />
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Vector-1-1.svg" />
                     </button>
               </div>
             </div>

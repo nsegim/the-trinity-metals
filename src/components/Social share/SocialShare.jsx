@@ -49,7 +49,7 @@ const SocialShare = ({ postUrl, postTitle }) => {
         {socialMediaLinks.map((platform, index) => (
           <li key={index}>
             <a href={`${platform.url}${encodeURIComponent(postUrl)}`} target="_blank" rel="noopener noreferrer">
-              <ImageGallery imageUrl={`https://trinity-metals.com/wp-content/uploads/2025/02/${platform.img}`} />
+              <ImageGallery imageUrl={`https://contents.trinity-metals.com/wp-content/uploads/2025/02/${platform.img}`} />
             </a>
           </li>
         ))}
@@ -57,7 +57,7 @@ const SocialShare = ({ postUrl, postTitle }) => {
         {/* Universal Share Button - Opens Popup */}
         <li>
           <button onClick={() => setShowPopup(!showPopup)} className="share-share-button">
-            <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Background-4.svg" />
+            <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Background-4.svg" />
           </button>
         </li>
       </ul>
@@ -71,7 +71,7 @@ const SocialShare = ({ postUrl, postTitle }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <ImageGallery imageUrl={`https://trinity-metals.com/wp-content/uploads/2025/02/${platform.img}`} />
+              <ImageGallery imageUrl={`https://contents.trinity-metals.com/wp-content/uploads/2025/02/${platform.img}`} />
             </a>
           ))}
         </div>

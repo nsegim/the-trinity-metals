@@ -144,11 +144,11 @@ const ThePhotoGallery = () => {
             <div className="gallery-navigation">
                 <div className="gallery-nav-wrapper d-flex">
                     <Link to="/investor-relations/gallery/photos" className="gallery-nav visited">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Photo-icon.svg"/>
+                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Photo-icon.svg"/>
                         <span>{t("gallery.photo-gallery")}</span>
                     </Link>
                     <Link to="/investor-relations/gallery/videos" className="gallery-nav">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Video-icon.svg"/>
+                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Video-icon.svg"/>
                         <span>{t("gallery.video-gallery")}</span>
                     </Link>
                 </div>
@@ -188,7 +188,7 @@ const ThePhotoGallery = () => {
                                                             <div className="view-image" onClick={() => handleClick(item, index)}>
 
                                                                 <ImageGallery
-                                                                    imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/View-button.svg"
+                                                                    imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/View-button.svg"
                                                                     customClass="play-video-player"
                                                                     
                                                                 />
@@ -217,7 +217,7 @@ const ThePhotoGallery = () => {
                                                         <div className="view-image" onClick={() => handleClick(item, index)}>
 
                                                             <ImageGallery
-                                                                imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/View-button.svg"
+                                                                imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/View-button.svg"
                                                                 customClass="play-video-player"
                                                                 
                                                             />
@@ -238,7 +238,7 @@ const ThePhotoGallery = () => {
                                             scrollToTheTop();
                                         }}
                                     >
-                                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Vector.svg" />
+                                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Vector.svg" />
                                     </button>
                             
                                             {/* Page Numbers */}
@@ -268,7 +268,7 @@ const ThePhotoGallery = () => {
                                             scrollToTheTop();
                                         }}
                                     >
-                                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Vector-1-1.svg" />
+                                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Vector-1-1.svg" />
                                     </button>
                             </div>
                           

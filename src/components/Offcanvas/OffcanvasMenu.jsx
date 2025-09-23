@@ -56,18 +56,18 @@ const OffcanvasMenu = () => {
                 <div className="site-logo">
                   <Link to="/">
                     <ImageGallery
-                      imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/site-logo1.png"
+                      imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/site-logo1.png"
                       customClass="site-image-logo"
                     />
                   </Link>
                 </div>
                 <div className="contact-info">
                   <a href="#">
-                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/phone-icon.svg" />
+                    <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/phone-icon.svg" />
                     <span>+250 791 959 034</span>
                   </a>
                   <a href="#">
-                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/envelope.svg" />
+                    <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/envelope.svg" />
                     <span>Email: info.rw@trinity-metals.com</span>
                   </a>
                 </div>
@@ -75,7 +75,7 @@ const OffcanvasMenu = () => {
                     <ul className="social-icons">
                                <li>
                                  <a href="https://x.com/Trinity_Metals" target="_blank">
-                                   <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/X-icon.svg" />
+                                   <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/X-icon.svg" />
                                  </a>
                                </li>
                                <li>
@@ -87,7 +87,7 @@ const OffcanvasMenu = () => {
                                </li>
                                <li>
                                  <a href="https://youtu.be/tfJO_Fxl33c?si=fdC9qCcIe3P-bRro" target="_blank">
-                                   <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Youtube-icon.svg" />
+                                   <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Youtube-icon.svg" />
                                  </a>
                                </li>
                      </ul>

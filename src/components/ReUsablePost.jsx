@@ -48,7 +48,7 @@ const ReUsablePost = ({ item, categories, postImages }) => {
   return (
     <div className="grid-item">
       <img
-        src={postImages[item.id] ? postImages[item.id] : 'https://trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif'}
+        src={postImages[item.id] ? postImages[item.id] : 'https://contents.trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif'}
         alt=""
         className="featured-image"
       />
@@ -64,7 +64,7 @@ const ReUsablePost = ({ item, categories, postImages }) => {
         <div className="card-bottom-elements">
           <div className="category-holder">
             <ImageGallery
-              imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Category-Icon.svg"
+              imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Category-Icon.svg"
               customClass="category-icon"
             />
             <span className="category">

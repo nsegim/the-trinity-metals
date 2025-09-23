@@ -11,7 +11,7 @@ export default defineConfig({
   server: {
     historyApiFallback: true, // Ensures that deep links work
     proxy: {
-      '/wp-json': 'https://trinity-metals.com', // Proxy API requests to bypass CORS
+      '/wp-json': 'https://contents.trinity-metals.com', // Proxy API requests to bypass CORS
     },
   },
   

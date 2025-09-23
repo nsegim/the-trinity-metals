@@ -23,7 +23,7 @@
 }
 
 .get-in-touch {
-    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Our-Work.webp');
+    background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/Our-Work.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -125,7 +125,7 @@ padding: 15.5px 28px 15.5px 28px!important;
 
 
 .field-wrapper .select-inquiry{
-    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Icon-2.svg');
+    background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/Icon-2.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center right 15px;
@@ -224,7 +224,7 @@ color: var(--trinity-white);
 }
 
 .form-check-input:checked[type=radio]{
-    background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Ellipse-blue.svg');
+    background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/Ellipse-blue.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-size: 8px;

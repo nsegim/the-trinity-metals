@@ -65,7 +65,7 @@ const styles = {
     <div style={styles.container}>
       {/* Drag & Drop Area */}
       <div {...getRootProps()} style={styles.dropzone} className="resume-area">
-        <img src="https://trinity-metals.com/wp-content/uploads/2025/03/Vector.svg" alt="" onClick={open} />
+        <img src="https://contents.trinity-metals.com/wp-content/uploads/2025/03/Vector.svg" alt="" onClick={open} />
         <input {...getInputProps()} />
         {isDragActive ? (
           <p style={styles.text}>Drop the file here...</p>

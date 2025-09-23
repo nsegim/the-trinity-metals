@@ -14,15 +14,15 @@ import mySvg from '../../../public/asset/SVG.svg'
 
 const BottomImagesGallery = [
   {
-    'link': 'https://trinity-metals.com/wp-content/uploads/2025/06/3_32.webp',
+    'link': 'https://contents.trinity-metals.com/wp-content/uploads/2025/06/3_32.webp',
     'text': 'H.E Paul Kagame as our visitor'
   },
   {
-    'link': 'https://trinity-metals.com/wp-content/uploads/2025/06/3_32-2.webp',
+    'link': 'https://contents.trinity-metals.com/wp-content/uploads/2025/06/3_32-2.webp',
     'text': 'H.E Paul Kagame as our visitor 2'
   },
   {
-    'link': 'https://trinity-metals.com/wp-content/uploads/2025/02/trinity-employes2-scaled.jpeg',
+    'link': 'https://contents.trinity-metals.com/wp-content/uploads/2025/02/trinity-employes2-scaled.jpeg',
     'text': 'Employees of triniy'
   }
 ]
@@ -82,7 +82,7 @@ const scrollToAboutSection = () => {
       <div className="hero-section home-hero">
         <div className="background-video-container">
           <video autoPlay muted loop>
-            <source src="https://trinity-metals.com/wp-content/uploads/2025/06/homepage-1.mp4" type="video/mp4" />
+            <source src="https://contents.trinity-metals.com/wp-content/uploads/2025/06/homepage-1.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="background-overlay">
@@ -90,7 +90,7 @@ const scrollToAboutSection = () => {
         <div className="container hero-section-content-wrapper">
             <div className="basic-info">
 
-              <h1 className="section-header"><span className="welcome-icon"><ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/welcome-icon.svg"/></span>{t("home.welcome")}</h1>
+              <h1 className="section-header"><span className="welcome-icon"><ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/welcome-icon.svg"/></span>{t("home.welcome")}</h1>
               <h2  dangerouslySetInnerHTML={{ __html: t("home.welcome-description") }} className="section-desc" />
               
               <p className="section-sub-desc">{t("home.min-description")}</p>
@@ -102,7 +102,7 @@ const scrollToAboutSection = () => {
                     
                     {t("home.get-stated-button")}
                     <span>
-                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                   </span>
@@ -111,7 +111,7 @@ const scrollToAboutSection = () => {
                   <Link to="/our-projects" className="view-projects transprent-button">
                     {t("home.view-project-button")}
                     <span>
-                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
@@ -222,7 +222,7 @@ const scrollToAboutSection = () => {
                         </div>
                       </div>
                       <div className="the_content_right">
-                        <ImageGallery  imageUrl= 'https://trinity-metals.com/wp-content/uploads/2025/02/mine_site_employees.png' customClass="miners_img1" />
+                        <ImageGallery  imageUrl= 'https://contents.trinity-metals.com/wp-content/uploads/2025/02/mine_site_employees.png' customClass="miners_img1" />
                       </div>
                      </div>
                       
@@ -241,7 +241,7 @@ const scrollToAboutSection = () => {
                      <div className="wrapper_content">
                         
                         <div className="the_content_right">
-                          <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/mine_site_employees2.png' customClass="miners_img1" />
+                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/mine_site_employees2.png' customClass="miners_img1" />
                         </div>
                      
                       </div>
@@ -259,7 +259,7 @@ const scrollToAboutSection = () => {
                       <div className="wrapper_content">
                         
                         <div className="the_content_right">
-                          <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/mine_site_employees3.png' customClass="miners_img1" />
+                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/mine_site_employees3.png' customClass="miners_img1" />
                         </div>
                      
                       </div>
@@ -273,7 +273,7 @@ const scrollToAboutSection = () => {
                 <Link to="/about" className="hover-green">
                   
                   <span>{t("home.read-more-button")}</span>
-                  <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg' />
+                  <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg' />
 
                 </Link>
               </div>
@@ -292,7 +292,7 @@ const scrollToAboutSection = () => {
                   <div className="section-heading">
                     <h1 className="section-header-2">
                       <span className="welcome-icon">
-                        <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/welcome-icon2.svg' />
+                        <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/welcome-icon2.svg' />
                       </span>{t("home.latest-work-section")}
                       
                     </h1>
@@ -309,7 +309,7 @@ const scrollToAboutSection = () => {
                   <Link to="our-projects" className="view-projects transprent-button">
                     {t("home.view-project-button")}
                     <span>
-                      <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg'/>
+                      <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg'/>
                     </span>
                     
                     
@@ -325,7 +325,7 @@ const scrollToAboutSection = () => {
                      
                       <div className="featured-image">
                         <Link to="/our-projects/nyakabingo">
-                          <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine-min.png' customClass= "card-image" />
+                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine-min.png' customClass= "card-image" />
                         </Link>  
                       </div>
                       
@@ -341,7 +341,7 @@ const scrollToAboutSection = () => {
                    <div className="a-card">
                       <div className="featured-image">
                         <Link to="/our-projects/musha">
-                          <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/musha_mine-min.png' customClass= "card-image" />
+                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/musha_mine-min.png' customClass= "card-image" />
                         </Link>  
                       </div>
                       <div className="project-title">
@@ -355,7 +355,7 @@ const scrollToAboutSection = () => {
                    <div className="a-card">
                       <div className="featured-image">
                         <Link to="/our-projects/rutongo">
-                          <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/rutongo-min.png' customClass= "card-image"/>
+                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/rutongo-min.png' customClass= "card-image"/>
                         </Link>  
                       </div>
                       <div className="project-title">
@@ -382,7 +382,7 @@ const scrollToAboutSection = () => {
            <div className="col-md-6 Sastainability-right">
              <h2 className="section-header">
               <span className="welcome-icon">
-                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/06/Vector.svg"/>
+                <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/06/Vector.svg"/>
               </span>{t("home.sustainability")}
              </h2>
 
@@ -422,7 +422,7 @@ const scrollToAboutSection = () => {
                   <div className="section-heading">
                     <h1 className="section-header-2 with-blue">
                       <span className="welcome-icon-blue me-3">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/welcome-icon-blue.svg"/>
+                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/welcome-icon-blue.svg"/>
                       </span>
                       {t("home.blog-post-section")}
                       
@@ -440,7 +440,7 @@ const scrollToAboutSection = () => {
                   <Link to="/investor-relations/latest-news" className="explore-more">
                   {t("home.read-more-button")}
                     <span>
-                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
@@ -463,7 +463,7 @@ const scrollToAboutSection = () => {
                   <div className="section-heading">
                     <h1 className="section-header-2 with-blue">
                       <span className="welcome-icon-blue me-3">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/welcome-icon-blue.svg"/>
+                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/welcome-icon-blue.svg"/>
                       </span>
                       {t("home.media-section")}
                       
@@ -481,7 +481,7 @@ const scrollToAboutSection = () => {
                   <Link to="/investor-relations/gallery/photos" className="explore-more">
                     {t("home.view-gallery-btn")}
                     <span>
-                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                     </span>
                     
                     
@@ -495,12 +495,12 @@ const scrollToAboutSection = () => {
                 ref = {videoRef}
                  
                  muted>
-                   <source src="https://trinity-metals.com/wp-content/uploads/2022/12/Loop-9.mp4" type="video/mp4" />
+                   <source src="https://contents.trinity-metals.com/wp-content/uploads/2022/12/Loop-9.mp4" type="video/mp4" />
                 </video>
                
                  
                 <div className="play-button" onClick={handleVideoHandler}>
-                  <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Play-button.svg"/>
+                  <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Play-button.svg"/>
                 </div> */}
                  <iframe 
                  className="video-player-fromyoutbe"

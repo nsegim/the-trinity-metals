@@ -206,7 +206,7 @@ const SideBar = ({ currentCategories, postTofieldField, onFiltedPost }) => {
                               onChange={(e) => setSearchQuery(e.target.value)}
                            />
                            <button type="submit">
-                              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Symbol-9.svg" />
+                              <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Symbol-9.svg" />
                            </button>
                         </form>
                      </div>
@@ -227,11 +227,11 @@ const SideBar = ({ currentCategories, postTofieldField, onFiltedPost }) => {
                             relatedPosts.slice(0, 3).map((item, index) => (
                                  <div key={index} className="featured-post">
                                     <div className="featured-image">
-                                    <ImageGallery imageUrl={featuredImage[item?.id] || 'https://trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif' } customClass="related-featured-img" />
+                                    <ImageGallery imageUrl={featuredImage[item?.id] || 'https://contents.trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif' } customClass="related-featured-img" />
 
                                        {/* {
                                           featuredImage[item?.id] ? (
-                                             <ImageGallery imageUrl={featuredImage[item?.id] || 'https://trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif' } customClass="related-featured-img" />
+                                             <ImageGallery imageUrl={featuredImage[item?.id] || 'https://contents.trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif' } customClass="related-featured-img" />
                                           ) : (
                                              <Spinner />
                                           )
@@ -290,7 +290,7 @@ const SideBar = ({ currentCategories, postTofieldField, onFiltedPost }) => {
                            item?.count && (
                               <div className="a-category" key={index}>
                                  <div className="category-name-wrapper">
-                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Document-icon.svg" />
+                                    <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Document-icon.svg" />
                                     <Link >
                                        <span className="category-name" dangerouslySetInnerHTML={{ __html: item?.name}}></span>
                                     </Link>
@@ -330,7 +330,7 @@ const SideBar = ({ currentCategories, postTofieldField, onFiltedPost }) => {
                                                                     <div className="view-image" onClick={() => handleClick(item, index)}>
 
                                                                         <ImageGallery
-                                                                            imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/View-button.svg"
+                                                                            imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/View-button.svg"
                                                                             customClass="play-video-player"
                                                                             
                                                                         />

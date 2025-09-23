@@ -96,7 +96,7 @@ const SustainabilityPage = () => {
                  try {
 
                      //const response = await fetchData(`media/${selectedPostUrl}`)
-                     const response = await fetch(`https://trinity-metals.com/wp-json/wp/v2/media/${selectedPostUrl}`, {
+                     const response = await fetch(`https://contents.trinity-metals.com/wp-json/wp/v2/media/${selectedPostUrl}`, {
                        method: 'GET',
                         headers: {
                             'Accept': 'application/json',
@@ -107,7 +107,7 @@ const SustainabilityPage = () => {
                      })
 
 
-                      //const response = await fetch(`https://trinity-metals.com/wp-json/wp/v2/media/${selectedPostUrl}`)
+                      //const response = await fetch(`https://contents.trinity-metals.com/wp-json/wp/v2/media/${selectedPostUrl}`)
 
                       // console.log("selectId:", selectedPostUrl)
                       
@@ -202,7 +202,7 @@ const SustainabilityPage = () => {
            {/* Water management */}
            <div className="community-section ">
               <div className="row">
-              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Community-icon.svg" customClass={'sustainabilty-icon sus-icon'}/>
+              <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Community-icon.svg" customClass={'sustainabilty-icon sus-icon'}/>
 
                 <div className="col-md-6 community-content">
                 <div className="content-wrapper">
@@ -226,7 +226,7 @@ const SustainabilityPage = () => {
             {/* Our approach to Tailings  */}
             <div className="our-approach-section ">
              <div className="row">
-              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Environment-bulk.svg" customClass={'sustainabilty-icon sus-icon'}/>
+              <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Environment-bulk.svg" customClass={'sustainabilty-icon sus-icon'}/>
               <div className="col-md-6 bg-section">
                 
               </div>
@@ -250,7 +250,7 @@ const SustainabilityPage = () => {
           {/* Our approach to closure */}
            <div className="community-section">
               <div className="row">
-              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Community-icon.svg" customClass={'sustainabilty-icon sus-icon'}/>
+              <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Community-icon.svg" customClass={'sustainabilty-icon sus-icon'}/>
 
                 <div className="col-md-6 community-content">
                 <div className="content-wrapper">
@@ -276,7 +276,7 @@ const SustainabilityPage = () => {
               {/* Community */}
            <div className="goverance1 ">
              <div className="row">
-              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Container-4.svg" customClass={'sustainabilty-icon sus-icon'}/>
+              <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Container-4.svg" customClass={'sustainabilty-icon sus-icon'}/>
               <div className="col-md-6 bg-section">
                 
               </div>
@@ -363,7 +363,7 @@ const SustainabilityPage = () => {
            {/* Envirnoment section */}
            {/* <div className="environment-section">
              <div className="row">
-              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Environment-bulk.svg" customClass={'sustainabilty-icon sus-icon'}/>
+              <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Environment-bulk.svg" customClass={'sustainabilty-icon sus-icon'}/>
               <div className="col-md-6 bg-section">
                 
               </div>
@@ -398,7 +398,7 @@ const SustainabilityPage = () => {
              {/*Occupational Health */}
            <div className="community-section1">
               <div className="row">
-              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Community-icon.svg" customClass={'sustainabilty-icon sus-icon'}/>
+              <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Community-icon.svg" customClass={'sustainabilty-icon sus-icon'}/>
 
                 <div className="col-md-6 community-content">
                 <div className="content-wrapper">
@@ -434,7 +434,7 @@ const SustainabilityPage = () => {
            {/* Governance */}
            {/* <div className="goverance">
              <div className="row">
-              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Container-4.svg" customClass={'sustainabilty-icon sus-icon'}/>
+              <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Container-4.svg" customClass={'sustainabilty-icon sus-icon'}/>
               <div className="col-md-6 bg-section">
                 
               </div>
@@ -513,7 +513,7 @@ const SustainabilityPage = () => {
                                 Documents2.map((item, index) => (
                                   <div key={index} className="single-report">
                                       <div className="report-name">
-                                          <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Report-icon.svg" />
+                                          <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Report-icon.svg" />
                                           
                                           <h4 className="report-name">
                                               {item.title.rendered}
@@ -574,7 +574,7 @@ const SustainabilityPage = () => {
                                 Documents.map((item, index) => (
                                   <div key={index} className="single-report">
                                       <div className="report-name">
-                                          <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Report-icon.svg" />
+                                          <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Report-icon.svg" />
                                           
                                           <h4 className="report-name">
                                               {item.title.rendered}

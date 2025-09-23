@@ -50,7 +50,7 @@ const ProjectPage = () => {
                      <Link to='/our-projects/nyakabingo'>
                       <span className='button-name'>{t("home.read-more-button")}</span>
                       <span className="button-icon">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
+                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                       </span>
                      </Link>
                    </div>
@@ -63,7 +63,7 @@ const ProjectPage = () => {
                      <Link to='/our-projects/musha'>
                       <span className='button-name'>{t("home.read-more-button")}</span>
                       <span className="button-icon">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
+                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                       </span>
                      </Link>
                    </div>
@@ -76,7 +76,7 @@ const ProjectPage = () => {
                      <Link to='/our-projects/rutongo'>
                       <span className='button-name'>{t("home.read-more-button")}</span>
                       <span className="button-icon">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
+                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                       </span>
                      </Link>
                    </div>
@@ -89,7 +89,7 @@ const ProjectPage = () => {
                      <Link to='/our-projects/lithium-exploration'>
                       <span className='button-name'>{t("home.read-more-button")}</span>
                       <span className="button-icon">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
+                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
                       </span>
                      </Link>
                    </div>

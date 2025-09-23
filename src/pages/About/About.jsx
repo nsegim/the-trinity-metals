@@ -167,7 +167,7 @@ const AboutPage = () => {
             <div ref={history} className="container history-section-wrapper">
                 <div className="row justify-content-between">
                     <div className="col-md-6 image-holder">
-                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/06/tyu.webp" customClass={'history-image'}/>
+                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/06/tyu.webp" customClass={'history-image'}/>
                         {/* <ImageGallery imageUrl="History-playButton.svg" customClass={'history-play-button'}/> */}
                     </div>
                     <div className="col-md-6 histort-content-holder">
@@ -224,7 +224,7 @@ const AboutPage = () => {
                             <div class="general-button justify-content-left">
                                 <a href="#" class="hover-green" onClick={() => setModalShow(true)}>
                                     <span>{t("home.read-more-button")}</span>
-                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg"/>
+                                    <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg"/>
                                 </a>
                             </div>
 
@@ -239,7 +239,7 @@ const AboutPage = () => {
                     <div className="col-md-6 our-mission d-flex justify-content-center align-items-center flex-column">
                         <div className="icon-box">
                             <div className="icon d-flex justify-content-center">
-                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Our_mission-icon.svg" />
+                                <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Our_mission-icon.svg" />
                             </div>
                             <div className="icon-box-header">
                                 <p className="text-001">{t("about-us-page.our-mission-title")}</p>
@@ -257,7 +257,7 @@ const AboutPage = () => {
                     <div className="col-md-6 our-vision d-flex justify-content-center align-items-center flex-column">
                         <div className="icon-box">
                             <div className="icon d-flex justify-content-center">
-                            <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Our_vision-icon.svg" />
+                            <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Our_vision-icon.svg" />
                             </div>
                             <div className="icon-box-text">
                                 <p className="text-001">{t("about-us-page.our-vision-title")} </p>
@@ -291,7 +291,7 @@ const AboutPage = () => {
                             <div className="the-grid-item">
                                 <div className="the-icon-box">
                                     <div className="the-iconbox-icon">
-                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/LightBulb.svg" />
+                                    <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/LightBulb.svg" />
                                     </div>
                                     <div className="iconbox-content-wrapper">
                                         <div className="icon-box-header">
@@ -306,7 +306,7 @@ const AboutPage = () => {
                             <div className="the-grid-item">
                                 <div className="the-icon-box">
                                     <div className="the-iconbox-icon">
-                                        <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Watch-icon.svg" />
+                                        <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Watch-icon.svg" />
                                     </div>
                                     <div className="iconbox-content-wrapper">
                                         <div className="icon-box-header">
@@ -321,7 +321,7 @@ const AboutPage = () => {
                             <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/User-icon.svg" />
+                                    <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/User-icon.svg" />
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -336,7 +336,7 @@ const AboutPage = () => {
                             <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/trophy-icon.svg" />
+                                    <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/trophy-icon.svg" />
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -375,7 +375,7 @@ const AboutPage = () => {
                         <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Hammer-icon.svg" customClass={'strategy-icon'}/>
+                                <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Hammer-icon.svg" customClass={'strategy-icon'}/>
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -392,7 +392,7 @@ const AboutPage = () => {
                         <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/group-icon.svg" customClass={'strategy-icon'}/>
+                                <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/group-icon.svg" customClass={'strategy-icon'}/>
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -407,7 +407,7 @@ const AboutPage = () => {
                         <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/intersection-cion.svg" customClass={'strategy-icon'}/>
+                                <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/intersection-cion.svg" customClass={'strategy-icon'}/>
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -422,7 +422,7 @@ const AboutPage = () => {
                         <div className="the-grid-item">
                             <div className="the-icon-box">
                                 <div className="the-iconbox-icon">
-                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/qlementine-icons_build-16.svg" customClass={'strategy-icon'}/>
+                                <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/qlementine-icons_build-16.svg" customClass={'strategy-icon'}/>
                                 </div>
                                 <div className="iconbox-content-wrapper">
                                     <div className="icon-box-header">
@@ -460,7 +460,7 @@ const AboutPage = () => {
                                             : managementMembers?.[currentLang]?.slice(5, 8).reverse()
                                             )?.map((item, index) => (
                                         <div key={index} className="single-team-member">
-                                        <ImageGallery imageUrl={item._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif"} customClass={'team-member-photo'}/>
+                                        <ImageGallery imageUrl={item._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://contents.trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif"} customClass={'team-member-photo'}/>
                                                <div className="team-member-details">
                                                    <div className="team-member-info">
                                                        <h2 className="member-name">
@@ -485,7 +485,7 @@ const AboutPage = () => {
                                                            <Modal.Body>
                                                                <div className="a-member-desc">
                                                                    <div className="a-member-image">
-                                                                   <ImageGallery imageUrl={item._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif"} customClass={'team-member-photo'}/>
+                                                                   <ImageGallery imageUrl={item._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://contents.trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif"} customClass={'team-member-photo'}/>
            
                                                                    </div>
                                                                    <div className="text-content">
@@ -499,7 +499,7 @@ const AboutPage = () => {
                                                            
                                                        </Modal>
                                                    <div className="view-member-desc" onClick={() => setActiveModal(item.id)}>
-                                                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Vector-1.svg"/>
+                                                       <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Vector-1.svg"/>
                                                    </div>
                                                </div>
                                        
@@ -526,7 +526,7 @@ const AboutPage = () => {
                     <div class="general-button justify-content-center">
                             <Link to="/about/our-leadership" class="hover-green">
                                 <span>{t("about-us-page.view-all-team-button")}</span>
-                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg"/>
+                                <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Arrow2.svg"/>
                             </Link>
                     </div>
                 </div>
@@ -547,7 +547,7 @@ const AboutPage = () => {
                 </div>
                 <div className="second-container d-flex">
                    <div className="single-product">
-                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Tin.svg" customClass={'product-image'}/>
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Tin.svg" customClass={'product-image'}/>
                       <div className="product-desc">
                         <div className="product-name">
                             <p>
@@ -563,7 +563,7 @@ const AboutPage = () => {
                       </div>
                    </div>
                    <div className="single-product">
-                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Tantalum.svg" customClass={'product-image'}/>
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Tantalum.svg" customClass={'product-image'}/>
                       <div className="product-desc">
                         <div className="product-name">
                             <p>
@@ -581,7 +581,7 @@ const AboutPage = () => {
                       </div>
                    </div>
                    <div className="single-product">
-                      <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Tangusten.svg" customClass={'product-image'}/>
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Tangusten.svg" customClass={'product-image'}/>
                       <div className="product-desc">
                         <div className="product-name">
                             <p>

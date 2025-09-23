@@ -12,7 +12,7 @@ const Nyakabingo = () => {
           {/* Hero section */}
           <div className="the-project-hero-section-wrapper">
             <video autoPlay muted loop>
-              <source src="https://trinity-metals.com/wp-content/uploads/2025/06/nyakibingo-1.mp4" type="video/mp4" />
+              <source src="https://contents.trinity-metals.com/wp-content/uploads/2025/06/nyakibingo-1.mp4" type="video/mp4" />
             </video>
           </div>
           {/* Projects description */}
@@ -27,7 +27,7 @@ const Nyakabingo = () => {
                 <div className="work-result row">
                    <div className="col-md-4 stats">
                      <div className="icon-element">
-                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black.svg" />
+                       <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Black.svg" />
                      </div>
                      <div className="details-element">
                         <h4>{t("our-project-page.nyakabingo-mines.tungsten-production")}</h4>
@@ -37,7 +37,7 @@ const Nyakabingo = () => {
 
                    <div className="col-md-4 stats">
                      <div className="icon-element">
-                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black-1.svg" />
+                       <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Black-1.svg" />
                      </div>
                      <div className="details-element">
                         <h4>{t("our-project-page.nyakabingo-mines.workforce")}</h4>
@@ -47,7 +47,7 @@ const Nyakabingo = () => {
 
                    <div className="col-md-4 stats">
                      <div className="icon-element">
-                       <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Black-2.svg" />
+                       <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Black-2.svg" />
                      </div>
                      <div className="details-element">
                         

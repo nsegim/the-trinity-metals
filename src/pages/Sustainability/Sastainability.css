@@ -35,11 +35,11 @@ background-size: cover;
 min-height: 500px;
 }
 .environment-section .bg-section{
-background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Sustainabilty.webp');
+background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/Sustainabilty.webp');
 
 }
 .our-approach-section .bg-section{
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/06/Tailings-1.webp');
+  background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/06/Tailings-1.webp');
 
 }
 
@@ -108,7 +108,7 @@ padding-left: 60px;
 
 /* Our approach to Water management */
 .water-man{
-     background-image: url('https://trinity-metals.com/wp-content/uploads/2022/09/VALUES.jpg');
+     background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2022/09/VALUES.jpg');
 
 }
 
@@ -121,12 +121,12 @@ padding-left: 60px;
   min-height: 500px;
 }
 .community-bg-section{
-     background-image: url('https://trinity-metals.com/wp-content/uploads/2025/06/approach-to-gov.webp');
+     background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/06/approach-to-gov.webp');
 
 }
 
 .community-bg-section1{
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/06/approach-to-tailings.webp');
+  background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/06/approach-to-tailings.webp');
 }
 
 
@@ -182,22 +182,22 @@ background-size: contain;
 
 }
 .community-content .content-achievement li::after{
-background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Container-5.svg');
+background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/Container-5.svg');
 
 }
 
 /* Governance section styles */
 .goverance1 .bg-section{
-  background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Rotongo-women.jpg');
+  background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/Rotongo-women.jpg');
 }
 .goverance .bg-section{
-background-image: url('https://trinity-metals.com/wp-content/uploads/2025/06/Governance.webp');
+background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/06/Governance.webp');
 }
 
 
 
 .goverance .content-achievement li::after, .goverance1 .content-achievement li::after{
-background-image: url('https://trinity-metals.com/wp-content/uploads/2025/02/Container-6.svg');
+background-image: url('https://contents.trinity-metals.com/wp-content/uploads/2025/02/Container-6.svg');
 
 }
 
@@ -345,7 +345,7 @@ color: var(--trinity-white)!important;
 }
 }
 .Governance-section{
-    background-image: url(https://trinity-metals.com/wp-content/uploads/2025/06/Governance.webp);
+    background-image: url(https://contents.trinity-metals.com/wp-content/uploads/2025/06/Governance.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

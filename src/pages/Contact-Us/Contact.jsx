@@ -87,7 +87,7 @@ const ContactUs = ()=>{
                         {t("Contact.contact-details")}
                         </p>
                         <p>
-                            <ImageGallery imageUrl='https://trinity-metals.com/wp-content/uploads/2025/02/Cell-phone-icon-4.svg' />
+                            <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/Cell-phone-icon-4.svg' />
                             <span> {t("Contact.contact-tel")}</span>
                         </p>
                     </div> 
@@ -155,7 +155,7 @@ const ContactUs = ()=>{
                                 <label className="field-title">
                                   YOUR INQUIRY ABOUT
                                   <span>
-                                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Icon-1.svg" />
+                                    <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Icon-1.svg" />
                                   </span>
                                 </label>
                               
@@ -192,7 +192,7 @@ const ContactUs = ()=>{
                             <button type="submit" className="w-full text-white p-2 rounded-md form-submit-button">
                               <span className="button-text">{t("Contact.field-wrapper-sendbtn")}</span>
                               <span className="button-icon">
-                                <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/contact-us-icon.svg" />
+                                <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/contact-us-icon.svg" />
 
                               </span>
                             </button>

@@ -11,7 +11,7 @@
     object-fit: cover;
 }
 .lithium{
-    background-image: url(https://trinity-metals.com/wp-content/uploads/2025/07/image001-2-1.jpg);
+    background-image: url(https://contents.trinity-metals.com/wp-content/uploads/2025/07/image001-2-1.jpg);
         background-position: center 60%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -101,13 +101,13 @@ text-align: left;
     background-size: contain;
 }
 .nyakabingo-map{
-   background-image: url(https://trinity-metals.com/wp-content/uploads/2025/06/Nyakabingo-site-map.png);
+   background-image: url(https://contents.trinity-metals.com/wp-content/uploads/2025/06/Nyakabingo-site-map.png);
 }
 .musha-map{
-    background-image: url(https://trinity-metals.com/wp-content/uploads/2025/06/Musha-site-map.png);
+    background-image: url(https://contents.trinity-metals.com/wp-content/uploads/2025/06/Musha-site-map.png);
 }
 .rutongo-map{
-    background-image: url(https://trinity-metals.com/wp-content/uploads/2025/06/Rutongo-site-map.png);
+    background-image: url(https://contents.trinity-metals.com/wp-content/uploads/2025/06/Rutongo-site-map.png);
 }
 
 @media (max-width: 768px) {

@@ -117,7 +117,7 @@ const Careers = () => {
                                         </div>
                                         
                                         <button>
-                                            <ImageGallery imageUrl={'https://trinity-metals.com/wp-content/uploads/2025/03/Container.svg'} alt="search icon" className="seach--icon"/>
+                                            <ImageGallery imageUrl={'https://contents.trinity-metals.com/wp-content/uploads/2025/03/Container.svg'} alt="search icon" className="seach--icon"/>
                                         </button>
                                     </form>
                                     </div>
@@ -142,13 +142,13 @@ const Careers = () => {
                                                             </div>
                                                             <Link to={`/apply/${item?.id}`} className='apply-button'>
                                                             <span>Apply Now</span>
-                                                            <ImageGallery imageUrl={"https://trinity-metals.com/wp-content/uploads/2025/03/Container-1.svg"} />
+                                                            <ImageGallery imageUrl={"https://contents.trinity-metals.com/wp-content/uploads/2025/03/Container-1.svg"} />
                                                             </Link>
                                                             
                                                         </div>
                                                         <div className="bellow-card">
                                                             <ul className='job-details'>
-                                                                <li><ImageGallery imageUrl={"https://trinity-metals.com/wp-content/uploads/2025/03/Symbol.svg"} /><span>{item?.acf?.location}</span></li>
+                                                                <li><ImageGallery imageUrl={"https://contents.trinity-metals.com/wp-content/uploads/2025/03/Symbol.svg"} /><span>{item?.acf?.location}</span></li>
                                                                 <li><span className='job-date'>Posting Date</span><span>{moment(item?.date).format("DD/MM/YYYY")}</span></li>
                                                                 <li><span className='job-date'>Closing date</span><span>{moment(item?.acf?.closing_date).format("DD/MM/YYYY")}</span></li>
                                                             </ul>

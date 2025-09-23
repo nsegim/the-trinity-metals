@@ -107,13 +107,13 @@ const SinglePost = () => {
                     <ul className="post-meta">
                       <li>
                         <a href="#">
-                          <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Icon.svg" />
+                          <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Icon.svg" />
                           <p>Admin</p>
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Document-icon.svg" />
+                          <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Document-icon.svg" />
                           <p>Industrial</p>
                         </a>
                       </li>
@@ -131,7 +131,7 @@ const SinglePost = () => {
                       {["Background", "Background-1", "Background-2", "Background-3", "Background-4"].map((img, index) => (
                         <li key={index}>
                           <a href="">
-                            <ImageGallery imageUrl={`https://trinity-metals.com/wp-content/uploads/2025/02/${img}.svg`} />
+                            <ImageGallery imageUrl={`https://contents.trinity-metals.com/wp-content/uploads/2025/02/${img}.svg`} />
                           </a>
                         </li>
                       ))}

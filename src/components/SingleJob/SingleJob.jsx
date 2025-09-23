@@ -56,15 +56,15 @@ const SingleJob = () => {
                                 <p>Job Title: <span>{jobData?.title?.rendered}</span></p>
                             </div>
                             <div className="job-type">
-                                <ImageGallery imageUrl={'https://trinity-metals.com/wp-content/uploads/2025/03/user-icon.svg'} />
+                                <ImageGallery imageUrl={'https://contents.trinity-metals.com/wp-content/uploads/2025/03/user-icon.svg'} />
                                 <p>Job Type: <span>{jobData?.acf?.job_type}</span></p>
                             </div>
                             <div className="job-location">
-                                <ImageGallery imageUrl={'https://trinity-metals.com/wp-content/uploads/2025/03/Symbol.svg'} />
+                                <ImageGallery imageUrl={'https://contents.trinity-metals.com/wp-content/uploads/2025/03/Symbol.svg'} />
                                 <p>{jobData?.acf?.location}</p>
                             </div>
                             <div className="post-date">
-                                <ImageGallery imageUrl={'https://trinity-metals.com/wp-content/uploads/2025/03/calendar.svg'} />
+                                <ImageGallery imageUrl={'https://contents.trinity-metals.com/wp-content/uploads/2025/03/calendar.svg'} />
                                 <p>Posted: <span>{moment(jobData?.date).format("DD/MM/YYYY")}</span></p>
                             </div>
                         </div>

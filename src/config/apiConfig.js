@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 // Define your base URL
-const BASE_URL = 'https://trinity-metals.com/wp-json/wp/v2/';  // Replace with your actual API base URL
+const BASE_URL = 'https://contents.trinity-metals.com/wp-json/wp/v2/';  // Replace with your actual API base URL
 
 // Create an Axios instance
 const api = axios.create({

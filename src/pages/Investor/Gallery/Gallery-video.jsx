@@ -183,11 +183,11 @@ const TheVideoGallery = ()=>{
            <div className="gallery-navigation">
              <div className="gallery-nav-wrapper d-flex">
                 <Link to="/investor-relations/gallery/photos" className="gallery-nav">
-                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Photo-icon.svg"/>
+                    <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Photo-icon.svg"/>
                       <span>{t("gallery.photo-gallery")}</span>
                 </Link>
                 <Link to="/investor-relations/gallery/videos" className="gallery-nav visited">
-                    <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Video-icon.svg"/>
+                    <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Video-icon.svg"/>
                       <span>{t("gallery.video-gallery")}</span>
                 </Link>
 
@@ -234,7 +234,7 @@ const TheVideoGallery = ()=>{
                                            <ImageGallery imageUrl ={item?.snippet?.thumbnails?.medium?.url} />
 
                                             <div className="play-video" onClick={(event) => handleVideoPlay(event, item)}>
-                                              <ImageGallery imageUrl="https://trinity-metals.com/wp-content/uploads/2025/02/Link-e1739190132637.png" customClass="play-video-player"/>
+                                              <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Link-e1739190132637.png" customClass="play-video-player"/>
                                             </div>
                                           
 
@@ -265,7 +265,7 @@ const TheVideoGallery = ()=>{
                     {/* Video LightBox */}
                     {isOpen ? (
                        
-                            <LightBox clickedPlayButtonLink={`https://youtube.com/embed/${clickedPlayButtonLink}?start&autoplay=0&controls=1&enablejsapi=1&modestbranding=1&origin=https://trinity-metals.com&rel=0&showinfo=0&version=3&wmode=transparent`} handleClosePopup={handleClosePopup} ref={popup}/>
+                            <LightBox clickedPlayButtonLink={`https://youtube.com/embed/${clickedPlayButtonLink}?start&autoplay=0&controls=1&enablejsapi=1&modestbranding=1&origin=https://contents.trinity-metals.com&rel=0&showinfo=0&version=3&wmode=transparent`} handleClosePopup={handleClosePopup} ref={popup}/>
                         
                           
                     ) : (

@@ -1,15 +1,15 @@
 
 // const imageArray = [
 //   {
-//     'link': 'https://trinity-metals.com/wp-content/uploads/2025/02/Excavator-scaled.jpeg',
+//     'link': 'https://contents.trinity-metals.com/wp-content/uploads/2025/02/Excavator-scaled.jpeg',
 //     'text': 'Excavator as one of triniy tools'
 //   },
 //   {
-//     'link': 'https://trinity-metals.com/wp-content/uploads/2025/02/trinity-employees-scaled.jpeg',
+//     'link': 'https://contents.trinity-metals.com/wp-content/uploads/2025/02/trinity-employees-scaled.jpeg',
 //     'text': 'Employees of triniy'
 //   },
 //   {
-//     'link': 'https://trinity-metals.com/wp-content/uploads/2025/02/trinity-employes2-scaled.jpeg',
+//     'link': 'https://contents.trinity-metals.com/wp-content/uploads/2025/02/trinity-employes2-scaled.jpeg',
 //     'text': 'Employees of triniy'
 //   }
 // ]

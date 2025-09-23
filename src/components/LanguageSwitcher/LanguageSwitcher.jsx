@@ -10,8 +10,8 @@ const LanguageSwitcher = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = {
-    en: { label: "Eng", flag: "https://trinity-metals.com/wp-content/uploads/2025/07/usa-flag-round-circle-icon.svg" },
-    kiny: { label: "Kiny", flag: "https://trinity-metals.com/wp-content/uploads/2025/03/rwanda-flag-round-circle-icon.svg" },
+    en: { label: "Eng", flag: "https://contents.trinity-metals.com/wp-content/uploads/2025/07/usa-flag-round-circle-icon.svg" },
+    kiny: { label: "Kiny", flag: "https://contents.trinity-metals.com/wp-content/uploads/2025/03/rwanda-flag-round-circle-icon.svg" },
   };
 
   const changeLanguage = (lng) => {
