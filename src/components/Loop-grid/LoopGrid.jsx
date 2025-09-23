@@ -53,6 +53,8 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
         }
       });
     }
+
+    console.log("Test image:", data)
   }, [data]);
 
   const getPostCategory = async (id) => {
@@ -68,12 +70,14 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
   const getPostImage = async (id) => {
     try {
       const response = await fetchData(`media/${id}`);
-      return response?.guid?.rendered;
+      return response?.media_details?.sizes?.tp-image-grid?.source_url;
     } catch (error) {
       console.log(error);
       return null;
     }
   };
+
+
 
 
 
