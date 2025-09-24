@@ -143,7 +143,9 @@ const Team = () => {
             getMembers();
          }, []);
        
-        
+        useEffect(()=>{
+            console.log('boardMember',boardMember)
+        },[boardMember])
 
          useEffect(() => {
             const processMembers = async () => {
