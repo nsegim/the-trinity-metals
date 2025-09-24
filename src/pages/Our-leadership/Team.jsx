@@ -53,7 +53,7 @@ const Team = () => {
 
            } catch (error) {
              setError(error);
-             console.error(error);
+             console.log(error);
            }
          };
        
@@ -143,9 +143,10 @@ const Team = () => {
             };
           
             processMembers();
-            // console.log("the members: ",managementMemberKiny)
-               
 
+            console.log("the members: ",data)
+               
+            
            
           }, [data]); // Runs when `data` changes
           
