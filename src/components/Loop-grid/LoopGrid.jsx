@@ -33,7 +33,7 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
 
   useEffect(() => {
     getPosts();
-     console.log("Test image:", data);
+     
   }, []);
 
   useEffect(() => {
@@ -98,7 +98,7 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
 
    useEffect(()=>{
 
-      console.log("Test inner image: ", postImages)
+     // console.log("Test inner image: ", postImages)
   },[postImages])
   
 
