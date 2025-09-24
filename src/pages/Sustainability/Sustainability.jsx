@@ -35,9 +35,9 @@ const SustainabilityPage = () => {
 
                              // Store attachment URLs
                              const urls = response.flatMap(item => item._links.self.map(link => link.href));
-     
+       
                              
-     
+                             
                              setAttachmentsUrl(urls);
                          }
 
@@ -95,26 +95,17 @@ const SustainabilityPage = () => {
                  setLoadingPdf(true)
                  try {
 
-                     //const response = await fetchData(`media/${selectedPostUrl}`)
-                     const response = await fetch(`https://contents.trinity-metals.com/wp-json/wp/v2/media/${selectedPostUrl}`, {
-                       method: 'GET',
-                        headers: {
-                            'Accept': 'application/json',
-                            'Content-Type': 'application/json',
-                        },
-                        mode: 'cors',
-                        credentials: 'omit'
-                     })
-
-
-                      //const response = await fetch(`https://contents.trinity-metals.com/wp-json/wp/v2/media/${selectedPostUrl}`)
-
-                      // console.log("selectId:", selectedPostUrl)
+                     const response = await fetchData(`media/${selectedPostUrl}`)
+                    
                       
                        if(response){
-                       // window.open(response[0].guid.rendered, '_blank');
+
+                         window.open(response?.source_url, '_blank');
                         setLoadingPdf(false)
-                       // console.log("The response200:",response)
+
+                        // console.log("The response200:",response)
+                        // console.log("The link:",response?.source_url)
+
                         
                        }
                       if (!response.ok) {
@@ -127,9 +118,9 @@ const SustainabilityPage = () => {
 
                      // window.location.href = response[0].guid.rendered;
                     // setLink(response[0].guid.rendered)
-                     window.open(response[0].guid.rendered, '_blank');
-                     setLoadingPdf(false)
-                      console.log(response)
+                    //  window.open(response[0].guid.rendered, '_blank');
+                    //  setLoadingPdf(false)
+                    //   console.log(response)
 
 
                     }catch (error) {
@@ -146,7 +137,7 @@ const SustainabilityPage = () => {
              useEffect(()=>{
                  if(selectedPostUrl)
                      download()
-                   // console.log("The Id", selectedPostUrl)
+                    //console.log("The Id", selectedPostUrl)
              },[selectedPostUrl])
 
 
@@ -588,11 +579,11 @@ const SustainabilityPage = () => {
                                                       !loadinPdf &&
                                                       <a   
                                                           className="download-button"
-                                                          onClick={()=>setSelectedPostUrl(item.id)}
+                                                          onClick={()=>setSelectedPostUrl(item.acf.document_uploaded)}
                                               
                                               >
                                                     <span>{t("reports.Download-btn")}</span>
-                                                      {/* <span>{item.acf.document_uploaded}</span> */}
+                                                       {/* <span>{item.acf.document_uploaded}</span>  */}
                                               </a>
                                                   }
                                               
