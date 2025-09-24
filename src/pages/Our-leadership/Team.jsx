@@ -144,8 +144,9 @@ const Team = () => {
          }, []);
        
         useEffect(()=>{
-            console.log('boardMember',boardMember)
-        },[boardMember])
+            console.log('boardMember',bordMembers)
+            console.log('currentLang',currentLang)
+        },[bordMembers])
 
          useEffect(() => {
             const processMembers = async () => {
