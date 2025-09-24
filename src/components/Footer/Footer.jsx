@@ -162,7 +162,7 @@ const SiteFooter = () => {
                       <div className="text-element">
                         <p className="header-element">{t("footer.call-us")}</p>
 
-                        <a href="tel:+25091959034" className="reach-contact">+250 919 59034</a>
+                        <a href="tel:+250791959034" className="reach-contact">+250 791 959 034</a>
                       </div>
                       
                     </div>

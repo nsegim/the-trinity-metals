@@ -40,7 +40,7 @@ const SinglePost = () => {
   const fetchFeaturedImage = async (mediaId) => {
     try {
       const mediaResponse = await fetchData(`media/${mediaId}`);
-      setFeaturedImage(mediaResponse?.source_url || null);
+      setFeaturedImage(mediaResponse?.media_details?.sizes?.large?.source_url || null);
     } catch (error) {
       console.error("Error fetching featured image:", error);
     }

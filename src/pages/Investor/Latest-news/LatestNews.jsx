@@ -73,7 +73,7 @@ const LatestNews = () => {
   const getPostImage = async (id) => {
     try {
       const response = await fetchData(`media/${id}`);
-      return response?.guid?.rendered;
+      return response?.media_details?.sizes?.large?.source_url;;
     } catch (error) {
       console.log(error);
       return null;

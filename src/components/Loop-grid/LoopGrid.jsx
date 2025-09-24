@@ -24,6 +24,7 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
     try {
       const response = await fetchData('posts?page=1&per_page=9');
       setData(response);
+
     } catch (error) {
       setError(error);
       console.error(error);
@@ -32,6 +33,7 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
 
   useEffect(() => {
     getPosts();
+     console.log("Test image:", data);
   }, []);
 
   useEffect(() => {
@@ -50,11 +52,23 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
             ...prevImages,
             [item.id]: featuredImage,
           }));
+
+          
         }
+
+       
+
       });
+
+
+      
     }
 
-    console.log("Test image:", data)
+    
+         
+
+
+  
   }, [data]);
 
   const getPostCategory = async (id) => {
@@ -70,7 +84,11 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
   const getPostImage = async (id) => {
     try {
       const response = await fetchData(`media/${id}`);
-      return response?.media_details?.sizes?.tp-image-grid?.source_url;
+     // const testImage = response?.media_details?.sizes?.tp-image-grid?.source_url;
+
+      return response?.media_details?.sizes?.large?.source_url;
+       
+
     } catch (error) {
       console.log(error);
       return null;
@@ -78,6 +96,11 @@ const LoopGrid = ({ items, itemsPerPage = 3 }) => {
   };
 
 
+   useEffect(()=>{
+
+      console.log("Test inner image: ", postImages)
+  },[postImages])
+  
 
 
 
