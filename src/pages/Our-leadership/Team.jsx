@@ -46,9 +46,91 @@ const Team = () => {
 
          // Fetch posts
          const getMembers = async () => {
+
+
+             let boardTemp = [];
+              let rutongoBoardTemp = [];
+              let managementTemp = [];
+              let boardTempKiny = [];
+              let managementTempKiny = [];
+              let tagsMap = {};
+             // let imagesMap = {};
+              let tagIds = new Set(); // Collect unique tag IDs for batch fetching
+
            try {
              const response = await fetchData('member-showcase?per_page=100&_embed');
              setData(response);
+
+
+
+
+
+
+          
+              // Collect all tag IDs (handling multiple tags per member)
+              response?.forEach((item) => {
+                if (item?.tags?.length > 0) {
+                  item.tags.forEach((tagId) => tagIds.add(tagId)); // ✅ Collect all tags
+                }
+              });
+          
+              // Fetch all tags in one API request (instead of one per item)
+              const tagResponses = await fetchData(`tags?include=${[...tagIds].join(",")}`);
+              const tagLookup = {}; // Map tag ID to tag name
+              tagResponses.forEach(tag => {
+                tagLookup[tag.id] = tag.name;
+              });
+              
+
+              
+
+              // Process members with tags and images
+              response?.forEach((item) => {
+                const tagNames = item?.tags?.map(tagId => tagLookup[tagId]) || []; 
+                
+                tagsMap[item.id] = tagNames; // Store all assigned tags
+                
+                
+                // Categorize team members if at least one tag matches
+                if (tagNames.includes("Board member")) boardTemp.push(item);
+                if (tagNames.includes("Management Team")) managementTemp.push(item);
+                if(tagNames.includes("Rutongo Mines Board Members")) rutongoBoardTemp.push(item);
+                if(tagNames.includes("Inama y'Ubutegetsi")) boardTempKiny.push(item);
+                if(tagNames.includes("Abagize inama y'ubucukuzi bwa Rutongo")) managementTempKiny.push(item);
+                 
+            
+          
+                // Fetch and store featured image
+                // if (item?.featured_media) {
+                //   imagesMap[item.id] = item._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "default-image.jpg";
+                // }
+              });
+          
+              // 4️⃣ Update state once (avoids multiple re-renders)
+              setTags(tagsMap);
+
+
+             // setMemberImage(imagesMap);
+              setBoardMember(boardTemp);
+              setBoardMembers(prev => ({
+                                    ...prev,
+                                    en: boardTemp,
+                                    kiny:boardTempKiny
+                                    }));
+
+              setManagementMember(managementTemp);
+
+              setmanagementMembers(prev => ({
+                                    ...prev,
+                                    en: managementTemp,
+                                    kiny: managementTempKiny
+                                    }));
+
+              setRutongoBoardMember(rutongoBoardTemp);
+            //   setBoardMemberKiny(boardTempKiny)
+
+        
+
              
 
            } catch (error) {
@@ -65,6 +147,7 @@ const Team = () => {
 
          useEffect(() => {
             const processMembers = async () => {
+
               if (data.length === 0) return;
           
               let boardTemp = [];
@@ -142,7 +225,7 @@ const Team = () => {
 
             };
           
-            processMembers();
+            // processMembers();
 
             console.log("the members: ",data)
                
