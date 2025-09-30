@@ -129,6 +129,8 @@ color: #04080D;
 
 .wp-element-caption{
     font-size: 12px!important;
+       
+    font-style: italic!important;
 }
 
 @media(min-width: 769px){
@@ -181,7 +183,7 @@ color: #04080D;
     }
     .wp-block-column-is-layout-flow img{
         height: 350px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
 }
