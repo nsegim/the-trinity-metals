@@ -127,8 +127,8 @@ color: #04080D;
     object-fit: contain!important;
 }
 
-.wp-element-caption em{
-    font-size: 12px;
+.wp-element-caption{
+    font-size: 12px!important;
 }
 
 @media(min-width: 769px){
