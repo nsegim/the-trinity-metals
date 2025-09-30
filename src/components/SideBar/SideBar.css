@@ -3,7 +3,7 @@
     background-color: #F2F2F2;
 
 }
-.sidebar-wrapper .container{
+.sidebar-wrapper .contain{
     display: flex;
     justify-content: end;
     padding: 0;
@@ -19,7 +19,7 @@ display: flex;
 flex-direction: column;
 gap: 40px;
 }
-.container .side-bar-wrapper{
+.contain .side-bar-wrapper{
     background-color: var(--trinity-white)
 }
 .sidebar-headers{
@@ -239,4 +239,27 @@ color: var(--trinity-dark);
 .a-gallery .the-gallery .view-image{
     width: 30px;
     height: 30px;
+}
+
+@media(min-width: 769px) and (max-width: 992px){
+    .about-posts-search .search-form form{
+       display: block;
+    }
+   
+}
+
+@media(max-width: 1199px){
+    .sidebar-wrapper .contain{
+        display: block;
+    }
+     .about-posts-search .search-form input{
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .side-bar-wrapper {
+        padding-inline: 10px;
+    }
 }

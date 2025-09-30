@@ -192,7 +192,7 @@ const SideBar = ({ currentCategories, postTofieldField, onFiltedPost }) => {
    return (
       <>
          <div className="sidebar-wrapper">
-            <div className="container">
+            <div className="contain">
                <div className="side-bar-wrapper">
                   {/* Search Form */}
                   <div className="about-posts-search">
