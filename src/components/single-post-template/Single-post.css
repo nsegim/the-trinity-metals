@@ -122,14 +122,24 @@ color: #04080D;
 
 .the_content img{
     width: 100%!important;
-    object-fit: cover!important;
+    height: fit-content!important;
+    
+    object-fit: contain!important;
+}
+
+.wp-element-caption em{
+    font-size: 12px;
 }
 
 @media(min-width: 769px){
         .single-post-wrapper .row .col-md-8{
-            width: 65.1%;
+            width: 71.1%;
 
         }
+        .single-post-wrapper .row .col-md-4{
+            width: 28%;
+        }
+
         .single-post-wrapper .row{
              flex-wrap: nowrap;
         }
@@ -174,4 +184,18 @@ color: #04080D;
         margin-bottom: 10px;
     }
 
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+      .single-post-wrapper .row .col-md-8{
+            width: 65.1%;
+
+        }
+        .single-post-wrapper .row .col-md-4{
+            width: 33%;
+        } 
+        .side-bar-wrapper{
+            padding-inline: 10px;
+        }
+    
 }
