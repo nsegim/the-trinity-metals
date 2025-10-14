@@ -11,7 +11,6 @@ import ImageLightBox from "../../components/LightBox/Image-LightBox/ImageLightBo
 import { useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import mySvg from '../../../public/asset/SVG.svg'
-import HomeMeta from "./HomeMeta";
 
 
 
@@ -78,7 +77,7 @@ const scrollToAboutSection = () => {
 
   return (
     <>
-    <HomeMeta/>
+    {/* <HomeMeta/> */}
       <SiteHeader />
 
 
