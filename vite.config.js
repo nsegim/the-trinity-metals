@@ -8,6 +8,9 @@ export default defineConfig({
   build: {
      chunkSizeWarningLimit: 1000, 
   },
+  ssr: {
+    noExternal: ['react-router-dom', 'react-helmet-async']
+  },
   server: {
     historyApiFallback: true, // Ensures that deep links work
     proxy: {
