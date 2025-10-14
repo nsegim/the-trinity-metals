@@ -1,4 +1,13 @@
-User-agent: *
-Disallow:
+# robots.txt for https://trinity-metals.com/
+# Allow all major search engines to crawl the site and sitemap.
 
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /login/
+Disallow: /api/
+
+# Important: Keep sitemap accessible to all crawlers
 Sitemap: https://trinity-metals.com/sitemap.xml
+
+
