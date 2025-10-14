@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://trinity-metals.com/sitemap.xml
