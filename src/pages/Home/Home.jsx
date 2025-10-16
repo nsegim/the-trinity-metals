@@ -11,6 +11,7 @@ import ImageLightBox from "../../components/LightBox/Image-LightBox/ImageLightBo
 import { useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import mySvg from '../../../public/asset/SVG.svg'
+import { Helmet } from "react-helmet";
 
 
 
@@ -78,6 +79,14 @@ const scrollToAboutSection = () => {
   return (
     <>
     {/* <HomeMeta/> */}
+
+      <Helmet>
+          <title>Home</title>
+          <meta name="description" content="Trinity Metals Limited is a leading mining company in Rwanda, specializing in tin, tungsten, and tantalum with responsible mining practices" data-rh="true" />  
+          <meta property="og:url" content="https://trinity-metals.com/" />
+          <link rel="canonical" href="/" />  
+      </Helmet>
+          
       <SiteHeader />
 
 
