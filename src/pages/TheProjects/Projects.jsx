@@ -4,11 +4,38 @@ import SiteHeader from '../../components/header/Header'
 import ImageGallery from '../../components/ImageGallery'
 import { useTranslation } from 'react-i18next'
 import './Projects.css'
+import { Helmet } from 'react-helmet-async'
 const ProjectPage = () => {
 
   const { t } = useTranslation()
     return(
         <>
+            <Helmet>
+                <title>Our Projects | Trinity Metals Limited</title>
+
+                <meta
+                  name="description"
+                  content="Trinity Metals operates three certified conflict-free mining projects in Rwanda, upholding strict ESG and sustainable mining standards."
+                />
+
+                <meta
+                  name="keywords"
+                  content="Trinity Metals Projects, Rutongo Mines, Nyakabingo Mine, Musha Mines, Ntunga Lithium Project
+ Responsible Mining Rwanda, ESG Mining, Conflict-Free Minerals"
+                />
+
+                <meta property="og:title" content="Our Projects | Trinity Metals Limited" />
+                <meta
+                  property="og:description"
+                  content="Explore Trinity Metals Limited’s mining operations in Rwanda – Rutongo, Nyakabingo, and Musha Mines. Operated responsibly under ESG and OECD conflict-free standards."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://trinity-metals.com/our-projects" />
+                
+                <link rel="canonical" href="https://trinity-metals.com/our-projects" />
+          </Helmet>
+
+
           <SiteHeader />
           {/* Hero Section */}
           <div className="project-section-wrapper">

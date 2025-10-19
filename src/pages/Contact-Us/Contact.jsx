@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 
 import SiteHeader from "../../components/header/Header"
 import ImageGallery from "../../components/ImageGallery"
+import { Helmet } from "react-helmet-async"
 
 import './Contact.css'
 import { useTranslation } from "react-i18next";
@@ -67,6 +68,20 @@ const ContactUs = ()=>{
     
     return(
         <>
+            <Helmet>
+              <title>Contact Us | Trinity Metals Limited</title>
+              <meta
+                name="description"
+                content="Get in touch with Trinity Metals Limited for inquiries, partnerships, or media requests. We’re here to support responsible mining and sustainable growth in Rwanda."
+              />
+              <meta property="og:title" content="Contact Us | Trinity Metals Limited" />
+              <meta
+                property="og:description"
+                content="Get in touch with Trinity Metals Limited for inquiries, partnerships, or media requests. We’re here to support responsible mining and sustainable growth in Rwanda."
+              />
+              <meta property="og:url" content="https://trinity-metals.com/contact-us" />
+              <link rel="canonical" href="https://trinity-metals.com/contact-us" />
+          </Helmet>
           <SiteHeader />
           
           {/* Hero section */}

@@ -8,6 +8,7 @@ import { fetchData } from '../../../config/apiConfig';
 import ReUsablePost from '../../../components/ReUsablePost';
 import ImageGallery from '../../../components/ImageGallery';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 const LatestNews = () => {
   const [data, setData] = useState([]);
@@ -105,6 +106,20 @@ const { t } = useTranslation()
 
   return (
     <>
+      <Helmet>
+          <title>Latest News | Trinity Metals Limited</title>
+          <meta
+            name="description"
+            content="Stay updated with Trinity Metals’ latest news, investment updates, and mining insights from Rwanda’s leading responsible tin, tungsten, and tantalum producer."
+          />
+          <meta property="og:title" content="Latest News | Trinity Metals Limited" />
+          <meta
+            property="og:description"
+            content="Stay updated with Trinity Metals’ latest news, investment updates, and mining insights from Rwanda’s leading responsible tin, tungsten, and tantalum producer."
+          />
+          <meta property="og:url" content="https://trinity-metals.com/investor-relations/latest-news" />
+          <link rel="canonical" href="https://trinity-metals.com/investor-relations/latest-news" />
+      </Helmet>
       <SiteHeader />
       <div className="custom-hero">
         <div className="child-item-wrapper z-1">

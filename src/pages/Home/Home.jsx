@@ -11,7 +11,7 @@ import ImageLightBox from "../../components/LightBox/Image-LightBox/ImageLightBo
 import { useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import mySvg from '../../../public/asset/SVG.svg'
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -80,12 +80,13 @@ const scrollToAboutSection = () => {
     <>
     {/* <HomeMeta/> */}
 
-      <Helmet>
-          <title>Home</title>
-          <meta name="description" content="Trinity Metals Limited is a leading mining company in Rwanda, specializing in tin, tungsten, and tantalum with responsible mining practices" data-rh="true" />  
+      {/* <Helmet>
+          <title>Home | Trinity Metals Limited</title>
+          <meta name="description" content="Trinity Metals Limited is a leading mining company in Rwanda, specializing in tin, tungsten, and tantalum with responsible mining practices ----" />  
           <meta property="og:url" content="https://trinity-metals.com/" />
           <link rel="canonical" href="/" />  
-      </Helmet>
+      </Helmet> */}
+      
           
       <SiteHeader />
 
@@ -103,7 +104,7 @@ const scrollToAboutSection = () => {
         <div className="container hero-section-content-wrapper">
             <div className="basic-info">
 
-              <h1 className="section-header"><span className="welcome-icon"><ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/welcome-icon.svg"/></span>{t("home.welcome")}</h1>
+              <h1 className="section-header"><span className="welcome-icon"><ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/welcome-icon.svg" height="10px" width="36px" /></span>{t("home.welcome")}</h1>
               <h2  dangerouslySetInnerHTML={{ __html: t("home.welcome-description") }} className="section-desc" />
               
               <p className="section-sub-desc">{t("home.min-description")}</p>
@@ -115,7 +116,7 @@ const scrollToAboutSection = () => {
                     
                     {t("home.get-stated-button")}
                     <span>
-                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg" height="24px" width="24px" />
                     </span>
                     
                   </span>
@@ -124,7 +125,7 @@ const scrollToAboutSection = () => {
                   <Link to="/our-projects" className="view-projects transprent-button">
                     {t("home.view-project-button")}
                     <span>
-                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg"/>
+                      <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/arrow-icon.svg" height="24px" width="24px"/>
                     </span>
                     
                     
@@ -185,9 +186,9 @@ const scrollToAboutSection = () => {
          <div className="basic-intro-right">
               <div className="right-intro-wrapper">
                 <div className="right-intro-header">
-                <h3 className="heading">
+                <h2 className="heading">
                   {t("home.home-about-heading")}
-                </h3>
+                </h2>
               </div>
           
               <div className="tabs-wrapper">
@@ -303,17 +304,17 @@ const scrollToAboutSection = () => {
               <div className="container-holder">
                 <div className="sectionTops">
                   <div className="section-heading">
-                    <h1 className="section-header-2">
+                    <h2 className="section-header-2">
                       <span className="welcome-icon">
                         <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/welcome-icon2.svg' />
                       </span>{t("home.latest-work-section")}
                       
-                    </h1>
-                  <h2 className="heading">
+                    </h2>
+                  <h3 className="heading">
                     <span className="text-white">
                     {t("home.our-project")}
                     </span>
-                  </h2>
+                  </h3>
 
 
                   </div>
@@ -433,18 +434,18 @@ const scrollToAboutSection = () => {
         <div className="container">
           <div className="sectionTops pb-4">
                   <div className="section-heading">
-                    <h1 className="section-header-2 with-blue">
+                    <h2 className="section-header-2 with-blue">
                       <span className="welcome-icon-blue me-3">
                         <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/welcome-icon-blue.svg"/>
                       </span>
                       {t("home.blog-post-section")}
                       
-                    </h1>
-                  <h2 className="heading">
+                    </h2>
+                  <h3 className="heading">
                     <span>
                     {t("home.latest-articles")}
                     </span>
-                  </h2>
+                  </h3>
 
 
                   </div>
@@ -474,18 +475,18 @@ const scrollToAboutSection = () => {
         <div className="container">
           <div className="sectionTops">
                   <div className="section-heading">
-                    <h1 className="section-header-2 with-blue">
+                    <h2 className="section-header-2 with-blue">
                       <span className="welcome-icon-blue me-3">
                         <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/welcome-icon-blue.svg"/>
                       </span>
                       {t("home.media-section")}
                       
-                    </h1>
-                  <h2 className="heading">
+                    </h2>
+                  <h3 className="heading">
                     <span>
                    {t("home.our-gallery")}
                     </span>
-                  </h2>
+                  </h3>
 
 
                   </div>

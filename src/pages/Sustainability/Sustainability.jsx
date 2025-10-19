@@ -6,7 +6,7 @@ import ImageGallery from "../../components/ImageGallery"
 import { fetchData } from '../../config/apiConfig'
 import './Sastainability.css'
 import { useTranslation } from "react-i18next"
-
+import { Helmet } from "react-helmet-async"
 import axios from "axios"
 
 
@@ -154,6 +154,21 @@ const SustainabilityPage = () => {
              const { t } = useTranslation()
     return(
         <>
+           <Helmet>
+              <title>Sustainability | Trinity Metals Limited</title>
+              <meta
+                name="description"
+                content="Trinity Metals leads responsible mining in Rwanda, advancing UN SDGs through environmental protection, community growth, and sustainable impact."
+              />
+              <meta property="og:title" content="Sustainability | Trinity Metals Limited" />
+              <meta
+                property="og:description"
+                content="Trinity Metals leads responsible mining in Rwanda, advancing UN SDGs through environmental protection, community growth, and sustainable impact."
+              />
+              <meta property="og:url" content="https://trinity-metals.com/sustainability" />
+              <link rel="canonical" href="https://trinity-metals.com/sustainability" />
+           </Helmet>
+           
           <SiteHeader />
           {/* Hero Section */}
           <div className="about-hero-section">

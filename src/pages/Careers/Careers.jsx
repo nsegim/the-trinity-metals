@@ -9,7 +9,7 @@ import { data, Link } from 'react-router-dom';
 import { fetchData } from '../../config/apiConfig';
 import moment from 'moment/min/moment-with-locales';
 import { useTranslation } from 'react-i18next';
-
+import { Helmet } from 'react-helmet-async';
 
 
 const Careers = () => {
@@ -53,6 +53,20 @@ const Careers = () => {
 
         
         <div>
+               <Helmet>
+                    <title>Careers | Trinity Metals Limited</title>
+                    <meta
+                    name="description"
+                    content="Join Trinity Metals Limited: empowering communities, creating jobs, and promoting gender diversity in mining."
+                    />
+                    <meta property="og:title" content="Careers | Trinity Metals Limited" />
+                    <meta
+                    property="og:description"
+                    content="Join Trinity Metals Limited: empowering communities, creating jobs, and promoting gender diversity in mining."
+                    />
+                    <meta property="og:url" content="https://trinity-metals.com/Careers" />
+                    <link rel="canonical" href="https://trinity-metals.com/Careers" />
+            </Helmet>
             <SiteHeader />
 
             {/* Hero section */}

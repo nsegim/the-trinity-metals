@@ -9,6 +9,7 @@ import TheModal from "../../../components/LightBox/Image-LightBox/Modal";
 import ImageLightBox from "../../../components/LightBox/Image-LightBox/ImageLightBox";
 import Spinner from "../../../components/Spinner/Spinner";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 
 
 const ThePhotoGallery = () => {
@@ -131,7 +132,21 @@ const ThePhotoGallery = () => {
 
 
     return (
-        <>  
+        <>   
+            <Helmet>
+                <title>Gallery – Photos | Trinity Metals Limited</title>
+                <meta
+                name="description"
+                content="Explore photos from Trinity Metals’ mining projects and community initiatives across Rwanda, showcasing responsible mining and sustainable development in action."
+                />
+                <meta property="og:title" content="Gallery – Photos | Trinity Metals Limited" />
+                <meta
+                property="og:description"
+                content="Explore photos from Trinity Metals’ mining projects and community initiatives across Rwanda, showcasing responsible mining and sustainable development in action."
+                />
+                <meta property="og:url" content="https://trinity-metals.com/investor-relations/gallery/photos" />
+                <link rel="canonical" href="https://trinity-metals.com/investor-relations/gallery/photos" />
+            </Helmet>
             <SiteHeader />
             {/* Hero Section */}
             <div className="custom-hero photo-gallery">

@@ -17,7 +17,7 @@ const SiteFooter = () => {
         <div className="footer-content-wrapper col-md-6">
           <div className="inner-content-wrapper d-flex flex-column">
               <div className="the-newsLetter">
-                <h1 className="footer-heading">{t("footer.subscribe-newsletter")}</h1>
+                <h2 className="footer-heading">{t("footer.subscribe-newsletter")}</h2>
 
                 <div className="formWrapper">
                   <Form className="newsletter-form">
@@ -44,7 +44,7 @@ const SiteFooter = () => {
               </div>
               <div className="include-location d-flex">
                 <div className="quickLinksWrapper">
-                  <h1 className="footer-heading">{t("footer.quick-links")}</h1>
+                  <h2 className="footer-heading">{t("footer.quick-links")}</h2>
 
                       <div className="the-links">
                         <div className="links001">
@@ -155,7 +155,7 @@ const SiteFooter = () => {
                     <div className="icon-box">
                       <a href="tel:+25091959034">
                          <span>
-                           <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Yellow-Phone.svg" />
+                           <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Yellow-Phone.svg" width="65px" height="65px" />
                          </span>
                       </a>
                      
@@ -169,7 +169,7 @@ const SiteFooter = () => {
                     <div className="icon-box">
                       <span>
                         <a href="mailto:info.rw@trinity-metals.com">
-                          <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Yellow-envelope.svg" />
+                          <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Yellow-envelope.svg" width="65px" height="65px" />
                         </a>
                       </span>
                       <div className="text-element">

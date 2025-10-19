@@ -9,6 +9,7 @@ import { useRef, useEffect, useState } from "react"
 import Spinner from "../../components/Spinner/Spinner"
 import { fetchData } from "../../config/apiConfig"
 import { useTranslation } from "react-i18next"
+import { Helmet } from "react-helmet-async"
 
 const AboutPage = () => {
     const location = useLocation()
@@ -154,7 +155,23 @@ const AboutPage = () => {
 
     
     return(
-        <>
+        <> 
+            <Helmet>
+                <title>About Us | Trinity Metals Limited</title>
+                <meta
+                    name="description"
+                    content="Learn about Trinity Metals Limited’s formation from three major Rwandan mining companies and its commitment to responsible tin, tungsten, and tantalum mining."
+                />
+                <meta property="og:title" content="About Us | Trinity Metals Limited" />
+                <meta
+                    property="og:description"
+                    content="Learn about Trinity Metals Limited’s formation from three major Rwandan mining companies and its commitment to responsible tin, tungsten, and tantalum mining."
+                />
+                <meta property="og:url" content="https://trinity-metals.com/about" />
+                <link rel="canonical" href="https://trinity-metals.com/about" />
+            </Helmet>
+
+
             <SiteHeader />
             {/* Hero section */}
             <div className="about-hero-section">
