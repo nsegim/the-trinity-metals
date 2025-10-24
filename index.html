@@ -21,9 +21,18 @@
     <meta property="og:image" content="https://contents.trinity-metals.com/wp-content/uploads/2025/02/site-logo1.png" />
 
     <title>Trinity Metals</title>
+    <!-- Preconnect to font and image hosts to speed up font/image fetches -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      /* Fallback font to prevent invisible text during font load */
+      body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; }
     </style>
+    <!-- Preconnect to the external image host used by the site to reduce DNS/TTFB -->
+    <link rel="preconnect" href="https://contents.trinity-metals.com" crossorigin>
+    <!-- Preload the site logo (often above-the-fold) to help LCP -->
+    <link rel="preload" as="image" href="https://contents.trinity-metals.com/wp-content/uploads/2025/02/site-logo1.png">
   </head>
   <body>
     <div id="root"></div>

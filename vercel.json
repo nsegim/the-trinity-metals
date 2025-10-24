@@ -4,5 +4,17 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ]
+  ],
+   "routes": [
+    {
+      "src": "/.*",
+      "dest": "/src/server.jsx"
+    }
+  ],
+  "functions": {
+    "src/server.jsx": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
 }

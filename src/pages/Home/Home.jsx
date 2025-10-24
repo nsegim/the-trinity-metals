@@ -516,7 +516,7 @@ const scrollToAboutSection = () => {
                 <div className="play-button" onClick={handleVideoHandler}>
                   <ImageGallery imageUrl="https://contents.trinity-metals.com/wp-content/uploads/2025/02/Play-button.svg"/>
                 </div> */}
-                 <iframe 
+                 <iframe  
                  className="video-player-fromyoutbe"
                
                 src="https://www.youtube.com/embed/aSxVT-MduHQ?controls=1&modestbranding=1&showinfo=0&rel=0&fs=0"

@@ -74,7 +74,7 @@
   
     
   
-  "@emotion/styled": "^11.14.0",
+  "@emotion/styled": "^11.14.1",
   
   
     
@@ -84,7 +84,7 @@
   
     
   
-  "@mui/material": "^6.4.1",
+  "@mui/material": "^6.5.0",
   
   
     
@@ -105,6 +105,11 @@
     
   
   "cors": "^2.8.5",
+  
+  
+    
+  
+  "dayjs": "^1.11.18",
   
   
     
@@ -179,7 +184,12 @@
   
     
   
-  "react-router-dom": "^7.1.0"
+  "react-router-dom": "^7.1.0",
+  
+  
+    
+  
+  "sharp": "^0.34.4"
   
   
   },
@@ -241,6 +251,16 @@
     
   
   "globals": "^15.13.0",
+  
+  
+    
+  
+  "rollup-plugin-visualizer": "^6.0.5",
+  
+  
+    
+  
+  "terser": "^5.44.0",
   
   
     
