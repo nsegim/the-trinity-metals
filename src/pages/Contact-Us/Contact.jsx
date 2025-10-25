@@ -22,7 +22,7 @@ const ContactUs = ()=>{
         const [submitMessage, setSubmitMessage] = useState("");
         const [isVisible, setIsVisible] = useState(false);
         const dropdownRef = useRef(null);
-        const { t } = useTranslation();
+        const { t } = useTranslation(); 
 
         // Initialize EmailJS
         useEffect(() => {
@@ -52,7 +52,7 @@ const ContactUs = ()=>{
           try {
             // EmailJS template parameters
             const templateParams = {
-              to_email: "test@tstoneapartmenthotel.com",
+              to_email: "info.rw@trinity-metals.com",
               from_name: formData.name,
               from_email: formData.email,
               phone: formData.phone,

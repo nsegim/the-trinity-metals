@@ -2,7 +2,9 @@
 # Allow all major search engines to crawl the site and sitemap.
 
 User-agent: *
-Disallow: 
+Disallow:
+
+Sitemap: https://trinity-metals.com/sitemap.xml
 
 
 

@@ -162,7 +162,7 @@ const TheVideoGallery = ()=>{
           event.preventDefault(); 
           setClickedPlayButtonLink(item?.snippet?.resourceId?.videoId);
           setIsOpen(true)
-          console.log(clickedPlayButtonLink)
+          //console.log(clickedPlayButtonLink)
         };
          
       const { t } = useTranslation()
