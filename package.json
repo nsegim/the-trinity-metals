@@ -99,6 +99,11 @@
   
     
   
+  "dayjs": "^1.11.18",
+  
+  
+    
+  
   "dompurify": "^3.2.4",
   
   
@@ -144,6 +149,11 @@
   
     
   
+  "react-helmet-async": "^2.0.5",
+  
+  
+    
+  
   "react-hook-form": "^7.54.2",
   
   
@@ -154,7 +164,17 @@
   
     
   
-  "react-router-dom": "^7.1.0"
+  "react-router-dom": "^7.1.0",
+  
+  
+    
+  
+  "sharp": "^0.34.4",
+  
+  
+    
+  
+  "terser": "^5.44.0"
   
   
   },
