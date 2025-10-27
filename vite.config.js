@@ -31,7 +31,7 @@ export default defineConfig({
            'email': ['@emailjs/browser'],
            'helmet': ['react-helmet-async'],
            'bootstrap': ['bootstrap', 'react-bootstrap'],
-           'utils': ['dayjs', 'dompurify', 'sharp']
+           'utils': ['dayjs', 'dompurify']
          }
        }
      }
