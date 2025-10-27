@@ -22,11 +22,11 @@ const BottomImagesGallery = [
     'text': 'H.E Paul Kagame as our visitor'
   },
   {
-    'link': 'https://contents.trinity-metals.com/wp-content/uploads/2025/06/3_32-2.webp',
+    'link': 'https://contents.trinity-metals.com/wp-content/uploads/2025/05/3_32-2-768x1049.jpg.webp',
     'text': 'H.E Paul Kagame as our visitor 2'
   },
   {
-    'link': 'https://contents.trinity-metals.com/wp-content/uploads/2025/02/trinity-employes2-scaled.jpeg',
+    'link': 'https://contents.trinity-metals.com/wp-content/uploads/2025/02/trinity-employes2-scaled.jpeg.webp',
     'text': 'Employees of triniy'
   }
 ]
@@ -95,8 +95,11 @@ const scrollToAboutSection = () => {
 
       <div className="hero-section home-hero">
         <div className="background-video-container">
-          <video autoPlay muted loop>
-            <source src="https://contents.trinity-metals.com/wp-content/uploads/2025/06/homepage-1.mp4" type="video/mp4" />
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="https://contents.trinity-metals.com/wp-content/uploads/2025/10/homepage-1-compressed.webm" type="video/webm" />
+            <source src="https://contents.trinity-metals.com/wp-content/uploads/2025/10/homepage-1-compressed.mp4" type="video/mp4" />
+            
+
           </video>
         </div>
         <div className="background-overlay">
@@ -339,7 +342,7 @@ const scrollToAboutSection = () => {
                      
                       <div className="featured-image">
                         <Link to="/our-projects/nyakabingo">
-                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine-min.png' customClass= "card-image" />
+                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/nyakabingo-mine-min.png.webp' customClass= "card-image" />
                         </Link>  
                       </div>
                       
@@ -355,7 +358,7 @@ const scrollToAboutSection = () => {
                    <div className="a-card">
                       <div className="featured-image">
                         <Link to="/our-projects/musha">
-                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/musha_mine-min.png' customClass= "card-image" />
+                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/musha_mine-min.png.webp' customClass= "card-image" />
                         </Link>  
                       </div>
                       <div className="project-title">
@@ -369,7 +372,7 @@ const scrollToAboutSection = () => {
                    <div className="a-card">
                       <div className="featured-image">
                         <Link to="/our-projects/rutongo">
-                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/rutongo-min.png' customClass= "card-image"/>
+                          <ImageGallery imageUrl='https://contents.trinity-metals.com/wp-content/uploads/2025/02/rutongo-min.png.webp' customClass= "card-image"/>
                         </Link>  
                       </div>
                       <div className="project-title">
