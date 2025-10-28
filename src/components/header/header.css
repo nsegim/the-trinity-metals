@@ -20,7 +20,7 @@
 }
 .contact-info span {
   color: var(--trinity-white);
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;

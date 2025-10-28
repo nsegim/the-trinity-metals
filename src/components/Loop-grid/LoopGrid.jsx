@@ -1,180 +1,361 @@
-import { useState,useEffect } from "react";
-import './styles.css'
-import Carousel from 'react-bootstrap/Carousel';
+// import { useState,useEffect } from "react";
+// import './styles.css'
+// import Carousel from 'react-bootstrap/Carousel';
 
-import ReUsablePost from '../../components/ReUsablePost';
-import { fetchData } from "../../config/apiConfig";
+// import ReUsablePost from '../../components/ReUsablePost';
+// import { fetchData } from "../../config/apiConfig";
 
 
-const LoopGrid = ({ items, itemsPerPage = 3 }) => {
-  const [currentPage, setCurrentPage] = useState(1);
-  // const [animationDirection, setAnimationDirection] = useState('');
-  const [activeIndex, setActiveIndex] = useState(0)
+// const LoopGrid = ({ items, itemsPerPage = 3 }) => {
+//   const [currentPage, setCurrentPage] = useState(1);
+//   // const [animationDirection, setAnimationDirection] = useState('');
+//   const [activeIndex, setActiveIndex] = useState(0)
 
-  // Pagination logic
+//   // Pagination logic
+  
+//   const [data, setData] = useState([]);
+//   const [categories, setCategories] = useState({});
+//   const [postImages, setPostImages] = useState({});
+//   const [error, setError] = useState(null);
+
+//   // Fetch posts
+//   const getPosts = async () => {
+//     try {
+//       const response = await fetchData('posts?page=1&per_page=9');
+//       setData(response);
+
+//     } catch (error) {
+//       setError(error);
+//       console.error(error);
+//     }
+//   };
+
+//   useEffect(() => {
+//     getPosts();
+     
+//   }, []);
+
+//   useEffect(() => {
+//     if (data.length > 0) {
+//       data.forEach(async (item) => {
+//         if (item?.categories?.[0]) {
+//           const categoryName = await getPostCategory(item?.categories[0]);
+//           setCategories((prevCategories) => ({
+//             ...prevCategories,
+//             [item.id]: categoryName,
+//           }));
+//         }
+//         if (item?.featured_media) {
+//           const featuredImage = await getPostImage(item?.featured_media);
+//           setPostImages((prevImages) => ({
+//             ...prevImages,
+//             [item.id]: featuredImage,
+//           }));
+
+          
+//         }
+
+       
+
+//       });
+
+
+      
+//     }
+
+    
+         
+
+
+  
+//   }, [data]);
+
+//   const getPostCategory = async (id) => {
+//     try {
+//       const response = await fetchData(`categories/${id}`);
+//       return response?.name;
+//     } catch (error) {
+//       console.log(error);
+//       return null;
+//     }
+//   };
+
+//   const getPostImage = async (id) => {
+//     try {
+//       const response = await fetchData(`media/${id}`);
+//      // const testImage = response?.media_details?.sizes?.tp-image-grid?.source_url;
+
+//       return response?.media_details?.sizes?.large?.source_url;
+       
+
+//     } catch (error) {
+//       console.log(error);
+//       return null;
+//     }
+//   };
+
+
+//    useEffect(()=>{
+
+//      // console.log("Test inner image: ", postImages)
+//   },[postImages])
   
 
+
+
+
+//   const totalPages = Math.ceil(data.length / itemsPerPage);
+//   const startIndex = (currentPage - 1) * itemsPerPage;
+//   const currentItems = data.slice(startIndex, startIndex + itemsPerPage);
+
+ 
+
+//   const handleSelected = (selectedIndex) => {
+//       setActiveIndex(selectedIndex)
+     
+//       for(let i=0; i < totalPages; i++){
+        
+//         if(i == selectedIndex){
+//           setCurrentPage(i+1);
+          
+
+//         }
+//       }  
+          
+//   }
+
+
+//   return (
+//     <div>
+//       {/* Bootstrap Carousel */}
+//       {/* Loop Grid */}
+//       <Carousel className="article-carousel"
+//          activeIndex={activeIndex} 
+//          onSelect={handleSelected} 
+//          interval={5000} 
+//          style={{minHeight: "300px", 
+                 
+                 
+//                 paddingBottom: "60px"}}
+//         controls={false}        
+//       >
+        
+//         {[...Array(totalPages)].map((_, index) =>(
+//              <Carousel.Item style={{minHeight: "300px"}} key={index}>
+//              <div className= {`grid article`}>
+//                {currentItems.map((item, index) => (
+//                  <ReUsablePost
+//                     key={index}
+//                     item={item}
+//                     categories={categories}
+//                     postImages={postImages}
+//                   />
+//                ))}
+//              </div>
+
+               
+//            </Carousel.Item>
+//         )
+
+//         )}
+          
+         
+          
+//       </Carousel>
+ 
+
+
+         
+
+
+    
+    
+
+      
+//     </div>
+//   );
+// };
+
+// export default LoopGrid  
+
+
+
+
+import { useState, useEffect, useCallback, useMemo, lazy } from "react";
+import './styles.css'
+import Carousel from 'react-bootstrap/Carousel';
+import { fetchData } from "../../config/apiConfig";
+
+// Lazy load ReUsablePost
+const ReUsablePost = lazy(() => import('../../components/ReUsablePost'));
+
+// Custom hook for optimized data fetching
+const usePostsData = () => {
   const [data, setData] = useState([]);
   const [categories, setCategories] = useState({});
   const [postImages, setPostImages] = useState({});
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  // Fetch posts
-  const getPosts = async () => {
+  const getPosts = useCallback(async () => {
     try {
+      setLoading(true);
       const response = await fetchData('posts?page=1&per_page=9');
       setData(response);
 
-    } catch (error) {
-      setError(error);
-      console.error(error);
-    }
-  };
-
-  useEffect(() => {
-    getPosts();
-     
-  }, []);
-
-  useEffect(() => {
-    if (data.length > 0) {
-      data.forEach(async (item) => {
+      // Fetch all categories and images in parallel
+      const categoryPromises = response.map(async (item) => {
         if (item?.categories?.[0]) {
-          const categoryName = await getPostCategory(item?.categories[0]);
-          setCategories((prevCategories) => ({
-            ...prevCategories,
-            [item.id]: categoryName,
-          }));
+          try {
+            const categoryName = await fetchData(`categories/${item.categories[0]}`);
+            return { id: item.id, category: categoryName?.name };
+          } catch (error) {
+            console.error(`Failed to fetch category for post ${item.id}:`, error);
+            return null;
+          }
         }
-        if (item?.featured_media) {
-          const featuredImage = await getPostImage(item?.featured_media);
-          setPostImages((prevImages) => ({
-            ...prevImages,
-            [item.id]: featuredImage,
-          }));
-
-          
-        }
-
-       
-
+        return null;
       });
 
-
-      
-    }
-
-    
-         
-
-
-  
-  }, [data]);
-
-  const getPostCategory = async (id) => {
-    try {
-      const response = await fetchData(`categories/${id}`);
-      return response?.name;
-    } catch (error) {
-      console.log(error);
-      return null;
-    }
-  };
-
-  const getPostImage = async (id) => {
-    try {
-      const response = await fetchData(`media/${id}`);
-     // const testImage = response?.media_details?.sizes?.tp-image-grid?.source_url;
-
-      return response?.media_details?.sizes?.large?.source_url;
-       
-
-    } catch (error) {
-      console.log(error);
-      return null;
-    }
-  };
-
-
-   useEffect(()=>{
-
-     // console.log("Test inner image: ", postImages)
-  },[postImages])
-  
-
-
-
-
-  const totalPages = Math.ceil(data.length / itemsPerPage);
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentItems = data.slice(startIndex, startIndex + itemsPerPage);
-
- 
-
-  const handleSelected = (selectedIndex) => {
-      setActiveIndex(selectedIndex)
-     
-      for(let i=0; i < totalPages; i++){
-        
-        if(i == selectedIndex){
-          setCurrentPage(i+1);
-          
-
+      const imagePromises = response.map(async (item) => {
+        if (item?.featured_media) {
+          try {
+            const imageData = await fetchData(`media/${item.featured_media}`);
+            return { 
+              id: item.id, 
+              image: imageData?.media_details?.sizes?.medium_large?.source_url || 
+                    imageData?.media_details?.sizes?.large?.source_url 
+            };
+          } catch (error) {
+            console.error(`Failed to fetch image for post ${item.id}:`, error);
+            return null;
+          }
         }
-      }  
-          
-  }
+        return null;
+      });
 
+      // Wait for all promises to resolve
+      const [categoryResults, imageResults] = await Promise.all([
+        Promise.all(categoryPromises),
+        Promise.all(imagePromises)
+      ]);
+
+      // Batch update categories
+      const newCategories = {};
+      categoryResults.forEach(result => {
+        if (result) {
+          newCategories[result.id] = result.category;
+        }
+      });
+      setCategories(newCategories);
+
+      // Batch update images
+      const newImages = {};
+      imageResults.forEach(result => {
+        if (result) {
+          newImages[result.id] = result.image;
+        }
+      });
+      setPostImages(newImages);
+
+    } catch (error) {
+      setError(error);
+      console.error('Failed to fetch posts:', error);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  return { data, categories, postImages, error, loading, getPosts };
+};
+
+const LoopGrid = ({ itemsPerPage = 3 }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const { data, categories, postImages, error, loading, getPosts } = usePostsData();
+
+  // Fetch data on mount
+  useEffect(() => {
+    getPosts();
+  }, [getPosts]);
+
+  // Memoized carousel items calculation
+  const carouselItems = useMemo(() => {
+    if (loading || data.length === 0) {
+      return Array.from({ length: Math.min(3, data.length || 3) }).map((_, index) => (
+        <Carousel.Item key={index} style={{ minHeight: "300px" }}>
+          <div className="grid article">
+            {Array.from({ length: itemsPerPage }).map((_, itemIndex) => (
+              <div key={itemIndex} className="grid-item loading-skeleton">
+                <div className="skeleton-image"></div>
+                <div className="skeleton-text short"></div>
+                <div className="skeleton-text long"></div>
+                <div className="skeleton-text medium"></div>
+              </div>
+            ))}
+          </div>
+        </Carousel.Item>
+      ));
+    }
+
+    const totalPages = Math.ceil(data.length / itemsPerPage);
+    
+    return [...Array(totalPages)].map((_, pageIndex) => {
+      const startIndex = pageIndex * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
+      const pageItems = data.slice(startIndex, endIndex);
+
+      return (
+        <Carousel.Item 
+          key={pageIndex} 
+          style={{ minHeight: "300px" }}
+        >
+          <div className={`grid article`}>
+            {pageItems.map((item) => (
+              <ReUsablePost
+                key={item.id}
+                item={item}
+                categories={categories}
+                postImages={postImages}
+              />
+            ))}
+          </div>
+        </Carousel.Item>
+      );
+    });
+  }, [data, categories, postImages, loading, itemsPerPage]);
+
+  // Optimized carousel handler
+  const handleSelected = useCallback((selectedIndex) => {
+    setActiveIndex(selectedIndex);
+  }, []);
+
+  if (error) {
+    return (
+      <div className="error-state">
+        <div>Failed to load posts. Please try again later.</div>
+      </div>
+    );
+  }
 
   return (
     <div>
-      {/* Bootstrap Carousel */}
-      {/* Loop Grid */}
-      <Carousel className="article-carousel"
-         activeIndex={activeIndex} 
-         onSelect={handleSelected} 
-         interval={5000} 
-         style={{minHeight: "300px", 
-                 
-                 
-                paddingBottom: "60px"}}
+      <Carousel 
+        className="article-carousel"
+        activeIndex={activeIndex} 
+        onSelect={handleSelected} 
+        interval={5000} 
+        style={{ 
+          minHeight: "300px", 
+          paddingBottom: "60px" 
+        }}
         controls={false}        
       >
-        
-        {[...Array(totalPages)].map((_, index) =>(
-             <Carousel.Item style={{minHeight: "300px"}} key={index}>
-             <div className= {`grid article`}>
-               {currentItems.map((item, index) => (
-                 <ReUsablePost
-                    key={index}
-                    item={item}
-                    categories={categories}
-                    postImages={postImages}
-                  />
-               ))}
-             </div>
-
-               
-           </Carousel.Item>
-        )
-
-        )}
-          
-         
-          
+        {carouselItems}
       </Carousel>
- 
-
-
-         
-
-
-    
-    
-
-      
     </div>
   );
 };
 
-export default LoopGrid  
+export default LoopGrid;
+
+
