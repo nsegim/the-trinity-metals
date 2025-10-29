@@ -345,7 +345,7 @@ const LoopGrid = ({ itemsPerPage = 3 }) => {
         onSelect={handleSelected} 
         interval={5000} 
         style={{ 
-          minHeight: "300px", 
+         
           paddingBottom: "60px" 
         }}
         controls={false}        
