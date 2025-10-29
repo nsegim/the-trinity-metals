@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [react(), visualizer({ filename: 'dist/stats.html', open: true, gzipSize: true, brotliSize: true })],
   build: {
      chunkSizeWarningLimit: 1000,
+     sourcemap: true,
      minify: 'terser',
      terserOptions: {
        compress: {
