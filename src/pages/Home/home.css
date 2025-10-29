@@ -762,7 +762,7 @@ color: #001721;
 
 /* Latest Article section styles */
 .article-sectionwrapper{
-  padding-top: 120px;
+  /* padding-top: 120px; */
   background-color: #F2F2F2;
   padding-bottom: 60px;
 }

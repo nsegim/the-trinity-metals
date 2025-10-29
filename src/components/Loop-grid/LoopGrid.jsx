@@ -13,7 +13,6 @@
 
 //   // Pagination logic
   
-
 //   const [data, setData] = useState([]);
 //   const [categories, setCategories] = useState({});
 //   const [postImages, setPostImages] = useState({});
@@ -180,88 +179,130 @@
 // export default LoopGrid  
 
 
-import { useState, useEffect, useCallback, useMemo } from "react";
+
+
+import { useState, useEffect, useCallback, useMemo, lazy } from "react";
 import './styles.css'
 import Carousel from 'react-bootstrap/Carousel';
-import ReUsablePost from '../../components/ReUsablePost';
 import { fetchData } from "../../config/apiConfig";
 
-const LoopGrid = ({ itemsPerPage = 3 }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
+// Lazy load ReUsablePost
+const ReUsablePost = lazy(() => import('../../components/ReUsablePost'));
+
+// Custom hook for optimized data fetching
+const usePostsData = () => {
   const [data, setData] = useState([]);
   const [categories, setCategories] = useState({});
   const [postImages, setPostImages] = useState({});
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // Fetch all posts with their details in parallel
   const getPosts = useCallback(async () => {
     try {
       setLoading(true);
       const response = await fetchData('posts?page=1&per_page=9');
       setData(response);
 
-      // Create promises for all categories and images
-      const promises = response.map(async (item) => {
-        const [categoryResult, imageResult] = await Promise.all([
-          item?.categories?.[0] 
-            ? fetchData(`categories/${item.categories[0]}`).catch(() => null)
-            : Promise.resolve(null),
-          item?.featured_media
-            ? fetchData(`media/${item.featured_media}`).catch(() => null)
-            : Promise.resolve(null)
-        ]);
+      // Fetch all categories and images in parallel
+      const categoryPromises = response.map(async (item) => {
+        if (item?.categories?.[0]) {
+          try {
+            const categoryName = await fetchData(`categories/${item.categories[0]}`);
+            return { id: item.id, category: categoryName?.name };
+          } catch (error) {
+            console.error(`Failed to fetch category for post ${item.id}:`, error);
+            return null;
+          }
+        }
+        return null;
+      });
 
-        return {
-          id: item.id,
-          category: categoryResult?.name || null,
-          image: imageResult?.media_details?.sizes?.large?.source_url || null
-        };
+      const imagePromises = response.map(async (item) => {
+        if (item?.featured_media) {
+          try {
+            const imageData = await fetchData(`media/${item.featured_media}`);
+            return { 
+              id: item.id, 
+              image: imageData?.media_details?.sizes?.medium_large?.source_url || 
+                    imageData?.media_details?.sizes?.large?.source_url 
+            };
+          } catch (error) {
+            console.error(`Failed to fetch image for post ${item.id}:`, error);
+            return null;
+          }
+        }
+        return null;
       });
 
       // Wait for all promises to resolve
-      const results = await Promise.all(promises);
+      const [categoryResults, imageResults] = await Promise.all([
+        Promise.all(categoryPromises),
+        Promise.all(imagePromises)
+      ]);
 
-      // Batch update state once
+      // Batch update categories
       const newCategories = {};
-      const newImages = {};
-      
-      results.forEach(result => {
-        if (result.category) {
+      categoryResults.forEach(result => {
+        if (result) {
           newCategories[result.id] = result.category;
         }
-        if (result.image) {
+      });
+      setCategories(newCategories);
+
+      // Batch update images
+      const newImages = {};
+      imageResults.forEach(result => {
+        if (result) {
           newImages[result.id] = result.image;
         }
       });
-
-      setCategories(newCategories);
       setPostImages(newImages);
 
     } catch (error) {
-      console.error('Failed to fetch posts:', error);
       setError(error);
+      console.error('Failed to fetch posts:', error);
     } finally {
       setLoading(false);
     }
   }, []);
+
+  return { data, categories, postImages, error, loading, getPosts };
+};
+
+const LoopGrid = ({ itemsPerPage = 3 }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const { data, categories, postImages, error, loading, getPosts } = usePostsData();
 
   // Fetch data on mount
   useEffect(() => {
     getPosts();
   }, [getPosts]);
 
-  // Memoized carousel items to prevent unnecessary re-renders
+  // Memoized carousel items calculation
   const carouselItems = useMemo(() => {
     if (loading || data.length === 0) {
-      return [];
+      return Array.from({ length: Math.min(3, data.length || 3) }).map((_, index) => (
+        <Carousel.Item key={index} style={{ minHeight: "300px" }}>
+          <div className="grid article">
+            {Array.from({ length: itemsPerPage }).map((_, itemIndex) => (
+              <div key={itemIndex} className="grid-item loading-skeleton">
+                <div className="skeleton-image"></div>
+                <div className="skeleton-text short"></div>
+                <div className="skeleton-text long"></div>
+                <div className="skeleton-text medium"></div>
+              </div>
+            ))}
+          </div>
+        </Carousel.Item>
+      ));
     }
 
     const totalPages = Math.ceil(data.length / itemsPerPage);
     
     return [...Array(totalPages)].map((_, pageIndex) => {
       const startIndex = pageIndex * itemsPerPage;
-      const currentPageItems = data.slice(startIndex, startIndex + itemsPerPage);
+      const endIndex = startIndex + itemsPerPage;
+      const pageItems = data.slice(startIndex, endIndex);
 
       return (
         <Carousel.Item 
@@ -269,7 +310,7 @@ const LoopGrid = ({ itemsPerPage = 3 }) => {
           style={{ minHeight: "300px" }}
         >
           <div className={`grid article`}>
-            {currentPageItems.map((item) => (
+            {pageItems.map((item) => (
               <ReUsablePost
                 key={item.id}
                 item={item}
@@ -288,61 +329,23 @@ const LoopGrid = ({ itemsPerPage = 3 }) => {
     setActiveIndex(selectedIndex);
   }, []);
 
-  // Loading state
-  if (loading) {
-    return (
-      <div className="loading-state" style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        minHeight: '300px',
-        background: '#f5f5f5'
-      }}>
-        <div>Loading latest articles...</div>
-      </div>
-    );
-  }
-
-  // Error state
   if (error) {
     return (
-      <div className="error-state" style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        minHeight: '300px',
-        background: '#f5f5f5',
-        color: '#d32f2f'
-      }}>
-        <div>Failed to load articles. Please try again later.</div>
-      </div>
-    );
-  }
-
-  // Empty state
-  if (data.length === 0) {
-    return (
-      <div className="empty-state" style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        minHeight: '300px',
-        background: '#f5f5f5'
-      }}>
-        <div>No articles available.</div>
+      <div className="error-state">
+        <div>Failed to load posts. Please try again later.</div>
       </div>
     );
   }
 
   return (
-    <div className="loop-grid-container">
+    <div>
       <Carousel 
         className="article-carousel"
         activeIndex={activeIndex} 
         onSelect={handleSelected} 
         interval={5000} 
         style={{ 
-          minHeight: "300px", 
+         
           paddingBottom: "60px" 
         }}
         controls={false}        
@@ -354,3 +357,5 @@ const LoopGrid = ({ itemsPerPage = 3 }) => {
 };
 
 export default LoopGrid;
+
+
