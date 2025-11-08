@@ -185,6 +185,7 @@ import { useState, useEffect, useCallback, useMemo, lazy } from "react";
 import './styles.css'
 import Carousel from 'react-bootstrap/Carousel';
 import { fetchData } from "../../config/apiConfig";
+import Spinner from "../Spinner/Spinner";
 
 // Lazy load ReUsablePost
 const ReUsablePost = lazy(() => import('../../components/ReUsablePost'));
@@ -339,6 +340,7 @@ const LoopGrid = ({ itemsPerPage = 3 }) => {
 
   return (
     <div>
+      
       <Carousel 
         className="article-carousel"
         activeIndex={activeIndex} 

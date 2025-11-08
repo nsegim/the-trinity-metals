@@ -474,7 +474,7 @@ const AboutPage = () => {
 
                                     {(currentLang === "kiny" 
                                             ? managementMembers?.[currentLang === "kiny" ? currentLang : 'en']?.slice(0, 3)
-                                            : managementMembers?.[currentLang === "kiny" ? currentLang : 'en']?.slice(5, 8).reverse()
+                                            : managementMembers?.[currentLang === "kiny" ? currentLang : 'en']?.slice(4, 8).reverse()
                                             )?.map((item, index) => (
                                         <div key={index} className="single-team-member">
                                         <ImageGallery imageUrl={item._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://contents.trinity-metals.com/wp-content/uploads/2025/02/animated_loader_gif_n6b5x0.gif"} customClass={'team-member-photo'}/>
